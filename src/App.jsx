@@ -13,6 +13,7 @@ import Instruction from './components/instructions';
 import Instructioncet from './components/instructionscet';
 import NotebookPage from './components/notebook';
 import ProfilePage from './components/profile';
+import Pyqcet from './components/pyqmhtcet';
 import { UserProvider } from './components/UserContext'; // Import UserProvider
 
 function App() {
@@ -37,6 +38,8 @@ function App() {
         <Route path="/result" element={<ResultPage />} />
         <Route path="/notebook" element={<NotebookPage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/pyqcet" element={<Pyqcet />} />
+
         
       </Routes>
     </BrowserRouter>

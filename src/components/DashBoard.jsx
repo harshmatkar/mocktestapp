@@ -63,11 +63,11 @@ const DashBoard = () => {
 
   const mockTests = [
     { title: 'MHT CET Mock Tests', action: 'Start Practice', path: '/mocktestlistmhtcet' },
-    { title: 'JEE Mock Tests', action: 'Take Mock Test', path: '/mocktestslist' },
-    { title: 'NEET Mock Tests', action: 'Take Mock Test', path: '/mocktestslistneet' },
-    { title: 'HSC Boards Prep', action: 'View Analytics', path: '/analytics' },
-    { title: 'Previous Year Papers', action: 'View Analytics', path: '/analytics' },
-    { title: 'Competition', action: 'View Rank', path: '/competition' }
+    { title: 'JEE MAIN Mock Tests', action: 'Take Mock Test', path: '/mocktestslist' },
+    { title: 'JEE ADVANCED Mock Tests', action: 'Take Mock Test', path: '/mocktestslistneet' },
+    { title: 'MHT CET PYQ', action: 'View Analytics', path: '/pyqcet' },
+    { title: 'JEE MAIN PYQ', action: 'View Rank', path: '/competition' },
+    { title: 'JEE ADVANCED PYQ', action: 'View Analytics', path: '/analytics' }
   ];
 
   return (
