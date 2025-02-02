@@ -95,7 +95,6 @@ const NotebookPage = () => {
       } else {
         // Text content: replace newlines with <br/> and escape HTML
         return segment
-          .replace(/\n/g, '<br/>')
           .replace(/&/g, '&amp;')
           .replace(/</g, '&lt;')
           .replace(/>/g, '&gt;');
