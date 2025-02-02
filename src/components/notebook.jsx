@@ -179,7 +179,7 @@ const NotebookPage = () => {
                       </button>
                     </div>
                     <div className="mt-2">
-                      <p className="text-green-700">
+                      <p className="text-green-500">
                         <strong>Correct Answer: </strong>
                         <MathJax>
                           <span
@@ -187,14 +187,16 @@ const NotebookPage = () => {
                             style={{ whiteSpace: "pre-wrap" }}
                             dangerouslySetInnerHTML={{
                               __html: renderMathExpression(
-                                question.correctAnswer
+                                question.correctAnswer.includes("\\")
+                                  ? `\\(${question.userAnswer}\\)`
+                                  : `\\text{${question.userAnswer}}`
                               ),
                             }}
                           />
                         </MathJax>
                       </p>
                       {question.userAnswer && (
-                        <p className="text-yellow-600 mt-1">
+                        <p className="text-red-600 mt-1">
                           <strong>Your Answer: </strong>
                           <MathJax>
                             <span
@@ -202,7 +204,9 @@ const NotebookPage = () => {
                               style={{ whiteSpace: "pre-wrap" }}
                               dangerouslySetInnerHTML={{
                                 __html: renderMathExpression(
-                                  question.userAnswer
+                                  question.userAnswer.includes("\\")
+                                    ? `\\(${question.userAnswer}\\)`
+                                    : `\\text{${question.userAnswer}}`
                                 ),
                               }}
                             />
