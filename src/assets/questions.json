@@ -72,7 +72,7 @@
     "testId": 1,
     "id": 6,
     "subject": "Physics",
-    "question": "Assertion: No work is done in moving an electric dipole translationally in a uniform electric field.  Reason: Net force on electric dipole in uniform electric feild is zero",
+    "question": "Assertion: No work is done in moving an electric dipole translationally in a uniform electric field. \n Reason: Net force on electric dipole in uniform electric feild is zero",
     "options": [
       "\\text{If both Assertion and Reason are true and Reason is the correct explanation of Assertion.}",
       "\\text{If Assertion is true but Reason is false.}",
