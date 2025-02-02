@@ -187,8 +187,8 @@ const NotebookPage = () => {
                             dangerouslySetInnerHTML={{
                               __html: renderMathExpression(
                                 question.correctAnswer.includes("\\")
-                                  ? `\\(${question.userAnswer}\\)`
-                                  : `\\text{${question.userAnswer}}`
+                                  ? `\\(${question.correctAnswer}\\)`
+                                  : `\\text{${question.correctAnswer}}`
                               ),
                             }}
                           />
