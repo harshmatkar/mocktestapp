@@ -1,0 +1,1536 @@
+[
+  {
+    "testId": 1,
+    "id": 1,
+    "subject": "Physics",
+    "question": "For the equation \\( F \\propto A^a v^b d^c \\), where \\( F \\) is the force, \\( A \\) is the area, \\( v \\) is the velocity, and \\( d \\) is the density, the values of \\( a, b \\), and \\( c \\) are respectively",
+    "options": [
+      "\\text{1, 2, 1}",
+      "\\text{1, 1, 2}",
+      "\\text{2, 1, 1}",
+      "\\text{0, 1, 1}"
+    ],
+    "correctAnswer":"\\text{1, 2, 1}"
+  },
+  
+  {
+    "testId": 1,
+    "id": 2,
+    "subject": "Physics",
+    "question": "In a meter bridge, the point D is the neutral point. Select the incorrect option.",
+    "options": [
+      "\\text{The meter bridge can have no other neutral point for this set of resistances}",
+      "\\text{When the jockey contacts a point on the meter wire to the right of D, current flows from B to the wire through the galvanometer}",
+      "\\text{When the jockey contacts a point on the meter wire left of D, current flows to B from the wire}",
+      "\\text{When R is increased, the neutral point shifts to the left}"
+    ],
+    "image": "https://housing.com/news/wp-content/uploads/2023/05/what-is-metre-bridge-f.png",
+    "correctAnswer":"\\text{The meter bridge can have no other neutral point for this set of resistances}"
+  },
+  {
+    
+    "testId": 1,
+    "id": 3,
+    "subject": "Physics",
+    "question": "Two soap bubbles of radii \\( r_1 = 4 \\, \\text{cm} \\) and \\( r_2 = 5 \\, \\text{cm} \\) are touching each other over a common surface \\( AB \\)Its radius will be",
+    "options": [
+      "\\text{4 cm}",
+      "\\text{5 cm}",
+      "\\text{4.5 cm}",
+      "\\text{20 cm}"
+    ],
+    "image":"https://search-static.byjusweb.com/question-images/byjus/ckeditor_assets/pictures/974964/original_Q1.png",
+    "correctAnswer":"\\text{4 cm}"
+  },
+  {
+    "testId": 1,
+    "id": 4,
+    "subject": "Physics",
+    "question": "An ideal monoatomic gas is taken around the cycle ABCD as shown in p versus V diagram. Work done during the cycle is ",
+    "options": [
+      "\\text{pV}",
+      "\\text{2pV}",
+      "\\text{0.5pV}",
+      "\\text{3pV}"
+    ],
+    "correctAnswer":"\\text{3pV}"
+  },  
+  {
+    "testId": 1,
+    "id": 5,
+    "question": "A star initially has \\( 10^{40} \\) deuterons. It produces energy via nuclear processes. If the average power radiated is \\( 10^{16} \\, \\text{W} \\), the deuteron supply is exhausted in a time of the order of",
+    "subject": "Physics",
+    "options": [
+        "10^6 \\, \\text{s}",
+        "10^8 \\, \\text{s}",
+        "10^{12} \\, \\text{s}",
+        "10^{16} \\, \\text{s}"
+      ],
+    "correctAnswer": "10^{16} \\, \\text{s}"
+  },
+  {
+    "testId": 1,
+    "id": 6,
+    "subject": "Physics",
+    "question": "Assertion: No work is done in moving an electric dipole translationally in a uniform electric field.  Reason: Net force on electric dipole in uniform electric feild is zero",
+    "options": [
+      "\\text{If both Assertion and Reason are true and Reason is the correct explanation of Assertion.}",
+      "\\text{If Assertion is true but Reason is false.}",
+      "\\text{If Assertion is false but Reason is true.}",
+      "\\text{If both Assertion and Reason are false.}"
+    ],
+    "correctAnswer": "\\text{If both Assertion and Reason are false.}"
+  },
+  {
+    "testId": 1,
+    "id": 7,
+    "subject": "Physics",
+    "question": "Which statements about a solenoid are correct? \n1. Magnetic field strength depends on the number of turns per unit length. \n2. Magnetic field strength depends on the current. \n3. The magnetoc feild strength in a solenoid depends upon the diameter of the solenid",
+    "options": [
+        "\\text{1, 2, and 3}",
+        "\\text{1 and 3}",
+        "\\text{2 and 3}",
+        "\\text{1 and 2}"
+      ],
+    "correctAnswer": "\\text{1 and 2}"
+  },
+  {
+    "testId": 1,
+    "id": 8,
+    "subject": "Physics",
+    "question": "A vernier caliper has a main scale division of 1 mm and 20 vernier divisions matching 16 main scale divisions. The least count is",
+    "options": [
+        "\\text{0.02 mm}",
+        "\\text{0.05 mm}",
+        "\\text{0.2 mm}",
+        "\\text{0.1 mm}"
+      ],
+    "correctAnswer": "\\text{0.1 mm}"
+  },
+  {
+    "testId": 1,
+    "id": 9,
+    "subject": "Physics",
+    "question": "A cylindrical capacitor with co-axial cylinders of radii 1.8 cm and 1.82 cm has a net capacitance of",    
+    "options": [
+      "\\text{1 nF}",
+      "\\text{10 nF}",
+      "\\text{2 nF}",
+      "\\text{20 nF}"
+    ],
+    "correctAnswer": "\\text{20 nF}"
+  },
+  {
+    "testId": 1,
+    "id": 10,
+    "subject": "Physics",
+    "question": "A hydrogen-like atom's emission spectrum has 10 wavelengths. The maximum angular impulse on an electron transitioning between energy levels is",
+    "options": [
+        "( \\frac{h}{2\\pi} )",
+        "( \\frac{2h}{\\pi} )",
+        "( \\frac{h}{\\pi} )",
+        "( \\frac{3h}{2\\pi} )"
+      ],
+    "correctAnswer": "( \\frac{3h}{2\\pi} )"
+  },
+  {
+    "testId": 1,
+    "id": 11,
+    "subject": "Physics",
+    "question": "Two planeta have masses M and 10 and their radii are a body of mass m is fired from the surface of and 2a, nuspectively. The separation between the centres able to reach at the surface of smaller planet, the m the seger planet terwards the malier planet along the of the lion jalaing thoir centres. For planets is 10. A the body to be minimum firing spoed needed is",
+    "options": ["2\\sqrt{\\frac{GM}{a}}", "4\\sqrt{\\frac{GM}{a}}", "\\sqrt{\\frac{GM^2}{ma}}", "\\frac{3}{2}\\sqrt{\\frac{5GM}{a}}"],
+    "correctAnswer": "Tokyo"
+  },
+  {
+    "testId": 1,
+    "id": 12,
+    "subject": "Physics",
+    "question": "A particle is projected from ground at some angle with horizontal (Annaming point of projection to be origin and the horizontal and vertical directions to be the x and y-axis) the particle passes through the points (3 m, 41 4 m) and (4m, 3 3 m) during its motion then the range of the particle would be: (9-10 ma)",
+    "options": ["\\text{36m}", "\\frac{37}{7}m", "\\text{4m}", "\\text{16m}"],
+    "correctAnswer": "Hydrogen"
+  },
+  {
+    "testId": 1,
+    "id": 13,
+    "subject": "Physics",
+    "question": "AT shape object with dimensiness in figuris lying aso. A fine is applied at the point P paralist to All, wach that the object has only the Pwith mapeut to 0",
+    "options": ["\\text{1}", "\\frac{4}{3}1", "\\frac{3}{2}1", "\\frac{2}{3}1"],
+    "correctAnswer": "Neil Armstrong"
+  },
+  {
+    "testId": 1,
+    "id": 14,
+    "subject": "Physics",
+    "question": "Match List -1 Gilectromagnetic wave type) with List -II (Its association/application) and select the corect option from the choices given below the lists",
+    "options": ["Amazon", "Mississippi", "Yangtze", "Nile"],
+    "correctAnswer": "Amazon"
+  },
+  {
+    "testId": 1,
+    "id": 15,
+    "subject": "Physics",
+    "question": "In a Lloyd's mirror experiment, a light ware emitted directly by the source S interftons with reflected light from the mirre. The soume 8. The size of the fringe width is 0.25 mm. The source it moved 0.6 mm above the initial position, the fringe with decreuses by 1.5 times. The lighit wond away from the",
+    "options": ["\\text{0.6} um", "\\text{0.4} um", "\\text{0.2} um", "\\text{0.8} um"],
+    "correctAnswer": "30"
+  },
+  {
+    "testId": 1,
+    "id": 16,
+    "subject": "Physics",
+    "question": "The combination of gates shown below yields",
+    "options": ["\\text{OR gate}", "\\text{NOT gate}", "\\text{XOR gate}", "\\text{NAND gate}"],
+    "correctAnswer": "Python"
+  },
+  {
+    "testId": 1,
+    "id": 20,
+    "subject": "Physics",
+    "question": "Assertion: In a room containing air, heat can go from one place to another by radiation only.Reason: In convection, heat is transferred from one place to another by actual motion of heated material.",
+    "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Link", "Home Tool Markup Language"],
+    "correctAnswer": "Hyper Text Markup Language"
+  },
+  {
+    "testId": 1,
+    "id": 19,
+    "subject": "Physics",
+    "question": "If coefficient of friction between an insect and bowl is a and radius of the boul is r, the maximum height to which the insect can crawl in the boul is",
+    "options": ["Steve Jobs", "Bill Gates", "Mark Zuckerberg", "Jeff Bezos"],
+    "correctAnswer": "Bill Gates"
+  },
+  {
+    "testId": 1,
+    "id": 18,
+    "subject": "Physics",
+    "question": "Amag dipole man is redensed in a union magnetic field of induction B. from the position shown in the figure, then the maximum kinetic tin of neodle in",
+    "options": ["1010", "1100", "1001", "1011"],
+    "correctAnswer": "1010"
+  },
+  {
+    "testId": 1,
+    "id": 17,
+    "subject": "Physics",
+    "question": "A coil having N turns is wound tightly in the form of a spiral with inner and outer radii 'a' und 'V' respectively. Find the magnetic field at centre, when a carrent I passes through coil:",
+    "options": ["Queue", "Array", "Stack", "Linked List"],
+    "correctAnswer": "Stack"
+  },
+  {
+    "testId": 1,
+    "id": 21,
+    "subject": "Physics",
+    "question": "What is the largest organ in the human body?",
+    "options": ["Heart", "Brain", "Liver", "Skin"],
+    "correctAnswer": "Skin"
+  },
+  {
+    "testId": 1,
+    "id": 22,
+    "subject": "Physics",
+    "question": "Which continent has the most countries?",
+    "options": ["Asia", "Africa", "Europe", "North America"],
+    "correctAnswer": "Africa"
+  },
+  {
+    "testId": 1,
+    "id": 23,
+    "subject": "Physics",
+    "question": "What is the square root of 64?",
+    "options": ["6", "7", "8", "9"],
+    "correctAnswer": "8"
+  },
+  {
+    "testId": 1,
+    "id": 24,
+    "subject": "Physics",
+    "question": "Who developed the theory of relativity?",
+    "options": ["Isaac Newton", "Stephen Hawking", "Albert Einstein", "Niels Bohr"],
+    "correctAnswer": "Albert Einstein"
+  },
+  {
+    "testId": 1,
+    "id": 25,
+    "subject": "Physics",
+    "question": "What is the main language spoken in Brazil?",
+    "options": ["Spanish", "Portuguese", "Italian", "French"],
+    "correctAnswer": "Portuguese"
+  },
+  {
+    "testId": 1,
+    "id": 26,
+    "subject": "Chemistry",
+    "question": "Which of the following have highest magnetic moment",
+    "options": ["50°C", "75°C", "100°C", "150°C"],
+    "correctAnswer": "100°C"
+  },
+  {
+    "testId": 1,
+    "id": 27,
+    "subject": "Chemistry",
+    "question": "Which is the largest island in the world?",
+    "options": ["Greenland", "Australia", "New Guinea", "Borneo"],
+    "correctAnswer": "Greenland"
+  },
+  {
+    "testId": 1,
+    "id": 28,
+    "subject": "Chemistry",
+    "question": "Which of the following chemical species are not related through resonence?",
+    "options": ["Herman Melville", "Mark Twain", "Charles Dickens", "Leo Tolstoy"],
+    "correctAnswer": "Herman Melville"
+  },
+  {
+    "testId": 1,
+    "id": 29,
+    "subject": "Chemistry",
+    "question": "Assertion: PbO2 is an oxidising agent and reduced to PbO. Reason: Stability of Pb(II) > Pb(IV) on account of innert pair effect",
+    "options": ["France", "Italy", "Spain", "Greece"],
+    "correctAnswer": "Italy"
+  },
+  {
+    "testId": 1,
+    "id": 30,
+    "subject": "Chemistry",
+    "question": "Match List -1 (Reagents fir reactions of nitrobenzene) with List II (product formed) and select the corect option from the choices given below the lists",
+    "options": ["Earth", "Mars", "Jupiter", "Saturn"],
+    "correctAnswer": "Jupiter"
+  },
+  {
+    "testId": 1,
+    "id": 31,
+    "subject": "Chemistry",
+    "question": "",
+    "options": ["Elephant", "Giraffe", "Rhino", "Hippo"],
+    "correctAnswer": "Elephant"
+  },
+  {
+    "testId": 1,
+    "id": 32,
+    "subject": "Chemistry",
+    "question": "Which is not paramagnetic ?",
+    "options": ["Rome", "Milan", "Naples", "Venice"],
+    "correctAnswer": "Rome"
+  },
+  {
+    "testId": 1,
+    "id": 33,
+    "subject": "Chemistry",
+    "question": "Which language is primarily spoken in Germany?",
+    "options": ["English", "German", "French", "Spanish"],
+    "correctAnswer": "German"
+  },
+  {
+    "testId": 1,
+    "id": 34,
+    "subject": "Chemistry",
+    "question": "Al3+ has low radius than mg2+",
+    "options": ["O", "CO2", "H2O", "O2"],
+    "correctAnswer": "H2O"
+  },
+  {
+    "testId": 1,
+    "id": 35,
+    "subject": "Chemistry",
+    "question": "What will be the volume of O2 liberated at NTP by passing 5 A current For 193 Sec . through acidified water",
+    "options": ["K2", "Mount Everest", "Kangchenjunga", "Makalu"],
+    "correctAnswer": "Mount Everest"
+  },
+  {
+    "testId": 1,
+    "id": 36,
+    "subject": "Chemistry",
+    "question": "The product in the above reaction is",
+    "options": ["0", "1", "2", "3"],
+    "correctAnswer": "2"
+  },
+  {
+    "testId": 1,
+    "id": 37,
+    "subject": "Chemistry",
+    "question": "If a transition-metal compound absorbs violet radiation in the visible region, its colour would be",
+    "options": ["Iron", "Mercury", "Silver", "Gold"],
+    "correctAnswer": "Mercury"
+  },
+  {
+    "testId": 1,
+    "id": 38,
+    "subject": "Chemistry",
+    "question": "Who discovered penicillin?",
+    "options": ["Marie Curie", "Alexander Fleming", "Louis Pasteur", "Joseph Lister"],
+    "correctAnswer": "Alexander Fleming"
+  },
+  {
+    "testId": 1,
+    "id": 39,
+    "subject": "Chemistry",
+    "question": "The numver of aldol reactions that occurs in the given transformation is",
+    "options": ["Rose", "Lotus", "Marigold", "Sunflower"],
+    "correctAnswer": "Lotus"
+  },
+  {
+    "testId": 1,
+    "id": 40,
+    "subject": "Chemistry",
+    "question": "How many bones are there in an adult human body?",
+    "options": ["205", "206", "208", "210"],
+    "correctAnswer": "206"
+  },
+  {
+    "testId": 1,
+    "id": 41,
+    "subject": "Chemistry",
+    "question": "Which one of the following is true about this reaction?",
+    "options": ["4", "6", "8", "10"],
+    "correctAnswer": "6"
+  },
+  {
+    "testId": 1,
+    "id": 42,
+    "subject": "Chemistry",
+    "question": "The composition of wusite is Fe0.95O1, what is the percentage of Fe3+ ions?",
+    "options": ["C", "Python", "Assembly", "Java"],
+    "correctAnswer": "Python"
+  },
+  {
+    "testId": 1,
+    "id": 43,
+    "subject": "Chemistry",
+    "question": "Which year did World War II end?",
+    "options": ["1944", "1945", "1946", "1947"],
+    "correctAnswer": "1945"
+  },
+  {
+    "testId": 1,
+    "id": 44,
+    "subject": "Chemistry",
+    "question": "Which gas is most abundant in Earth's atmosphere?",
+    "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+    "correctAnswer": "Nitrogen"
+  },
+  {
+    "testId": 1,
+    "id": 45,
+    "subject": "Chemistry",
+    "question": "What is the square of 12?",
+    "options": ["124", "144", "156", "164"],
+    "correctAnswer": "144"
+  },
+  {
+    "testId": 1,
+    "id": 46,
+    "subject": "Chemistry",
+    "question": "Who is known as the father of the computer?",
+    "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Ada Lovelace"],
+    "correctAnswer": "Charles Babbage"
+  },
+  {
+    "testId": 1,
+    "id": 47,
+    "subject": "Chemistry",
+    "question": "Which ocean is the largest?",
+    "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+    "correctAnswer": "Pacific"
+  },
+  {
+    "testId": 1,
+    "id": 48,
+    "subject": "Chemistry",
+    "question": "Which sport is known as the 'king of sports'?",
+    "options": ["Basketball", "Cricket", "Soccer", "Tennis"],
+    "correctAnswer": "Soccer"
+  },
+  {
+    "testId": 1,
+    "id": 49,
+    "subject": "Chemistry",
+    "question": "What is the boiling point of water in Fahrenheit?",
+    "options": ["200°F", "212°F", "220°F", "230°F"],
+    "correctAnswer": "212°F"
+  },
+  {
+    "testId": 1,
+    "id": 50,
+    "subject": "Chemistry",
+    "question": "Who painted 'Starry Night'?",
+    "options": ["Claude Monet", "Pablo Picasso", "Vincent van Gogh", "Leonardo da Vinci"],
+    "correctAnswer": "Vincent van Gogh"
+  },
+  {
+    "testId": 1,
+    "id": 51,
+    "subject": "Mathematics",
+    "question": "Which programming language is primarily used for Android development?",
+    "options": ["Swift", "Kotlin", "Ruby", "PHP"],
+    "correctAnswer": "Kotlin"
+  },
+  {
+    "testId": 1,
+    "id": 52,
+    "subject": "Mathematics",
+    "question": "Which planet has the most moons?",
+    "options": ["Mars", "Jupiter", "Saturn", "Uranus"],
+    "correctAnswer": "Saturn"
+  },
+  {
+    "testId": 1,
+    "id": 53,
+    "subject": "Mathematics",
+    "question": "What is the freezing point of water in Celsius?",
+    "options": ["0°C", "-1°C", "-5°C", "1°C"],
+    "correctAnswer": "0°C"
+  },
+  {
+    "testId": 1,
+    "id": 54,
+    "subject": "Mathematics",
+    "question": "Who invented the telephone?",
+    "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
+    "correctAnswer": "Alexander Graham Bell"
+  },
+  {
+    "testId": 1,
+    "id": 55,
+    "subject": "Mathematics",
+    "question": "What does CPU stand for?",
+    "options": ["Central Processing Unit", "Central Programming Unit", "Core Processing Unit", "Central Power Unit"],
+    "correctAnswer": "Central Processing Unit"
+  },
+  {
+    "testId": 1,
+    "id": 56,
+    "subject": "Mathematics",
+    "question": "What is the capital of Australia?",
+    "options": ["Sydney", "Melbourne", "Canberra", "Brisbane"],
+    "correctAnswer": "Canberra"
+  },
+  {
+    "testId": 1,
+    "id": 57,
+    "subject": "Mathematics",
+    "question": "Who wrote 'Pride and Prejudice'?",
+    "options": ["Jane Austen", "Charles Dickens", "George Eliot", "Emily Bronte"],
+    "correctAnswer": "Jane Austen"
+  },
+  {
+    "testId": 1,
+    "id": 58,
+    "subject": "Mathematics",
+    "question": "What is 9 cubed?",
+    "options": ["81", "729", "243", "512"],
+    "correctAnswer": "729"
+  },
+  {
+    "testId": 1,
+    "id": 59,
+    "subject": "Mathematics",
+    "question": "What is the largest internal organ in the human body?",
+    "options": ["Liver", "Lungs", "Heart", "Kidneys"],
+    "correctAnswer": "Liver"
+  },
+  {
+    "testId": 1,
+    "id": 60,
+    "subject": "Mathematics",
+    "question": "Which element is known as the building block of life?",
+    "options": ["Oxygen", "Carbon", "Hydrogen", "Nitrogen"],
+    "correctAnswer": "Carbon"
+  },
+  {
+    "testId": 1,
+    "id": 61,
+    "subject": "Mathematics",
+    "question": "Who is the author of 'Harry Potter'?",
+    "options": ["J.R.R. Tolkien", "J.K. Rowling", "George R.R. Martin", "C.S. Lewis"],
+    "correctAnswer": "J.K. Rowling"
+  },
+  {
+    "testId": 1,
+    "id": 62,
+    "subject": "Mathematics",
+    "question": "Which gas is commonly used in balloons?",
+    "options": ["Helium", "Hydrogen", "Oxygen", "Nitrogen"],
+    "correctAnswer": "Helium"
+  },
+  {
+    "testId": 1,
+    "id": 63,
+    "subject": "Mathematics",
+    "question": "What is the Roman numeral for 50?",
+    "options": ["L", "C", "D", "M"],
+    "correctAnswer": "L"
+  },
+  {
+    "testId": 1,
+    "id": 64,
+    "subject": "Mathematics",
+    "question": "What is the smallest unit of life?",
+    "options": ["Atom", "Molecule", "Cell", "Organ"],
+    "correctAnswer": "Cell"
+  },
+  {
+    "testId": 1,
+    "id": 65,
+    "subject": "Mathematics",
+    "question": "Which country gifted the Statue of Liberty to the United States?",
+    "options": ["Italy", "France", "Germany", "Spain"],
+    "correctAnswer": "France"
+  },
+  {
+    "testId": 1,
+    "id": 66,
+    "subject": "Mathematics",
+    "question": "What does DNA stand for?",
+    "options": ["Deoxyribonucleic Acid", "Deoxynucleic Acid", "Deoxyribonucleic Atom", "Deoxynucleic Atom"],
+    "correctAnswer": "Deoxyribonucleic Acid"
+  },
+  {
+    "testId": 1,
+    "id": 67,
+    "subject": "Mathematics",
+    "question": "What is the capital of Canada?",
+    "options": ["Toronto", "Vancouver", "Ottawa", "Montreal"],
+    "correctAnswer": "Ottawa"
+  },
+  {
+    "testId": 1,
+    "id": 68,
+    "subject": "Mathematics",
+    "question": "Which star is the closest to Earth?",
+    "options": ["Sirius", "Alpha Centauri", "Proxima Centauri", "The Sun"],
+    "correctAnswer": "The Sun"
+  },
+  {
+    "testId": 1,
+    "id": 69,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 1,
+    "id": 70,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 1,
+    "id": 71,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 1,
+    "id": 72,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 1,
+    "id": 73,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 1,
+    "id": 74,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 1,
+    "id": 75,
+    "subject": "Mathematics",
+    "question": "Who was the first President of the United States?",
+    "options": ["Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams"],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 2,
+    "id": 1,
+    "question": "The resistance of a wire is . It is stretched, so that the length becomes three times, then the new resistance of the wire will be",
+    "options": [
+      "(200 \\, \\Omega)",
+      "(160 \\, \\Omega)",
+      "(120 \\, \\Omega)",
+      "(180 \\, \\Omega)"
+    ],
+    "correctAnswer": "(200 \\, \\Omega)"
+  },
+  {
+    
+    "question": "A standing wave in a pipe with a length is described by \n\\( y(x,t) = y_0 \\sin\\left(\\frac{2\\pi}{L}x\\right) \\sin\\left(\\frac{2\\pi}{T}t + \\frac{\\pi}{4}\\right) \\). \nBased on the above information, which one of the following statements is incorrect? (Speed of sound in air is )",
+    "id": 2,
+    "options": [
+      "\\text{The pipe is closed at both ends}",
+      "\\text{The wavelength of the wave could be 1.2 m}",
+      "\\text{There could be a node at x = 0 and antinode at x = L/2}",
+      "\\text{The frequency of the fundamental mode of vibrations is 137.5 Hz}"
+    ],
+    "correctAnswer": "\\text{The pipe is closed at both ends}",
+    "testId": 2
+  },
+  {
+    "question": "300 cc of a gas at the atmospheric pressure of 106 dyne cm−2 is compressed to 150 cc. If the change is sudden, γ =1.4, what is the final pressure?",
+    "options": [
+      "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
+      "\\text{2.0 × \\(10^6\\) dyne.cm−2}",
+      "\\text{2.6 × \\(10^6\\) dyne.cm−2}",
+      "\\text{3.0 × \\(10^6\\) dyne.cm−2}"
+    ],
+    "id": 3,
+    "correctAnswer": "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
+    "testId": 2
+  },
+  {
+    "question": " There are two identical small holes of area of cross-section  on the opposite sides of a tank containing a liquid of density . The difference in height between the holes is . Tank is resting on a smooth horizontal surface, horizontal",
+    "options": [
+      
+        "\\text{( \\rho ghA \\)}",
+        "\\text{( \\frac{2gh}{\\rho A} \\)}",
+        "\\text{( 2\\rho ghA \\)}",
+        "\\text{( \\frac{\\rho gh}{A} )}"
+      
+    ],
+    "correctAnswer": "\\text{( \\rho ghA \\)}",
+    "id": 4,
+    "testId": 2
+  },
+  {
+    "question":"The values of  and  in the given logic circuit are",
+    "options": [
+      "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
+      "\\text{2.0 × \\(10^6\\) dyne.cm−2}",
+      "\\text{2.6 × \\(10^6\\) dyne.cm−2}",
+      "\\text{3.0 × \\(10^6\\) dyne.cm−2}"
+    ],
+    "id": 5,
+    "correctAnswer": "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
+    "testId": 2
+  },
+  {
+    "question":" Four holes of radius  are cut from a thin square plate of side  4R and mass M . The moment of inertia of the remaining portion about z-axis is",
+    "options": [
+      "(200 \\, \\Omega)",
+      "(160 \\, \\Omega)",
+      "(120 \\, \\Omega)",
+      "(180 \\, \\Omega)"
+    ],
+    "id": 6,
+    "correctAnswer": "(200 \\, \\Omega)",
+    "testId": 2
+  },
+  {
+    "question": "The figures shows the variation of photocurrent with anode potential for three different radiations. Let Ia, Ib and Ic be the intensities and fa, fb and fc be the frequencies for the curves a, b and c respectively. Then",
+    "options": [
+      "Ia > Ib > Ic and fa > fb > fc",
+      "Ia < Ib < Ic and fa < fb < fc",
+      "Ia = Ib = Ic and fa = fb = fc",
+      "Ia > Ib > Ic and fa < fb < fc"
+    ],
+    "id": 7,
+    "correctAnswer": "Ia < Ib < Ic and fa < fb < fc",
+    "testId": 2
+  },
+  {
+    "question": "A liquid of mass 100 g at 90°C is mixed with 50 g of the same liquid at 100°C. Now if 100 g of liquid A at 100°C is added to 50 g of liquid B at 75°C, the temperature of the mixture will be",
+    "options": [
+      "(200 \\, \\Omega)",
+      "(160 \\, \\Omega)",
+      "(120 \\, \\Omega)",
+      "(180 \\, \\Omega)"
+    ],
+    "id": 8,
+    "correctAnswer": "(120 \\, \\Omega)",
+    "testId": 2
+  },
+  {
+    "question": "15 Block ' ' is hanging from a vertical spring and is at rest. Block ' ' strikes the block ' ' with velocity ' ' and sticks to it. Then the value of ' ' for which the spring just attains natural length is -",
+    "options": [
+      "(200 \\, \\Omega)",
+      "(160 \\, \\Omega)",
+      "(120 \\, \\Omega)",
+      "(180 \\, \\Omega)"
+    ],
+    "id": 9,
+    "correctAnswer": "(160 \\, \\Omega)",
+    "testId": 2
+  },
+  {
+    "question": "16 A ball rolls off the top of stair-way with a horizontal velocity of magnitude The steps are high and wide. Which step will the ball hit first?",
+    "options": [
+      "(200 \\, \\Omega)",
+      "(160 \\, \\Omega)",
+      "(120 \\, \\Omega)",
+      "(180 \\, \\Omega)"
+    ],
+    "id": 10,
+    "correctAnswer": "(200 \\, \\Omega)",
+    "testId": 2
+  },
+  {
+    "question": "17 The distance moved by the screw of a screw gauge is in four rotations and there are divisions on its cap. When nothing is put between its jaws, division of circular scale coincides with the reference line, with zero of circular scale lying above the reference line. When a plate is placed between the jaws, the main scale reads divisions and the circular scale reads divisions. The thickness of the plate is",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 11,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "18 An inclined plane making an angle with the horizontal is placed in a uniform horizontal electric field of as shown in the figure. A small block of mass and charge, 0.01C is allowed to slide down from rest from a height, . If the coefficient of friction is 0.2 , then the acceleration of the block is nearly, (Acceleration due to gravity, )",
+    "options": [
+      "(2) (3)"
+    ],
+    "id": 12,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "19 A gas mixture consists of moles of oxygen and moles of argon at temperature . Neglecting all vibrational modes we calculated the total internal energy of the system to be . What is the value of ?",
+    "options": [
+      "10 (2) 9 (3) 13 (4) 11"
+    ],
+    "id": 13,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "20 In the arrangement shown, a dielectric slab of dielectric constant is completely filled in the shaded region. All the plates have same area S. Find the equivalent capacitance between and . (Given )",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 14,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "26 List I contain pair of solute and solvent and List II contain properties of their resulting solution.",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 15,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "A ball rolls off the top of stair-way with a horizontal velocity of magnitude \\( 1.8 \\, \\text{ms}^{-1} \\). The steps are \\( 0.20 \\)m high and \\( 0.20 \\)m wide. Which step will the ball hit first?",
+    "options": [
+      "\\text{First}",
+      "\\text{Second}",
+      "\\text{Third}",
+      "\\text{Fourth}"
+    ],
+    "id": 16,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "The distance moved by the screw of a screw gauge is 2 mm in four rotations and there are 50 divisions on its cap. When nothing is put between its jaws, 30th division of circular scale coincides with the reference line, with zero of circular scale lying above the reference line. When a plate is placed between the jaws, the main scale reads 2 divisions and the circular scale reads 20 divisions. The thickness of the plate is",
+    "options": [
+      "\\text{1.5 mm}",
+      "\\text{1.2 mm}",
+      "\\text{1.4 mm}",
+      "\\text{1.6 mm}"
+    ],
+    "id": 17,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "An inclined plane making an angle \\(30^\\circ\\) with the horizontal is placed in a uniform horizontal electric field of \\(100 \\, \\text{V/m}\\) as shown in the figure. A small block of mass \\(1 \\, \\text{kg}\\) and charge \\(0.01 \\, \\text{C}\\) is allowed to slide down from rest from a height \\(h = 1 \\, \\text{m}\\). If the coefficient of friction is 0.2, then the acceleration of the block is nearly (Acceleration due to gravity, \\(g = 10 \\, \\text{m/s}^2\\))",
+    "options": [
+      "\\text{2.5 ms^-2}",
+      "\\text{5 ms^{-2}}",
+      "\\text{7.5 ms^{-2}}",
+      "\\text{10 ms^{-2}}"
+    ],
+    "id": 18,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+{
+  "question": "A gas mixture consists of 2 moles of oxygen and 4 moles of argon at temperature T. Neglecting all vibrational modes, we calculated the total internal energy of the system to be xRT. What is the value of x?",
+  "options": [
+    "\\text{10}",
+    "\\text{9}",
+    "\\text{13}",
+    "\\text{11}"
+  ],
+  "id": 19,
+  "correctAnswer": "George Washington",
+  "testId": 2
+},
+{
+  "question": "In the arrangement shown, a dielectric slab of dielectric constant \\( \\kappa \\) = 2 is completely filled in the shaded region. All the plates have the same area \\( S \\). Find the equivalent capacitance between \\( A \\) and \\( B \\). (Given \\( \\epsilon_0 S / d = 1 \\mu F \\))",
+  "options": [
+    "\\frac{2}{11} \\text{ } \\mu F",
+    "\\frac{4}{11} \\text{ } \\mu F",
+    "\\frac{7}{22} \\text{ } \\mu F",
+    "\\frac{9}{22} \\text{ } \\mu F"
+  ],
+  "id": 20,
+  "correctAnswer": "George Washington",
+  "testId": 2
+},
+  {
+    "question": "32 The correct statement(s) concerning the structures is/are : - are tautomers. - are resonating structures. - are tautomers. - are resonating structures.",
+    "options": [
+      "A,B,C Only (2) A,B,C,D (3) A,B Only (4) C,D Only"
+    ],
+    "id": 21,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    
+      "question": "A hydrogen-like atom (atomic number \\( Z \\)) is in a higher excited state of quantum number \\( n \\). This excited atom can make a transition to the first excited state by successively emitting two photons of energies \\( E_1 \\) and \\( E_2 \\) respectively. Alternatively, the atom from the same excited state can make a transition to the second excited state by successively emitting two photons of energy \\( 10.20 \\text{ eV} \\) and \\( 5.95 \\text{ eV} \\) respectively. Determine the value of \\( n \\). [Ionization energy of hydrogen atom = 13.6 eV]",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+     
+      "id": 22,
+      "correctAnswer": "George Washington",
+      "testId": 2
+  },
+  {
+    
+      "question": "A non-conducting rod of length \\( L \\) with linear charge density \\( \\lambda = \\lambda_0 x \\) where \\( x \\) is the distance from end \\( A \\) is rotating with constant angular speed \\( \\omega \\) about the same end. If the angular velocity of the rod (\\( \\omega \\)) is large, then the magnetic dipole moment of the system is \\( M \\). What is the value of \\( M \\)?",
+      "options": [
+        "\\( \\frac{\\lambda_0 \\omega L^3}{3} \\)",
+        "\\( \\frac{\\lambda_0 \\omega L^2}{2} \\)",
+        "\\( \\frac{\\lambda_0 \\omega L^4}{4} \\)",
+        "\\( \\frac{\\lambda_0 \\omega L^5}{5} \\)"
+      ],
+      "id": 23,
+      "correctAnswer": "George Washington",
+      "testId": 2
+  },
+  {
+      "question": "Two persons A and B are located in the X-Y plane at the points (0, 0) and (0, 10) measured in MKS unit). At a time t = 0 respectively. They start moving simultaneously with velocities \\( \\vec{v}_B = 2 \\hat{i} \\text{ m/s} \\) and \\( \\vec{v}_A = 2 \\hat{j} \\text{ m/s} \\) respectively. The time after which A and B are at their closest distance is \\( t \\) sec, find \\( t \\).",
+      "options": [
+        "2.5",
+        "5",
+        "7.5",
+        "10"
+      ],
+      "correctAnswer": "5",
+      "id": 24,
+      "testId": 2
+  },
+  {
+    "question": "A large sphere of mass \\( M \\) through the centre of \\( M \\) is fixed at one position and two identical particles each of mass \\( m \\) are kept on a line passing \\( l \\) (see figure). The point masses are connected by a rigid massless rod of length \\( l \\) and this assembly is free to move along the line connecting them. All three masses interact only through their mutual gravitational interaction. When the point mass nearer to \\( M \\) is at distance \\( d \\) from \\( M \\), the force on the other point mass is zero. The value of \\( d \\) is",
+    "options": [
+      "\\( \\frac{l}{2} \\)",
+      "\\( \\frac{l}{3} \\)",
+      "\\( \\frac{l}{4} \\)",
+      "\\( \\frac{l}{5} \\)"
+    ],
+    "id": 25,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "38 Among the following which one will have the largest bond length?",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 26,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "40 A Buffer solution having pH 4.72 is prepared by mixing of 1 M NaOH and 1 M HCN . What is the ratio of volume of acid to base? of",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 27,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "41 Assertion (A): The denaturation of proteins can destroy all and protein structures. Reason (R): Curdling of milk is due to denaturation of proteins. The correct option among the following is",
+    "options": [
+      "(A) is true, (R) is true and (R) is the correct explanation for (A) (2) (A) is true, (R) is true but (R) is not the correct explanation for (A) (3) (A) is true but (R) is false (4) (A) is false but (R) is true"
+    ],
+    "id": 28,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "42 All the elements of Group 15 form hydrides of the type . From the following given statements with respect to , select the incorrect one.",
+    "options": [
+      "Basicity as well as reducing strength is maximum for (2) Standard enthalpy of formation is negative only for while for others it is positive"
+    ],
+    "id": 29,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "43 It is an experimental fact that salt Red ppt Which of the following is wrong about this Red ppt.?",
+    "options": [
+      "It is non-ionic compound (2) It involves intra molecular H-bonding (3) is hybridised (4) It is a diamagnetic complex"
+    ],
+    "id": 30,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "44 For the reaction below the structure of the product is",
+    "options": [],
+    "id": 31,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "45 6 mol of a mixture of Mohr's salt and requires 500 ml of 1 M of for complete oxidation in acidic medium. The mole % of the Mohr's salt in the mixture is",
+    "options": [
+      "75 (2) 50 (3) 60 (4) 25"
+    ],
+    "id": 32,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "52 The solution of differential equation is",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 33,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "53 Consider the real valued function such that and satisfying for every Then the value of is",
+    "options": [
+      "(2) (3) 6 (4)"
+    ],
+    "id": 34,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "54 If and are roots of and , then value of is",
+    "options": [
+      "5 (2) 6 (3) 2.5 (4) 3"
+    ],
+    "id": 35,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "55 If , where and are distinct, then number of matrices in with trace equal to 10 are: (where trace represents the sum of diagonal elements of a square matrix)",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 36,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "56 The area of the region bounded by the curves and (in sq units) is , find .",
+    "options": [
+      "19 (2) 16 (3) 18 (4) 17"
+    ],
+    "id": 37,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "Among the following which one will have the largest bond length?",
+    "options": [
+        "\\text{\\( KO_2 \\)}",
+        "\\text{\\( O_2 \\)}",
+        "\\text{\\( O_2^+ [AsF_6]^− \\)}",
+        "\\text{\\( K_2O_2 \\)}"
+    ],
+    "id": 38,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "In the Kjeldahl's method for estimation of nitrogen present in a soil sample, ammonia evolved from 0.75 g of sample neutralized 10 mL of 1M H2SO4. The percentage of nitrogen in the soil is",
+    "options": [
+      "\\text{37.33}",
+      "\\text{43.33}",
+      "\\text{45.33}",
+      "\\text{35.33}"
+    ],
+    "id": 39,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "A Buffer solution having pH 4.72 is prepared by mixing of 1 M NaOH and 1 M HCN. What is the ratio of volume of acid to base? (\\( pK_b \\) of \\( CN^- \\) = 9.28)",
+    "options": [
+        "\\text{1 : 1}",
+        "\\text{1 : 2}",
+        "\\text{2 : 1}",
+        "\\text{3 : 1}"
+    ],
+    "id": 40,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "Assertion (A): The denaturation of proteins can destroy all 1°, 2° and 3° protein structures. \nReason (R): Curdling of milk is due to denaturation of proteins.The correct option among the following is",
+    "options": [
+      "\\text{(A) is true, (R) is true and (R) is the correct explanation for (A)}",
+      "\\text{(A) is true, (R) is true but (R) is not the correct explanation for (A)}",
+      "\\text{(A) is true but (R) is false}",
+      "\\text{(A) is false but (R) is true}"
+    ],
+    "id": 41,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "All the elements of Group 15 form hydrides of the type EH3. From the following given statements with respect to NH3, select the incorrect one. (1) Basicity as well as reducing strength is maximum for NH3. (2) Standard enthalpy of formation is negative only for NH3 while for others it is positive",
+    "options": [
+      "\\text{Basicity as well as reducing strength is maximum for NH3.}",
+      "\\text{Standard enthalpy of formation is negative only for NH3 while for others it is positive}",
+      "\\text{Boiling point follows the order: PH3 < AsH3 < NH3 < SbH3}",
+      "\\text{HEH bond angle follows the order: NH3 > PH3 > AsH3 > SbH3}"
+    ],
+    "id": 42,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "It is an experimental fact that \\( \\text{dmg} + \\text{Ni(II)} + \\text{NH}_4\\text{OH} \\rightarrow \\text{salt Red ppt.} \\) Which of the following is wrong about this Red ppt.?",
+    "options": [
+      "\\text{It is non-ionic compound}",
+      "\\text{It involves intra molecular H-bonding}",
+      "Ni(II) \\text{ is } sp^3 \\text{ hybridised}",
+      "\\text{It is a diamagnetic complex}"
+    ],
+    "id": 43,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "For the reaction below the structure of the product  is",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 44,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+ 
+  {
+    "question": "6 mol of a mixture of Mohr's salt and requires 500 ml of 1 M of K2Cr2O7 for complete oxidation in acidic medium. The mole % of the Mohr's salt in the mixture is",
+    "options": [
+      "75",
+      "50",
+      "60",
+      "25"
+    ],
+    "id": 45,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "In how many of the following species the central atoms have two lone pairs of electrons? \\( \\text{XeF}_4, \\text{XeF}^-_5, \\text{F}_2\\text{SeO}_2, \\text{XeF}^+_3, \\text{XeOF}_4, \\text{ClOF}_3, \\text{ICl}^-_4, \\text{SCl}_2, \\text{OSF}_4 \\)",
+    "options": [
+      "(2) (3) (4) None of these"
+    ],
+    "id": 46,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "The work done in an open vessel at 300 K, when 112 g iron reacts with dilute HCl to give FeCl2, is nearly W. Find 5W. Mark answer in calories.",
+    "options": [
+      "-3 (2) 2 (3) (4)"
+    ],
+    "id": 47,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": "A 1 L solution of CuSO4 was electrolysed till the pH of the solution become 1. A current of 0.965 A was passed through the solution for x×10^y sec with an efficiency of 20%. Report the value of 25y/x (x and y are smallest integers)",
+    "options": [
+      "(2) (3) (4)"
+    ],
+    "id": 48,
+    "correctAnswer": "George Washington",
+    "testId": 2
+  },
+  {
+    "question": " Find the value of (Z).",
+    "id": 49,
+    "testId": 2,
+    "correctAnswer": "George Washington",
+    "options": [
+      "\\text{7}",
+      "\\frac{100}{19}",
+      "\\frac{1400}{361}",
+      "\\frac{1440}{361}"
+    ]
+  },
+  {
+    "question": " Among the following the total number of compounds which give positive iodoform test is/are:",
+    "id": 50,
+    "correctAnswer": "George Washington",
+    "testId": 2,
+    "options": [
+      "\\text{7}",
+      "\\frac{100}{19}",
+      "\\frac{1400}{361}",
+      "\\frac{1440}{361}"
+    ]
+  },
+
+  {
+    "testId": 2,
+    "id": 51,
+    "correctAnswer": "George Washington",
+    "question": "The mean and variance of 20 observations are found to be 10 and 4 respectively. On rechecking, it was found that an observation 8 is incorrect. If the wrong observation is omitted, then the correct variance is",
+    "options": [
+      "\\text{7}",
+      "\\frac{100}{19}",
+      "\\frac{1400}{361}",
+      "\\frac{1440}{361}"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 52,
+    "correctAnswer": "George Washington",
+    "question": "The solution of differential equation is \\((2xy^4e^y + 2xy^3 + y)dx + (x^2y^4e^y - x^2y^2 - 3x)dy = 0\\)",
+    "options": [
+      "x^2e^y + \\frac{x^2}{y} + \\frac{x}{y^3} = c",
+      "x^2e^y - \\frac{x^2}{y} + \\frac{x}{y^3} = c",
+      "x^2e^y + \\frac{x^2}{y} - \\frac{x}{y^3} = c",
+      "x^2e^y - \\frac{x^2}{y} - \\frac{x}{y^3} = c"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 53,
+    "correctAnswer": "George Washington",
+    "question": "Consider the real valued function \\(h \\): \\(\\left\\{ 1,2,....100 \\right\\}\\) \\(\\to R\\) such that \\(h(0) = 5\\), \\(h(0) = 100\\) and satisfying for every \\(h(p)\\) = \\(\\frac{1}{2}\\)\\(\\left\\{h(p+1) + h(p-1))\\right\\}\\). Then the value of \\(h(1)\\) is ",
+    "options": [
+      "",
+      "",
+      "6",
+      ""
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 54,
+    "correctAnswer": "George Washington",
+    "question": "If \\( \\alpha \\) and \\( \\beta \\) are roots of \\( x^2 + x + 1 = 0 \\) and \\( \\alpha^2 \\) and \\( \\beta^2 \\) are roots of \\( ax^2 + bx + c = 0 \\), \\( S_n = ( \\alpha^2 + \\beta^2 )^n \\), \\( n \\) belongs to \\( \\mathbb{N} \\), then the value of \\( \\frac{\\sum_{n=1}^{5}S_n}{\\sum_{n=1}^{4}\\alpha^n+\\sum_{n=1}^{4}\\beta^n + 7} \\)",
+    "options": [
+      "\\text{5}",
+      "\\text{6}",
+      "\\text{2.5}",
+      "\\text{3}"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 55,
+    "correctAnswer": "George Washington",
+    "question": "\\[A = \begin{bmatrix} a & x & y \\ x & b & z \\ y & z & c \\end{bmatrix}\\], where \\( a, b, c, x, y, z \\in \\{1,2,3,4,5,6\\} \\) and \\( a, b, c, x, y, z \\) are distinct, then number of matrices in \\( A \\) with trace equal to 10 are: (where trace represents the sum of diagonal elements of a square matrix)   ",
+    "options": [
+      "108",
+      "72",
+      "36",
+      "216"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 56,
+    "correctAnswer": "George Washington",
+    "question": "The area of the region bounded by the curves \\(y = 9x^2\\) and \\(y = 5x^2 + 4\\) (in sq units) is \\(\\frac{k}{3}\\), find \\(k\\)",
+    "options": [
+      "\\text{19}",
+      "\\text{16}",
+      "\\text{18}",
+      "\\text{17}"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 57,
+    "correctAnswer": "George Washington",
+    "question": "Suppose families always have one, two or three children, with probabilities \\( \\frac{1}{4} \\), \\( \\frac{1}{2} \\) and \\( \\frac{1}{4} \\) respectively. Assume everyone eventually gets married and has children, the probability of a couple having exactly four grandchildren is",
+    "options": [
+      "27/128",
+      "37/128",
+      "25/128",
+      "30/128"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 58,
+    "correctAnswer": "George Washington",
+    "question": " \\( \\vec{a} = 3\\hat{i} + \\hat{j} - \\hat{k} \\), \\( \\vec{b} = \\hat{i} - 4\\hat{j} + 5\\hat{k} \\), \\( \\vec{c} = 4\\hat{i} + 5\\hat{j} - \\hat{k} \\) are three vectors and a vector \\( \\vec{r} \\) is perpendicular to both the vectors \\( \\vec{b} \\) and \\( \\vec{c} \\). If \\( \\vec{r} \\cdot \\vec{a} = 9 \\), then \\( \\vec{r} \\) = ",
+    "options": [
+      "\\text{3( − \\hat{i} + \\hat{j} ) \\hat{k}}",
+      "\\text{9( − \\hat{i} − \\hat{j} ) \\hat{k}}",
+      "\\text{9( − \\hat{i} + \\hat{j} ) \\hat{k}}",
+      "\\text{3( − \\hat{i} − \\hat{j} ) \\hat{k}}"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 59,
+    "correctAnswer": "George Washington",
+    "question": "Let the solution of the equation \\( \\frac{dy}{dx} = y + \\int_0^x y dx \\) is \\( y(x) \\). If \\( y(0) = 1 \\), then \\( y(2) \\) = ",
+    "options": [
+      "\\frac{e^{2} + 2}{4e^{2} - 1}",
+      "\\frac{2e^{2} + 1}{4-e^{2}}",
+      "\\frac{2e^{2} - 1}{4e^{2} - 1}",
+      "\\frac{e^{2} - 1}{4-e^{2}}"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 60,
+    "question": "Let \\( f(x) = \\begin{cases} 4x - x^3 + \\ln{(b^2 - 3b + 3)}, & 2 \\leq x < 3 \\ x - 18, &  \\geq 3 \\end{cases} \\). Find all the possible real values of \\( b \\) such that \\( f(x) \\) has the smallest value at \\( x = 3 \\).",
+    "correctAnswer": "George Washington",
+    "options": [
+      "a",
+      "b",
+      "v",
+      "d"
+    ]
+  },
+  {
+    "testId": 2,
+    "id": 61,
+    "question": "If \\( \\tan^{-1} \\left( \\frac{1}{2} \\right) + \\tan^{-1} \\left( \\frac{3x}{2} \\right) + \\tan^{-1} \\left( \\frac{3}{4} \\right) = \\frac{\\pi}{2} \\), then the value of \\( \\tan \\left( \\pi - 2 \\tan^{-1} x \\right) \\) is:",
+    "options": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 2,
+    "id": 62,
+    "question": "If \\( z \\) be a complex number satisfying \\( |z|^2 + 2(z+\\bar{z}) - 5 = 0 \\), then complex number \\( z + 3 + 2i \\) will lie on \\( (i = \\sqrt{-1}) \\)   ",
+    "options": [
+      "Circle with centre and radius 4",
+      "Circle with centre and radius 4",
+      "Circle with centre and radius 3",
+      "Circle with centre and radius 3"
+    ],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 2,
+    "id": 63,
+    "question": "Equation of the line of shortest distance between the lines \\( \\frac{x}{2} = \\frac{-y}{3} = \\frac{z - 1}{1} \\) and \\( \\frac{x-2}{3} = \\frac{y-5}{-1} = \\frac{z+2}{2} \\) is",
+    "options": [
+      "",
+      "",
+      ""
+    ],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 2,
+    "id": 64,
+    "question": "If system of equations \\( x + (\\sin \\alpha) y + (\\sin^2 \\alpha) z = 0 \\), \\( x + (\\cos \\alpha) y + (\\cos^2 \\alpha) z = 0 \\), \\( x + (\\sin 2\\alpha) y + (\\sin^2 2\\alpha) z = 0 \\) has non-trivial solutions, then number of distinct values of \\( \\alpha \\) (where \\( \\alpha \\in [0, \\pi] \\)) is",
+    "options": [
+      "9",
+      "6",
+      "8",
+      "7"
+    ],
+    "correctAnswer": "George Washington"
+  },
+  {
+    "testId": 2,
+    "id": 65,
+    "question": "\\( O \\) is the vertex of the parabola \\( y^2 = 4ax \\) and \\( L \\) is the upper end of the latus rectum. If \\( LH \\) is drawn perpendicular to \\( OL\\) meeting \\( OX \\) in \\( H \\), then the length of the double ordinate through \\( H \\) is",
+    "options": [
+      "0",
+      "(120 \\, \\Omega)",
+      "( \\frac{2h}{\\pi*2} )",
+      "( \\frac{2h}{\\pi} )"
+    ],
+    "correctAnswer": "George Washington"
+  },
+{
+  "testId": 2,
+  "id": 66,
+  "question": "The direction cosines of two lines are given by \\(2l + \\lambda m + n = 0\\) and \\(mn + nl - 56m = 0\\). Find value of \\(\\lambda\\), if the lines are perpendicular.  ",
+  "options": [
+    "NaCl",
+    "KCl",
+    "CaCl2",
+    "MgCl2"
+  ],
+  "correctAnswer": "NaCl"
+},
+{
+  "testId": 2,
+  "id": 67,
+  "question": "If \\( f(x) \\) be a function such that \\( f(x + 1) = \\frac{f(x)-1}{f(x)+1} \\), \\( \\forall x \\in \\mathbb{N} \\) and \\( f(1) = 2 \\) then \\( f(999) \\) is:  ",
+  "options": [
+    "Nucleus",
+    "Mitochondria",
+    "Ribosome",
+    "Endoplasmic Reticulum"
+  ],
+  "correctAnswer": "Mitochondria"
+},
+{
+  "testId": 2,
+  "id": 68,
+  "question": "Let \\( f(x) = \\lim_{n \\to \\infty} \\tan^{-1} \\left\\{ 4n^2 \\left(1 - \\cos \\frac{x}{n} \\right) \\right\\} \\) and \\( g(x) = \\lim_{n \\to \\infty} \\frac{n^2}{2} \\ln \\cos \\left( \\frac{2x}{n} \\right) \\), then \\( \\lim_{x \\to 0} \\frac{f(x) + 2g(x)}{x^2} \\) is:  ",
+  "options": [
+    "Berlin",
+    "Madrid",
+    "Paris",
+    "Rome"
+  ],
+  "correctAnswer": "Paris"
+},
+{
+  "testId": 2,
+  "id": 69,
+  "question": "If \\( \\int \\frac{x^{pq-p-1}}{(x^p+1)^q} dx = \\frac{2(1+x^{-p})^{1-q} )}{\\lambda p(q-1)} \\) + \\(c\\) . where \\( p, q \\in \\mathbb{N} - \\{1\\} \\), then the value of \\( \\lambda \\) is (here, \\( c \\) is an arbitrary constant):",
+  "options": [
+    "1",
+    "4",
+    "2",
+    "6"
+  ],
+  "correctAnswer": "Jupiter"
+},
+{
+  "testId": 2,
+  "id": 70,
+  "question": "Consider \\( \\triangle ABC \\) whose vertices are \\( A \\equiv (m,n) \\), \\( B \\equiv (1,2) \\), \\( C \\equiv (2,3) \\) and vertex ‘A’ lies on the line  \\[2x - y + 3 = 0\\]where \\( m, n \\in \\mathbb{N} \\) with \\( m + n > 10 \\). Let the area of \\( \\triangle ABC \\) be \\( S \\) such that \\( [S] = 2 \\), where \\( [x] \\) denotes the greatest integer less than or equal to \\( x \\).  If the equation of side \\( AC \\) of \\( \\triangle ABC \\) is \\( ax + by = 9 \\), then \\( (a + b) \\) equals:  ",
+  "options": [
+    "4",
+    "15",
+    "5",
+    "11"
+  ],
+  "correctAnswer": "Au"
+},
+{
+  "testId": 2,
+  "id": 71,
+  "question": "If the number of arrangements of the letters of the word DHARAMSHALA taken all at a time so that no alike letters appear together is \\[(4 \\cdot 5^b \\cdot 6^c \\cdot 7^d)\\] where \\( a, b, c, d \\in \\mathbb{N} \\), then \\( a + b + c + d \\) is equal to: ",
+  "correctAnswer": "300,000 km/s"
+},
+{
+  "testId": 2,
+  "id": 72,
+  "question": "Let \\( \\vec{x} = \\hat{i} + 3\\hat{j} - 2\\hat{k} , \\quad \\vec{y} = 2\\hat{i} + 4\\hat{j} + \\hat{k} \\) and a vector \\( \\vec{z} \\) satisfying \\( \\vec{x} \\times \\vec{z} = \\vec{x} \\times \\vec{y} \\) and \\( \\vec{z} \\cdot \\vec{x} = 0 \\). Then \\( \\|\\vec{z}\\| \\) is, (where \\( [.] \\) denotes the greatest integer function):  ",
+  "correctAnswer": "Harper Lee"
+},
+{
+  "testId": 2,
+  "id": 73,
+  "question": "The number of points where \\( f(x) = |x + \\lfloor x \\rfloor| - 3\\lfloor 2x \\rfloor + 4\\lfloor 3x \\rfloor \\) is discontinuous in \\( [-1,1] \\), is: **[Note: \\( \\lfloor k \\rfloor \\) denotes the greatest integer less than or equal to \\( k \\)] ",
+  "correctAnswer": "Mercury"
+},
+{
+  "testId": 2,
+  "id": 74,
+  "question": "The coefficient of \\( x^4 \\) appearing in the expansion of  \\[(1 + x^2)^{10} (1 - x)^6 (1 + x^3)^8 (1 + x)^6\\]",
+  "correctAnswer": "H2O"
+},
+{
+  "testId": 2,
+  "id": 75,
+  "question": "If \\lim_{x \\to \\infty } \\int_{\\frac{-1}{\\sqrt[n]{3}}}^{\\frac{1}{\\sqrt[n]{3}}} \\(xln(1 + e^x + e^{2x} + e^{3x} + \\dots + e^{2nx}) dx\\) = \\prod_{k=2}^{m} \\left(1 - \\frac{1}{k^2} \\right) then find the value of \\( m \\).",
+  "correctAnswer": "Albert Einstein"
+},
+
+{
+  "testId": 3,
+  "id": 1,
+  "subject": "Physics",
+  "question": " the velocity, and \\( d \\) is the density, the values of \\( a, b \\), and \\( c \\) are respectively",
+  "options": [
+    "\\text{1, 2, 1}",
+    "\\text{1, 1, 2}",
+    "\\text{2, 1, 1}",
+    "\\text{0, 1, 1}"
+  ],
+  "correctAnswer":"\\text{1, 2, 1}"
+},
+
+{
+  "testId": 3,
+  "id": 2,
+  "subject": "Physics",
+  "question": "In a meter bridge, the point D is the neutral point. Select the incorrect option.",
+  "options": [
+    "\\text{The meter bridge can have no other neutral point for this set of resistances}",
+    "\\text{When the jockey contacts a point on the meter wire to the right of D, current flows from B to the wire through the galvanometer}",
+    "\\text{When the jockey contacts a point on the meter wire left of D, current flows to B from the wire}",
+    "\\text{When R is increased, the neutral point shifts to the left}"
+  ],
+  "image": "https://housing.com/news/wp-content/uploads/2023/05/what-is-metre-bridge-f.png",
+  "correctAnswer":"\\text{The meter bridge can have no other neutral point for this set of resistances}"
+},
+{
+  
+  "testId": 3,
+  "id": 3,
+  "subject": "Physics",
+  "question": "Two soap bubbles of radii \\( r_1 = 4 \\, \\text{cm} \\) and \\( r_2 = 5 \\, \\text{cm} \\) are touching each other over a common surface \\( AB \\)Its radius will be",
+  "options": [
+    "\\text{4 cm}",
+    "\\text{5 cm}",
+    "\\text{4.5 cm}",
+    "\\text{20 cm}"
+  ],
+  "image":"https://search-static.byjusweb.com/question-images/byjus/ckeditor_assets/pictures/974964/original_Q1.png",
+  "correctAnswer":"\\text{4 cm}"
+},
+{
+  "testId": 3,
+  "id": 4,
+  "subject": "Physics",
+  "question": "An ideal monoatomic gas is taken around the cycle ABCD as shown in p versus V diagram. Work done during the cycle is ",
+  "options": [
+    "\\text{pV}",
+    "\\text{2pV}",
+    "\\text{0.5pV}",
+    "\\text{3pV}"
+  ],
+  "correctAnswer":"\\text{3pV}"
+},  
+{
+  "testId": 3,
+  "id": 5,
+  "question": "A star initially has \\( 10^{40} \\) deuterons. It produces energy via nuclear processes. If the average power radiated is \\( 10^{16} \\, \\text{W} \\), the deuteron supply is exhausted in a time of the order of",
+  "subject": "Physics",
+  "options": [
+      "10^6 \\, \\text{s}",
+      "10^8 \\, \\text{s}",
+      "10^{12} \\, \\text{s}",
+      "10^{16} \\, \\text{s}"
+    ],
+  "correctAnswer": "10^{16} \\, \\text{s}"
+}
+]
+

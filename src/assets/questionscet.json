@@ -1,0 +1,483 @@
+[
+    {
+        "id": 1,
+        "testIdcet": 1,
+        "subject": "Physics",
+        "question": "What is Newton's First Law?",
+        "options": ["Option A", "Option B", "Option C", "Option D"],
+        "correct": 0
+      },
+      {
+        "id": 2,
+        "testIdcet": 1,
+        "subject": "Chemistry",
+        "question": "What is the atomic number of Hydrogen?",
+        "options": ["1", "2", "3", "4"],
+        "correct": 0
+      }
+  ,
+  {
+    "id": 3,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of Pi?",
+    "options": ["3.14", "2.71", "1.61", "1.41"],
+    "correct": 0
+  },
+  {
+    "id": 4,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the powerhouse of the cell?",
+    "options": ["Nucleus", "Mitochondria", "Ribosome", "Chloroplast"],
+    "correct": 1
+  },
+  {
+    "id": 5,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the speed of light?",
+    "options": ["3x10^8 m/s", "3x10^6 m/s", "3x10^5 m/s", "3x10^7 m/s"],
+    "correct": 0
+  },
+  {
+    "id": 6,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for water?",
+    "options": ["H2O", "CO2", "O2", "H2"],
+    "correct": 0
+  },
+  {
+    "id": 7,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the square root of 16?",
+    "options": ["2", "4", "8", "16"],
+    "correct": 1
+  },
+  {
+    "id": 8,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the genetic material in cells?",
+    "options": ["RNA", "DNA", "Protein", "Lipid"],
+    "correct": 1
+  },
+  {
+    "id": 9,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of force?",
+    "options": ["Newton", "Joule", "Watt", "Pascal"],
+    "correct": 0
+  },
+  {
+    "id": 10,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the pH of pure water?",
+    "options": ["7", "1", "14", "0"],
+    "correct": 0
+  },
+  {
+    "id": 11,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the derivative of x^2?",
+    "options": ["2x", "x", "x^2", "2"],
+    "correct": 0
+  },
+  {
+    "id": 12,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the process of cell division?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Budding"],
+    "correct": 0
+  },
+  {
+    "id": 13,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the gravitational constant?",
+    "options": ["9.8 m/s^2", "6.67x10^-11 N(m/kg)^2", "3x10^8 m/s", "1.6x10^-19 C"],
+    "correct": 1
+  },
+  {
+    "id": 14,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the molar mass of CO2?",
+    "options": ["44 g/mol", "28 g/mol", "32 g/mol", "18 g/mol"],
+    "correct": 0
+  },
+  {
+    "id": 15,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the integral of 1/x?",
+    "options": ["ln(x)", "x", "1/x", "e^x"],
+    "correct": 0
+  },
+  {
+    "id": 16,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the main function of red blood cells?",
+    "options": ["Transport oxygen", "Fight infections", "Clot blood", "Produce hormones"],
+    "correct": 0
+  },
+  {
+    "id": 17,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of electric current?",
+    "options": ["Ampere", "Volt", "Ohm", "Watt"],
+    "correct": 0
+  },
+  {
+    "id": 18,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the electron configuration of Helium?",
+    "options": ["1s^2", "1s^1", "2s^2", "2p^6"],
+    "correct": 0
+  },
+  {
+    "id": 19,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of the golden ratio?",
+    "options": ["1.618", "2.718", "3.141", "1.414"],
+    "correct": 0
+  },
+  {
+    "id": 20,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the basic unit of life?",
+    "options": ["Cell", "Atom", "Molecule", "Organ"],
+    "correct": 0
+  },
+  {
+    "id": 21,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the formula for kinetic energy?",
+    "options": ["1/2 mv^2", "mgh", "F=ma", "pV=nRT"],
+    "correct": 0
+  },
+  {
+    "id": 22,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is Avogadro's number?",
+    "options": ["6.022x10^23", "3.14", "9.81", "1.6x10^-19"],
+    "correct": 0
+  },
+  {
+    "id": 23,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of e?",
+    "options": ["2.718", "3.14", "1.618", "1.414"],
+    "correct": 0
+  },
+  {
+    "id": 24,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the ribosome?",
+    "options": ["Protein synthesis", "DNA replication", "Energy production", "Cell division"],
+    "correct": 0
+  },
+  {
+    "id": 25,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is Ohm's Law?",
+    "options": ["V=IR", "P=IV", "F=ma", "E=mc^2"],
+    "correct": 0
+  },
+  {
+    "id": 26,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+    "correct": 0
+  },
+  {
+    "id": 27,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the Pythagorean theorem?",
+    "options": ["a^2 + b^2 = c^2", "E=mc^2", "F=ma", "V=IR"],
+    "correct": 0
+  },
+  {
+    "id": 28,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the mitochondria?",
+    "options": ["Energy production", "Protein synthesis", "DNA replication", "Cell division"],
+    "correct": 0
+  },
+  {
+    "id": 29,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of power?",
+    "options": ["Watt", "Joule", "Newton", "Pascal"],
+    "correct": 0
+  },
+  {
+    "id": 30,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical symbol for gold?",
+    "options": ["Au", "Ag", "Fe", "Pb"],
+    "correct": 0
+  },
+  {
+    "id": 31,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of sin(90 degrees)?",
+    "options": ["1", "0", "0.5", "sqrt(2)/2"],
+    "correct": 0
+  },
+  {
+    "id": 32,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the chloroplast?",
+    "options": ["Photosynthesis", "Protein synthesis", "DNA replication", "Energy production"],
+    "correct": 0
+  },
+  {
+    "id": 33,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of frequency?",
+    "options": ["Hertz", "Watt", "Joule", "Newton"],
+    "correct": 0
+  },
+  {
+    "id": 34,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for methane?",
+    "options": ["CH4", "CO2", "H2O", "O2"],
+    "correct": 0
+  },
+  {
+    "id": 35,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of cos(0 degrees)?",
+    "options": ["1", "0", "0.5", "sqrt(2)/2"],
+    "correct": 0
+  },
+  {
+    "id": 36,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the nucleus?",
+    "options": ["Control center of the cell", "Energy production", "Protein synthesis", "Cell division"],
+    "correct": 0
+  },
+  {
+    "id": 37,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of pressure?",
+    "options": ["Pascal", "Newton", "Joule", "Watt"],
+    "correct": 0
+  },
+  {
+    "id": 38,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for sodium chloride?",
+    "options": ["NaCl", "KCl", "CaCl2", "MgCl2"],
+    "correct": 0
+  },
+  {
+    "id": 39,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of tan(45 degrees)?",
+    "options": ["1", "0", "sqrt(3)", "sqrt(2)"],
+    "correct": 0
+  },
+  {
+    "id": 40,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the cell membrane?",
+    "options": ["Regulates what enters and leaves the cell", "Energy production", "Protein synthesis", "Cell division"],
+    "correct": 0
+  },
+  {
+    "id": 41,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of electric charge?",
+    "options": ["Coulomb", "Ampere", "Volt", "Ohm"],
+    "correct": 0
+  },
+  {
+    "id": 42,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for carbon dioxide?",
+    "options": ["CO2", "CO", "C2H6", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 43,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of log(1)?",
+    "options": ["0", "1", "10", "e"],
+    "correct": 0
+  },
+  {
+    "id": 44,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the lysosome?",
+    "options": ["Breaks down waste", "Energy production", "Protein synthesis", "Cell division"],
+    "correct": 0
+  },
+  {
+    "id": 45,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of energy?",
+    "options": ["Joule", "Watt", "Newton", "Pascal"],
+    "correct": 0
+  },
+  {
+    "id": 46,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for glucose?",
+    "options": ["C6H12O6", "C2H6O", "CH4", "CO2"],
+    "correct": 0
+  },
+  {
+    "id": 47,
+    "testIdcet": 1,
+    "subject": "Mathematics",
+    "question": "What is the value of e^0?",
+    "options": ["1", "0", "e", "Infinity"],
+    "correct": 0
+  },
+  {
+    "id": 48,
+    "testIdcet": 1,
+    "subject": "Biology",
+    "question": "What is the function of the Golgi apparatus?",
+    "options": ["Modifies and packages proteins", "Energy production", "Protein synthesis", "Cell division"],
+    "correct": 0
+  },
+  {
+    "id": 49,
+    "testIdcet": 1,
+    "subject": "Physics",
+    "question": "What is the unit of magnetic flux?",
+    "options": ["Weber", "Tesla", "Henry", "Farad"],
+    "correct": 0
+  },
+  {
+    "id": 50,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 51,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 52,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 53,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 54,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 55,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 56,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 57,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 58,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 59,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  },
+  {
+    "id": 60,
+    "testIdcet": 1,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": 0
+  }
+  ]
