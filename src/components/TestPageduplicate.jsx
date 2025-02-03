@@ -347,6 +347,13 @@ const TestPage = () => {
       console.error("Error: User ID is missing!");
       return;
     }
+
+    const userConfirmed = window.confirm("Are you sure you want to submit your test?");
+    if (!userConfirmed) {
+      console.log("Submission cancelled by user.");
+      return;
+    }
+    
     const totalQuestions = questions.length;
     const answeredQuestions = Object.keys(selectedAnswers).length;
     const correctAnswers = questions.filter(
@@ -370,6 +377,23 @@ const TestPage = () => {
       };
     }).filter(q => q !== null); // Remove null entries
 
+    const questionStatuses = questions.map(q => {
+      const isAnswered = selectedAnswers[q.id] !== undefined;
+      const isCorrect = selectedAnswers[q.id] === q.correctAnswer;
+      const isMarked = markedQuestions[q.id] !== undefined;
+
+      return {
+        questionId: String(q.id),
+        status: isAnswered
+          ? isCorrect
+            ? "Correct Solved"
+            : "Wrong Solved"
+          : isMarked
+          ? "Marked"
+          : "Not Visited"
+      };
+    });
+
     try {
       // Save test results to backend
       const docRef = await addDoc(collection(db, "testResults"), {
@@ -383,6 +407,7 @@ const TestPage = () => {
         selectedAnswers: selectedAnswers,
         submittedAnswers: submittedAnswers,
         markedQuestions: Object.keys(markedQuestions),
+        questionStatuses: questionStatuses,
       });
 
       console.log("Document written with ID: ", docRef.id);

@@ -658,10 +658,10 @@
     "id": 1,
     "question": "The resistance of a wire is . It is stretched, so that the length becomes three times, then the new resistance of the wire will be",
     "options": [
-      "(200 \\, \\Omega)",
-      "(160 \\, \\Omega)",
-      "(120 \\, \\Omega)",
-      "(180 \\, \\Omega)"
+      "200 \\, \\Omega",
+      "160 \\, \\Omega",
+      "120 \\, \\Omega",
+      "180 \\, \\Omega"
     ],
     "correctAnswer": "(200 \\, \\Omega)"
   },
@@ -679,7 +679,7 @@
     "testId": 2
   },
   {
-    "question": "300 cc of a gas at the atmospheric pressure of 106 dyne cm−2 is compressed to 150 cc. If the change is sudden, γ =1.4, what is the final pressure?",
+    "question": "300 cc of a gas at the atmospheric pressure of 106 \\(dyne.cm^-2\\) is compressed to 150 cc. If the change is sudden, γ =1.4, what is the final pressure?",
     "options": [
       "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
       "\\text{2.0 × \\(10^6\\) dyne.cm−2}",
@@ -694,10 +694,10 @@
     "question": " There are two identical small holes of area of cross-section  on the opposite sides of a tank containing a liquid of density . The difference in height between the holes is . Tank is resting on a smooth horizontal surface, horizontal",
     "options": [
       
-        "\\text{( \\rho ghA \\)}",
-        "\\text{( \\frac{2gh}{\\rho A} \\)}",
-        "\\text{( 2\\rho ghA \\)}",
-        "\\text{( \\frac{\\rho gh}{A} )}"
+        "\\rho ghA",
+        "\\frac{2gh}{\\rho A}",
+        "2\\rho ghA",
+        "\\frac{\\rho}{ghA}"
       
     ],
     "correctAnswer": "\\text{( \\rho ghA \\)}",
@@ -707,10 +707,10 @@
   {
     "question":"The values of  and  in the given logic circuit are",
     "options": [
-      "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
-      "\\text{2.0 × \\(10^6\\) dyne.cm−2}",
-      "\\text{2.6 × \\(10^6\\) dyne.cm−2}",
-      "\\text{3.0 × \\(10^6\\) dyne.cm−2}"
+      "\\text{Y = 1, Z = 1}",
+      "\\text{Y = 0, Z = 1}",
+      "\\text{Y = 1, Z = 0}",
+      "\\text{Y = 0, Z = 0}"
     ],
     "id": 5,
     "correctAnswer": "\\text{1.0 × \\(10^6\\) dyne.cm−2}",
@@ -719,10 +719,12 @@
   {
     "question":" Four holes of radius  are cut from a thin square plate of side  4R and mass M . The moment of inertia of the remaining portion about z-axis is",
     "options": [
-      "(200 \\, \\Omega)",
-      "(160 \\, \\Omega)",
-      "(120 \\, \\Omega)",
-      "(180 \\, \\Omega)"
+
+      "\\frac{\\pi}{12} MR^2",
+      "(\\frac{4}{3} - \\frac{\\pi}{4}) MR^2",
+      "(\\frac{4}{3} - \\frac{10\\pi}{16}) MR^2",
+      "(\\frac{8}{3} - \\frac{\\pi}{6}) MR^2"
+      
     ],
     "id": 6,
     "correctAnswer": "(200 \\, \\Omega)",
@@ -731,10 +733,10 @@
   {
     "question": "The figures shows the variation of photocurrent with anode potential for three different radiations. Let Ia, Ib and Ic be the intensities and fa, fb and fc be the frequencies for the curves a, b and c respectively. Then",
     "options": [
-      "Ia > Ib > Ic and fa > fb > fc",
-      "Ia < Ib < Ic and fa < fb < fc",
-      "Ia = Ib = Ic and fa = fb = fc",
-      "Ia > Ib > Ic and fa < fb < fc"
+      "f_a = f_b \\quad \\text{and} \\quad I_a \\neq I_b",
+    "f_a = f_c \\quad \\text{and} \\quad I_a = I_c",
+    "f_a = f_b \\quad \\text{and} \\quad I_a = I_b",
+    "f_b = f_c \\quad \\text{and} \\quad I_b = I_c"
     ],
     "id": 7,
     "correctAnswer": "Ia < Ib < Ic and fa < fb < fc",
@@ -743,10 +745,10 @@
   {
     "question": "A liquid of mass 100 g at 90°C is mixed with 50 g of the same liquid at 100°C. Now if 100 g of liquid A at 100°C is added to 50 g of liquid B at 75°C, the temperature of the mixture will be",
     "options": [
-      "(200 \\, \\Omega)",
-      "(160 \\, \\Omega)",
-      "(120 \\, \\Omega)",
-      "(180 \\, \\Omega)"
+      "80^{\\circ}C",
+      "60^{\\circ}C",
+      "70^{\\circ}C",
+      "85^{\\circ}C"
     ],
     "id": 8,
     "correctAnswer": "(120 \\, \\Omega)",
@@ -755,10 +757,11 @@
   {
     "question": "15 Block ' ' is hanging from a vertical spring and is at rest. Block ' ' strikes the block ' ' with velocity ' ' and sticks to it. Then the value of ' ' for which the spring just attains natural length is -",
     "options": [
-      "(200 \\, \\Omega)",
-      "(160 \\, \\Omega)",
-      "(120 \\, \\Omega)",
-      "(180 \\, \\Omega)"
+      "\\frac{\\mu_0 i}{4\\pi} \\sqrt{2} \\left( \\frac{4\\pi}{a} + \\frac{b}{4\\pi} \\right)",
+    "\\sqrt{2} \\frac{\\mu_0 i}{4\\pi}",
+    "\\frac{3\\pi}{2a} + \\frac{b}{\\mu_0 i} \\frac{2\\pi}{4\\pi}",
+    "\\frac{\\pi}{3a} + \\frac{3\\sqrt{2}b}{\\mu_0 i} \\frac{4\\pi}{3\\pi a} \\sqrt{2}"
+
     ],
     "id": 9,
     "correctAnswer": "(160 \\, \\Omega)",
@@ -767,10 +770,10 @@
   {
     "question": "16 A ball rolls off the top of stair-way with a horizontal velocity of magnitude The steps are high and wide. Which step will the ball hit first?",
     "options": [
-      "(200 \\, \\Omega)",
-      "(160 \\, \\Omega)",
-      "(120 \\, \\Omega)",
-      "(180 \\, \\Omega)"
+      "Q \\to B, \\quad R \\to C, \\quad P \\to D, \\quad S \\to A",
+    "A \\to R, \\quad B \\to Q, \\quad C \\to S, \\quad D \\to P",
+    "A \\to R, \\quad B \\to S, \\quad C \\to Q, \\quad D \\to P",
+    "A \\to S, \\quad B \\to R, \\quad C \\to Q, \\quad D \\to P"
     ],
     "id": 10,
     "correctAnswer": "(200 \\, \\Omega)",
@@ -779,7 +782,10 @@
   {
     "question": "17 The distance moved by the screw of a screw gauge is in four rotations and there are divisions on its cap. When nothing is put between its jaws, division of circular scale coincides with the reference line, with zero of circular scale lying above the reference line. When a plate is placed between the jaws, the main scale reads divisions and the circular scale reads divisions. The thickness of the plate is",
     "options": [
-      "(2) (3) (4)"
+      "\\text{5 m}",
+      "\\text{3 m}",
+      "\\text{7 m}",
+      "\\text{9 m}"
     ],
     "id": 11,
     "correctAnswer": "George Washington",

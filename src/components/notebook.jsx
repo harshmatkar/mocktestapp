@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { db } from "../firebaseConfig";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { useUser } from "./UserContext.jsx";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
+import questionsData from "../assets/questions.json";
 
 const mathJaxConfig = {
   loader: { load: ["[tex]/html"] },
@@ -12,236 +13,221 @@ const mathJaxConfig = {
     processEscapes: true,
     packages: { "[+]": ["html"] },
   },
-  chtml: {
-    scale: 1,
-    linebreaks: { automatic: true },
-  },
-  options: {
-    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
-  },
 };
 
 const NotebookPage = () => {
   const { userId } = useUser();
   const [selectedTest, setSelectedTest] = useState("");
-  const [wrongQuestions, setWrongQuestions] = useState([]);
-  const [solutions, setSolutions] = useState({});
+  const [selectedStatus, setSelectedStatus] = useState("all");
+  const [questions, setQuestions] = useState([]);
   const [expandedQuestions, setExpandedQuestions] = useState({});
   const [isLoading, setIsLoading] = useState(false);
-  // We no longer need containerRef since MathJaxContext will handle re-typesetting.
-  // const containerRef = useRef(null);
+  const [testAttempted, setTestAttempted] = useState(false);
 
-  // Fetch wrong questions from Firestore.
-  const fetchWrongQuestions = async () => {
+  const fetchQuestions = async () => {
     if (!selectedTest || !userId) return;
     setIsLoading(true);
+    setTestAttempted(false);
+
     try {
-      const testIdValue = selectedTest.replace("test", "");
+      const testId = parseInt(selectedTest.replace(/test/gi, ""), 10);
       const q = query(
         collection(db, "testResults"),
-        where("testId", "==", testIdValue),
+        where("testId", "==", String(testId)),
         where("userId", "==", userId)
       );
       const querySnapshot = await getDocs(q);
-      if (querySnapshot.empty) {
-        setWrongQuestions([]);
-      } else {
-        querySnapshot.forEach((docSnapshot) => {
-          const data = docSnapshot.data();
-          setWrongQuestions(data.wrongQuestions || []);
+
+      if (!querySnapshot.empty) {
+        setTestAttempted(true);
+        const testQuestions = questionsData.filter(q => q.testId === testId);
+        const allStatuses = querySnapshot.docs.flatMap(
+          doc => doc.data().questionStatuses || []
+        );
+        const submittedAnswers = querySnapshot.docs[0].data().submittedAnswers || [];
+
+        const questionsWithStatus = testQuestions.map(question => {
+          const statusEntry = allStatuses.find(s =>
+            s.questionId.toString() === question.id.toString()
+          );
+
+          const normalizedStatus = statusEntry?.status?.toLowerCase().trim() || "unattempted";
+          const statusMapping = {
+            "correct solved": "correct",
+            "wrong solved": "wrong",
+            "not visited": "unattempted"
+          };
+
+          const userAnswerEntry = submittedAnswers.find(
+            answer => answer.questionId === question.id
+          );
+          const userAnswer = userAnswerEntry ? userAnswerEntry.userAnswer : "Not Attempted"; // User's answer
+          const correctAnswer = question.correctAnswer || "Not Provided"; // Correct answer
+
+          return {
+            ...question,
+            status: statusMapping[normalizedStatus] || normalizedStatus,
+            userAnswer,
+            correctAnswer,
+          };
         });
+
+        setQuestions(questionsWithStatus);
+      } else {
+        setQuestions([]);
       }
     } catch (error) {
-      console.error("Error fetching wrong questions:", error);
-      setWrongQuestions([]);
+      console.error("Error fetching questions:", error);
+      setQuestions([]);
     } finally {
       setIsLoading(false);
     }
   };
 
-  // Fetch solutions from solution.json (assumed to be in public folder)
   useEffect(() => {
-    const fetchSolutions = async () => {
-      try {
-        const res = await fetch("/solution.json");
-        if (!res.ok) throw new Error("Failed to load solution.json");
-        const data = await res.json();
-        setSolutions(data);
-      } catch (error) {
-        console.error("Error fetching solutions:", error);
-      }
-    };
-    fetchSolutions();
-  }, []);
-
-  // Refetch questions when test or user changes.
-  useEffect(() => {
-    fetchWrongQuestions();
+    fetchQuestions();
   }, [selectedTest, userId]);
 
-  // Simple rendering function for math expressions.
-  // If no math delimiters are found, wrap the text in \text{}
-  const renderMathExpression = (text) => {
-    if (!text) return "";
-  
-    // Split the content into segments that are either LaTeX (inside $...$) or text
-    const segments = text.split(/(\$.*?\$)/g);
-  
-    return segments.map((segment) => {
-      if (segment.startsWith('$') && segment.endsWith('$')) {
-        // LaTeX content: remove $ delimiters and wrap in \(...\)
-        const mathContent = segment.slice(1, -1);
-        return `\\(${mathContent}\\)`;
-      } else {
-        // Text content: replace newlines with <br/> and escape HTML
-        return segment
-          .replace(/&/g, '&amp;')
-          .replace(/</g, '&lt;')
-          .replace(/>/g, '&gt;');
-      }
-    }).join('');
+  const getStatusColor = (status) => {
+    switch (status) {
+      case 'correct': return 'bg-green-900 text-green-100';
+      case 'wrong': return 'bg-red-900 text-red-100';
+      case 'marked': return 'bg-yellow-900 text-yellow-100';
+      default: return 'bg-gray-700 text-gray-100';
+    }
   };
 
-  // Toggle the solution view for a question.
-  const toggleSolution = (qid) => {
-    setExpandedQuestions((prev) => ({ ...prev, [qid]: !prev[qid] }));
-  };
+  const filteredQuestions = questions.filter(question => {
+    switch (selectedStatus) {
+      case 'all': return true;
+      case 'correct': return question.status === 'correct';
+      case 'wrong': return question.status === 'wrong';
+      case 'unattempted': return question.status === 'unattempted';
+      default: return true;
+    }
+  });
 
   return (
     <MathJaxContext config={mathJaxConfig}>
-      <div className="container mx-auto p-4">
-        {/* Test selector */}
-        <div className="mb-4">
-          <label className="block mb-1 font-semibold text-gray-800">
-            Select Test:
-          </label>
-          <select
-            value={selectedTest}
-            onChange={(e) => {
-              setSelectedTest(e.target.value);
-              setExpandedQuestions({});
-            }}
-            className="p-2 border rounded w-64"
-          >
-            <option value="">Choose a test</option>
-            {Array.from({ length: 30 }, (_, i) => (
-              <option key={i + 1} value={`test${i + 1}`}>
-                Test {i + 1}
-              </option>
-            ))}
-          </select>
-        </div>
+      <div className="min-h-screen bg-gray-900 text-gray-100">
+        <div className="container mx-auto p-4 max-w-4xl">
+          <div className="flex flex-wrap gap-4 mb-6">
+            <div className="flex-1 min-w-[200px]">
+              <label className="block text-sm font-medium text-gray-300 mb-2">Select Test:</label>
+              <select
+                className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-gray-100 
+                         focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                value={selectedTest}
+                onChange={e => setSelectedTest(e.target.value)}
+              >
+                <option value="">Choose a test</option>
+                {Array.from({ length: 30 }, (_, i) => (
+                  <option key={i + 1} value={`test${i + 1}`}>Test {i + 1}</option>
+                ))}
+              </select>
+            </div>
 
-        {/* Loading state */}
-        {isLoading && <p>Loading...</p>}
-
-        {/* Questions container */}
-        {selectedTest && !isLoading && (
-          <div className="space-y-4">
-            <h2 className="text-xl font-bold mb-2">
-              Review Areas - Test {selectedTest.replace("test", "")}
-            </h2>
-            {wrongQuestions.length > 0 ? (
-              wrongQuestions.map((question, index) => {
-                const qid = question.id || index;
-                return (
-                  <div
-                    key={qid}
-                    className="border p-4 rounded mb-2 bg-white text-left"
-                  >
-                    <div className="flex justify-between items-center">
-                      <div className="flex-1">
-                        <p className="text-gray-900 font-medium">
-                          Question {index + 1}:
-                        </p>
-                        {/* Wrap math content inside the MathJax component.
-                            The inline style whiteSpace "pre-wrap" helps preserve line breaks. */}
-                        <MathJax>
-                          <div
-                            className="text-gray-800 break-words"
-                            style={{ whiteSpace: "pre-wrap" }}
-                            dangerouslySetInnerHTML={{
-                              __html: renderMathExpression(
-                                question.questionText
-                              ),
-                            }}
-                          />
-                        </MathJax>
-                      </div>
-                      <button
-                        onClick={() => toggleSolution(qid)}
-                        className="ml-2 px-2 py-1 border rounded text-sm"
-                      >
-                        {expandedQuestions[qid]
-                          ? "Hide Solution"
-                          : "Show Solution"}
-                      </button>
-                    </div>
-                    <div className="mt-2">
-                      <p className="text-green-500">
-                        <strong>Correct Answer: </strong>
-                        <MathJax>
-                          <span
-                            className="break-words"
-                            style={{ whiteSpace: "pre-wrap" }}
-                            dangerouslySetInnerHTML={{
-                              __html: renderMathExpression(
-                                question.correctAnswer.includes("\\")
-                                  ? `\\(${question.correctAnswer}\\)`
-                                  : `\\text{${question.correctAnswer}}`
-                              ),
-                            }}
-                          />
-                        </MathJax>
-                      </p>
-                      {question.userAnswer && (
-                        <p className="text-red-600 mt-1">
-                          <strong>Your Answer: </strong>
-                          <MathJax>
-                            <span
-                              className="break-words"
-                              style={{ whiteSpace: "pre-wrap" }}
-                              dangerouslySetInnerHTML={{
-                                __html: renderMathExpression(
-                                  question.userAnswer.includes("\\")
-                                    ? `\\(${question.userAnswer}\\)`
-                                    : `\\text{${question.userAnswer}}`
-                                ),
-                              }}
-                            />
-                          </MathJax>
-                        </p>
-                      )}
-                    </div>
-                    {expandedQuestions[qid] && (
-                      <div className="mt-3 p-3 border-t overflow-x-auto">
-                        {solutions[qid] ? (
-                          <MathJax>
-                            <div
-                              className="break-words"
-                              style={{ whiteSpace: "pre-wrap" }}
-                              dangerouslySetInnerHTML={{
-                                __html: renderMathExpression(solutions[qid]),
-                              }}
-                            />
-                          </MathJax>
-                        ) : (
-                          <p className="text-gray-600">
-                            No solution uploaded for this question.
-                          </p>
-                        )}
-                      </div>
-                    )}
-                  </div>
-                );
-              })
-            ) : (
-              <p className="text-gray-700">
-                No review questions found for this test.
-              </p>
-            )}
+            <div className="flex-1 min-w-[200px]">
+              <label className="block text-sm font-medium text-gray-300 mb-2">Filter by Status:</label>
+              <select
+                className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-gray-100 
+                         focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                value={selectedStatus}
+                onChange={e => setSelectedStatus(e.target.value)}
+              >
+                <option value="all">All Questions</option>
+                <option value="correct">Correct Solved</option>
+                <option value="wrong">Wrong Solved</option>
+                <option value="unattempted">Not Visited</option>
+              </select>
+            </div>
           </div>
-        )}
+
+          {isLoading && (
+            <div className="text-center py-8">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto"></div>
+            </div>
+          )}
+
+          {!isLoading && !testAttempted && (
+            <div className="text-center py-8 text-gray-400">
+              You haven't attempted this test yet.
+            </div>
+          )}
+
+          {!isLoading && testAttempted && questions.length === 0 && (
+            <div className="text-center py-8 text-gray-400">
+              No questions found for the selected test.
+            </div>
+          )}
+
+          {!isLoading && filteredQuestions.length === 0 && questions.length > 0 && (
+            <div className="text-center py-8 text-gray-400">
+              No questions match the selected status.
+            </div>
+          )}
+
+          <div className="space-y-4">
+            {filteredQuestions.map((question, i) => (
+              <div
+                key={question.id}
+                className="border border-gray-700 rounded-lg bg-gray-800 overflow-hidden"
+              >
+                <div className="p-4 border-b border-gray-700 bg-gray-800 flex justify-between items-center">
+                  <span className={`px-3 py-1 rounded-full text-sm font-medium ${getStatusColor(question.status)}`}>
+                    {question.status.charAt(0).toUpperCase() + question.status.slice(1)}
+                  </span>
+                  <button
+                    onClick={() => setExpandedQuestions(prev => ({
+                      ...prev,
+                      [question.id]: !prev[question.id]
+                    }))}
+                    className="text-blue-400 hover:text-blue-300 text-sm font-medium"
+                  >
+                    {expandedQuestions[question.id] ? 'Hide Solution' : 'Show Solution'}
+                  </button>
+                </div>
+
+                <div className="p-4">
+                  <MathJax dynamic key={`question-${i}`}>
+                    <div className="prose prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: question.question }} />
+                  </MathJax>
+                </div>
+
+                <div className="mt-4">
+                  <p className="text-sm font-medium text-gray-300">Your Answer:</p>
+                  <MathJax dynamic key={`user-answer-${i}`}>
+                    <div className="text-sm text-gray-400">
+                      {question.userAnswer.includes("\\") 
+                        ? `\\(${question.userAnswer}\\)` 
+                        : `\\text{${question.userAnswer}}`}
+                    </div>
+                  </MathJax>
+                </div>
+
+                <div className="mt-4">
+                  <p className="text-sm font-medium text-gray-300">Correct Answer:</p>
+                  <MathJax dynamic key={`correct-answer-${i}`}>
+                    <div className="text-sm text-gray-400">
+                      {question.correctAnswer.includes("\\") 
+                        ? `\\(${question.correctAnswer}\\)` 
+                        : `\\text{${question.correctAnswer}}`}
+                    </div>
+                  </MathJax>
+                </div>
+
+                {expandedQuestions[question.id] && (
+                  <div className="p-4 bg-gray-800 border-t border-gray-700">
+                    <div className="text-sm font-medium text-gray-300 mb-2">Solution:</div>
+                    <MathJax dynamic key={`solution-${i}`}>
+                      <div className="prose prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: question.solutionText }} />
+                    </MathJax>
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </MathJaxContext>
   );

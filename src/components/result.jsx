@@ -4,6 +4,7 @@ import { db } from '../firebaseConfig';
 import { collection, query, where, getDocs, orderBy, limit } from 'firebase/firestore';
 import { useParams } from "react-router-dom";
 import { useUser } from './UserContext.jsx';
+import { useNavigate } from 'react-router-dom';
 
 
 const CircularProgress = ({ size, radius, strokeWidth, progress, color, children }) => {
@@ -49,6 +50,7 @@ const TestResults = () => {
   const [error, setError] = useState(null);
   const { testId } = useParams();
   const { userId } = useUser();
+  const navigate = useNavigate();
   console.log("User ID from useUser:", userId);
   useEffect(() => {
     const fetchResult = async () => {
@@ -97,6 +99,12 @@ const TestResults = () => {
     month: 'long',
     day: 'numeric'
   });
+  
+
+  const handleWrongQuestion = () => {
+    console.log("clicked");
+      navigate("/notebook");
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 flex items-center justify-center p-6">
@@ -142,11 +150,11 @@ const TestResults = () => {
               <div className="flex justify-between items-center">
                 <div>
                   <div className="text-sm text-indigo-100">Correct Answers</div>
-                  <div className="text-2xl font-bold text-white">{result.marksObtained - result.wrongQuestions.length}</div>
+                  <div className="text-2xl font-bold text-white">{result.marksObtained}</div>
                 </div>
                 <div className="text-right">
                   <div className="text-sm text-indigo-100">Accuracy</div>
-                  <div className="text-2xl font-bold text-white">{percentage}%</div>
+                  <div className="text-2xl font-bold text-white">{result.marksObtained}%</div>
                 </div>
               </div>
             </div>
@@ -162,8 +170,13 @@ const TestResults = () => {
               <div className="text-white font-semibold">2025 Standard</div>
             </div>
             <div className="p-4 bg-gray-600/30 rounded-lg">
-              <div className="text-gray-400 text-sm">Submission Date</div>
-              <div className="text-white font-semibold">{testDate}</div>
+            <button
+              onClick={handleWrongQuestion}
+              className="w-full sm:w-auto bg-green-500 text-white py-2 px-6 sm:px-8 rounded-lg hover:bg-green-600 transition-colors duration-300 text-sm sm:text-base"
+            >
+              Wrong Questions
+            </button>
+
             </div>
           </div>
         </div>
