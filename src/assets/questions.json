@@ -667,7 +667,7 @@
   },
   {
     
-    "question": "A standing wave in a pipe with a length is described by \n\\( y(x,t) = y_0 \\sin\\left(\\frac{2\\pi}{L}x\\right) \\sin\\left(\\frac{2\\pi}{T}t + \\frac{\\pi}{4}\\right) \\). \nBased on the above information, which one of the following statements is incorrect? (Speed of sound in air is )",
+    "question": "A standing wave in a pipe with a length is described by \n \\( y(x,t) = y_0 \\sin\\left(\\frac{2\\pi}{L}x\\right) \\sin\\left(\\frac{2\\pi}{T}t + \\frac{\\pi}{4}\\right) \\). \nBased on the above information, which one of the following statements is incorrect? (Speed of sound in air is )",
     "id": 2,
     "options": [
       "\\text{The pipe is closed at both ends}",
@@ -947,89 +947,124 @@
     "correctAnswer": "George Washington",
     "testId": 2
   },
+
+
   {
-    "question": "38 Among the following which one will have the largest bond length?",
+    "question": "List I contains pairs of solute and solvent and List II contains properties of their resulting solution. Match the columns.",
     "options": [
-      "(2) (3) (4)"
+      "P \\rightarrow 1, 5; Q \\rightarrow 2, 3; R \\rightarrow 2, 5; S \\rightarrow 2, 3",
+      "P \\rightarrow 2, 4; Q \\rightarrow 2, 3; R \\rightarrow 2, 5; S \\rightarrow 2, 4",
+      "P \\rightarrow 2, 3; Q \\rightarrow 1, 5; R \\rightarrow 4, 5; S \\rightarrow 1, 5",
+      "P \\rightarrow 1, 5; Q \\rightarrow 2, 3; R \\rightarrow 2, 4; S \\rightarrow 1, 5"
     ],
     "id": 26,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "40 A Buffer solution having pH 4.72 is prepared by mixing of 1 M NaOH and 1 M HCN . What is the ratio of volume of acid to base? of",
+    "question": "In the presence of peroxide, styrene reacts with \\(HBr\\) to give \\(X\\). When \\(X\\) reacted with magnesium in dry ether followed by \\(CO_2\\) and hydrolysis gave \\(Y\\). Treatment of \\(Y\\) with \\(PCl_5\\) and then next with \\(H_2\\) \\(Pd\\) - \\(BaSO_4\\) and gave \\(Z\\) .what is \\(Z\\)",
     "options": [
-      "(2) (3) (4)"
+      "A",
+      "B",
+      "C",
+      "D"
     ],
     "id": 27,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "41 Assertion (A): The denaturation of proteins can destroy all and protein structures. Reason (R): Curdling of milk is due to denaturation of proteins. The correct option among the following is",
+    "question": "pH of aqueous solution of one of the following salts is independent of its concentration. The salt is:",
     "options": [
-      "(A) is true, (R) is true and (R) is the correct explanation for (A) (2) (A) is true, (R) is true but (R) is not the correct explanation for (A) (3) (A) is true but (R) is false (4) (A) is false but (R) is true"
+      " \\text{CH}_3\\text{COONa} ",
+      "\\text{C}_6\\text{H}_5\\text{NH}_3\\text{Cl}",
+      "\\text{PbCl}_2",
+      "\\text{CH}_3\\text{COONH}_4"
     ],
     "id": 28,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "42 All the elements of Group 15 form hydrides of the type . From the following given statements with respect to , select the incorrect one.",
+    "question": "Which of the following is not correct? ",
     "options": [
-      "Basicity as well as reducing strength is maximum for (2) Standard enthalpy of formation is negative only for while for others it is positive"
+      "FeCl_3 + KCN_5\\ \\rightarrow  Red colour",
+      "KI + PbCl_2\\ \\rightarrow  Yellow ppt",
+      "NH_4Cl + \\text{Nesseler's reagent}\\ \\rightarrow  Blue colour",
+      "DMG + NI^{2+} +NH_4OH\\ \\rightarrow  Scarlet red ppt"
     ],
     "id": 29,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "43 It is an experimental fact that salt Red ppt Which of the following is wrong about this Red ppt.?",
+    "question": "He$^{+}$ with 67.15 eV. He$^{+}$ ions in its ground state are irradiated with photons of energy. Electrons ejected from strikes the H-atom in its ground state. Give the maximum number of spectral lines which can be obtained from de-excitation of H-atoms.",
     "options": [
-      "It is non-ionic compound (2) It involves intra molecular H-bonding (3) is hybridised (4) It is a diamagnetic complex"
+      "\\text{12}",
+      "\\text{4}",
+      "\\text{8}",
+      "\\text{6}"
     ],
     "id": 30,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "44 For the reaction below the structure of the product is",
-    "options": [],
+    "question": "Given the electronic configurations of few elements, select the incorrect match:\\n1. 1s$^2$ 2s$^2$ 2p$^5$ - Most electronegative element in the periodic table\\n2. 1s$^2$ 2s$^2$ 2p$^3$ - An element belonging to 3rd period and 5th group\\n3. 1s$^2$ 2s$^2$ 2p$^6$ 3s$^2$ - A d-block element\\n4. 1s$^2$ 2s$^2$ 2p$^6$ 3s$^2$ 3p$^6$ - An element from 18th group",
+    "options": [
+      "\\text{1 and 4 only}",
+      "\\text{2 only}",
+      "\\text{1, 2 and 3}",
+      "\\text{All are the incorrect matches.}"
+    ],
     "id": 31,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "45 6 mol of a mixture of Mohr's salt and requires 500 ml of 1 M of for complete oxidation in acidic medium. The mole % of the Mohr's salt in the mixture is",
+    "question": "The correct statement(s) concerning the structures is/are:\\nA) Q & S are tautomers.\\nB) R & S are resonating structures.\\nC) P & R are tautomers.\\nD) P & Q are resonating structures.",
     "options": [
-      "75 (2) 50 (3) 60 (4) 25"
+      "\\text{A, B, C Only}",
+      "\\text{A, B, C, D}",
+      "\\text{A, B Only}",
+      "\\text{C, D Only}"
     ],
     "id": 32,
     "correctAnswer": "George Washington",
-    "testId": 2
+    "testId": 2,
+    "image":"https://i.postimg.cc/1X054zmN/Screenshot-2025-02-03-235855.png"
   },
   {
-    "question": "52 The solution of differential equation is",
-    "options": [
-      "(2) (3) (4)"
+      "question": "Cr(H$_2$O)$_6^{3+}$ reacts with AgNO$_3$. The complex P has a spin-only magnetic moment of 3.83 BM. It reacts with AgNO3 and shows geometrical isomerism. The IUPAC nomenclature of the complex is:",    "options": [
+      "\\text{Hexaaqua chromium(III) bromide}",
+      "\\text{Dibromidotetraaqua chromium(IV) bromide dihydrate}",
+      "\\text{Tetraaquadibromido chromium(IV) bromide dihydrate}",
+      "\\text{Tetraaquadibromido chromium(III) bromide dihydrate}"
     ],
     "id": 33,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "53 Consider the real valued function such that and satisfying for every Then the value of is",
+    "question": "The correct order of reagents required to bring the following change is:",
     "options": [
-      "(2) (3) 6 (4)"
+      "\\text{H$_3$O$^+$;  KCN;  NBS;  K$_2$Cr$_2$O$_7$ / H$^+$}",
+      "\\text{K$_2$Cr$_2$O$_7$ / H$^+$;  Cl$_2$ / KOH;  CH$_3$MgBr; H$_3$O$^+$}",
+      "\\text{conc. H$_2$SO$_4$;  NBS; KCN;  H$_3$O$^+$}",
+      "\\text{conc. H$_2$SO$_4$;  NBS;  CH$_3$MgBr;  K$_2$Cr$_2$O$_7$ / H$^+$}"
     ],
     "id": 34,
     "correctAnswer": "George Washington",
-    "testId": 2
+    "testId": 2,
+    "image":"https://i.postimg.cc/L6MJSc91/Screenshot-2025-02-03-235716.png"
   },
   {
-    "question": "54 If and are roots of and , then value of is",
+    "question": "Arrange  \\(Ce^{+3}\\) < \\(Yb^{+3}\\) < \\(Pm^{+3}\\) < \\(La^{+3}\\) ions in increasing order of their ionic radii",
     "options": [
-      "5 (2) 6 (3) 2.5 (4) 3"
+      "\\ Ce^{+3} < Yb^{+3} < Pm^{+3} < La^{+3}",
+      "\\ Yb^{+3} < Pm^{+3} < La^{+3} < Ce^{+3}",
+      "\\ Yb^{+3} < Yb^{+3} < Pm^{+3} < La^{+3}",
+      "\\ Pm^{+3} < La^{+3} < Ce^{+3} < Yb^{+3}"
     ],
     "id": 35,
     "correctAnswer": "George Washington",
@@ -1038,20 +1073,27 @@
   {
     "question": "55 If , where and are distinct, then number of matrices in with trace equal to 10 are: (where trace represents the sum of diagonal elements of a square matrix)",
     "options": [
-      "(2) (3) (4)"
+      "\\text{600K}",
+      "300 \\times 4.606 \\ K ",
+      "\\frac{300}{4.606}K",
+      "\\frac{4.606}{600}K"
     ],
     "id": 36,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "56 The area of the region bounded by the curves and (in sq units) is , find .",
+    "question": "Give the order of decreasing reactivity towards an electrophile.",
     "options": [
-      "19 (2) 16 (3) 18 (4) 17"
+      "\\text{2 > 3 > 1 > 5 > 4}",
+      "\\text{3 > 1 > 2 > 5 > 4}",
+      "\\text{5 > 4 > 2 > 3 > 1}",
+      "\\text{1 > 5 > 2 > 3 > 4}"
     ],
     "id": 37,
     "correctAnswer": "George Washington",
-    "testId": 2
+    "testId": 2,
+    "image":"https://i.postimg.cc/x15Jt6Sb/Screenshot-2025-02-03-235619.png"
   },
   {
     "question": "Among the following which one will have the largest bond length?",
@@ -1066,7 +1108,7 @@
     "testId": 2
   },
   {
-    "question": "In the Kjeldahl's method for estimation of nitrogen present in a soil sample, ammonia evolved from 0.75 g of sample neutralized 10 mL of 1M H2SO4. The percentage of nitrogen in the soil is",
+    "question": "In the Kjeldahl's method for estimation of nitrogen present in a soil sample, ammonia evolved from 0.75 g of sample neutralized 10 mL of \\(1M\\) \\(H_2SO_4\\). The percentage of nitrogen in the soil is",
     "options": [
       "\\text{37.33}",
       "\\text{43.33}",
@@ -1102,19 +1144,19 @@
     "testId": 2
   },
   {
-    "question": "All the elements of Group 15 form hydrides of the type EH3. From the following given statements with respect to NH3, select the incorrect one. (1) Basicity as well as reducing strength is maximum for NH3. (2) Standard enthalpy of formation is negative only for NH3 while for others it is positive",
+    "question": "All the elements of Group 15 form hydrides of the type \\(EH_3\\). From the following given statements with respect to \\(NH_3\\), select the incorrect one.",
     "options": [
-      "\\text{Basicity as well as reducing strength is maximum for NH3.}",
-      "\\text{Standard enthalpy of formation is negative only for NH3 while for others it is positive}",
-      "\\text{Boiling point follows the order: PH3 < AsH3 < NH3 < SbH3}",
-      "\\text{HEH bond angle follows the order: NH3 > PH3 > AsH3 > SbH3}"
+      "\\text{Basicity as well as reducing strength is maximum for \\(NH_3\\).}",
+      "\\text{Standard enthalpy of formation is negative only for \\(NH_3\\) while for others it is positive}",
+      " \\text{HEH bond angle follows the order: \\(NH_3\\) > \\(NH_3\\) > \\(NH_3\\) > \\(NH_3\\)}",
+      "\\text{Boiling point follows the order: \\(PH_3\\) < \\(AsH_3\\) < \\(NH_3\\) < \\(Sb_3\\)}"
     ],
     "id": 42,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "It is an experimental fact that \\( \\text{dmg} + \\text{Ni(II)} + \\text{NH}_4\\text{OH} \\rightarrow \\text{salt Red ppt.} \\) Which of the following is wrong about this Red ppt.?",
+    "question": "It is an experimental fact that \\( \\text{dmg} + \\text{Ni(II)} + \\text{NH}_4\\text{OH} \\rightarrow \\text{ Red ppt.} \\) Which of the following is wrong about this Red ppt.?",
     "options": [
       "\\text{It is non-ionic compound}",
       "\\text{It involves intra molecular H-bonding}",
@@ -1126,7 +1168,7 @@
     "testId": 2
   },
   {
-    "question": "For the reaction below the structure of the product  is",
+    "question": "For the reaction below the structure of the product Q is",
     "options": [
       "(2) (3) (4)"
     ],
@@ -1136,12 +1178,12 @@
   },
  
   {
-    "question": "6 mol of a mixture of Mohr's salt and requires 500 ml of 1 M of K2Cr2O7 for complete oxidation in acidic medium. The mole % of the Mohr's salt in the mixture is",
+    "question": "6 mol of a mixture of Mohr's salt and requires 500 ml of 1 M of \\(K_2Cr_2O_7\\) for complete oxidation in acidic medium. The mole % of the Mohr's salt in the mixture is",
     "options": [
-      "75",
-      "50",
-      "60",
-      "25"
+      "\\text{75}",
+      "\\text{50}",
+      "\\text{60}",
+      "\\text{25}"
     ],
     "id": 45,
     "correctAnswer": "George Washington",
@@ -1149,24 +1191,18 @@
   },
   {
     "question": "In how many of the following species the central atoms have two lone pairs of electrons? \\( \\text{XeF}_4, \\text{XeF}^-_5, \\text{F}_2\\text{SeO}_2, \\text{XeF}^+_3, \\text{XeOF}_4, \\text{ClOF}_3, \\text{ICl}^-_4, \\text{SCl}_2, \\text{OSF}_4 \\)",
-    "options": [
-      "(2) (3) (4) None of these"
-    ],
     "id": 46,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "The work done in an open vessel at 300 K, when 112 g iron reacts with dilute HCl to give FeCl2, is nearly W. Find 5W. Mark answer in calories.",
-    "options": [
-      "-3 (2) 2 (3) (4)"
-    ],
+    "question": "The work done in an open vessel at 300 K, when 112 g iron reacts with dilute \\(HCl\\) to give \\(FeCl_2\\), is nearly W. Find 5W. Mark answer in calories.",
     "id": 47,
     "correctAnswer": "George Washington",
     "testId": 2
   },
   {
-    "question": "A 1 L solution of CuSO4 was electrolysed till the pH of the solution become 1. A current of 0.965 A was passed through the solution for x×10^y sec with an efficiency of 20%. Report the value of 25y/x (x and y are smallest integers)",
+    "question": "A 1 L solution of \\(CuSO_4\\) was electrolysed till the pH of the solution become 1. A current of 0.965 A was passed through the solution for \\(x×10^y\\) sec with an efficiency of \\(20\\)%. Report the value of \\(25y/x\\) (x and y are smallest integers)",
     "options": [
       "(2) (3) (4)"
     ],
@@ -1177,20 +1213,15 @@
   {
     "question": " Find the value of (Z).",
     "id": 49,
-    "testId": 2,
-    "correctAnswer": "George Washington",
-    "options": [
-      "\\text{7}",
-      "\\frac{100}{19}",
-      "\\frac{1400}{361}",
-      "\\frac{1440}{361}"
-    ]
+    "image":"https://i.postimg.cc/RCW7qxxp/Screenshot-2025-02-03-233919.png",
+    "testId": 2
   },
   {
     "question": " Among the following the total number of compounds which give positive iodoform test is/are:",
     "id": 50,
     "correctAnswer": "George Washington",
     "testId": 2,
+    "image":"https://i.postimg.cc/NjB26WZc/Screenshot-2025-02-03-235532.png",
     "options": [
       "\\text{7}",
       "\\frac{100}{19}",

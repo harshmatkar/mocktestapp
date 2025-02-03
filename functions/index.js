@@ -9,8 +9,8 @@ app.use(express.json());
 
 // Initialize Razorpay
 const razorpay = new Razorpay({
-    key_id: "YOUR_RAZORPAY_KEY_ID",
-    key_secret: "YOUR_RAZORPAY_KEY_SECRET",
+    key_id: "rzp_test_K6FpSqlaj3aWci",
+    key_secret: "WyD12yFXsuZZUAmvoUJrearT",
 });
 
 // API to create a Razorpay order
