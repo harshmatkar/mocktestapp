@@ -9,6 +9,9 @@ import { useUser } from './UserContext';
 import { ChevronLeft, ChevronRight , Menu} from "lucide-react";
 import Header from "./JEETESTPAGECOMPONENTS/Header";
 import Subheader from "./JEETESTPAGECOMPONENTS/Subheader";
+import QuestionPaletteDrawer from './JEETESTPAGECOMPONENTS/QuestionPallet';
+import Cookies from 'js-cookie';
+
 
 
 import {
@@ -81,35 +84,45 @@ const TestPage = () => {
 
   
   useEffect(() => {
-    const checkAccess = async () => {
-      try {
-        const user = auth.currentUser;
-        if (!user) {
-          navigate('/dashboard');
-          return;
-        }
+    const unsubscribe = auth.onAuthStateChanged(async (user) => {
+      setIsVerifyingAccess(true);
   
+      if (!userId) {
+        navigate('/dashboard');
+        setIsVerifyingAccess(false);
+        return;
+      }
+  
+      const cookieKey = `hasAccess_${userId.uid}`;
+      const storedAccess = Cookies.get(cookieKey);
+  
+      if (storedAccess !== undefined) {
+        setHasAccess(storedAccess === 'true');
+        setIsVerifyingAccess(false);
+        return;
+      }
+  
+      try {
         const q = query(
           collection(db, "transactions"),
-          where("userId", "==", user.uid),
+          where("userId", "==", userId.uid),
           where("courseTitle", "==", "JEE MAIN Mock Tests")
         );
-  
         const querySnapshot = await getDocs(q);
-        setHasAccess(!querySnapshot.empty);
+        const access = !querySnapshot.empty;
+        setHasAccess(access);
+        Cookies.set(cookieKey, access.toString(), { expires: 1 });
       } catch (error) {
         console.error("Access check failed:", error);
       } finally {
         setIsVerifyingAccess(false);
       }
-    };
+    });
   
-    checkAccess();
+    return () => unsubscribe();
   }, [navigate]);
+  
 
-  
-  
-  
   
 
   const legendItems = [
@@ -472,6 +485,7 @@ const TestPage = () => {
       submittedAnswers,
     };
     setTestResults(resultData);
+    clearLocalStorage(); 
   };
 
   //-------------------------------------------------------------------- Visited questions and status handling
@@ -595,38 +609,38 @@ const TestPage = () => {
               </Box>
 
               <Box sx={{ 
-      display: { xs: 'none', md: 'block' }, // Only show on desktop
-      position: 'fixed',
-      bottom: 0,
-      left: 0,
-      right: 395,
-      zIndex: 1000,
-      bgcolor: 'background.paper',
-      borderTop: 'px solid',
-      borderColor: 'divider',
-      py: 1,
-      px: 2,
-      boxShadow: 2
-    }}>
-      <Box sx={{
-        display: 'flex',
-        gap: 2,
-        
-        maxWidth: 1200,
-        margin: '0 auto',
-        '& button': {
-          width: '140px',
-          height:'40px',
-          fontSize: '0.9rem',
-          py: 1.5,
-          borderRadius: '4px',
-          boxShadow: 1,
-          '&:hover': {
-            boxShadow: 3,
-            transform: 'translateY(-1px)'
+                  display: { xs: 'none', md: 'block' }, // Only show on desktop
+                  position: 'fixed',
+                  bottom: 0,
+                  left: 0,
+                  right: 395,
+                  zIndex: 1000,
+                  bgcolor: 'background.paper',
+                  borderTop: 'px solid',
+                  borderColor: 'divider',
+                  py: 1,
+                  px: 2,
+                  boxShadow: 2
+                }}>
+        <Box sx={{
+          display: 'flex',
+          gap: 2,
+          
+          maxWidth: 1200,
+          margin: '0 auto',
+          '& button': {
+            width: '140px',
+            height:'40px',
+            fontSize: '0.9rem',
+            py: 1.5,
+            borderRadius: '4px',
+            boxShadow: 1,
+            '&:hover': {
+              boxShadow: 3,
+              transform: 'translateY(-1px)'
+            }
           }
-        }
-      }}>
+        }}>
         <Button onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))} 
                 disabled={currentQuestionIndex === 0}
                 variant="contained" 

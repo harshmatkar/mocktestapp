@@ -5,6 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
   const [language, setLanguage] = useState("english"); // Default language is English
   
+  
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
     // You can add logic here to switch the app's language using i18n or context

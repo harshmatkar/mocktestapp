@@ -20,6 +20,7 @@
     "better-react-mathjax": "^2.0.4-beta1",
     "dompurify": "^3.2.3",
     "firebase": "^11.2.0",
+    "js-cookie": "^3.0.5",
     "katex": "^0.16.21",
     "lucide-react": "^0.474.0",
     "mathjax": "^3.2.2",
@@ -29,6 +30,7 @@
     "react-firebase-hooks": "^5.1.1",
     "react-katex": "^3.0.1",
     "react-responsive": "^10.0.0",
+    "react-router-dom": "7.1.5",
     "react-scroll": "^1.9.0",
     "recharts": "^2.15.1"
   },
