@@ -25,9 +25,6 @@ const DashBoard = () => {
       setUsername(user.email.split('@')[0]); 
     }
    
-    if (!user) {
-      navigate('/login');
-    }
 
     if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setIsDarkMode(true);

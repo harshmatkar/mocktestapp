@@ -3,11 +3,12 @@ import { useParams, useNavigate } from "react-router-dom";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import questionsData from "../assets/questions.json";
 import "katex/dist/katex.min.css";
-import { ArrowForward, ArrowBack } from "@mui/icons-material"; 
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import { useUser } from './UserContext';
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight , Menu} from "lucide-react";
+import Header from "./JEETESTPAGECOMPONENTS/Header";
+import Subheader from "./JEETESTPAGECOMPONENTS/Subheader";
 
 
 import {
@@ -25,13 +26,16 @@ import {
   Grid,
   Select,
   MenuItem,
+  SwipeableDrawer,
   FormControl as MUIFormControl,
+  Drawer,
 } from "@mui/material";
 
 import logo from "../assets/nta-logo.png";
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc } from "firebase/firestore";
+import { getFirestore, collection, addDoc, query,where, getDocs } from "firebase/firestore";
 import { auth, db } from '../firebaseConfig';
+import { getAuth } from "firebase/auth";
 
 //--------------------------------------------------------------------- This are imports
 
@@ -66,7 +70,47 @@ const TestPage = () => {
   const [submissionError, setSubmissionError] = useState(null);
   const { testId } = useParams();  // To extract test id
   const { userId } = useUser();
+  const {username} = useUser();
   const [isPalletOpen, setIsPalletOpen] = useState(true);  // Renamed from 'open' for clarity
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isVerifyingAccess, setIsVerifyingAccess] = useState(true);
+  const [hasAccess, setHasAccess] = useState(false);
+
+  const auth = getAuth();
+  const db = getFirestore();
+
+  
+  useEffect(() => {
+    const checkAccess = async () => {
+      try {
+        const user = auth.currentUser;
+        if (!user) {
+          navigate('/dashboard');
+          return;
+        }
+  
+        const q = query(
+          collection(db, "transactions"),
+          where("userId", "==", user.uid),
+          where("courseTitle", "==", "JEE MAIN Mock Tests")
+        );
+  
+        const querySnapshot = await getDocs(q);
+        setHasAccess(!querySnapshot.empty);
+      } catch (error) {
+        console.error("Access check failed:", error);
+      } finally {
+        setIsVerifyingAccess(false);
+      }
+    };
+  
+    checkAccess();
+  }, [navigate]);
+
+  
+  
+  
+  
 
   const legendItems = [
     { color: 'gray', text: 'Not Visited' },
@@ -475,155 +519,24 @@ const TestPage = () => {
   return (
     <MathJaxContext config={mathJaxConfig}>
       <>
-        {/* Header - Modified for mobile */}
-        <AppBar position="static" color="white" elevation={1} sx={{ py: { xs: 1, sm: 0 } }}>
-          <Toolbar sx={{
-            flexDirection: { xs: 'row', sm: 'row' },
-            alignItems: 'flex-start',
-            gap: { xs: 6, sm: 0 },
-            py: { xs: 1, sm: 0 }
-          }}>
-            <Box sx={{ 
-              display: "flex", 
-              alignItems: "center", 
-              height: { xs: 40, sm: 80 },
-              flexShrink: 0
-            }}>
-              <img
-                src={logo}
-                alt="NTA Logo"
-                style={{ height: '100%', marginRight: 8 }}
-              />
-              <Typography variant="h6" sx={{ 
-                fontWeight: "bold", 
-                fontSize: { xs: '0.6rem', sm: '1.25rem' },
-                lineHeight: 1.2
-              }}>
-                NATIONAL TESTING AGENCY
-                <br />
-                <span style={{
-                  backgroundColor: "green",
-                  color: "white",
-                  fontStyle: "italic",
-                  fontSize: { xs: '0.4rem', sm: '0.8rem' }
-                }}>
-                  Excellence in assessment.
-                </span>
-              </Typography>
-            </Box>
-
-            <Box sx={{ 
-              textAlign: { xs: 'left', sm: 'right' },
-              flexGrow: 1,
-              ml: { xs: 0, sm: 2 }
-            }}>
-              <Typography variant="subtitle1" sx={{ fontSize: { xs: '0.8rem', sm: '1rem' } }}>
-                Candidate: Harsh Matkar
-              </Typography>
-              <Typography variant="subtitle2" sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}>
-                Exam: JEE ADVANCE
-              </Typography>
-              <Typography
-                variant="body2"
-                color={remainingTime <= 600 ? "error" : "textSecondary"}
-                sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}
-              >
-                Time Remaining: {formatTime(remainingTime)}
-              </Typography>
-            </Box>
-          </Toolbar>
-        </AppBar>
-
-        {/* Subheader - Modified for mobile */}
-        <Box sx={{
-          p: { xs: 1, sm: 1 },
-          backgroundColor: "orange",
-          display: "flex",
-          flexDirection: { xs: 'row', sm: 'row' },
-          alignItems: 'center',
-          gap: {sm:5},
-        }}>
-          <Typography sx={{ 
-            fontWeight: "bold", 
-            color: "white", 
-            fontSize: { xs: '1.2rem', sm: '2rem' },
-            textAlign: 'center',
-            whiteSpace: "nowrap",
-            display: "inline-block"
-          }}>
-            JEE MAIN
-          </Typography>
-
-          <Box sx={{ 
-            display: "flex", 
-            gap: 1, 
-            flexWrap: { xs: "nowrap", sm: "wrap" }, 
-            justifyContent: 'center',
-            order: { xs: 2, sm: 0 }
-          }}>
-            {/* Subject buttons */}
-            {["Physics", "Chemistry", "Mathematics"].map((subject) => (
-              <Button
-                key={subject}
-                variant="contained"
-                sx={{ 
-                  backgroundColor: "#1e6ead",
-                  borderRadius: 0,
-                  fontSize: { xs: '0.6rem', sm: '0.875rem' },
-                  px: { xs: 1, sm: 2 },
-                  py: { xs: 0.5, sm: 1 }
-                }}
-                onClick={() => handleSubjectClick(subject)}
-              >
-                {subject}
-              </Button>
-            ))}
-          </Box>
-
-          <MUIFormControl
-            variant="outlined"
-            sx={{
-              width: { xs: '100%', sm: '300px' },
-              order: { xs: 1, sm: 0 },
-              '& .MuiOutlinedInput-root': {
-                backgroundColor: 'white',
-                height: '40px',
-              },
-            }}
-          >
-            <Select
-              value={language}
-              onChange={(e) => setLanguage(e.target.value)}
-              sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } , justifyContent:'flex-end', width:{xs:100}, display:{xs:'none'}}}
-            >
-              <MenuItem value="english" sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}>
-                English
-              </MenuItem>
-              <MenuItem value="hindi" sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}>
-                Hindi
-              </MenuItem>
-              <MenuItem value="marathi" sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}>
-                Marathi
-              </MenuItem>
-            </Select>
-          </MUIFormControl>
-        </Box>
-
+      <Header logo={logo} remainingTime={remainingTime} formatTime={formatTime} />
+      <Subheader handleSubjectClick={handleSubjectClick} setIsDrawerOpen={setIsDrawerOpen}/>
+       
         {/* Main Content - Modified grid layout */}
         <Grid container spacing={2} sx={{ p: { xs: 1, sm: 2 }, flexDirection: { xs: 'column-reverse', sm: 'row' } }}>
           {/* Left Section - Question Area */}
           <Grid item xs={12} md={9} sx={{ 
-  order: { xs: 2, sm: 0 },
-  position: 'relative',
-  pb: { md: 8 } // Add padding for fixed navigation
-}}>
+            order: { xs: 2, sm: 0 },
+            position: 'relative',
+            pb: { md: 8 } // Add padding for fixed navigation
+          }}>
           <Paper elevation={3} sx={{ 
-    p: { xs: 1, sm: 2 },
-    boxShadow: '3px 3px 3px rgba(0, 0, 0, 0.1)',
-    border:'none',
-    position: 'relative',
-    mb: { xs: 2, md: 0 } 
-  }}>
+            p: { xs: 1, sm: 2 },
+            boxShadow: '3px 3px 3px rgba(0, 0, 0, 0.1)',
+            border:'none',
+            position: 'relative',
+            mb: { xs: 2, md: 0 } 
+          }}>
               {/* Question Content */}
               <Box sx={{
                 mb: 2,
@@ -745,11 +658,11 @@ const TestPage = () => {
     </Box>
     <Box sx={{ 
       display: { xs: 'block', md: 'none' }, // Only show on mobile
-      position: 'sticky',
+      position: 'fixed',
       bottom: 0,
       bgcolor: 'background.paper',
       py: 1,
-      borderTop: '1px solid',
+      borderTop: '2px solid',
       borderColor: 'divider'
     }}>
       <Box sx={{
@@ -761,7 +674,7 @@ const TestPage = () => {
           flex: '1 1 45%',
           fontSize: '0.7rem',
           py: 0.5,
-          px: 1,
+          px: 0.5,
           minWidth: 'unset',
           borderRadius: '4px',
           boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
@@ -770,33 +683,33 @@ const TestPage = () => {
         <Button onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
                 disabled={currentQuestionIndex === 0}
                 variant="contained"
-                color="primary"
+                sx={{ backgroundColor: '#FF5733', color: 'white'}}
                 size="small">
           Previous
         </Button>
         <Button onClick={handleSaveAndNext}
                 variant="contained"
-                color="primary"
+                sx={{ backgroundColor: '#4fd65e', color: 'white' }}
                 size="small">
           Save & Next
         </Button>
         <Button onClick={handleMarkForReview}
                 variant="contained"
-                color="secondary"
+                sx={{ backgroundColor: '#e3873b', color: 'white' }}
                 size="small">
           Review
         </Button>
         <Button onClick={handleClearResponse}
                 variant="contained"
-                color="error"
+                sx={{  color: 'white', '&:hover': { backgroundColor: '#E64A19' } }}
                 size="small">
           Clear
         </Button>
         <Button onClick={handleSubmitConfirmation}
                 variant="contained"
-                color="success"
-                size="small"
-                sx={{ flex: '1 1 100%' }}>
+                sx={{ marginLeft: 'auto' , backgroundColor: '#d2d6e0', color: 'black', '&:hover': { backgroundColor: '#4fd65e' , color:'white'}}}
+                size="small">
+                
           Submit Test
         </Button>
       </Box>
@@ -805,8 +718,8 @@ const TestPage = () => {
           </Grid>
 
           {/* Right Section - Question Navigation */}
-          <Grid item xs={12} md={3} sx={{ order: { xs: 1, sm: 0 } }}>
-            <Paper elevation={3} sx={{ p: 1, height: { xs: 'auto', sm: '70vh' }, overflowY: 'auto' }}>
+          <Grid item xs={12} md={3} sx={{ order: { xs: 1, sm: 0 } ,display: { xs: 'none', md: 'block' }}}>
+            <Paper elevation={3} sx={{ p: 1, height: { xs: 'auto', sm: '85vh' }, overflowY: 'auto' }}>
               <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <IconButton onClick={() => setIsPalletOpen(!isPalletOpen)} size="small">
                   {isPalletOpen ? <ChevronRight /> : <ChevronLeft />}
@@ -906,6 +819,118 @@ const TestPage = () => {
               )}
             </Paper>
           </Grid>
+
+          <SwipeableDrawer
+  anchor="right"
+  open={isDrawerOpen}
+  onClose={() => setIsDrawerOpen(false)}
+  onOpen={() => setIsDrawerOpen(true)}
+  sx={{ 
+    '& .MuiDrawer-paper': { 
+      width: '80%',
+      maxWidth: 300,
+      p: 2,
+      boxSizing: 'border-box'
+    } 
+  }}
+>
+  <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+    <IconButton onClick={() => setIsDrawerOpen(false)}>
+      <ChevronRight />
+    </IconButton>
+  </Box>
+  
+  {/* Reuse the question panel content from desktop */}
+  <Box sx={{ mb: 2 }}>
+    <Typography variant="subtitle2" gutterBottom>
+      Question Palette
+    </Typography>
+    <Box sx={{ 
+      display: 'grid', 
+      gridTemplateColumns: 'repeat(2, 1fr)', 
+      gap: 1,
+      fontSize: '0.7rem'
+    }}>
+      {legendItems.map((item, index) => (
+        <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+          <Box sx={{
+            width: 16,
+            height: 16,
+            borderRadius: '50%',
+            bgcolor: item.color,
+            position: 'relative'
+          }}>
+            {item.dot && (
+              <Box sx={{
+                position: 'absolute',
+                bottom: -2,
+                right: -2,
+                width: 8,
+                height: 8,
+                bgcolor: 'warning.main',
+                borderRadius: '50%'
+              }} />
+            )}
+          </Box>
+          <Typography variant="caption">{item.text}</Typography>
+        </Box>
+      ))}
+    </Box>
+  </Box>
+
+  <Box sx={{
+    display: 'grid',
+    gridTemplateColumns: 'repeat(5, 1fr)',
+    gap: 1,
+    overflowY: 'auto'
+  }}>
+    {questions.map((_, index) => {
+      const status = getQuestionStatus(index);
+      return (
+        <Button
+          key={index}
+          onClick={() => {
+            handleQuestionView(index);
+            setIsDrawerOpen(false);
+          }}
+          variant="contained"
+          sx={{
+            minWidth: 32,
+            height: 32,
+            p: 0,
+            fontSize: '0.75rem',
+            bgcolor: theme => {
+              if (currentQuestionIndex === index) return '#f0f0f0';
+              return `${statusColors[status]?.main || '#f5f5f5'}`
+            },
+            color: theme => {
+              if (currentQuestionIndex === index) return 'black';
+              return status === 'gray' ? 'black' : 'white'
+            },
+            border: theme => currentQuestionIndex === index ? '2px solid #1976d2' : 'none',
+            '&:hover': { 
+              bgcolor: `${statusColors[status]?.dark || '#e0e0e0'}`,
+              boxShadow: '0 4px 6px rgba(0,0,0,0.1)' 
+            },
+          }}
+        >
+          {index + 1}
+          {status === 'purple-dot' && (
+            <Box sx={{
+              position: 'absolute',
+              bottom: 2,
+              right: 2,
+              width: 6,
+              height: 6,
+              bgcolor: 'warning.main',
+              borderRadius: '50%'
+            }} />
+          )}
+        </Button>
+      );
+    })}
+  </Box>
+</SwipeableDrawer>
         </Grid>
       </>
     </MathJaxContext>
