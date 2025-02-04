@@ -5,7 +5,6 @@ import MenuIcon from '@mui/icons-material/Menu';
 const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
   const [language, setLanguage] = useState("english"); // Default language is English
   
-  
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
     // You can add logic here to switch the app's language using i18n or context
@@ -16,9 +15,11 @@ const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
       p: { xs: 1, sm: 1 },
       backgroundColor: "orange",
       display: "flex",
-      flexDirection: { xs: 'row', sm: 'row' },
+      flexDirection: { xs: 'column', sm: 'row' }, // Adjusted to stack vertically on small screens
       alignItems: 'center',
-      gap: { sm: 5, xs: 0.5 },
+      gap: { sm: 5 },
+      width: '100%',
+      position: 'relative', // This prevents overlapping by setting positioning context
     }}>
       <Typography sx={{
         fontWeight: "bold",
@@ -26,7 +27,7 @@ const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
         fontSize: { xs: '1.2rem', sm: '2rem' },
         textAlign: 'center',
         whiteSpace: "nowrap",
-        display: "inline-block"
+        display:{xs:'none', sm:'block'}
       }}>
         JEE MAIN
       </Typography>
@@ -34,7 +35,7 @@ const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
       <Box sx={{
         display: "flex",
         gap: 1,
-        flexWrap: { xs: "nowrap", sm: "wrap" },
+        flexWrap: { xs: "wrap", sm: "nowrap" }, // Make sure subjects wrap on smaller screens
         justifyContent: 'center',
         order: { xs: 2, sm: 0 }
       }}>
@@ -56,9 +57,9 @@ const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
           </Button>
         ))}
 
-        <Box sx={{ display: { xs: 'block', md: 'none' } }}>
+        <Box sx={{ display: { xs: 'block', md: 'none' }, marginLeft:"auto",alignItems: 'center', marginBottom:"1px" }}>
           <IconButton onClick={() => setIsDrawerOpen(true)}>
-            <MenuIcon sx={{ color: 'white' }} />
+            <MenuIcon sx={{ color: 'black' }} />
           </IconButton>
         </Box>
       </Box>
@@ -76,7 +77,7 @@ const Subheader = ({ handleSubjectClick, setIsDrawerOpen }) => {
       >
         <Select
           value={language}
-          onChange={handleLanguageChange} // Use the handleLanguageChange function
+          onChange={handleLanguageChange}
           sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' }, justifyContent: 'flex-end', width: '150px', display: { xs: 'none', sm:'block' }}}
         >
           <MenuItem value="english" sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}>

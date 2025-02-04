@@ -132,7 +132,7 @@ const DashBoard = () => {
   ];
 
   const mockTests = [
-    { title: 'MHT CET Mock Tests', action: 'Start Practice', path: '/mocktestlistmhtcet', content:'30+ Mock Test of MHTCET'},
+    { title: 'MHT CET Mock Tests', action: 'Take Mock Test', path: '/mocktestlistmhtcet', content:'30+ Mock Test of MHTCET'},
     { title: 'JEE MAIN Mock Tests', action: 'Take Mock Test', path: '/mocktestslist', content:'30+ Mock Test of JEE MAINS' },
     { title: 'JEE ADVANCED Mock Tests', action: 'Take Mock Test', path: '/mocktestslistneet', content:'10+ Mock Test of JEE ADVANCE' },
     { title: 'MHT CET PYQ', action: 'View Analytics', path: '/pyqcet' , content:'MHT CET PYQs of 10 Years'},

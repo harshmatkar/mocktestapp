@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
-import questionsData from "../assets/questions.json";
+import questionsData from "../../assets/questions.json";
 import "katex/dist/katex.min.css";
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import { useUser } from './UserContext';
+import { useUser } from '../UserContext';
 import { ChevronLeft, ChevronRight , Menu} from "lucide-react";
-import Header from "./JEETESTPAGECOMPONENTS/Header";
-import Subheader from "./JEETESTPAGECOMPONENTS/Subheader";
-import QuestionPaletteDrawer from './JEETESTPAGECOMPONENTS/QuestionPallet';
+import Header from "./Header";
+import Subheader from "./Subheader";
 import Cookies from 'js-cookie';
 
 
@@ -34,10 +33,10 @@ import {
   Drawer,
 } from "@mui/material";
 
-import logo from "../assets/nta-logo.png";
+import logo from "./nta-logo.png";
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, query,where, getDocs } from "firebase/firestore";
-import { auth, db } from '../firebaseConfig';
+import { auth, db } from '../../firebaseConfig';
 import { getAuth } from "firebase/auth";
 
 //--------------------------------------------------------------------- This are imports
@@ -86,32 +85,36 @@ const TestPage = () => {
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(async (user) => {
       setIsVerifyingAccess(true);
-  
-      if (!userId) {
-        navigate('/dashboard');
+      
+      // First check if user is logged in
+      if (!user) {
+        navigate('/login');
         setIsVerifyingAccess(false);
         return;
       }
   
-      const cookieKey = `hasAccess_${userId.uid}`;
+      // Then check test access
+      const cookieKey = `hasAccess_${user.uid}`;
       const storedAccess = Cookies.get(cookieKey);
   
       if (storedAccess !== undefined) {
         setHasAccess(storedAccess === 'true');
         setIsVerifyingAccess(false);
+        
         return;
       }
   
       try {
         const q = query(
           collection(db, "transactions"),
-          where("userId", "==", userId.uid),
+          where("userId", "==", user.uid),
           where("courseTitle", "==", "JEE MAIN Mock Tests")
         );
         const querySnapshot = await getDocs(q);
         const access = !querySnapshot.empty;
         setHasAccess(access);
-        Cookies.set(cookieKey, access.toString(), { expires: 1 });
+        Cookies.set(cookieKey, access.toString(), { expires: 1, path: '/' });
+        if (!access) navigate('/dashboard');
       } catch (error) {
         console.error("Access check failed:", error);
       } finally {
@@ -120,7 +123,9 @@ const TestPage = () => {
     });
   
     return () => unsubscribe();
-  }, [navigate]);
+  }, [navigate, userId]);
+
+
   
 
   
@@ -557,7 +562,7 @@ const TestPage = () => {
                 p: 1,
                 border:'none',
                 minHeight: "40vh",
-                maxHeight: { xs: '50vh', sm: '60vh' },
+                maxHeight: { xs: '60vh', sm: '60vh' },
                 overflowY: "auto",
                 fontSize: { xs: '0.9rem', sm: '1rem' },
                 '& .MathJax': { fontSize: '0.9rem !important' } ,// Scale down equations
@@ -677,7 +682,8 @@ const TestPage = () => {
       bgcolor: 'background.paper',
       py: 1,
       borderTop: '2px solid',
-      borderColor: 'divider'
+      borderColor: 'divider',
+      width: '100vw' 
     }}>
       <Box sx={{
         display: 'flex',

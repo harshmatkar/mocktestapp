@@ -1,6 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
+import { db } from "../firebase";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
+import { useUser } from "./UserContext"; // Import your UserContext
 import questionsData from "../assets/questionscet.json";
 import "katex/dist/katex.min.css";
 import {
@@ -19,8 +22,9 @@ import {
 
 const TestPage = () => {
   const navigate = useNavigate();
+  const { testIdcet } = useParams(); // Moved useParams to top level
+  const { user } = useUser(); // Get user from context
   const [questions, setQuestions] = useState([]);
-  const { testIdcet } = useParams();
   const [loading, setLoading] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -29,7 +33,8 @@ const TestPage = () => {
   const [submittedAnswers, setSubmittedAnswers] = useState([]);
   const [selectedSubject, setSelectedSubject] = useState("Physics");
   const [visitedQuestions, setVisitedQuestions] = useState([0]);
-
+  
+  
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 500);
     return () => clearTimeout(timer);
@@ -130,24 +135,39 @@ const TestPage = () => {
     });
   };
 
-  const handleSubmitConfirmation = () => {
+  const handleSubmitConfirmation = async () => {
     const totalQuestions = questions.length;
     const answeredQuestions = Object.keys(selectedAnswers).length;
     const correctAnswers = questions.filter(
       (q) => selectedAnswers[q.id] === q.correctAnswer
     ).length;
 
+    if (!user) {
+      alert("You need to be logged in to save results!");
+      return;
+    }
+
     const resultData = {
+      testId: testIdcet,
       totalQuestions,
       answeredQuestions,
       correctAnswers,
       unansweredQuestions: totalQuestions - answeredQuestions,
       markedQuestions: Object.keys(markedQuestions).length,
       submittedAnswers,
+      userId: user.uid, // Now using properly accessed user context
+      timestamp: Timestamp.now(),
     };
 
     if (window.confirm("Are you sure you want to submit your answers?")) {
-      navigate("/result", { state: resultData });
+      try {
+        const docRef = await addDoc(collection(db, "testResultcet"), resultData);
+        console.log("Result stored with ID: ", docRef.id);
+        navigate("/resultcet", { state: resultData });
+      } catch (error) {
+        console.error("Error storing result: ", error);
+        alert(`Failed to save your test result: ${error.message}`);
+      }
     }
   };
 

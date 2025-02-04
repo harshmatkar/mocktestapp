@@ -18,6 +18,7 @@ const Header = ({ logo, remainingTime, formatTime }) => {
           alignItems: "flex-start",
           gap: { xs: 3, sm: 0 },
           py: { xs: 1, sm: 0 },
+          width: '100vw' 
         }}
       >
         <Box
@@ -49,10 +50,10 @@ const Header = ({ logo, remainingTime, formatTime }) => {
         </Box>
 
         <Box sx={{ textAlign: { xs: "left", sm: "right" }, flexGrow: 1, ml: { xs: 0, sm: 2 } }}>
-          <Typography variant="subtitle1" sx={{ fontSize: { xs: "0.8rem", sm: "1rem" } }}>
+          <Typography variant="subtitle1" sx={{ fontSize: { xs: "0.8rem", sm: "1rem" }, }}>
             Candidate:XYZ
           </Typography>
-          <Typography variant="subtitle2" sx={{ fontSize: { xs: "0.7rem", sm: "0.875rem" } }}>
+          <Typography variant="subtitle2" sx={{ fontSize: { xs: "0.7rem", sm: "0.875rem" } ,display:{xs:'none', sm:'block'}}}>
             Exam: JEE ADVANCE
           </Typography>
           <Typography

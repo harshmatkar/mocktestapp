@@ -6,7 +6,7 @@ import DashBoard from './components/DashBoard';
 import MockTest from './components/Mocktest';
 import MockTests from "./components/Mocktestlist";
 import MockTestscet from "./components/mocktestlistmhtcet";
-import TestPage from './components/TestPageduplicate'; // New TestPage
+import TestPage from './components/JEETESTPAGECOMPONENTS/TestPageduplicate'; // New TestPage
 import TestPagecet from './components/mhtcettestpage'; // New TestPage
 import ResultPage from './components/result';
 import Instruction from './components/instructions';
@@ -15,6 +15,7 @@ import NotebookPage from './components/notebook';
 import ProfilePage from './components/profile';
 import Pyqcet from './components/pyqmhtcet';
 import { UserProvider } from './components/UserContext'; // Import UserProvider
+import Resultscet from './components/resultcet'; // Import UserProvider
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/notebook" element={<NotebookPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/pyqcet" element={<Pyqcet />} />
+        <Route path="/resultcet" element={<Resultscet />} />
 
         
       </Routes>

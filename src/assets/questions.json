@@ -1815,5 +1815,724 @@
   "id": 25,
   "question":"Standing waves are produced by the superposition of two waves \n \\( y = 0.05 \\sin(3\\pi t - 2x) \\) \n \\( y = 0.05 \\sin(3\\pi t - 2x) \\) \n where, \\(x \\ and \\ y\\) are in metres and t is in second. If amplitude of the particle at \\(x = 0.5\\) is \\(R\\), find \\(1000R\\)",
   "options": []
-}
+},
+
+
+
+
+  
+  
+    {
+      "id": 26,
+      "question": "2-Butyne can be obtained by:\nI. Dehydrogenation of 2-butene.\nII. Reaction of 1,1,1-trichloroethane with Ag powder.\nIII. 1 equivalent of ethyne treated with excess of sodium followed by \\( \\text{CH}_3\\text{Cl} \\).",
+      "testId": 4,
+      "options": [
+        "\\text{Both I and II}",
+        "\\text{Both II and III}",
+        "\\text{I, II & III}",
+        "\\text{Both I and III}"
+      ]
+    },
+    {
+      "id": 27,
+      "testId": 4,
+      "question": "For the cell \\( \\text{Zn} (s) | \\text{ZnSO}_4 (aq) || \\text{CuSO}_4 (aq) | \\text{Cu} (s) \\), when the concentration of \\( \\text{Zn}^{2+} \\) is 10 times the concentration of \\( \\text{Cu}^{2+} \\), the expression for \\( \\Delta G \\) (in J \\( \\text{mol}^{-1} \\)) is\n\n\\[ [F = \\text{Faraday's constant}, R = \\text{universal gas constant}, T = \\text{temperature}, E^\\circ_{\\text{cell}} = 1.1V] \\]",
+      "options": [
+        " 2.303 \\times RT + 1.1F ",
+        "\\text{1.1F} ",
+        "2.303 \\times RT - 2.2F ",
+        "\\text{ -2.2F} "
+      ]
+    },
+    {
+      "id": 28,
+      "testId": 4,
+      "question": "An organic compound contains 49.3% carbon, 6.84% hydrogen and its vapour density is 73. The molecular formula of the compound is:",
+      "options": [
+        "\\text{C}_3\\text{H}_6\\text{O}_2 ",
+        " \\text{C}_4\\text{H}_{10}\\text{O}_2 ",
+        " \\text{C}_6\\text{H}_{10}\\text{O}_4 ",
+        " \\text{C}_3\\text{H}_{10}\\text{O}_2 "
+      ]
+    },
+    {
+      "id": 29,
+      "testId": 4,
+      "question": "Calculate the percentage of all the monochlorinated products obtained from the chlorination of 2-methyl butane. The relative reactivity of 1°, 2°, and 3° hydrogen to chlorination is (1 : 3.8 : 5).",
+      "options": [
+        "15\\%, 45\\%, 20\\%, 25\\%",
+        "12\\%, 30\\%, 22\\%, 29\\%",
+        "14\\%, 35\\%, 23\\%, 28\\%",
+        "17\\%, 36\\%, 20\\%, 23\\%"
+      ]
+    },
+    {
+      "id": 30,
+      "testId": 4,
+      "question": "Assertion: A mixture of plant pigments can be separated by chromatography.\nReason: Chromatography is used for the separation of coloured substances into individual components.",
+      "options": [
+        "\\text{If both assertion and reason are true and the reason is the correct explanation of the assertion.}",
+        "\\text{If both assertion and reason are true but the reason is not the correct explanation of the assertion.}",
+        "\\text{If assertion is true but reason is false.}",
+        "\\text{If the assertion and reason both are false.}"
+      ]
+    },
+    {
+      "id": 31,
+      "testId": 4,
+      "question": "Find the structure of \\( X \\), given:\n\n\\[ \\text{X} (C_xH_yO_z) + \\text{CH}_3\\text{CH}_2\\text{COO}^- \\xrightarrow[\\text{KMnO}_4/\\text{OH}^-]{\\text{OH}^-} \\text{Y} + \\text{COOH} \\] \n\n(Image of structure provided)",
+      "options": [
+        "\\text{(Image of structure option 1)}",
+        "\\text{(Image of structure option 2)}",
+        "\\text{(Image of structure option 3)}",
+        "\\text{(Image of structure option 4)}"
+      ]
+    },
+      {
+        "id": 32,
+        "testId":4,
+        "question": "Given below are two statements: one is labeled as Assertion (A) and the other is labeled as Reason (R):\n\nAssertion (A): The \\(\\text{H} - \\text{O} - \\text{H}\\) bond angle in a water molecule is \\(104.5^\\circ\\).\nReason (R): The lone pair–lone pair repulsion of electrons is higher than the bond pair–bond pair repulsion.\n\nChoose the correct answer:",
+        "options": [
+          "A is false but R is true.",
+          "Both A and R are true, but R is not the correct explanation of A.",
+          "A is true but R is false.",
+          "Both A and R are true, and R is the correct explanation of A."
+        ]
+      },
+      {
+        "id": 33,
+        "testId":4,
+        "question": "The compound, whose stereo-chemical formula is written below, exhibits \\(x\\) geometrical isomers and \\(y\\) optical isomers:\n\\[ \\text{CH}_3 - \\text{C} = \\text{CH} - \\text{CH}_2 - \\text{C}(-\\text{OH}) - \\text{CH}_3 \\]\n\nThe values of \\(x\\) and \\(y\\) are:",
+        "options": [
+          "\\(4\\) and \\(4\\)",
+          "\\(2\\) and \\(2\\)",
+          "\\(2\\) and \\(0\\)"
+        ]
+      },
+      {
+        "id": 34,
+        "testId":4,
+        "question": "Consider the following statements:\n1. The entropy in an isolated system with only \\(p - V\\) work is always maximized at equilibrium.\n2. It is possible for the entropy of a closed system to increase substantially in an irreversible process.\n3. Without the help of an external agent, spontaneous processes cannot be reversed.\n4. \\(\\Delta S_{\\text{system}} = 0\\) for reversible processes in any system.\n\nWhich of the above statement(s) are correct?",
+        "options": [
+          "I, II, III",
+          "II and III",
+          "I, IV",
+          "III and IV"
+        ]
+      },
+      {
+        "id": 35,
+        "testId":4,
+        "question": "Na\\(_2\\)B\\(_4\\)O\\(_7\\)·10H\\(_2\\)O is correctly represented as:",
+        "options": [
+          "Na\\([\\text{B}_4\\text{O}_5(\\text{OH})_4]\\)·8H\\(_2\\)O",
+          "2NaBO\\(_2\\) + Na\\(_2\\)B\\(_4\\)O\\(_7\\)·10H\\(_2\\)O",
+          "Na\\([\\text{B}_4(\\text{H}_2\\text{O})_2\\text{O}_7]\\)·6H\\(_2\\)O",
+          "None of the above"
+        ]
+      },
+      {
+        "id": 36,
+       "testId":4,
+        "question": "Match the chemical conversions in List I with appropriate reagents in List II and select the correct answer using the code given below:\n\nList I:\n\\(P. \\text{C}l \\to \\text{Cl}\\)\n\\(Q. \\text{ONa} \\to \\text{OEth}\\)\n\\(R. \\text{Br} \\to \\text{OH}\\)\n\\(S. \\text{Me} \\to \\text{EtBr}\\)\n\nList II:\n(i) \\(\\text{H}_2\\text{O}/\\text{NaOH}\\)\n(ii) \\(\\text{NaBH}_4\\)\n(iii) \\(\\text{B}\\text{H}_3\\)\n\nCode:\n\\(P-III, Q-II, R-I, S-IV\\)",
+        "options": [
+          "P - III, Q - II, R - I, S - IV",
+          "P - III, Q - I, R - II, S - IV",
+          "P - I, Q - III, R - II, S - IV",
+          "P - II, Q - III, R - I, S - IV"
+        ]
+      },
+      {
+        "id": 37,
+        "testId":4,
+        "question": "Na\\(^+\\), Mg\\(^{2+}\\), Al\\(^{3+}\\), and Si\\(^{4+}\\) ions are isoelectronic. The trend of ionic radii of these ions is:",
+        "options": [
+          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+        ]
+      },
+      {
+        "id": 38,
+        "testId":4,
+        "question": "Identify the incorrect statement",
+        "options": [
+          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+        ]
+      },
+      {
+        "id": 39,
+        "testId":4,
+        "question": "Identify the incorrect statement",
+        "options": [
+          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+        ]
+      },
+      {
+        "id": 40,
+        "testId":4,
+        "question": "In which of the followiiing cyanide is obtained as a major product",
+        "options": [
+          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+        ]
+      },
+      {
+        "id": 41,
+        "testId":4,
+        "question": "Identify the incorrect statement",
+        "options": [
+          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+        ]
+      },
+      {
+        "id": 42,
+        "testId":4,
+        "question": "The rate of reaction is doubled for every \\(10^degree\\)C rise in temperature. The increase in rate of as result of an increase in teperatur from 10 to 100 is how many times the original rate ",
+        "options": [
+          "\\text{112}",
+          "\\text{512}",
+          "\\text{400}",
+          "\\text{256}"
+        ]
+      },
+      {
+        "id": 43,
+        "testId":4,
+        "question": "Please select the correct statement",
+        "options": [
+          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
+          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+        ]
+      },
+      {
+        "id": 44,
+        "testId":4,
+        "question": "Lanthanide contraction is responsible for the fact that:",
+        "options": [
+          "\\text{Zr and Y have the same radius}",
+          "\\text{Zr and Nb have similar oxidation state}",
+          "\\text{Zr and Zn have the same oxidation state}",
+          "\\text{Zr and Hf have about the same radius}"
+        ]
+      },
+      {
+        "id": 45,
+        "testId":4,
+        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
+        "options": [
+          "\\text{All are correct}",
+          "\\text{All execpt two}",
+          "\\text{Only 1 and 4}",
+          "\\text{Only 1 and 2}"
+        ]
+      },
+      {
+        "id": 46,
+        "testId":4,
+        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
+        "options": [
+          "\\text{All are correct}",
+          "\\text{All execpt two}",
+          "\\text{Only 1 and 4}",
+          "\\text{Only 1 and 2}"
+        ]
+      },
+      {
+        "id": 47,
+        "testId":4,
+        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
+        "options": [
+          "\\text{All are correct}",
+          "\\text{All execpt two}",
+          "\\text{Only 1 and 4}",
+          "\\text{Only 1 and 2}"
+        ]
+      },
+      {
+        "id": 48,
+        "testId":4,
+        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
+        "options": [
+          "\\text{All are correct}",
+          "\\text{All execpt two}",
+          "\\text{Only 1 and 4}",
+          "\\text{Only 1 and 2}"
+        ]
+      },
+      {
+        "id": 49,
+        "testId":4,
+        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
+        "options": [
+          "\\text{All are correct}",
+          "\\text{All execpt two}",
+          "\\text{Only 1 and 4}",
+          "\\text{Only 1 and 2}"
+        ]
+      },
+      {
+        "id": 50,
+        "testId":4,
+        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
+        "options": [
+          "\\text{All are correct}",
+          "\\text{All execpt two}",
+          "\\text{Only 1 and 4}",
+          "\\text{Only 1 and 2}"
+        ]
+      },
+      
+
+      
+
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  "testId": 4,
+  "id":51,
+  "question": "Coefficients of $x^r$ $[0 \\leq r \\leq (n - 1)]$ in the expansion of $(x + 3)^{n-1} + (x + 3)^{-2}(x + 2) + \\dots + (x + 2)^{n-1}$",
+  "options": [
+    "$\\binom{n}{r}(3^r - 2^r)$",
+    "$\\binom{n}{r}(3^r + 2^{n-r})$",
+    "None of these"
+  ],
+  "correct_answer": "$\\binom{n}{r}(3^r - 2^r)$"
+},
+{
+  "question": "If the graph of the function $y = (a - b)^2 x^2 + 2(a + b - 2c)x + 1 (a \\neq b)$ is strictly above the $x$-axis, then",
+  "options": [
+    "$a < b < c$",
+    "$b < a < c$",
+    "$a < c < b$",
+    "$c < b < a$"
+  ],
+  "testId": 4,
+  "id": 52,
+  "correct_answer": "$a < c < b$"
+},
+{
+  "question": "Let $\\phi(x, \\lambda) = 0$ be the equation of a circle if $\\phi(0, \\lambda) = 0$ has equal roots. $\\lambda = 2, 2$ and $\\phi(\\lambda, 0)$ has roots $\\frac{4}{5}, 5$, then, find the centre of the circle.",
+  "options": [
+    "$\\left(2, \\frac{29}{10} \\right)$",
+    "$\\left(-2, \\frac{29}{10} \\right)$",
+    "$\\left(\\frac{29}{10}, 2 \\right)$",
+    "None of these"
+  ],
+  "testId": 4,
+  "id": 53,
+  "correct_answer": "$\\left(2, \\frac{29}{10} \\right)$"
+},
+{
+  "question": "The number of solutions of the equation $\\sin^{-1}x = (\\sin x)^{-1}$ is/are",
+  "options": [
+    "one",
+    "two",
+    "three",
+    "zero"
+  ],
+  "id": 54,
+  "testId": 4,
+  "correct_answer": "two"
+},
+{
+  "question": "A function $f: \\mathbb{Z} \\to \\mathbb{Z}$ is defined as $f(n) = \\begin{cases} n + 1 & n \\text{ odd integer} \\\\ n & n \\text{ even integer} \\end{cases}$ and $f(f(f(k))) = 33$, then the sum of the digits of $k$ is",
+  "options": [
+    "7",
+    "5",
+    "9",
+    "8"
+  ],
+  "testId": 4,
+  "id": 55,
+  "correct_answer": "5"
+},
+{
+  "question": "Let $\\mathbf{u} = \\hat{i} + \\hat{j}$, $\\mathbf{v} = \\hat{i} - \\hat{j}$ and $\\mathbf{w} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$. If $\\mathbf{n}$ is a unit vector such that $\\mathbf{u} \\cdot \\mathbf{n} = 0$ and $\\mathbf{v} \\cdot \\mathbf{n} = 0$, then $\\mathbf{w} \\cdot \\mathbf{n}$ may be equal to",
+  "options": [
+    "1",
+    "2",
+    "3",
+    "0"
+  ],
+  "testId": 4,
+  "id": 56,
+  "correct_answer": "3"
+},
+{
+  "question": "Let $I_n = \\int_1^n |x|(1 + x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\dots + \\frac{x^m}{m})dx$ where $n \\in \\mathbb{N}$. If $\\lim_{n \\to \\infty} I_n$ can be expressed as a rational number $\\frac{p}{q}$ in the lowest form, then find the value of $p + q$.",
+  "testId": 4,
+  "id": 57,
+  "options": [
+    "7",
+    "5",
+    "9",
+    "8"
+  ],
+  "correct_answer": "Correct Answer"
+},
+{
+  "question": "The area (in sq. units) enclosed by the solution set of $|x||y| = 3$ is equal to (where $[\\cdot]$ denotes greatest integer function)",
+  "testId": 4,
+  "id": 58,
+  "options": [
+    "7",
+    "5",
+    "9",
+    "8"
+  ],
+  "correct_answer": "Correct Answer"
+},
+{
+  "id": 59,
+  "testId": 4,
+  "question": "The value of \\( \\lim_{{x \\to \\infty}} \\left[ \\frac{-2}{(1 + x^2)} \\right]^{x^2} \\) is equal to",
+  "options": [
+    "\\( e \\)",
+    "\\( e^{-1} \\)",
+    "\\( e^1 \\)",
+    "\\( e^{\\frac{1}{3}} \\)"
+  ]
+},
+{
+  "id": 60,
+  "testId": 4,
+  "question": "The number of point(s) of minima of the polynomial \\( y = 10x^6 - 24x^5 + 15x^4 - 40x^2 + 108 \\) is(are) equal to _____",
+  "options": [
+    "1",
+    "2",
+    "3",
+    "4"
+  ]
+},
+{
+  "id": 61,
+  "testId": 4,
+  "question": "Let \\( I_1 = \\int_0^1 e^x dx \\) and \\( I_2 = \\int_0^1 2x^2 e^x dx \\), then the value of \\( I_1 + I_2 \\) is equal to",
+  "options": [
+    "1",
+    "2",
+    "\\( e \\)",
+    "\\( e^2 \\)"
+  ]
+},
+{
+  "id": 62,
+  "testId": 4,
+  "question": "If principal argument of \\( z_0 \\) satisfying \\( |x - 3| \\leq \\sqrt{2} \\) and \\( \\arg(z - 5i) = -\\frac{\\pi}{4} \\) simultaneously is \\( \\theta \\), then identify the incorrect statement(s)?",
+  "options": [
+    "\\( |z_0| = 17 \\)",
+    "\\( \\tan 2\\theta = \\frac{8}{15} \\)",
+    "\\( |z_0 - 5i| = 4\\sqrt{2} \\)",
+    "\\( \\tan \\theta = \\frac{1}{4} \\)"
+  ]
+},
+{
+  "id": 63,
+  "testId": 4,
+  "question": "Consider two lines in space as \\( L_1: r_1 = j + 2k + \\lambda (3i - j - k) \\) and \\( L_2: r_2 = 4i + 3j + 6k + \\mu (i + 2k) \\) where \\( \\lambda, \\mu \\in R \\). If the shortest distance between these lines is \\( \\sqrt{\\Delta} \\), Then the value of \\( d \\) will be:",
+  "options": [
+    "5",
+    "6",
+    "7",
+    "8"
+  ]
+},
+{
+  "id": 64,
+  "testId": 4,
+  "question": "If a directrix of a hyperbola centered at the origin and passing through the point \\( (4, -2\\sqrt{3}) \\) is \\( 5x = 4\\sqrt{5} \\) and its eccentricity is \\( e \\), then:",
+  "options": [
+    "\\( 4e^4 + 8e^2 - 35 = 0 \\)",
+    "\\( 4e^4 - 24e^2 + 27 = 0 \\)",
+    "\\( 4e^4 - 12e^2 - 27 = 0 \\)"
+  ]
+},
+{
+  "testId": 4,
+  "id": 65,
+  "question": "Given three points on the xy plane $O(0,0)$, $A(1,0)$ and $B(-1,0)$. Point P is moving on the plane satisfying the condition $(\\overrightarrow{PA} \\cdot \\overrightarrow{PB}) + 3(\\overrightarrow{OA} \\cdot \\overrightarrow{OB}) = 0$. If the maximum and minimum values of $|\\overrightarrow{PA}|, |\\overrightarrow{PB}|$ are M and m respectively then find the values of $M^2 + m^2$.",
+  "options": []
+},
+{
+  "testId": 4,
+  "id": 66,
+  "question": "If the range of $f(x) = \\frac{2x^4 - 14x^2 - 8x + 49}{x^4 - 7x^2 - 4x + 23}$ is $(a, b]$, then $(a + b)$ is",
+  "options": []
+},
+{
+  "testId": 4,
+  "id": 67,
+  "question": "Let $\tan \\alpha, \tan \beta$ and $\\tan \\gamma$; $\\alpha, \\beta, \\gamma \\neq \\frac{(2n-1)\\pi}{2}, n \\in \\mathbb{N}$ be the slopes of three line segments $OA, OB$ and $OC$, respectively, where O is origin. If the circumcentre of $\triangle ABC$ coincides with origin and its orthocentre lies on y-axis, then the value of $\\left(\frac{\\cos \\alpha + \\cos \beta + \\cos \\gamma}{\\cos \\alpha \\cos \beta \\cos \\gamma}\right)^2$ is equal to:",
+  "options": []
+},
+{
+  "testId": 4,
+  "id": 68,
+  "question": "A term is randomly chosen from the expansion of $\\left( \\sqrt[5]{4} + \frac{1}{\\sqrt[5]{5}} \right)^{20}$. If the probability that it is a rational term is $P$, then $420P$ is equal to",
+  "options": []
+},
+{
+  "testId": 4,
+  "id": 69,
+  "question": "A term is randomly chosen from the expansion of $\\left( \\sqrt[5]{4} + \frac{1}{\\sqrt[5]{5}} \right)^{20}$. If the probability that it is a rational term is $P$, then $420P$ is equal to",
+  "options": []
+},
+{
+  "testId": 4,
+  "id": 70,
+  "question": "If $53^{53} - 33^{3}$ is divided by 10, then the remainder obtained is",
+  "options": []
+},
+{
+  "testId": 4,
+  "id": 71,
+  "question": "From the string $abacabababcded$, if 5 letters should be selected, then the number of ways in which this selection can be done is",
+  "options": []
+},
+            
+        {
+            "question": "If the graph of the function $y = (a - b)^2 x^2 + 2(a + b - 2c)x + 1 (a \\neq b)$ is strictly above the $x$-axis, then",
+            "options": [
+                "$a < b < c$",
+                "$b < a < c$",
+                "$a < c < b$",
+                "$c < b < a$"
+            ],
+            "testId":4,
+            "id":26,
+            "correct_answer": "$a < c < b$"
+        },
+        {
+            "question": "Let $\\phi(x, \\lambda) = 0$ be the equation of a circle if $\\phi(0, \\lambda) = 0$ has equal roots. $\\lambda = 2, 2$ and $\\phi(\\lambda, 0)$ has roots $\\frac{4}{5}, 5$, then, find the centre of the circle.",
+            "options": [
+                "$\\left(2, \\frac{29}{10} \\right)$",
+                "$\\left(-2, \\frac{29}{10} \\right)$",
+                "$\\left(\\frac{29}{10}, 2 \\right)$",
+                "None of these"
+            ],
+            "testId":4,
+            "correct_answer": "$\\left(2, \\frac{29}{10} \\right)$"
+        },
+        {
+            "question": "The number of solutions of the equation $\\sin^{-1}x = (\\sin x)^{-1}$ is/are",
+            "options": [
+                "one",
+                "two",
+                "three",
+                "zero"
+            ],
+            "id":27,
+            "testId":4,
+            "correct_answer": "two"
+        },
+        {
+            "question": "A function $f: \\mathbb{Z} \\to \\mathbb{Z}$ is defined as $f(n) = \\begin{cases} n + 1 & n \\text{ odd integer} \\\\ n & n \\text{ even integer} \\end{cases}$ and $f(f(f(k))) = 33$, then the sum of the digits of $k$ is",
+            "options": [
+                "7",
+                "5",
+                "9",
+                "8"
+            ],
+            "testId":4,
+            "id":28,
+            "correct_answer": "5"
+        },
+        {
+            "question": "Let $\\mathbf{u} = \\hat{i} + \\hat{j}$, $\\mathbf{v} = \\hat{i} - \\hat{j}$ and $\\mathbf{w} = \\hat{i} + 2\\hat{j} + 3\\hat{k}$. If $\\mathbf{n}$ is a unit vector such that $\\mathbf{u} \\cdot \\mathbf{n} = 0$ and $\\mathbf{v} \\cdot \\mathbf{n} = 0$, then $\\mathbf{w} \\cdot \\mathbf{n}$ may be equal to",
+            "options": [
+                "1",
+                "2",
+                "3",
+                "0"
+            ],
+            "testId":4,
+            "id":29,
+            "correct_answer": "3"
+        },
+        {
+            "question": "Let $I_n = \\int_1^n |x|(1 + x + \\frac{x^2}{2} + \\frac{x^3}{3} + \\dots + \\frac{x^m}{m})dx$ where $n \\in \\mathbb{N}$. If $\\lim_{n \\to \\infty} I_n$ can be expressed as a rational number $\\frac{p}{q}$ in the lowest form, then find the value of $p + q$.",
+            "testId":4,
+            "id":30,
+            "correct_answer": "Correct Answer"
+            
+        },
+        {
+            "question": "The area (in sq. units) enclosed by the solution set of $|x||y| = 3$ is equal to (where $[\\cdot]$ denotes greatest integer function)",
+            "testId":4,
+            "id":31,
+            "correct_answer": "Correct Answer"
+        },
+            {
+              "id": 32,
+              "testId":4,
+              "question": "The value of \\( \\lim_{{x \\to \\infty}} \\left[ \\frac{-2}{(1 + x^2)} \\right]^{x^2} \\) is equal to",
+              "options": [
+                "\\( e \\)",
+                "\\( e^{-1} \\)",
+                "\\( e^1 \\)",
+                "\\( e^{\\frac{1}{3}} \\)"
+              ]
+            },
+            {
+              "id": 79,
+              "testId":4,
+              "question": "The number of point(s) of minima of the polynomial \\( y = 10x^6 - 24x^5 + 15x^4 - 40x^2 + 108 \\) is(are) equal to _____",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ]
+            },
+            {
+              "id": 80,
+              "testId":4,
+              "question": "Let \\( I_1 = \\int_0^1 e^x dx \\) and \\( I_2 = \\int_0^1 2x^2 e^x dx \\), then the value of \\( I_1 + I_2 \\) is equal to",
+              "options": [
+                "1",
+                "2",
+                "\\( e \\)",
+                "\\( e^2 \\)"
+              ]
+            },
+            {
+              "id": 81,
+              "testId":4,
+              "question": "If principal argument of \\( z_0 \\) satisfying \\( |x - 3| \\leq \\sqrt{2} \\) and \\( \\arg(z - 5i) = -\\frac{\\pi}{4} \\) simultaneously is \\( \\theta \\), then identify the incorrect statement(s)?",
+              "options": [
+                "\\( |z_0| = 17 \\)",
+                "\\( \\tan 2\\theta = \\frac{8}{15} \\)",
+                "\\( |z_0 - 5i| = 4\\sqrt{2} \\)",
+                "\\( \\tan \\theta = \\frac{1}{4} \\)"
+              ]
+            },
+            {
+              "id": 82,
+              "testId":4,
+              "question": "Consider two lines in space as \\( L_1: r_1 = j + 2k + \\lambda (3i - j - k) \\) and \\( L_2: r_2 = 4i + 3j + 6k + \\mu (i + 2k) \\) where \\( \\lambda, \\mu \\in R \\). If the shortest distance between these lines is \\( \\sqrt{\\Delta} \\), Then the value of \\( d \\) will be:",
+              "options": [
+                "5",
+                "6",
+                "7",
+                "8"
+              ]
+            },
+            {
+              "id": 83,
+              "testId":4,
+              "question": "If a directrix of a hyperbola centered at the origin and passing through the point \\( (4, -2\\sqrt{3}) \\) is \\( 5x = 4\\sqrt{5} \\) and its eccentricity is \\( e \\), then:",
+              "options": [
+                "\\( 4e^4 + 8e^2 - 35 = 0 \\)",
+                "\\( 4e^4 - 24e^2 + 27 = 0 \\)",
+                "\\( 4e^4 - 12e^2 - 27 = 0 \\)"
+              ]
+            },
+           
+        
+  {
+    "testId":4,
+    "id": 84,
+    "question": "Given three points on the xy plane $O(0,0)$, $A(1,0)$ and $B(-1,0)$. Point P is moving on the plane satisfying the condition $(\\overrightarrow{PA} \\cdot \\overrightarrow{PB}) + 3(\\overrightarrow{OA} \\cdot \\overrightarrow{OB}) = 0$. If the maximum and minimum values of $|\\overrightarrow{PA}|, |\\overrightarrow{PB}|$ are M and m respectively then find the values of $M^2 + m^2$.",
+    "options": []
+  },
+  {
+    "testId":4,
+    "id": 85,
+    "question": "If the range of $f(x) = \frac{2x^4 - 14x^2 - 8x + 49}{x^4 - 7x^2 - 4x + 23}$ is $(a, b]$, then $(a + b)$ is",
+    "options": []
+  },
+  {
+    "testId":4,
+    "id": 86,
+    "question": "Let $\tan \\alpha, \tan \beta$ and $\\tan \\gamma$; $\\alpha, \\beta, \\gamma \\neq \\frac{(2n-1)\\pi}{2}, n \\in \\mathbb{N}$ be the slopes of three line segments $OA, OB$ and $OC$, respectively, where O is origin. If the circumcentre of $\triangle ABC$ coincides with origin and its orthocentre lies on y-axis, then the value of $\\left(\frac{\\cos \\alpha + \\cos \beta + \\cos \\gamma}{\\cos \\alpha \\cos \beta \\cos \\gamma}\right)^2$ is equal to:",
+    "options": []
+  },
+  {
+    "testId":4,
+    "id": 87,
+    "question": "A term is randomly chosen from the expansion of $\\left( \\sqrt[5]{4} + \frac{1}{\\sqrt[5]{5}} \right)^{20}$. If the probability that it is a rational term is $P$, then $420P$ is equal to",
+    "options": []
+  },
+
+  {
+    "testId":4,
+    "id": 88,
+    "question": "A term is randomly chosen from the expansion of $\\left( \\sqrt[5]{4} + \frac{1}{\\sqrt[5]{5}} \right)^{20}$. If the probability that it is a rational term is $P$, then $420P$ is equal to",
+    "options": []
+  },
+  {
+    "testId":4,
+    "id": 89,
+    "question": "If $53^{53} - 33^{3}$ is divided by 10, then the remainder obtained is",
+    "options": []
+  },
+  {
+    "testId":4,
+    "id": 90,
+    "question": "From the string $abacabababcded$, if 5 letters should be selected, then the number of ways in which this selection can be done is",
+    "options": []
+  }
+
 ]
