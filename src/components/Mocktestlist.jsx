@@ -12,7 +12,7 @@ const MockTests = () => {
     subject: "JEE MAIN",
     difficulty: i < 10 ? "Easy" : i < 20 ? "Medium" : "Hard",
     id: i + 1,
-    isLive: i < 3
+    isLive: i < 4
   }));
 
   const handleStartTest = (testName, testId) => {

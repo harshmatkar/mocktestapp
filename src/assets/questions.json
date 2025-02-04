@@ -1568,6 +1568,252 @@
       "10^{16} \\, \\text{s}"
     ],
   "correctAnswer": "10^{16} \\, \\text{s}"
+},
+
+{
+  "testId": 4,
+  "id": 1,
+  "question": "Two blocks of masses \\(10\\) kg and \\(30\\) kg are placed along a vertical line. If \\(10\\) kg block is raised through a height of \\(7\\) cm, then the distance through which other mass should be moved to raise the center of mass of the system by \\(1\\) cm is",
+  "options": [
+    "1 cm up",
+    "1 cm down",
+    "2 cm down",
+    "2 cm up"
+  ]
+},
+{
+  "testId": 4,
+  "id": 2,
+  "question": "Statement 1: The plot of atomic number (\\(y\\)-axis) versus the number of neutrons (\\(x\\)-axis) for stable nuclei shows a curvature towards (\\(x\\)-axis) from the line of \\(45^\\circ\\) slope as the atomic number is increased.\n\nStatement 2: Proton-proton electrostatic repulsion begins to overcome attractive forces involving protons and neutrons in heavier nuclides.",
+  "options": [
+    "Statement 1 is true, statement 2 is true, statement 2 is correct explanation for statement 1.",
+    "Statement 1 is true, statement 2 is true, statement 2 is not a correct explanation for statement 1.",
+    "Statement 1 is true and statement 2 is false.",
+    "Statement 1 is false and statement 2 is true."
+  ]
+},
+{
+  "testId": 4,
+  "id": 3,
+  "question": "The stress versus strain graphs for wires of two materials \\(A\\) and \\(B\\) are as shown in figure. Which material is more ductile?",
+  "options": [
+    "Material \\(A\\)",
+    "Material \\(B\\)",
+    "Both material \\(A\\) and material \\(B\\)",
+    "None of these"
+  ]
+},
+{
+  "testId": 4,
+  "id": 4,
+  "question": "A given ray of light suffers minimum deviation in an equilateral prism \\(P\\). Additional prisms \\(Q\\) and \\(R\\) of identical shape and of same material as \\(P\\) are now added as shown in the figure. The ray will now suffer",
+  "options": [
+    "greater deviation.",
+    "no deviation.",
+    "same deviation.",
+    "total internal reflection."
+  ]
+},
+
+{
+  "id": 5,
+  "testId": 4,
+  "question": "The output Y of the logic circuit shown in figure is best represented as:",
+  "options": [
+      "A \\cdot \\bar{B} \\cdot \\bar{C}",
+      "A + \\bar{B} \\cdot C",
+      "\\bar{A} + B \\cdot \\bar{C}",
+      "\\bar{A} + B \\cdot C"
+  ]
+},
+{
+  "id": 6,
+  "testId": 4,
+  "question": "An infinitely long wire carrying current I is along X-axis such that its one end is at point (0,0) while the wire extends up to infinity. The magnitude of magnetic field strength at point P(x_0, y_0) is:",
+  "options": [
+      "\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 + \\frac{b}{\\sqrt{a^2 + b^2}} \\right)",
+      "\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 - \\frac{b}{\\sqrt{a^2 + b^2}} \\right)",
+      "\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 - \\frac{a}{\\sqrt{a^2 + b^2}} \\right)",
+      "\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 + \\frac{a}{\\sqrt{a^2 + b^2}} \\right)"
+  ]
+},
+{
+  "id": 7,
+  "testId": 4,
+  "question": "The correct match between the entries in column I and column II are:\nColumn I: {Microwave, Gamma ray, X-ray}\nColumn II: {10^{-2} \\text{m}, 10^{-10} \\text{m}, 10^{-8} \\text{m}}",
+  "options": [
+      "(a)-(ii), (b)-(i), (c)-(iii)",
+      "(a)-(ii), (b)-(iii), (c)-(i)",
+      "(a)-(i), (b)-(iii), (c)-(ii)",
+      "(a)-(iii), (b)-(ii), (c)-(i)"
+  ]
+},
+{
+  "id": 8,
+  "testId": 4,
+  "question": "If the velocity of a particle moving along a straight line decreases linearly with its displacement as \\(20 \\ m/s\\)  to value appoching zero at \\( s = 30 \\ \\text{m} \\), then acceleration of the particle at \\(s = 15\\) is:",
+  "options": [
+      "2 \\ \\text{m/s}^2",
+      "-2 \\ \\text{m/s}^2",
+      "-1 \\ \\text{m/s}^2",
+      "1 \\ \\text{m/s}^2"
+  ]
+},
+{
+  "id": 9,
+  "testId": 4,
+  "question":"Find the time period of the body (mass m), show in the figure, when displaced slightly in vertical direction",
+  "options": [
+      "2 \\pi \\sqrt{\\frac{m}{2k}}",
+      "2 \\pi \\sqrt{\\frac{3m}{2k}}",
+      "2 \\pi \\sqrt{\\frac{3m}{k}}",
+      " \\pi \\sqrt{\\frac{3m}{k}}"
+  ]
+},
+{
+  "id": 10,
+  "testId": 4,
+  "question":"The value of alternating emf E in the given circuit will be",
+  "options": [
+      "220 \\ \\text{V}",
+      "140 \\ \\text{V}",
+      "100 \\ \\text{V}",
+      "20 \\ \\text{V}"
+  ]
+},
+
+{
+  "testId":4,
+  "id": 11,
+  "question": "According to Einstein’s photoelectric equation, the plot of the kinetic energy of the emitted photoelectrons from a metal vs the frequency of the incident radiation gives a straight line whose slope",
+  "options": [
+    "\\text{depends on the nature of the metal used}",
+    "\\text{depends on the intensity of the radiation}",
+    "\\text{depends both on the intensity of the radiation and the metal used}",
+    "\\text{is the same for all metals and independent of the intensity of the radiation}"
+  ]
+},
+{ 
+"testId":4,  "id": 12,
+  "question": "In the figure, there is a conducting wire having current \\(i\\) and which has a shape of closed half ellipse \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1\\) is kept in a uniform magnetic field \\(B\\) as shown. The magnitude of magnetic dipole moment of loop and torque acting on it are:",
+  "options": [
+    "\\pi ab i, 0",
+    "\\pi ab i, \\pi ab i B",
+    "\\frac{\\pi ab i}{2}, \\pi ab i B",
+    "\\frac{\\pi ab i}{2}, 0"
+  ]
+},
+{ 
+"testId":4,  "id": 13,
+  "question": "In the network shown in the Fig, each resistance is \\(1 \\Omega\\). The effective resistance between A and B is:",
+  "options": [
+    "\\frac{4}{3} \\Omega",
+    "\\frac{3}{2} \\Omega",
+    "7 \\Omega",
+    "\\frac{5}{3} \\Omega"
+  ]
+},
+{ 
+"testId":4,  "id": 14,
+  "question": "Assertion: Consider a system of gas having \\(N\\) molecules; Instantaneous K.E. of few molecules can be greater than average K.E. of the molecules of the given gas.\nReason: Number of molecules having most probable speed is greater than number of molecules having average speed.",
+  "options": [
+    "\\text{Both Assertion and Reason are true and the Reason is correct explanation of the Assertion.}",
+    "\\text{Both Assertion and Reason are true but Reason is not correct explanation of the Assertion.}",
+    "\\text{Assertion is true but Reason is false.}",
+    "\\text{Assertion is false but Reason is true.}"
+  ]
+},
+{ 
+"testId":4,  "id": 15,
+  "question": "Match the physical quantities with their correct SI units.\n(A) Planck’s constant (I) (\\text{kg m}^2(B) \n Torque(C) Weight\n(D) Specific volume\\nList-I\\n \text{s}^{-1}\\)\n(II) \\(\text{kg m}^{-1} \text{s}^{-2}\\)\n(III) \\(\text{kg m}^2 \text{s}^{-2}\\)\n(IV) \\(\text{m}^3 \text{kg}^{-1}\\)\nThe correct match is:",
+  "options": [
+    "A = II, B = IV, C = I, D = III",
+    "A = II, B = III, C = I, D = IV",
+    "A = IV, B = I, C = II, D = III"
+  ]
+},
+{ 
+"testId":4,  "id": 16,
+  "question": "Four charges are arranged at the corners of a square \\(ABCD\\) as shown in the figure. The force on the charge kept at the centre \\(O\\) is:",
+  "options": [
+    "\\text{zero}",
+    "\\text{along the diagonal} \\ AC ",
+    "\\text{along the diagonal} \\ BD",
+    "\\text{along perpendicular to side} \\ AB"
+  ]
+},
+{
+  "testId":4,
+  "id": 17,
+  "question": "If \\(R\\) is the radius of the Earth then the height above the Earth’s surface at which the acceleration due to gravity decreases by 20% is:",
+  "options": [
+    "(\\frac{\\sqrt{5}}{2} - 1) R ",
+    " (\\frac{\\sqrt{5}}{2} + 1) R ",
+    " (5\\sqrt{2} - 1) R ",
+    " (5\\sqrt{2} + 1) R "
+  ]
+},
+{
+  "testId":4,
+  "id": 18,
+  "question": "Block A of mass 2 kg is placed over block B of mass 8 kg. The combination is placed over a smooth horizontal surface. Coefficient of friction between A and B is 0.5. A horizontal force of 20 N is applied on block B. The force of friction on A is:",
+  "options": [
+    "\\text{10 N}",
+    "\\text{8 N}",
+    "\\text{6 N}",
+    "\\text{4 N}"
+  ]
+},
+{
+  "testId":4,
+  "id": 19,
+  "question": "If \\( E_P \\) and \\( E_K \\) are the potential energy and kinetic energy of the electron in stationary orbit in the hydrogen atom, the value of \\( \\frac{E_P}{E_K} \\) is:",
+  "options": [
+    "\\text{2}",
+    "\\text{-1}",
+    "\\text{1}",
+    "\\text{-2}"
+  ]
+},
+{
+  "testId":4,
+  "id": 20,
+  "question": "One mole of an ideal gas under goes a process \\( P = P_0 \\left[ 1 + \\left( \\frac{2V}{V_0} \\right) \\right]^{-1} \\) where \\( P_0, V_0 \\) are constants. Change in temperature of the gas when volume is changed from \\( V = V_0 \\) to \\( V = 2V_0 \\) is:",
+  "options": [
+    " \\frac{4}{5} \\frac{P_0 V_0}{R} ",
+    " \\frac{3}{4} \\frac{P_0 V_0}{R} ",
+    " \\frac{2}{3} \\frac{P_0 V_0}{R} ",
+    " \\frac{9}{7} \\frac{P_0 V_0}{R} "
+  ]
+},
+{
+  "testId":4,
+  "id": 21,
+  "question": "The ends Q and R of two thin wires, PQ and RS, are soldered (joined) together. Initially each of the wires has a length of 1 at 10°C. Now the end P is maintained at 10°C, while the end S is heated and maintained at 400°C. The system is thermally insulated from its surroundings. If the thermal conductivity of wire PQ is twice that of the wire RS and the coefficient of linear thermal expansion of PQ is \\( 1.2 \\times 10^{-5} K^{-1} \\), the change in length of the wire PQ is: (Mark answer in mm to nearest whole number)",
+  "options": []
+},
+{
+  "testId":4,
+  "id": 22,
+  "question": "The densities of two solid spheres A and B of the same radii R vary with radial distance r as \\( \\rho_A(r) = k \\left( \\frac{r}{R} \\right) \\) and \\( \\rho_B(r) = k \\left( \\frac{r}{R} \\right)^5 \\), respectively, where k is a constant. The moments of inertia of the individual spheres about axes passing through their centres are \\( I_A \\) and \\( I_B \\), respectively. If \\( \\frac{I_A}{I_B} = n \\), the value of \\( n \\) is:",
+  "options": []
+},
+{
+  "testId":4,
+  "id": 23,
+  "question": "A drop of liquid of radius \\( R = 10^{-2} m \\) having surface tension \\( S = \\frac{0.1}{4 \\pi} Nm^{-1} \\) divides itself into K identical drops. In the process the total change in the surface energy \\( \\Delta U = 10^{-3} J \\). If \\( K = 10^n \\) then the value of \\( n \\) is:",
+  "options": []
+},
+{
+  "testId":4,
+  "id": 24,
+  "question": "If a coil of 40 turns and area \\( 40 \\text{ cm}^2 \\) is suddenly removed from a magnetic field, it is observed that a charge of \\( 2.0 \\times 10^{-4} C \\) flows into the coil. If the resistance of the coil is \\( 80 \\Omega \\), the magnetic flux density is:",
+  "options": []
+},
+{
+  "testId":4,
+  "id": 25,
+  "question":"Standing waves are produced by the superposition of two waves \n \\( y = 0.05 \\sin(3\\pi t - 2x) \\) \n \\( y = 0.05 \\sin(3\\pi t - 2x) \\) \n where, \\(x \\ and \\ y\\) are in metres and t is in second. If amplitude of the particle at \\(x = 0.5\\) is \\(R\\), find \\(1000R\\)",
+  "options": []
 }
 ]
-

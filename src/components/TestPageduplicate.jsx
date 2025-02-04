@@ -9,6 +9,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import { useUser } from './UserContext';
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+
 import {
   Button,
   Paper,
@@ -477,9 +478,9 @@ const TestPage = () => {
         {/* Header - Modified for mobile */}
         <AppBar position="static" color="white" elevation={1} sx={{ py: { xs: 1, sm: 0 } }}>
           <Toolbar sx={{
-            flexDirection: { xs: 'column', sm: 'row' },
+            flexDirection: { xs: 'row', sm: 'row' },
             alignItems: 'flex-start',
-            gap: { xs: 1, sm: 0 },
+            gap: { xs: 6, sm: 0 },
             py: { xs: 1, sm: 0 }
           }}>
             <Box sx={{ 
@@ -495,16 +496,16 @@ const TestPage = () => {
               />
               <Typography variant="h6" sx={{ 
                 fontWeight: "bold", 
-                fontSize: { xs: '0.9rem', sm: '1.25rem' },
+                fontSize: { xs: '0.6rem', sm: '1.25rem' },
                 lineHeight: 1.2
               }}>
-                RATIONAL TESTING AGENCY
+                NATIONAL TESTING AGENCY
                 <br />
                 <span style={{
                   backgroundColor: "green",
                   color: "white",
                   fontStyle: "italic",
-                  fontSize: { xs: '0.6rem', sm: '0.8rem' }
+                  fontSize: { xs: '0.4rem', sm: '0.8rem' }
                 }}>
                   Excellence in assessment.
                 </span>
@@ -535,18 +536,20 @@ const TestPage = () => {
 
         {/* Subheader - Modified for mobile */}
         <Box sx={{
-          p: { xs: 1, sm: 2 },
+          p: { xs: 1, sm: 1 },
           backgroundColor: "orange",
           display: "flex",
-          flexDirection: { xs: 'column', sm: 'row' },
+          flexDirection: { xs: 'row', sm: 'row' },
           alignItems: 'center',
-          gap: 1,
+          gap: {sm:5},
         }}>
           <Typography sx={{ 
             fontWeight: "bold", 
             color: "white", 
             fontSize: { xs: '1.2rem', sm: '2rem' },
-            textAlign: 'center'
+            textAlign: 'center',
+            whiteSpace: "nowrap",
+            display: "inline-block"
           }}>
             JEE MAIN
           </Typography>
@@ -554,7 +557,7 @@ const TestPage = () => {
           <Box sx={{ 
             display: "flex", 
             gap: 1, 
-            flexWrap: 'wrap', 
+            flexWrap: { xs: "nowrap", sm: "wrap" }, 
             justifyContent: 'center',
             order: { xs: 2, sm: 0 }
           }}>
@@ -591,7 +594,7 @@ const TestPage = () => {
             <Select
               value={language}
               onChange={(e) => setLanguage(e.target.value)}
-              sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}
+              sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } , justifyContent:'flex-end', width:{xs:100}, display:{xs:'none'}}}
             >
               <MenuItem value="english" sx={{ fontSize: { xs: '0.7rem', sm: '0.875rem' } }}>
                 English
@@ -616,6 +619,8 @@ const TestPage = () => {
 }}>
           <Paper elevation={3} sx={{ 
     p: { xs: 1, sm: 2 },
+    boxShadow: '3px 3px 3px rgba(0, 0, 0, 0.1)',
+    border:'none',
     position: 'relative',
     mb: { xs: 2, md: 0 } 
   }}>
@@ -623,13 +628,15 @@ const TestPage = () => {
               <Box sx={{
                 mb: 2,
                 p: 1,
+                border:'none',
                 minHeight: "40vh",
                 maxHeight: { xs: '50vh', sm: '60vh' },
                 overflowY: "auto",
                 fontSize: { xs: '0.9rem', sm: '1rem' },
-                '& .MathJax': { fontSize: '0.9rem !important' } // Scale down equations
+                '& .MathJax': { fontSize: '0.9rem !important' } ,// Scale down equations
+                whiteSpace: "pre-wrap"
               }}>
-                <Typography variant="h6" sx={{ fontSize: { xs: '0.9rem', sm: '1rem' } }}>
+                <Typography variant="h6" sx={{ fontSize: { xs: '0.9rem', sm: '1rem' , fontWeight: 'bold'}}} >
                   Question {currentQuestionIndex + 1}
                 </Typography>
                 <MathJax dynamic key={currentQuestionIndex}>
@@ -679,23 +686,24 @@ const TestPage = () => {
       position: 'fixed',
       bottom: 0,
       left: 0,
-      right: 0,
+      right: 395,
       zIndex: 1000,
       bgcolor: 'background.paper',
-      borderTop: '1px solid',
+      borderTop: 'px solid',
       borderColor: 'divider',
       py: 1,
       px: 2,
-      boxShadow: 3
+      boxShadow: 2
     }}>
       <Box sx={{
         display: 'flex',
         gap: 2,
-        justifyContent: 'center',
+        
         maxWidth: 1200,
         margin: '0 auto',
         '& button': {
           width: '140px',
+          height:'40px',
           fontSize: '0.9rem',
           py: 1.5,
           borderRadius: '4px',
@@ -709,28 +717,28 @@ const TestPage = () => {
         <Button onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))} 
                 disabled={currentQuestionIndex === 0}
                 variant="contained" 
-                color="primary">
+                sx={{ backgroundColor: '#FF5733', color: 'white'}}
+                >
           Previous
         </Button>
         <Button onClick={handleSaveAndNext} 
                 variant="contained" 
-                color="primary">
+                sx={{ backgroundColor: '#4fd65e', color: 'white' }}>
           Save & Next
         </Button>
         <Button onClick={handleMarkForReview}
             variant="contained"
-            color="secondary">
-      Mark Review
+            sx={{ backgroundColor: '#e3873b', color: 'white' }}>      Mark Review
     </Button>
 
     <Button onClick={handleClearResponse}
             variant="contained"
-            color="error">
-      Clear
+            sx={{  color: 'white', '&:hover': { backgroundColor: '#E64A19' } }}>      Clear
     </Button>
         <Button onClick={handleSubmitConfirmation} 
                 variant="contained" 
-                color="success">
+                color="success"
+                sx={{ marginLeft: 'auto' , backgroundColor: '#ffffff', color: 'black', '&:hover': { backgroundColor: '#4fd65e' , color:'white'}}}>
           Submit Test
         </Button>
       </Box>
