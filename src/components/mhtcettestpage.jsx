@@ -23,7 +23,7 @@ import {
 const TestPage = () => {
   const navigate = useNavigate();
   const { testIdcet } = useParams(); // Moved useParams to top level
-  const { user } = useUser(); // Get user from context
+  const { userId } = useUser(); // Get user from context
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -135,18 +135,29 @@ const TestPage = () => {
     });
   };
 
+
   const handleSubmitConfirmation = async () => {
+    console.log("handleSubmitConfirmation called");
+  
+    
+    console.log("Fetched userId from useUser():", userId);
+  
+    if (!userId) {
+      alert("You need to be logged in to save results!");
+      console.warn("User not logged in - Cannot save results");
+      return;
+    }
+  
     const totalQuestions = questions.length;
     const answeredQuestions = Object.keys(selectedAnswers).length;
     const correctAnswers = questions.filter(
       (q) => selectedAnswers[q.id] === q.correctAnswer
     ).length;
-
-    if (!user) {
-      alert("You need to be logged in to save results!");
-      return;
-    }
-
+  
+    console.log("Total Questions:", totalQuestions);
+    console.log("Answered Questions:", answeredQuestions);
+    console.log("Correct Answers:", correctAnswers);
+  
     const resultData = {
       testId: testIdcet,
       totalQuestions,
@@ -155,21 +166,29 @@ const TestPage = () => {
       unansweredQuestions: totalQuestions - answeredQuestions,
       markedQuestions: Object.keys(markedQuestions).length,
       submittedAnswers,
-      userId: user.uid, // Now using properly accessed user context
+      userId, // Now correctly using userId from useUser()
       timestamp: Timestamp.now(),
     };
-
+  
+    console.log("Result Data to be stored:", resultData);
+  
     if (window.confirm("Are you sure you want to submit your answers?")) {
       try {
+        console.log("User confirmed submission, proceeding to store results...");
         const docRef = await addDoc(collection(db, "testResultcet"), resultData);
-        console.log("Result stored with ID: ", docRef.id);
+        console.log("Result stored successfully with ID: ", docRef.id);
+  
         navigate("/resultcet", { state: resultData });
       } catch (error) {
         console.error("Error storing result: ", error);
         alert(`Failed to save your test result: ${error.message}`);
       }
+    } else {
+      console.log("User cancelled submission.");
     }
   };
+  
+  
 
   const handleQuestionView = (index) => {
     setCurrentQuestionIndex(index);

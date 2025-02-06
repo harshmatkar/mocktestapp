@@ -157,11 +157,11 @@ const LandingPage = () => {
       <div className="relative min-h-screen flex items-center justify-center">
         <div className="absolute inset-0">
           <img
-            src="https://i.pinimg.com/originals/0a/b3/66/0ab36631dcb1406d5b26ac642b434d8e.jpg"
+            src="https://png.pngtree.com/thumb_back/fw800/background/20221108/pngtree-scientific-formulas-physics-blackboard-education-image_1457080.jpg"
             alt="Background"
             className="w-full h-full object-cover opacity-100"
           />
-          <div className="absolute inset-0 bg-gray-700 opacity-80"></div>
+          <div className="absolute inset-0 bg-gray-900 opacity-80"></div>
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">

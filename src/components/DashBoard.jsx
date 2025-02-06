@@ -127,8 +127,8 @@ const DashBoard = () => {
   const sidebarItems = [
     { icon: Home, label: 'Home', id: 'home', onClick: () => { navigate('/'); setActiveSection('home'); } },
     { icon: Package, label: 'Packs', id: 'packs', onClick: () => { navigate('/packs'); setActiveSection('packs'); } },
-    { icon: AlertCircle, label: 'My Mistakes', id: 'mistakes', onClick: () => { navigate('/mistakes'); setActiveSection('mistakes'); } },
-    { icon: User, label: 'Profile', id: 'profile', onClick: () => { navigate('/profile'); setActiveSection('profile'); } }
+    { icon: User, label: 'Profile', id: 'profile', onClick: () => { navigate('/profile'); setActiveSection('profile'); } },
+    { icon: Book, label: 'SEE Mistakes(CET)', id: 'mistakes', onClick: () => { navigate('/mistakes'); setActiveSection('mistakes'); } }
   ];
 
   const mockTests = [
@@ -209,7 +209,7 @@ const DashBoard = () => {
                   : (isDarkMode ? 'text-gray-300 hover:bg-gray-700' : 'text-gray-600 hover:bg-gray-100')}`}
             >
               <Book size={20} />
-              <span>Notebook</span>
+              <span>SEE MISTAKES(JEE M)</span>
             </button>
           </nav>
 

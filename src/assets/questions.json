@@ -1540,7 +1540,7 @@
     "\\text{4.5 cm}",
     "\\text{20 cm}"
   ],
-  "image":"https://search-static.byjusweb.com/question-images/byjus/ckeditor_assets/pictures/974964/original_Q1.png",
+  "image":"https://i.postimg.cc/P5t97vc3/Screenshot-2025-02-05-202959.png",
   "correctAnswer":"\\text{4 cm}"
 },
 {
@@ -1575,59 +1575,73 @@
   "id": 1,
   "question": "Two blocks of masses \\(10\\) kg and \\(30\\) kg are placed along a vertical line. If \\(10\\) kg block is raised through a height of \\(7\\) cm, then the distance through which other mass should be moved to raise the center of mass of the system by \\(1\\) cm is",
   "options": [
-    "1 cm up",
-    "1 cm down",
-    "2 cm down",
-    "2 cm up"
+    "\\text{1 cm up}",
+    "\\text{1 cm down}",
+    "\\text{2 cm down}",
+    "\\text{2 cm up}"
   ]
+  
+  ,"correctAnswer":"\\text{1 cm down}"
 },
 {
   "testId": 4,
   "id": 2,
   "question": "Statement 1: The plot of atomic number (\\(y\\)-axis) versus the number of neutrons (\\(x\\)-axis) for stable nuclei shows a curvature towards (\\(x\\)-axis) from the line of \\(45^\\circ\\) slope as the atomic number is increased.\n\nStatement 2: Proton-proton electrostatic repulsion begins to overcome attractive forces involving protons and neutrons in heavier nuclides.",
   "options": [
-    "Statement 1 is true, statement 2 is true, statement 2 is correct explanation for statement 1.",
-    "Statement 1 is true, statement 2 is true, statement 2 is not a correct explanation for statement 1.",
-    "Statement 1 is true and statement 2 is false.",
-    "Statement 1 is false and statement 2 is true."
+    "\\text{Statement 1 is true, statement 2 is true, statement 2 is correct explanation for statement 1.}",
+    "\\text{Statement 1 is true, statement 2 is true, statement 2 is not a correct explanation for statement 1.}",
+    "\\text{Statement 1 is true and statement 2 is false.}",
+    "\\text{Statement 1 is false and statement 2 is true.}"
   ]
+  ,"correctAnswer":"\\text{Statement 1 is true, statement 2 is true, statement 2 is correct explanation for statement 1.}"
+
 },
 {
   "testId": 4,
   "id": 3,
   "question": "The stress versus strain graphs for wires of two materials \\(A\\) and \\(B\\) are as shown in figure. Which material is more ductile?",
+  "image":"https://i.postimg.cc/P5t97vc3/Screenshot-2025-02-05-202959.png",
   "options": [
-    "Material \\(A\\)",
-    "Material \\(B\\)",
-    "Both material \\(A\\) and material \\(B\\)",
-    "None of these"
+    "\\text{Material (A)}",
+    "\\text{Material (B)}",
+    "\\text{Both material (A) and material (B)}",
+    "\\text{None of these}"
   ]
+  ,"correctAnswer":"\\text{Material (A)}"
+
 },
 {
   "testId": 4,
   "id": 4,
+  "image":"https://i.postimg.cc/0QpCxcKp/Screenshot-2025-02-05-204049.png",
   "question": "A given ray of light suffers minimum deviation in an equilateral prism \\(P\\). Additional prisms \\(Q\\) and \\(R\\) of identical shape and of same material as \\(P\\) are now added as shown in the figure. The ray will now suffer",
   "options": [
-    "greater deviation.",
-    "no deviation.",
-    "same deviation.",
-    "total internal reflection."
+    "\\text{greater deviation.}",
+    "\\text{no deviation.}",
+    "\\text{same deviation.}",
+    "\\text{total internal reflection.}"
   ]
+  ,"correctAnswer":"\\text{same deviation.}"
+
 },
 
 {
   "id": 5,
   "testId": 4,
   "question": "The output Y of the logic circuit shown in figure is best represented as:",
+  "image":"https://i.postimg.cc/J05K3P11/Screenshot-2025-02-05-203750.png",
   "options": [
       "A \\cdot \\bar{B} \\cdot \\bar{C}",
       "A + \\bar{B} \\cdot C",
       "\\bar{A} + B \\cdot \\bar{C}",
       "\\bar{A} + B \\cdot C"
   ]
+  ,"correctAnswer":"\\bar{A} + B \\cdot \\bar{C}"
+
 },
 {
   "id": 6,
+  "image":"https://i.postimg.cc/brp9vk14/Screenshot-2025-02-05-204044.png",
   "testId": 4,
   "question": "An infinitely long wire carrying current I is along X-axis such that its one end is at point (0,0) while the wire extends up to infinity. The magnitude of magnetic field strength at point P(x_0, y_0) is:",
   "options": [
@@ -1636,20 +1650,23 @@
       "\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 - \\frac{a}{\\sqrt{a^2 + b^2}} \\right)",
       "\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 + \\frac{a}{\\sqrt{a^2 + b^2}} \\right)"
   ]
+  ,"correctAnswer":"\\frac{\\mu_0 I}{4 \\pi r} \\left( 1 - \\frac{b}{\\sqrt{a^2 + b^2}} \\right)"
 },
 {
   "id": 7,
   "testId": 4,
   "question": "The correct match between the entries in column I and column II are:\nColumn I: {Microwave, Gamma ray, X-ray}\nColumn II: {10^{-2} \\text{m}, 10^{-10} \\text{m}, 10^{-8} \\text{m}}",
   "options": [
-      "(a)-(ii), (b)-(i), (c)-(iii)",
-      "(a)-(ii), (b)-(iii), (c)-(i)",
-      "(a)-(i), (b)-(iii), (c)-(ii)",
-      "(a)-(iii), (b)-(ii), (c)-(i)"
+      "\\text{(a)-(ii), (b)-(i), (c)-(iv), (d)-(iii)}",
+      "\\text{(a)-(i), (b)-(iii), (c)-(iv), (d)-(ii)}",
+      "\\text{(a)-(iii), (b)-(ii), (c)-(i), (d)-(iv)}",
+      "\\text{(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)}"
   ]
+  ,"correctAnswer":"\\text{(a)-(iv), (b)-(ii), (c)-(i), (d)-(iii)}"
 },
 {
   "id": 8,
+  "image":"https://i.postimg.cc/D06d40g0/Screenshot-2025-02-05-204039.png",
   "testId": 4,
   "question": "If the velocity of a particle moving along a straight line decreases linearly with its displacement as \\(20 \\ m/s\\)  to value appoching zero at \\( s = 30 \\ \\text{m} \\), then acceleration of the particle at \\(s = 15\\) is:",
   "options": [
@@ -1658,9 +1675,11 @@
       "-1 \\ \\text{m/s}^2",
       "1 \\ \\text{m/s}^2"
   ]
+  ,"correctAnswer":""
 },
 {
   "id": 9,
+  "image":"https://i.postimg.cc/kXjvnVGh/Screenshot-2025-02-05-204032.png",
   "testId": 4,
   "question":"Find the time period of the body (mass m), show in the figure, when displaced slightly in vertical direction",
   "options": [
@@ -1669,10 +1688,12 @@
       "2 \\pi \\sqrt{\\frac{3m}{k}}",
       " \\pi \\sqrt{\\frac{3m}{k}}"
   ]
+  ,"correctAnswer":"2 \\pi \\sqrt{\\frac{3m}{k}}"
 },
 {
   "id": 10,
   "testId": 4,
+  "image":"https://i.postimg.cc/CxXCqWjG/Screenshot-2025-02-05-204027.png",
   "question":"The value of alternating emf E in the given circuit will be",
   "options": [
       "220 \\ \\text{V}",
@@ -1680,6 +1701,7 @@
       "100 \\ \\text{V}",
       "20 \\ \\text{V}"
   ]
+  ,"correctAnswer":"100 \\ \\text{V}"
 },
 
 {
@@ -1692,9 +1714,11 @@
     "\\text{depends both on the intensity of the radiation and the metal used}",
     "\\text{is the same for all metals and independent of the intensity of the radiation}"
   ]
+  ,"correctAnswer":"\\text{is the same for all metals and independent of the intensity of the radiation}"
 },
 { 
 "testId":4,  "id": 12,
+"image":"https://i.postimg.cc/FKSygDZ2/Screenshot-2025-02-05-204022.png",
   "question": "In the figure, there is a conducting wire having current \\(i\\) and which has a shape of closed half ellipse \\(\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1\\) is kept in a uniform magnetic field \\(B\\) as shown. The magnitude of magnetic dipole moment of loop and torque acting on it are:",
   "options": [
     "\\pi ab i, 0",
@@ -1702,16 +1726,19 @@
     "\\frac{\\pi ab i}{2}, \\pi ab i B",
     "\\frac{\\pi ab i}{2}, 0"
   ]
+  ,"correctAnswer":"\\frac{\\pi ab i}{2}, 0"
 },
 { 
 "testId":4,  "id": 13,
   "question": "In the network shown in the Fig, each resistance is \\(1 \\Omega\\). The effective resistance between A and B is:",
+  "image":"https://i.postimg.cc/mDN7KkKj/Screenshot-2025-02-05-204018.png",
   "options": [
     "\\frac{4}{3} \\Omega",
     "\\frac{3}{2} \\Omega",
     "7 \\Omega",
-    "\\frac{5}{3} \\Omega"
+    "\\frac{8}{7} \\Omega"
   ]
+  ,"correctAnswer":"\\frac{8}{7} \\Omega"
 },
 { 
 "testId":4,  "id": 14,
@@ -1722,25 +1749,30 @@
     "\\text{Assertion is true but Reason is false.}",
     "\\text{Assertion is false but Reason is true.}"
   ]
+  ,"correctAnswer":"\\text{Both Assertion and Reason are true but Reason is not correct explanation of the Assertion.}"
 },
 { 
 "testId":4,  "id": 15,
   "question": "Match the physical quantities with their correct SI units.\n(A) Planck’s constant (I) (\\text{kg m}^2(B) \n Torque(C) Weight\n(D) Specific volume\\nList-I\\n \text{s}^{-1}\\)\n(II) \\(\text{kg m}^{-1} \text{s}^{-2}\\)\n(III) \\(\text{kg m}^2 \text{s}^{-2}\\)\n(IV) \\(\text{m}^3 \text{kg}^{-1}\\)\nThe correct match is:",
   "options": [
-    "A = II, B = IV, C = I, D = III",
-    "A = II, B = III, C = I, D = IV",
-    "A = IV, B = I, C = II, D = III"
+    "\\text{A = II, B = IV, C = I, D = III}",
+    "\\text{A = III, B = IV, C = I, D = II}",
+    "\\text{A = IV, B = I, C = II, D = III}",
+    "\\text{A = II, B = III, C = I, D = IV}"
   ]
+  ,"correctAnswer":"\\text{A = III, B = IV, C = I, D = II}"
 },
 { 
 "testId":4,  "id": 16,
   "question": "Four charges are arranged at the corners of a square \\(ABCD\\) as shown in the figure. The force on the charge kept at the centre \\(O\\) is:",
+  "image":"https://i.postimg.cc/vHm5SQh7/Screenshot-2025-02-05-204011.png",
   "options": [
     "\\text{zero}",
     "\\text{along the diagonal} \\ AC ",
     "\\text{along the diagonal} \\ BD",
     "\\text{along perpendicular to side} \\ AB"
   ]
+  ,"correctAnswer":"\\text{along the diagonal} \\ BD"
 },
 {
   "testId":4,
@@ -1752,10 +1784,12 @@
     " (5\\sqrt{2} - 1) R ",
     " (5\\sqrt{2} + 1) R "
   ]
+  ,"correctAnswer":"(\\frac{\\sqrt{5}}{2} - 1) R"
 },
 {
   "testId":4,
   "id": 18,
+  "image":"https://i.postimg.cc/FHd3ND27/Screenshot-2025-02-05-204006.png",
   "question": "Block A of mass 2 kg is placed over block B of mass 8 kg. The combination is placed over a smooth horizontal surface. Coefficient of friction between A and B is 0.5. A horizontal force of 20 N is applied on block B. The force of friction on A is:",
   "options": [
     "\\text{10 N}",
@@ -1763,6 +1797,7 @@
     "\\text{6 N}",
     "\\text{4 N}"
   ]
+  ,"correctAnswer":"\\text{4 N}"
 },
 {
   "testId":4,
@@ -1774,6 +1809,7 @@
     "\\text{1}",
     "\\text{-2}"
   ]
+  ,"correctAnswer":"\\text{-2}"
 },
 {
   "testId":4,
@@ -1785,36 +1821,42 @@
     " \\frac{2}{3} \\frac{P_0 V_0}{R} ",
     " \\frac{9}{7} \\frac{P_0 V_0}{R} "
   ]
+  ,"correctAnswer":"\\frac{4}{5} \\frac{P_0 V_0}{R} "
 },
 {
   "testId":4,
   "id": 21,
   "question": "The ends Q and R of two thin wires, PQ and RS, are soldered (joined) together. Initially each of the wires has a length of 1 at 10°C. Now the end P is maintained at 10°C, while the end S is heated and maintained at 400°C. The system is thermally insulated from its surroundings. If the thermal conductivity of wire PQ is twice that of the wire RS and the coefficient of linear thermal expansion of PQ is \\( 1.2 \\times 10^{-5} K^{-1} \\), the change in length of the wire PQ is: (Mark answer in mm to nearest whole number)",
   "options": []
+  ,"correctAnswer":"1"
 },
 {
   "testId":4,
   "id": 22,
   "question": "The densities of two solid spheres A and B of the same radii R vary with radial distance r as \\( \\rho_A(r) = k \\left( \\frac{r}{R} \\right) \\) and \\( \\rho_B(r) = k \\left( \\frac{r}{R} \\right)^5 \\), respectively, where k is a constant. The moments of inertia of the individual spheres about axes passing through their centres are \\( I_A \\) and \\( I_B \\), respectively. If \\( \\frac{I_A}{I_B} = n \\), the value of \\( n \\) is:",
   "options": []
+  ,"correctAnswer":"6"
 },
 {
   "testId":4,
   "id": 23,
   "question": "A drop of liquid of radius \\( R = 10^{-2} m \\) having surface tension \\( S = \\frac{0.1}{4 \\pi} Nm^{-1} \\) divides itself into K identical drops. In the process the total change in the surface energy \\( \\Delta U = 10^{-3} J \\). If \\( K = 10^n \\) then the value of \\( n \\) is:",
   "options": []
+  ,"correctAnswer":"6"
 },
 {
   "testId":4,
   "id": 24,
   "question": "If a coil of 40 turns and area \\( 40 \\text{ cm}^2 \\) is suddenly removed from a magnetic field, it is observed that a charge of \\( 2.0 \\times 10^{-4} C \\) flows into the coil. If the resistance of the coil is \\( 80 \\Omega \\), the magnetic flux density is:",
   "options": []
+  ,"correctAnswer":"1"
 },
 {
   "testId":4,
   "id": 25,
   "question":"Standing waves are produced by the superposition of two waves \n \\( y = 0.05 \\sin(3\\pi t - 2x) \\) \n \\( y = 0.05 \\sin(3\\pi t - 2x) \\) \n where, \\(x \\ and \\ y\\) are in metres and t is in second. If amplitude of the particle at \\(x = 0.5\\) is \\(R\\), find \\(1000R\\)",
   "options": []
+  ,"correctAnswer":"54"
 },
 
 
@@ -1880,7 +1922,8 @@
     {
       "id": 31,
       "testId": 4,
-      "question": "Find the structure of \\( X \\), given:\n\n\\[ \\text{X} (C_xH_yO_z) + \\text{CH}_3\\text{CH}_2\\text{COO}^- \\xrightarrow[\\text{KMnO}_4/\\text{OH}^-]{\\text{OH}^-} \\text{Y} + \\text{COOH} \\] \n\n(Image of structure provided)",
+      "question": "Find the structure of \\( X \\), given:",
+      "image":"https://i.postimg.cc/g04Y5PNR/Screenshot-2025-02-05-204801.png",
       "options": [
         "\\text{(Image of structure option 1)}",
         "\\text{(Image of structure option 2)}",
@@ -1893,20 +1936,22 @@
         "testId":4,
         "question": "Given below are two statements: one is labeled as Assertion (A) and the other is labeled as Reason (R):\n\nAssertion (A): The \\(\\text{H} - \\text{O} - \\text{H}\\) bond angle in a water molecule is \\(104.5^\\circ\\).\nReason (R): The lone pair–lone pair repulsion of electrons is higher than the bond pair–bond pair repulsion.\n\nChoose the correct answer:",
         "options": [
-          "A is false but R is true.",
-          "Both A and R are true, but R is not the correct explanation of A.",
-          "A is true but R is false.",
-          "Both A and R are true, and R is the correct explanation of A."
+            "\\text{A is false but R is true.}",
+            "\\text{Both A and R are true, but R is not the correct explanation of A.}",
+            "\\text{A is true but R is false.}",
+            "\\text{Both A and R are true, and R is the correct explanation of A.}"
         ]
       },
       {
         "id": 33,
         "testId":4,
-        "question": "The compound, whose stereo-chemical formula is written below, exhibits \\(x\\) geometrical isomers and \\(y\\) optical isomers:\n\\[ \\text{CH}_3 - \\text{C} = \\text{CH} - \\text{CH}_2 - \\text{C}(-\\text{OH}) - \\text{CH}_3 \\]\n\nThe values of \\(x\\) and \\(y\\) are:",
+        "image":"https://i.postimg.cc/g0GzN0qm/Screenshot-2025-02-05-204813.png",
+        "question": "The compound, whose stereo-chemical formula is written below, exhibits \\(x\\) geometrical isomers and \\(y\\) optical isomers:",
         "options": [
-          "\\(4\\) and \\(4\\)",
-          "\\(2\\) and \\(2\\)",
-          "\\(2\\) and \\(0\\)"
+            "\\text{(4) and (4)}",
+            "\\text{(2) and (0)}",
+            "\\text{(2) and (2)}",
+            "\\text{(4) and (2)}"
         ]
       },
       {
@@ -1914,32 +1959,35 @@
         "testId":4,
         "question": "Consider the following statements:\n1. The entropy in an isolated system with only \\(p - V\\) work is always maximized at equilibrium.\n2. It is possible for the entropy of a closed system to increase substantially in an irreversible process.\n3. Without the help of an external agent, spontaneous processes cannot be reversed.\n4. \\(\\Delta S_{\\text{system}} = 0\\) for reversible processes in any system.\n\nWhich of the above statement(s) are correct?",
         "options": [
-          "I, II, III",
-          "II and III",
-          "I, IV",
-          "III and IV"
-        ]
+            "\\text{I, II, III}",
+            "\\text{II and III}",
+            "\\text{I, IV}",
+            "\\text{III and IV}"
+          ]
       },
       {
         "id": 35,
         "testId":4,
         "question": "Na\\(_2\\)B\\(_4\\)O\\(_7\\)·10H\\(_2\\)O is correctly represented as:",
         "options": [
-          "Na\\([\\text{B}_4\\text{O}_5(\\text{OH})_4]\\)·8H\\(_2\\)O",
-          "2NaBO\\(_2\\) + Na\\(_2\\)B\\(_4\\)O\\(_7\\)·10H\\(_2\\)O",
-          "Na\\([\\text{B}_4(\\text{H}_2\\text{O})_2\\text{O}_7]\\)·6H\\(_2\\)O",
-          "None of the above"
+
+          "Na_2 \\cdot [B_4O_4(OH)_4] \\cdot 8H_2O",
+          "2NaBO_2 \\cdot Na_2B_2O_3 \\cdot 10H_2O",
+          "Na_2 \\cdot [B_4(H_2O)_4O_7)] \\cdot 6H_2O",
+          "\\text{None of these}"
+    
         ]
       },
       {
         "id": 36,
        "testId":4,
+       "image":"https://i.postimg.cc/13GRGFFv/Screenshot-2025-02-05-204823.png",
         "question": "Match the chemical conversions in List I with appropriate reagents in List II and select the correct answer using the code given below:\n\nList I:\n\\(P. \\text{C}l \\to \\text{Cl}\\)\n\\(Q. \\text{ONa} \\to \\text{OEth}\\)\n\\(R. \\text{Br} \\to \\text{OH}\\)\n\\(S. \\text{Me} \\to \\text{EtBr}\\)\n\nList II:\n(i) \\(\\text{H}_2\\text{O}/\\text{NaOH}\\)\n(ii) \\(\\text{NaBH}_4\\)\n(iii) \\(\\text{B}\\text{H}_3\\)\n\nCode:\n\\(P-III, Q-II, R-I, S-IV\\)",
         "options": [
-          "P - III, Q - II, R - I, S - IV",
-          "P - III, Q - I, R - II, S - IV",
-          "P - I, Q - III, R - II, S - IV",
-          "P - II, Q - III, R - I, S - IV"
+          "\\text{P - III, Q - II, R - I, S - IV}",
+          "\\text{P - III, Q - I, R - II, S - IV}",
+          "\\text{P - I, Q - III, R - II, S - IV}",
+          "\\text{P - II, Q - III, R - I, S - IV}"
         ]
       },
       {
@@ -1947,8 +1995,10 @@
         "testId":4,
         "question": "Na\\(^+\\), Mg\\(^{2+}\\), Al\\(^{3+}\\), and Si\\(^{4+}\\) ions are isoelectronic. The trend of ionic radii of these ions is:",
         "options": [
-          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+          "Na^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}",
+          "Na^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}",
+          "Na^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}",
+          "Na^+ < \\) Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}"
         ]
       },
       {
@@ -1956,10 +2006,10 @@
         "testId":4,
         "question": "Identify the incorrect statement",
         "options": [
-          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+          "CuSO_4 \\text{reacts with KCl and glucose in aqueous solution to give} \\ Cu_2Cl_2",
+          "CuSO_4 \\text{reacts with KI in aquueous solution to give} \\ Cu_2I_2",
+          "CuSO_4 \\ \\text{reacts with NaOH and glucose in aqueous medium to give} \\ Cu_2O",
+          "CuSO_4 \\ \\text{on strong heating gives Cuo}"
         ]
       },
       {
@@ -1967,10 +2017,10 @@
         "testId":4,
         "question": "Identify the incorrect statement",
         "options": [
-          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+          "\\text{42.64 , 21.10}",
+          "\\text{21.10 , 42.64}",
+          "\\text{25.59 , 42.64}",
+          "\\text{42.64 , 25.59}"
         ]
       },
       {
@@ -1987,12 +2037,13 @@
       {
         "id": 41,
         "testId":4,
-        "question": "Identify the incorrect statement",
+        "image":"https://i.postimg.cc/15N3z23h/Screenshot-2025-02-05-204835.png",
+        "question": "Various products formed on oxidation of 2,5-demethylhexan-3-one are",
         "options": [
-          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+          "\\text{(i) and (iii)}",
+          "\\text{(i),(ii) and (iii)}",
+          "\\text{(i),(ii),(iii) and (iv)}",
+          "\\text{(iii) and (iv)}"
         ]
       },
       {
@@ -2011,10 +2062,11 @@
         "testId":4,
         "question": "Please select the correct statement",
         "options": [
-          "Na\\(^+ > \\)Mg\\(^{2+} > \\)Al\\(^{3+} > \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)",
-          "Na\\(^+ < \\)Mg\\(^{2+} < \\)Al\\(^{3+} < \\)Si\\(^{4+}\\)"
+         
+            "\\text{Co (III) is stabilised in presence of weak field ligands, while Co (II) is stabilised in presence of strong field ligand.}",
+            "\\text{Four coordinated complexes of Pd (II) and Pt (II) are paramagnetic and square planar.}",
+             "[ \\text{[Ni(CN)}_4^{4-}] \\ \\text{ion and} [ \\text{[Ni(CO)}_4] \\ \\text{are tetrahedral and square planar respectively.}",
+             "\\text{Ni}^{2+} \\text{ ion does not form inner orbital octahedral complexes in presence of weak ligand fields.}"
         ]
       },
       {
@@ -2064,35 +2116,20 @@
       {
         "id": 48,
         "testId":4,
-        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
-        "options": [
-          "\\text{All are correct}",
-          "\\text{All execpt two}",
-          "\\text{Only 1 and 4}",
-          "\\text{Only 1 and 2}"
-        ]
+        "question": "Total number of monochlorinated products of \\(CH_3\\)-\\(CH_2\\)\\(-CH_2\\)-\\(CH_3\\) is"
+        
       },
       {
         "id": 49,
         "testId":4,
-        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
-        "options": [
-          "\\text{All are correct}",
-          "\\text{All execpt two}",
-          "\\text{Only 1 and 4}",
-          "\\text{Only 1 and 2}"
-        ]
+        "question": "Calculate the EAN of central atom in the dollowing complex \\([Cr(CO)_6]\\)"
+        
       },
       {
         "id": 50,
         "testId":4,
-        "question": "Reed the following statements and identify the correct ones regarding polysaccharides \n 1) Polysaccharides are made of many sugars joined together. \n 2)Cellulose is a polysaccharide made of less than 10 monomeric units \n 3) Polysaccharides are found as a part of the acid insoluble pellet. \n 4) In a polysaccharide chain, the right end is called reducing end and the left end is called non-reducing end",
-        "options": [
-          "\\text{All are correct}",
-          "\\text{All execpt two}",
-          "\\text{Only 1 and 4}",
-          "\\text{Only 1 and 2}"
-        ]
+        "question": "Calculate the difference in the hest of formula(in calories) of carbon monoxide at constant pressure and at constant volume at 27°C."
+        
       },
       
 

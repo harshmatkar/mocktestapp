@@ -38,6 +38,7 @@ const MockTests = () => {
 
   const handleCancelCountdown = () => {
     setSelectedTest(null);
+    navigate('/mocktestslist');
     setCountdown(0);
   };
 
