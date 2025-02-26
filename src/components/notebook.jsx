@@ -4,6 +4,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { useUser } from "./UserContext.jsx";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import questionsData from "../assets/questions.json";
+import {Box} from "@mui/material";
 
 const mathJaxConfig = {
   loader: { load: ["[tex]/html"] },
@@ -46,6 +47,8 @@ const NotebookPage = () => {
         );
         const submittedAnswers = querySnapshot.docs[0].data().submittedAnswers || [];
 
+        
+
         const questionsWithStatus = testQuestions.map(question => {
           const statusEntry = allStatuses.find(s =>
             s.questionId.toString() === question.id.toString()
@@ -53,18 +56,18 @@ const NotebookPage = () => {
 
           const normalizedStatus = statusEntry?.status?.toLowerCase().trim() || "unattempted";
           const statusMapping = {
-            "correct solved": "correct",
-            "wrong solved": "wrong",
-            "not visited": "unattempted"
+            "correct solved": "correct +4",
+            "wrong solved": "wrong -1",
+            "not visited": "unattempted 0"
           };
 
-          const userAnswerEntry = submittedAnswers.find(
-            answer => answer.questionId === question.id
-          );
-          const userAnswer = userAnswerEntry ? userAnswerEntry.userAnswer : "Not Attempted"; // User's answer
-          const correctAnswer = question.correctAnswer || "Not Provided"; // Correct answer
+          
+          const userAnswer = submittedAnswers[question.id] || "Not Attempted"; // User's answer
+const correctAnswer = question.correctAnswer || "Not Provided"; // Correct answer
+
 
           return {
+            questionId: question.id,
             ...question,
             status: statusMapping[normalizedStatus] || normalizedStatus,
             userAnswer,
@@ -90,9 +93,9 @@ const NotebookPage = () => {
 
   const getStatusColor = (status) => {
     switch (status) {
-      case 'correct': return 'bg-green-900 text-green-100';
-      case 'wrong': return 'bg-red-900 text-red-100';
-      case 'marked': return 'bg-yellow-900 text-yellow-100';
+      case 'correct +4': return 'bg-green-900 text-green-100';
+      case 'wrong -1': return 'bg-red-900 text-red-100';
+      case 'marked 0': return 'bg-yellow-900 text-yellow-100';
       default: return 'bg-gray-700 text-gray-100';
     }
   };
@@ -100,9 +103,9 @@ const NotebookPage = () => {
   const filteredQuestions = questions.filter(question => {
     switch (selectedStatus) {
       case 'all': return true;
-      case 'correct': return question.status === 'correct';
-      case 'wrong': return question.status === 'wrong';
-      case 'unattempted': return question.status === 'unattempted';
+      case 'correct': return question.status.startsWith('correct');
+      case 'wrong': return question.status.startsWith('wrong');
+      case 'unattempted': return question.status.startsWith('unattempted');
       default: return true;
     }
   });
@@ -112,7 +115,10 @@ const NotebookPage = () => {
       <div className="min-h-screen bg-gray-900 text-gray-100">
         <div className="container mx-auto p-4 max-w-4xl">
           <div className="flex flex-wrap gap-4 mb-6">
+          <h3 className="text-red-600 text-sm mb-1">Solutions are not uploaded yet we are working on it</h3>
+          <h3 className="text-red-500 text-sm mb-1">**Use desktop mode if complete question is not displayed**</h3>
             <div className="flex-1 min-w-[200px]">
+              
               <label className="block text-sm font-medium text-gray-300 mb-2">Select Test:</label>
               <select
                 className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-gray-100 
@@ -188,33 +194,94 @@ const NotebookPage = () => {
                   </button>
                 </div>
 
+                <p className="text-sm text-gray-400">Question ID: {question.questionId}</p>
+
                 <div className="p-4">
-                  <MathJax dynamic key={`question-${i}`}>
-                    <div className="prose prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: question.question }} />
-                  </MathJax>
-                </div>
+  <MathJax dynamic key={`question-${i}`}>
+    <div className="prose prose-invert max-w-none">
+      {question.question.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {index > 0 && <div className="h-1" />} {/* Line spacing */}
+          <div dangerouslySetInnerHTML={{ __html: line }} />
+        </React.Fragment>
+      ))}
+    </div>
+  </MathJax>
+</div>
 
-                <div className="mt-4">
-                  <p className="text-sm font-medium text-gray-300">Your Answer:</p>
-                  <MathJax dynamic key={`user-answer-${i}`}>
-                    <div className="text-sm text-gray-400">
-                      {question.userAnswer.includes("\\") 
-                        ? `\\(${question.userAnswer}\\)` 
-                        : `\\text{${question.userAnswer}}`}
-                    </div>
-                  </MathJax>
-                </div>
+                {question.image && (
+                    <Box
+                        component="img"
+                        src={question.image}
+                        alt="Question related image"
+                        sx={{ mt: 2, maxWidth: "100%", maxHeight: "20vh", objectFit: "contain" }}
+                    />
+                )}
 
-                <div className="mt-4">
-                  <p className="text-sm font-medium text-gray-300">Correct Answer:</p>
-                  <MathJax dynamic key={`correct-answer-${i}`}>
-                    <div className="text-sm text-gray-400">
-                      {question.correctAnswer.includes("\\") 
-                        ? `\\(${question.correctAnswer}\\)` 
-                        : `\\text{${question.correctAnswer}}`}
-                    </div>
-                  </MathJax>
-                </div>
+<div className="mt-4">
+  <p className="text-sm font-medium text-gray-300">Your Answer:</p>
+  {question.userAnswer === "Not Attempted" ? (
+    <div className="text-sm text-gray-400">{question.userAnswer}</div>
+  ) : question.userAnswer.match(/\.(jpg|jpeg|png|gif)$/i) ? (
+    <Box
+      component="img"
+      src={question.userAnswer.startsWith("http") ? question.userAnswer : `/images/${question.userAnswer}`}
+      alt="User's answer"
+      sx={{ 
+        mt: 1,
+        maxWidth: "100%",
+        maxHeight: "200px",
+        objectFit: "contain",
+        "&:hover": { backgroundColor: "#f8f8f8" }
+      }}
+      onError={(e) => e.target.style.display = "none"}
+    />
+  ) : (
+    <MathJax dynamic key={`user-answer-${i}`}>
+      <div className="text-sm text-gray-400">
+        {question.userAnswer.includes("\\") 
+          ? `\\(${question.userAnswer}\\)` 
+          : (question.id >= 21 && question.id <= 25) || 
+            (question.id >= 46 && question.id <= 50) || 
+            (question.id >= 71 && question.id <= 75) 
+            ? question.userAnswer 
+            : `\\text{${question.userAnswer}}`}
+      </div>
+    </MathJax>
+  )}
+</div>
+
+
+<div className="mt-4">
+  <p className="text-sm font-medium text-gray-300">Correct Answer:</p>
+  {question.correctAnswer.match(/\.(jpg|jpeg|png|gif)$/i) ? (
+    <Box
+      component="img"
+      src={question.correctAnswer.startsWith("http") ? question.correctAnswer : `/images/${question.correctAnswer}`}
+      alt="Correct answer"
+      sx={{ 
+        mt: 1,
+        maxWidth: "100%",
+        maxHeight: "200px",
+        objectFit: "contain",
+        "&:hover": { backgroundColor: "#f8f8f8" }
+      }}
+      onError={(e) => e.target.style.display = "none"}
+    />
+  ) : (
+    <MathJax dynamic key={`correct-answer-${i}`}>
+      <div className="text-sm text-gray-400">
+        {question.correctAnswer.includes("\\") 
+          ? `\\(${question.correctAnswer}\\)` 
+          : (question.id >= 21 && question.id <= 25) || 
+            (question.id >= 46 && question.id <= 50) || 
+            (question.id >= 71 && question.id <= 75) 
+            ? question.correctAnswer 
+            : `\\text{${question.correctAnswer}}`}
+      </div>
+    </MathJax>
+  )}
+</div>
 
                 {expandedQuestions[question.id] && (
                   <div className="p-4 bg-gray-800 border-t border-gray-700">

@@ -124,6 +124,7 @@ const Instructions = () => {
                 <li>Auto-submit at time expiration</li>
                 <li>Verify question summary before submission</li>
               </ul>
+              <h3 style={{ fontFamily: 'Droid Sans, sans-serif', fontSize: '13.33px', color: 'red' }}>***Answers are not saved unless submitted, reload or back erases your responces***</h3>
               </Box>
               {/* Agreement Checkbox */}
         <FormControlLabel

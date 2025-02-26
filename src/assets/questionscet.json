@@ -478,6 +478,5155 @@
     "subject": "Chemistry",
     "question": "What is the chemical formula for ammonia?",
     "options": ["NH3", "H2O", "CO2", "CH4"],
-    "correct": 0
-  }
+    "correct": "NH3"
+  },
+  {
+    "id": 1,
+    "testIdcet": 2,
+    "subject": "Physics",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": "H2O"
+  },
+  {
+    "id": 2,
+    "testIdcet": 2,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": "CO2"
+  },
+  {
+    "id": 3,
+    "testIdcet": 2,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": "CH4"
+  },
+  {
+    "id": 4,
+    "testIdcet": 2,
+    "subject": "Chemistry",
+    "question": "What is the chemical formula for ammonia?",
+    "options": ["NH3", "H2O", "CO2", "CH4"],
+    "correct": "NH3"
+  },
+
+  {
+    "question": "For the same cross-sectional area and for a given load, the ratio of depressions for the beam of a square cross-section and circular cross-section is",
+    "options": [
+      "3:π",
+      "π:3",
+      "1:π",
+      "π:1"
+    ],
+    "id": 1,
+    "testIdcet": 3
+  },
+  {
+    "question": "If three equal masses m are placed at the three vertices of an equilateral triangle of side l/m then what force acts on a particle of mass 2m placed at the centroid?",
+    "options": [
+      "cm²",
+      "2πm²",
+      "Zero",
+      "cm²"
+    ],
+    "id": 2,
+    "testIdcet": 3
+  },
+  {
+    "question": "In a reverse biased diode when the applied voltage changes by 1V, the current is found to change by 0.5 μA. The reverse bias resistance of the diode is",
+    "options": [
+      "2 × 10^5 Ω",
+      "2 × 10^6 Ω",
+      "200 Ω",
+      "2 Ω"
+    ],
+    "id": 3,
+    "testIdcet": 3
+  },
+  {
+    "question": "Two simple harmonic motions are represented by the equations y₁ = 0.1 sin (100πt + π/3) and y₂ = 0.1 cos (100πt). The phase difference of the velocity of particle 1 with respect to the velocity of particle 2 is",
+    "options": [
+      "π/3",
+      "-π/6",
+      "π/6",
+      "-π/3"
+    ],
+    "id": 4,
+    "testIdcet": 3
+  },
+  {
+    "question": "A stretched wire 60 cm long is vibrating with its fundamental frequency of 256 Hz. If the length of the wire is decreased to 15 cm and the tension remains the same. Then the fundamental frequency of the vibration of the wire will be",
+    "options": [
+      "1024",
+      "572",
+      "256",
+      "64"
+    ],
+    "id": 5,
+    "testIdcet": 3
+  },
+  {
+    "question": "A soap film of surface tension 3 × 10⁻² formed in a rectangular frame can support a straw as shown in Fig. If g = 10 ms⁻², the mass of the straw is",
+    "options": [
+      "0.006 g",
+      "0.06 g",
+      "0.6 g",
+      "6 g"
+    ],
+    "id": 6,
+    "testIdcet": 3
+  },
+  {
+    "question": "A circular disc of radius R is removed from a bigger circular disc of radius 2R such that the circumferences of the discs coincide. The centre of mass of the new disc is αR from the centre of the bigger disc. The value of α is",
+    "options": [
+      "1/4",
+      "1/3",
+      "1/2",
+      "1/6"
+    ],
+    "id": 7,
+    "testIdcet": 3
+  },
+  {
+    "question": "Two sources of equal emf are connected to an external resistance R. The internal resistance of the two sources are R₁ and R₂ (R₂ > R₁). If the potential difference across the source having internal resistance R₂ is zero, then",
+    "options": [
+      "R = R₂ - R₁",
+      "R = R₂ × (R₁ + R₂) / (R₂ - R₁)",
+      "R = R₁R₂ / (R₂ - R₁)",
+      "R = R₁R₂ / (R₁ - R₂)"
+    ],
+    "id": 8,
+    "testIdcet": 3
+  },
+  {
+    "question": "A vessel contains oil (density = 0.8 gm/cm³) over mercury (density = 13.6 gm/cm³). A homogeneous sphere floats with half of its volume immersed in mercury and the other half in oil. The density of the material of the sphere in gm/cm³ is",
+    "options": [
+      "3.3",
+      "64",
+      "7.2",
+      "12.8"
+    ],
+    "id": 9,
+    "testIdcet": 3
+  },
+  {
+    "question": "A current of 1 ampere flows in a wire forming a circular arc of radius r metres subtending an angle θ at the centre as shown. The magnetic field at the centre O in tesla is",
+    "options": [
+      "μ₀Iθ / 4π",
+      "μ₀Iθ / 2π",
+      "μ₀ Iθ / 10",
+      "μ₀ Iθ / 4"
+    ],
+    "id": 10,
+    "testIdcet": 3
+  },
+  {
+    "question": "A broadcast radio transmitter radiates 12 kW when percentage of modulation is 50%, then the unmodulated carrier power is",
+    "options": [
+      "5.67 kW",
+      "7.15 kW",
+      "9.26 kW",
+      "12 kW"
+    ],
+    "id": 11,
+    "testIdcet": 3
+  },
+  {
+    "question": "Two trains are moving towards each other with speeds of 20 m/s and 15 m/s relative to the ground. The first train sounds a whistle of frequency 600 Hz. The frequency of the whistle heard by a passenger in the second train before the train meets, is (the speed of sound in air is 340 m/s)",
+    "options": [
+      "600 Hz",
+      "585 Hz",
+      "645 Hz",
+      "666 Hz"
+    ],
+    "id": 12,
+    "testIdcet": 3
+  },
+  {
+    "question": "A particle of mass M is situated at the centre of a spherical shell of same mass and radius a. The gravitational potential at a point situated at a/2 distance from the centre, will be:",
+    "options": [
+      "-3GM / a",
+      "-2GM / a",
+      "-GM / a",
+      "-4GM / a"
+    ],
+    "id": 13,
+    "testIdcet": 3
+  },
+  {
+    "question": "For a particle executing SHM the displacement is given by x = A cos ωt. Identify the graph which represents the variation of potential energy (P.E.) as a function of time t and displacement x.",
+    "options": [
+      "I, III",
+      "II, IV",
+      "III, II",
+      "I, IV"
+    ],
+    "id": 14,
+    "testIdcet": 3
+  },
+  {
+    "question": "A beam of electrons is moving with constant velocity in a region having simultaneous perpendicular electric and magnetic fields of strength 20 V/m and 0.5 T respectively at right angles to the direction of motion of the electrons. Then the velocity of the electrons must be",
+    "options": [
+      "8 m/s",
+      "20 m/s",
+      "40 m/s",
+      "1 m/s"
+    ],
+    "id": 15,
+    "testIdcet": 3
+  },
+  {
+    "question": "The period of oscillation of a magnet in a vibration magnetometer is 2 sec. The period of oscillation of a magnet whose magnetic moment is four times that of the first magnet is",
+    "options": [
+      "1 sec",
+      "5 sec",
+      "8 sec",
+      "0.5 sec"
+    ],
+    "id": 16,
+    "testIdcet": 3
+  },
+  {
+    "question": "A cell having an emf ε and internal resistance r is connected across a variable external resistance R. As the resistance R is increased, the plot of potential difference V across R is given by",
+    "options": [
+      "Graph A",
+      "Graph B",
+      "Graph C",
+      "Graph D"
+    ],
+    "id": 17,
+    "testIdcet": 3
+  },
+
+  {
+    "question": "The transition from the state \\( n = 4 \\) to \\( n = 3 \\) in a hydrogen-like atom results in ultraviolet radiation. Infrared radiation will be obtained in the transition from",
+    "options": ["2 → 1", "3 → 2", "4 → 2", "5 → 4"],
+    "id": 18,
+    "testIdcet": 3
+  },
+  {
+    "question": "A light rod of length \\( 2m \\) suspended from the ceiling horizontally by means of two vertical wires of equal length. A weight \\( W \\) is hung from a light rod as shown in figure. The rod hung by means of a steel wire of cross-sectional area \\( A_1 = 0.1 cm^2 \\) and brass wire of cross-sectional area \\( A_2 = 0.2 cm^2 \\). To have equal stress in both wires, \\( T_1 / T_2 \\) is",
+    "options": ["1/3", "1/4", "4/3", "1/2"],
+    "id": 19,
+    "testIdcet": 3
+  },
+  {
+    "question": "For which angle between two equal vectors \\( \\mathbf{A} \\) and \\( \\mathbf{B} \\) will the magnitude of the sum of two vectors be equal to the magnitude of each vector?",
+    "options": ["60°", "-120°", "0°", "90°"],
+    "id": 20,
+    "testIdcet": 3
+  },
+  {
+    "question": "The width of a slit is 0.012 mm. Monochromatic light is incident on it. The angular position of first bright line is \\( 5.2° \\). The wavelength of incident light is \\( \\sin 5.2° = 0.0906 \\).",
+    "options": ["6404 Å", "4026 Å", "5890 Å", "7248 Å"],
+    "id": 21,
+    "testIdcet": 3
+  },
+  {
+    "question": "The least coefficient of friction \\( \\mu \\) for an inclined plane inclined at angle \\( \\alpha \\) with horizontal in order that a solid cylinder will roll down without slipping is",
+    "options": ["\\( \\frac{2}{3} \\tan \\alpha \\)", "\\( \\frac{1}{2} \\tan \\alpha \\)", "\\( \\tan \\alpha \\)", "\\( \\frac{5}{7} \\tan \\alpha \\)"],
+    "id": 22,
+    "testIdcet": 3
+  },
+  {
+    "question": "Two balls are projected at an angle \\( \\theta \\) and \\( (90° - \\theta) \\) to the horizontal with the same speed. The ratio of their maximum vertical heights is",
+    "options": ["1:1", "\\( \\tan \\theta : 1 \\)", "1 : \\( \\tan \\theta \\)", "\\( \\tan^2 \\theta : 1 \\)"],
+    "id": 23,
+    "testIdcet": 3
+  },
+  {
+    "question": "A rod PQ of mass \\( M \\) and length \\( L \\) is hinged at P and is kept horizontal by a massless string tied to point Q as shown in figure. When the string is cut, the initial angular acceleration of the rod is",
+    "options": ["g/L", "2g/L", "2g", "3g/L"],
+    "id": 24,
+    "testIdcet": 3
+  },
+  {
+    "question": "Let \\( Q \\) denote the charge on the plate of a capacitor of capacitance \\( C \\). The dimensional formula of \\( Q^2/C \\) is",
+    "options": ["\\( [L^2MT^{-3}] \\)", "\\( [M L^2 T^{-2}] \\)", "\\( [L^2 M T^{-2}] \\)", "\\( [L^2 M T^2] \\)"],
+    "id": 25,
+    "testIdcet": 3
+  },
+  {
+    "question": "A common emitter amplifier has a voltage gain of 50, an input impedance of 100Ω and an output impedance of 200Ω. The power gain is",
+    "options": ["50", "1000", "1250", "50"],
+    "id": 26,
+    "testIdcet": 3
+  },
+  {
+    "question": "A glass flask is filled up to a mark with 50 cc of mercury at 18°C. If the flask and contents are heated to 38°C, how much mercury will be above the mark? (for glass \\( 9 × 10^{-6} /°C \\) and coefficient of thermal expansion of mercury is \\( 180 × 10^{-6}/°C \\))",
+    "options": ["0.85 cc", "0.46 cc", "0.153 cc", "0.05 cc"],
+    "id": 27,
+    "testIdcet": 3
+  },
+
+  {
+    "id": 28,
+    "testIdcet": 3,
+    "question": "With the increase in temperature, the angle of contact",
+    "options": [
+      "decreases",
+      "increases",
+      "remains constant",
+      "sometimes increases and sometimes decreases"
+    ]
+  },
+  {
+    "id": 29,
+    "testIdcet": 3,
+    "question": "A prism has a refracting angle of \\(60^{\\circ}\\). When placed in the position of minimum deviation, it produces a deviation of \\(30^{\\circ}\\). The angle of incidence is",
+    "options": [
+      "\\(30^{\\circ}\\)",
+      "\\(45^{\\circ}\\)",
+      "\\(15^{\\circ}\\)",
+      "\\(60^{\\circ}\\)"
+    ]
+  },
+  {
+    "id": 30,
+    "testIdcet": 3,
+    "question": "A planet in a distant solar system is 10 times more massive than the earth and its radius is 10 times smaller. Given that the escape velocity from the earth's surface is \\(11 \\text{ km s}^{-1}\\), the escape velocity from the surface of the planet would be",
+    "options": [
+      "1.1 \\text{ km s}^{-1}",
+      "11 \\text{ km s}^{-1}",
+      "110 \\text{ km s}^{-1}",
+      "0.11 \\text{ km s}^{-1}"
+    ]
+  },
+
+  {
+    "id": 31,
+    "testIdcet": 3,
+    "question": "The fringe width in a Young’s double slit experiment can be increased if we decrease",
+    "options": [
+      "width of slits",
+      "separation of slits",
+      "wavelength of light used",
+      "distance between slits and screen"
+    ]
+  },
+  {
+    "id": 32,
+    "testIdcet": 3,
+    "question": "Two radiations of photons energies \\(1 \\text{ eV}\\) and \\(2.5 \\text{ eV}\\), successively illuminate a photosensitive metallic surface of work function \\(0.5 \\text{ eV}\\). The ratio of the maximum speeds of the emitted electrons is",
+    "options": [
+      "1 : 4",
+      "1 : 2",
+      "1 : 1",
+      "1 : \\sqrt{5}"
+    ]
+  },
+  {
+    "id": 33,
+    "testIdcet": 3,
+    "question": "An electromagnetic wave going through vacuum is described by \\(E = E_0 \\sin(kx - \\omega t)\\); \\(B = B_0 \\sin(kx - \\omega t)\\). Which of the following equations is true?",
+    "options": [
+      "\\(E_0 = B_0 c\\)",
+      "\\(E_0 = B_0 k\\)",
+      "\\(E_0 = B_0 \\omega\\)",
+      "None of these"
+    ]
+  },
+  {
+    "id": 34,
+    "testIdcet": 3,
+    "question": "A galvanometer of resistance \\(100 \\Omega\\) gives a full scale deflection for a current of \\(0.5 \\text{ mA}\\). To convert it into an ammeter capable of measuring up to \\(1 \\text{ A}\\), we should connect a resistance of",
+    "options": [
+      "\\(1 \\Omega\\) in parallel",
+      "\\(10 \\Omega\\) in parallel",
+      "\\(10^2 \\Omega\\) in series",
+      "\\(10^2 \\Omega\\) in parallel"
+    ]
+  },
+  {
+    "id": 35,
+    "testIdcet": 3,
+    "question": "A spherical ball of iron of radius \\(1 \\text{ m}\\) is falling through a column of glycerine. If densities of glycerine and iron are respectively \\(1.3 \\times 10^3 \\text{ kg/m}^3\\) and \\(8.0 \\times 10^3 \\text{ kg/m}^3\\), for glycerine \\(\\eta = 0.83 \\text{ Nm}^{-2}\\text{ s}\\), then the terminal velocity is",
+    "options": [
+      "0.1 \\text{ m/s}",
+      "0.3 \\text{ m/s}",
+      "0.07 \\text{ m/s}",
+      "0.07 \\text{ mm/s}"
+    ]
+  },
+  {
+    "id": 36,
+    "testIdcet": 3,
+    "question": "A Carnot engine whose low temperature reservoir is at \\(7^{\\circ} C\\) has an efficiency of \\(50\\%\\). If it is desired to increase the efficiency to \\(70\\%\\), by how many degrees should the temperature of the high temperature reservoir be increased?",
+    "options": [
+      "840 K",
+      "280 K",
+      "560 K",
+      "380 K"
+    ]
+  },
+  {
+    "id": 37,
+    "testIdcet": 3,
+    "question": "The two blocks, \\(m = 10 \\text{ kg}\\) and \\(M = 50 \\text{ kg}\\) are free to move as shown. The coefficient of static friction between blocks is \\(0.5\\). There is no friction between \\(M\\) and the ground. A minimum horizontal force \\(F\\) is applied to hold \\(m\\) against \\(M\\). \\[F = \\frac{m}{\\mu} g\\]",
+    "options": [
+      "100N",
+      "50N",
+      "240N",
+      "180N"
+    ]
+  },
+  {
+    "id": 38,
+    "testIdcet": 3,
+    "question": "The pressure on a square plate is measured by measuring the force on the plate and length of the sides of the plate by using the formula \\[P = \\frac{F}{L^2}\\] If the maximum errors in the measurement of force and length are \\(6\\%\\) and \\(3\\%\\) respectively, then the maximum error in the measurement of \\(P\\) is",
+    "options": [
+      "1%",
+      "6%",
+      "12%",
+      "10%"
+    ]
+  },
+  {
+    "id": 39,
+    "testIdcet": 3,
+    "question": "An electron of mass \\(m\\) and charge \\(e\\) initially at rest gets accelerated by a constant electric field \\(E\\). The rate of change of de-Broglie wavelength of this electron at time \\(t\\) ignoring relativistic effects is",
+    "options": [
+      "\\(- \\frac{h}{eE} e^{-eEt/h}\\)",
+      "\\(- \\frac{h}{eE}\\)",
+      "\\(- \\frac{eE}{h}\\)",
+      "\\(- eEt/h\\)"
+    ]
+  },
+  {
+    "id": 40,
+    "testIdcet": 3,
+    "question": "A plano-convex lens is made of a material of refractive index \\(1.6\\). The radius of curvature of the curved surface is \\(60 \\text{ cm}\\). The focal length of the lens is",
+    "options": [
+      "50 cm",
+      "100 cm",
+      "200 cm",
+      "40 cm"
+    ]
+  },
+  {
+    "id": 41,
+    "testIdcet": 3,
+    "question": "A mass \\(m\\) is revolving in a vertical circle at the end of a string of length \\(20 \\text{ cm}\\). By how much does the tension in the string at the lowest point exceed the tension at the topmost point?",
+    "options": [
+      "2 mg",
+      "4 mg",
+      "6 mg",
+      "8 mg"
+    ]
+  },
+  {
+    "id": 42,
+    "testIdcet": 3,
+    "question": "Two conducting circular loops of radii \\(R_1\\) and \\(R_2\\) are placed in the same plane with their centers coinciding. If \\(R_2 > R_1\\), the mutual inductance \\(M\\) between them will be directly proportional to",
+    "options": [
+      "\\(\\frac{R_1}{R_2}\\)",
+      "\\(\\frac{R_2}{R_1}\\)",
+      "\\(\\frac{R_1^2}{R_2}\\)",
+      "\\(\\frac{R_2^2}{R_1}\\)"
+    ]
+  },
+  {
+    "id": 43,
+    "testIdcet": 3,
+    "question": "If \\(v = a + b r^2\\), where \\(v\\) is the distance travelled by the body in kilometers while \\(t\\) is the time in seconds, what is the unit of \\(b\\)?",
+    "options": [
+      "\\(\\text{km/s}\\)",
+      "\\(\\text{km/s}^2\\)",
+      "\\(\\text{km/s}^3\\)",
+      "\\(\\text{s/km}\\)"
+    ]
+  },
+  {
+    "id": 44,
+    "testIdcet": 3,
+    "question": "An organ pipe \\(P_1\\) closed at one end vibrating in its fundamental mode, and another pipe \\(P_2\\) open at both ends vibrating in its first overtone, are in resonance with a given tuning fork. The ratio of the length \\(l_1\\) of \\(P_1\\) to \\(l_2\\) of \\(P_2\\) is",
+    "options": [
+      "8/3",
+      "3/8",
+      "1/2",
+      "1/3"
+    ]
+  },
+
+  {
+    "id": 45,
+    "testIdcet": 3,
+    "question": "If one mole of monatomic gas \\( \\gamma = \\frac{5}{3} \\) is mixed with one mole of diatomic gas \\( \\gamma = \\frac{7}{5} \\), the value of \\( \\gamma \\) for the mixture is",
+    "options": ["1.40", "1.50", "1.53", "3.07"]
+  },
+  {
+    "id": 46,
+    "testIdcet": 3,
+    "question": "In a series resonant circuit, having L, C, and R as its elements, the resonant current is \\( I \\). The power dissipated in the circuit at resonance is",
+    "options": ["\\( \\frac{I^2 R}{wL - \\frac{1}{wC}} \\)", "zero", "\\( I^2 \\omega L \\)", "\\( I^2 R \\)"]
+  },
+  {
+    "id": 47,
+    "testIdcet": 3,
+    "question": "A U-tube is of non-uniform cross-section. The area of cross-sections of two sides of the tube are A and 2A. It contains non-viscous liquid of mass m. The liquid is displaced slightly and free to oscillate. Its time period of oscillations is",
+    "options": ["\\( T = 2 \\pi \\sqrt{\\frac{m}{3 \\rho g A}} \\)", "\\( T = 2 \\pi \\sqrt{\\frac{m}{2 \\rho g A}} \\)", "\\( T = 2 \\pi \\sqrt{\\frac{m}{\\rho g 2A}} \\)", "None of these"]
+  },
+  {
+    "id": 48,
+    "testIdcet": 3,
+    "question": "From a supply of identical capacitors rated 8 mF, 250V, the minimum number of capacitors required to form a composite 16 mF, 1000V is",
+    "options": ["2", "4", "16", "32"]
+  },
+  {
+    "id": 49,
+    "testIdcet": 3,
+    "question": "An \\( \\alpha \\)-particle of energy 5 MeV is scattered through 180° by a fixed uranium nucleus. The distance of closest approach is of the order of",
+    "options": ["\\(10^{-12} \\text{ cm} \\)", "\\(10^{-10} \\text{ cm} \\)", "\\(10^{-20} \\text{ cm} \\)", "\\(10^{-15} \\text{ cm} \\)"]
+  },
+  {
+    "id": 50,
+    "testIdcet": 3,
+    "question": "A moving coil galvanometer has many turns in a coil of effective area \\( A \\), it carries a current \\( I \\). The magnetic field \\( B \\) is radial. The torque acting on the coil is",
+    "options": ["\\( NA^2B^2 I \\)", "\\( NABI^2 \\)", "\\( N^2ABI \\)", "\\( NABI \\)"]
+  },
+  {
+    "id": 51,
+    "testIdcet": 3,
+    "question": "KClO₄ (potassium super oxide) is used in oxygen cylinders in space and submarines because it",
+    "options": ["absorbs CO₂ and increases O₂ content", "absorbs moisture", "absorbs CO₂", "produces ozone"]
+  },
+  {
+    "id": 52,
+    "testIdcet": 3,
+    "question": "Which of the following is a bactericidal antibiotic?",
+    "options": ["Ofloxacin", "Tetracycline", "Chloramphenicol", "Erythromycin"]
+  },
+  {
+    "id": 53,
+    "testIdcet": 3,
+    "question": "An ideal gas expands against a constant external pressure of 2.0 atmosphere from 20 litres to 40 litres and absorbs 10 kJ of heat from surrounding. What is the change in internal energy of the system? \\( \\text{(Given: } 1 \\text{ atm-litre} = 101.3 J \\text{)} \\)",
+    "options": ["4052 J", "5948 J", "14052 J", "9940 J"]
+  },
+  {
+    "id": 54,
+    "testIdcet": 3,
+    "question": "In a solution of CuSO₄, how much time will be required to precipitate 2 g of copper by 0.5 ampere current?",
+    "options": ["12157.48 sec", "102 sec", "510 sec", "642 sec"]
+  },
+  {
+    "id": 55,
+    "testIdcet": 3,
+    "question": "Which of the following compounds will undergo self-aldol condensation in the presence of cold dilute alkali?",
+    "options": ["CH₃ = CH - CHO", "CH ≡ C - CHO", "C₆H₅CHO", "CH₃CH₂CHO"]
+  },
+  {
+    "id": 56,
+    "testIdcet": 3,
+    "question": "An element having an atomic radius of 0.14 nm crystallizes in an fcc unit cell. What is the length of the side of the cell?",
+    "options": ["0.56 nm", "0.24 nm", "0.96 nm", "0.4 nm"]
+  },
+  {
+    "id": 57,
+    "testIdcet": 3,
+    "question": "120 g of an ideal gas of molecular weight 40 g mol⁻¹ are confined to a volume of 20.2 L at 400 K. Using \\( R = 0.0821 \\text{ L atm K}^{-1} \\text{ mol}^{-1} \\), the pressure of the gas is",
+    "options": ["4.90 atm", "4.92 atm", "5.02 atm", "4.96 atm"]
+  },
+  {
+    "id": 58,
+    "testIdcet": 3,
+    "question": "Fluorobenzene (C₆H₅F) can be synthesized in the laboratory",
+    "options": [
+      "by direct fluorination of benzene with F₂ gas",
+      "by reacting bromobenzene with NaF solution",
+      "by heating benzene with HF and KF",
+      "from aniline by diazotisation followed by heating the diazonium salt with HBF₄"
+    ]
+  },
+  {
+    "id": 59,
+    "testIdcet": 3,
+    "question": "Substances used for the preservation of coloured fruit juices is",
+    "options": ["benzene", "benzoic acid", "phenol", "sodium meta bisulphite"]
+  },
+  {
+    "id": 60,
+    "testIdcet": 3,
+    "question": "Which of the following compounds gives dye test?",
+    "options": ["Aniline", "Methylamine", "Diphenylamine", "Ethylamine"]
+  },
+  {
+    "id": 61,
+    "testIdcet": 3,
+    "question": "The correct statement with regard to \\( H_2^+ \\) and \\( H_2^- \\) is",
+    "options": [
+      "Both \\( H_2^+ \\) and \\( H_2^- \\) do not exist",
+      "\\( H_2^+ \\) is more stable than \\( H_2^- \\)",
+      "\\( H_2^- \\) is more stable than \\( H_2 \\)",
+      "Both \\( H_2^+ \\) and \\( H_2^- \\) are equally stable"
+    ]
+  },
+
+  {
+    "id": 62,
+    "testIdcet": 3,
+    "question": "18 g of glucose \\((C_6H_{12}O_6)\\) is added to 178.2 g of water. The vapour pressure of water for this aqueous solution is",
+    "options": [
+      "76.00 torr",
+      "752.40 torr",
+      "759.00 torr",
+      "7.60 torr"
+    ]
+  },
+  {
+    "id": 63,
+    "testIdcet": 3,
+    "question": "Mark the oxide which is amphoteric in character",
+    "options": [
+      "\\( CO_2 \\)",
+      "\\( SiO_2 \\)",
+      "\\( SnO_2 \\)",
+      "\\( CaO \\)"
+    ]
+  },
+  {
+    "id": 64,
+    "testIdcet": 3,
+    "question": "The standard EMF for the cell reaction, \n\n\\( Zn + Cu^{2+} \\rightarrow Cu + Zn^{2+} \\) is 1.1 volt at 25°C. \n\nThe EMF for the cell reaction, when 0.1 M \\( Cu^{2+} \\) and 0.1 M \\( Zn^{2+} \\) solutions are used, at 25°C is",
+    "options": [
+      "1.10V",
+      "0.10V",
+      "-1.10V",
+      "-0.110V"
+    ]
+  },
+  {
+    "id": 65,
+    "testIdcet": 3,
+    "question": "The reactant (X) in the reaction \n\n\\( (X) \\xrightarrow{(CH_3COO)_2O} \\text{Cinnamic acid} \\), is",
+    "options": [
+      "Benzene with \\(-COOH\\) group",
+      "Benzene with \\(-CHO\\) group"
+    ]
+  },
+
+  {
+    "id": 66,
+    "testIdcet": 3,
+    "question": "The brown ring complex is formulated as \\([Fe(H_2O)_5 NO]SO_4\\). The oxidation number of iron is",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "id": 67,
+    "testIdcet": 3,
+    "question": "A substance \\(C_4H_{10}O\\) yields on oxidation a compound, \\(C_4H_8O\\) which gives an oxime and a positive iodoform test. The original substance on treatment with conc. \\(H_2SO_4\\) gives \\(C_4H_8\\). The structure of the compound is",
+    "options": [
+      "CH₃CH₂CH₂CH₂OH",
+      "CH₃CHOHCH₂CH₃",
+      "(CH₃)₃COH",
+      "CH₃CH₂−O−CH₂CH₃"
+    ]
+  },
+  {
+    "id": 68,
+    "testIdcet": 3,
+    "question": "Number of moles of \\(KMnO_4\\) required to oxidize one mole of \\(FeC_2O_4\\) in acidic medium is",
+    "options": [
+      "0.167",
+      "0.6",
+      "0.2",
+      "0.4"
+    ]
+  },
+  {
+    "id": 69,
+    "testIdcet": 3,
+    "question": "Predict the product C obtained in the following reaction of butyne-1. \n\n\\[ CH_3CH_2 - C \\equiv CH + HCl \\xrightarrow{B} \\xrightarrow{H_2} C \\]",
+    "options": [
+      "\\(CH_3 - CH_2 - C - H\\) \n\n \\( | \\) \n\n \\( Cl \\)",
+      "\\(CH_3 - CH_2 - CH - CH_2Cl\\) \n\n \\( | \\) \n\n \\( I \\)",
+      "\\(CH_3 - C - CH_3\\) \n\n \\( | \\) \n\n \\( Cl \\) \n\n \\( | \\) \n\n \\( I \\)",
+      "\\(CH_3CH_2 - C - CH_2I\\) \n\n \\( | \\) \n\n \\( Cl \\)"
+    ]
+  },
+  {
+    "id": 70,
+    "testIdcet": 3,
+    "question": "The vapour pressure of a solvent A is 0.80 atm. When a non-volatile substance B is added to this solvent its vapour pressure drops to 0.6 atm. The mole fraction of B in the solution is",
+    "options": [
+      "0.25",
+      "0.50",
+      "0.75",
+      "0.90"
+    ]
+  },
+
+
+  {
+    "id": 71,
+    "testIdcet": 3,
+    "question": "The electric cookers have a coating that protects them against fire. The coating is made of",
+    "options": [
+      "heavy lead",
+      "zinc oxide",
+      "magnesium oxide",
+      "sodium sulphate"
+    ]
+  },
+  {
+    "id": 72,
+    "testIdcet": 3,
+    "question": "Chlorine is liberated when we heat",
+    "options": [
+      "KMnO₄ + NaCl",
+      "K₂Cr₂O₇ + MnO₂",
+      "Pb(NO₃)₂ + MnO₂",
+      "K₂Cr₂O₇ + HCl"
+    ]
+  },
+  {
+    "id": 73,
+    "testIdcet": 3,
+    "question": "Which of the following solutions will have the maximum lowering of vapour pressure at 300 K",
+    "options": [
+      "1 M CaCl₂",
+      "1 M NaCl",
+      "1 M Phenol",
+      "1 M Sucrose"
+    ]
+  },
+  {
+    "id": 74,
+    "testIdcet": 3,
+    "question": "Which of the following electrolytes will be most effective in coagulation of negative sol?",
+    "options": [
+      "KNO₃",
+      "K₄[Fe(CN)₆]",
+      "Na₃PO₄",
+      "MgCl₂"
+    ]
+  },
+  {
+    "id": 75,
+    "testIdcet": 3,
+    "question": "The element which has not yet been reacted with \\(F_2\\) is",
+    "options": [
+      "Ar",
+      "Xe",
+      "Kr",
+      "Rn"
+    ]
+  },
+  {
+    "id": 76,
+    "testIdcet": 3,
+    "question": "Which is the best oxidising agent among the following?",
+    "options": [
+      "S",
+      "O",
+      "Se",
+      "Te"
+    ]
+  },
+  {
+    "id": 77,
+    "testIdcet": 3,
+    "question": "Which of the following is correct for a first order reaction?",
+    "options": [
+      "\\( t_{1/2} \\propto a \\)",
+      "\\( t_{1/2} \\propto 1/a \\)",
+      "\\( t_{1/2} \\propto a^0 \\)",
+      "\\( t_{1/2} \\propto 1/a^2 \\)"
+    ]
+  },
+  {
+    "id": 78,
+    "testIdcet": 3,
+    "question": "Standard enthalpy and standard entropy changes for the oxidation of ammonia at 298 K are \\(-382.64\\) \\( kJ mol^{-1} \\) and \\(-145.6 \\) \\( J K^{-1} mol^{-1} \\), respectively. Standard Gibbs energy change for the same reaction at 298 K is",
+    "options": [
+      "\\(-22.1 \\text{ kJ mol}^{-1}\\)",
+      "\\(-339.3 \\text{ kJ mol}^{-1}\\)",
+      "\\(-439.3 \\text{ kJ mol}^{-1}\\)",
+      "\\(-523.2 \\text{ kJ mol}^{-1}\\)"
+    ]
+  },
+  {
+    "id": 79,
+    "testIdcet": 3,
+    "question": "Which of the following polymers do not involve cross linkages?",
+    "options": [
+      "Melmac",
+      "Bakelite",
+      "Polythene",
+      "Vulcanised rubber"
+    ]
+  },
+  {
+    "id": 80,
+    "testIdcet": 3,
+    "question": "When a metal is to be extracted from its ore and the gangue associated with the ore is silica, then",
+    "options": [
+      "an acidic flux is needed",
+      "a basic flux is needed",
+      "both acidic and basic fluxes are needed",
+      "Neither of them is needed"
+    ]
+  },
+  {
+    "id": 81,
+    "testIdcet": 3,
+    "question": "A \\( \\rightarrow \\) B, \\( \\Delta H = -10 \\text{ kJ mol}^{-1} \\), \\( E_{a} = 50 \\text{ kJ mol}^{-1} \\), then \\( E_{a} \\) of \\( B \\rightarrow A \\) will be",
+    "options": [
+      "40 \\text{ kJ mol}^{-1}",
+      "50 \\text{ kJ mol}^{-1}",
+      "-50 \\text{ kJ mol}^{-1}",
+      "60 \\text{ kJ mol}^{-1}"
+    ]
+  },
+  {
+    "id": 82,
+    "testIdcet": 3,
+    "question": "At anode in the electrolysis of fused NaCl",
+    "options": [
+      "Na⁺ is oxidized",
+      "Cl⁻ is oxidized",
+      "Cl⁻ is reduced",
+      "Na is reduced"
+    ]
+  },
+  {
+    "id": 83,
+    "testIdcet": 3,
+    "question": "Molarity of liquid HCl will be, if density of solution is \\(1.17 \\text{ g/cc}\\)",
+    "options": [
+      "36.5",
+      "32.05",
+      "18.25",
+      "42.10"
+    ]
+  },
+  {
+    "id": 84,
+    "testIdcet": 3,
+    "question": "Which of the following bicarbonates does not exist as solid?",
+    "options": [
+      "KHCO₃",
+      "NaHCO₃",
+      "CsHCO₃",
+      "LiHCO₃"
+    ]
+  },
+  {
+    "id": 85,
+    "testIdcet": 3,
+    "question": "P₂O₅ is heated with water to give",
+    "options": [
+      "hypophosphorous acid",
+      "phosphorous acid",
+      "hypophosphoric acid",
+      "orthophosphoric acid"
+    ]
+  },
+  {
+    "id": 86,
+    "testIdcet": 3,
+    "question": "What is the IUPAC name of the compound?",
+    "image": "Attached Image",
+    "options": [
+      "1,1-dimethyl-1-cyclopentyl methane",
+      "2-cyclopentyl propane",
+      "1-(1-methyl) ethyl cyclopentane",
+      "Cumene"
+    ]
+  },
+  {
+    "id": 87,
+    "testIdcet": 3,
+    "question": "Which one of the following reactions is expected to readily give a hydrocarbon product in good yields?",
+    "options": [
+      "RCOOK \\xrightarrow{Electrolytic \\ oxidation} \\text{ ? }",
+      "RCOO⁻ Ag⁺ \\xrightarrow{Br_2} \\text{ ? }",
+      "CH₃CH₃ \\xrightarrow{Cl_2/hv} \\text{ ? }",
+      "(CH₃)₃CCl \\xrightarrow{C₂H₅OH} \\text{ ? }"
+    ]
+  },
+  {
+    "id": 88,
+    "testIdcet": 3,
+    "question": "Among the trihalides of nitrogen which one is most basic?",
+    "options": [
+      "NF₃",
+      "NCl₃",
+      "NI₃",
+      "NBr₃"
+    ]
+  },
+
+  {
+    "id": 89,
+    "testIdcet": 3,
+    "question": "Omeprazole and lansoprazole are used as –",
+    "options": [
+      "antiulcerility",
+      "antiallergic",
+      "antibiotic",
+      "antacid"
+    ]
+  },
+  {
+    "id": 90,
+    "testIdcet": 3,
+    "question": "Hydrolysis of sucrose is called",
+    "options": [
+      "hydration",
+      "saponification",
+      "esterification",
+      "inversion"
+    ]
+  },
+  {
+    "id": 91,
+    "testIdcet": 3,
+    "question": "Van Arkel method of purification of metals involves converting the metal to a",
+    "options": [
+      "volatile stable compound",
+      "volatile unstable compound",
+      "non volatile stable compound",
+      "None of the above"
+    ]
+  },
+  {
+    "id": 92,
+    "testIdcet": 3,
+    "question": "When \\(SO_2\\) is passed through acidified solution of potassium dichromate, then chromium sulphate is formed. The change in valency of chromium is",
+    "options": [
+      "+4 to +2",
+      "+5 to +3",
+      "+6 to +3",
+      "+7 to +2"
+    ]
+  },
+  {
+    "id": 93,
+    "testIdcet": 3,
+    "question": "Which of the following polymer is used for manufacturing of buckets, dustbins, pipes etc?",
+    "options": [
+      "Low density polythene",
+      "High density polythene",
+      "Teflon",
+      "Polyacrylonitrile"
+    ]
+  },
+  {
+    "id": 94,
+    "testIdcet": 3,
+    "question": "What is \\(X\\) in the following reaction?",
+    "options": [
+      "\\(CH_3OH, H_2SO_4\\)",
+      "\\(CH_3OH, CH_3O^- Na^+\\)",
+      "\\(H_2O/H_2SO_4\\) followed by \\(CH_3OH\\)",
+      "\\(CH_3MgBr\\) / ether followed by \\(H_3O^+\\)"
+    ]
+  },
+  {
+    "id": 95,
+    "testIdcet": 3,
+    "question": "In the above reaction, product (B) is:",
+    "options": [
+      "Benzene with \\(-CH_3\\) group",
+      "Benzene with \\(-OH\\) group"
+    ]
+  },
+  {
+    "id": 96,
+    "testIdcet": 3,
+    "question": "The compounds \\([PtCl_2(NH_3)_4]Br_2\\) and \\([PtBr_2(NH_3)_4]Cl_2\\) constitutes a pair of",
+    "options": [
+      "coordination isomers",
+      "linkage isomers",
+      "ionization isomers",
+      "optical isomers"
+    ]
+  },
+  {
+    "id": 97,
+    "testIdcet": 3,
+    "question": "Which of the following factors may be regarded as the main cause of lanthanoid contraction?",
+    "options": [
+      "Greater shielding of \\(5d\\) electrons by \\(4f\\) electrons",
+      "Poorer shielding of \\(5d\\) electrons by \\(4f\\) electrons",
+      "Effective shielding of one \\(4f\\) electron by another in the subshell",
+      "Poor shielding of one \\(4f\\) electron by another in the subshell"
+    ]
+  },
+  {
+    "id": 98,
+    "testIdcet": 3,
+    "question": "The polymer used in making synthetic hair wigs is made up of",
+    "options": [
+      "\\(CH_2 = CHCl\\)",
+      "\\(CH_2 = CHOCH_3\\)",
+      "\\(C_6H_5CH = CH_2\\)",
+      "\\(CH_2 = CH - CH_2CH_2\\)"
+    ]
+  },
+  {
+    "id": 99,
+    "testIdcet": 3,
+    "question": "Which of the following is called Wilkinson’s catalyst?",
+    "options": [
+      "\\([Rh(PPh_3)_3Cl]\\)",
+      "\\(TiCl_4 + (C_2H_5)_3Al\\)",
+      "\\((C_2H_5)_4Pb\\)",
+      "\\([PtCl_2(NH_3)_2]\\)"
+    ]
+  },
+  {
+    "id": 100,
+    "testIdcet": 3,
+    "question": "One mole of an ideal gas is allowed to expand reversibly and adiabatically from a temperature of 27°C. The work done during the process is 3 kJ, the final temperature will be equal \\((C_v = 20 J K^{-1})\\)",
+    "options": [
+      "150K",
+      "100K",
+      "285K",
+      "295K"
+    ]
+  },
+
+  {
+    "id": 101,
+    "testIdcet": 3,
+    "question": "In an entrance test, there are multiple choice questions. There are four possible answers to each question, of which one is correct. The probability that a student knows the answer to a question is 90%. If he gets the correct answer to a question, then the probability that he was guessing is",
+    "options":[
+      "\\(\\frac{1}{40}\\)",
+      "\\(\\frac{1}{39}\\)",
+      "\\(\\frac{1}{37}\\)",
+      "\\(\\frac{1}{43}\\)"
+    ]
+  },
+  {
+    "id": 102,
+    "testIdcet": 3,
+    "question": "If \\( \\frac{\\pi}{2} < x < \\pi \\), then \\( \\int \\frac{1 + \\cos 2x}{\\cos 2x} dx \\) equals",
+    "options": [
+       "\\(\\cos x + x \\sin x + C\\)",
+       "\\(\\cos x - x \\sin x + C\\)",
+       "\\(\\sin x + x \\cos x + C\\)",
+       "\\(\\sin x - x \\cos x + C\\)"
+    ]
+  },
+  {
+    "id": 103,
+    "testIdcet": 3,
+    "question": "A rectangle with one side lying along the x-axis is to be inscribed in the closed region of the xy plane bounded by the lines \\( y = 0, y = 3x \\) and \\( y = 30 - 2x \\). The largest area of such a rectangle is",
+    "options": [
+      "\\(\\frac{75}{8}\\)",
+      "\\(\\frac{45}{1}\\)",
+      "\\(\\frac{75}{8}\\)",
+      "\\(\\frac{135}{2}\\)"
+    ]
+  },
+  {
+    "id": 104,
+    "testIdcet": 3,
+    "question": "If \\( f: \\mathbb{R} \\to \\mathbb{R} \\) be a function defined by \\( f(x) = 4x^3 - 7 \\). Then",
+    "options": [
+      "f is one-one-into",
+      "f is many-one-into",
+      "f is many-one-onto",
+      "f is bijective"
+    ]
+  },
+  {
+    "id": 105,
+    "testIdcet": 3,
+    "question": "\\( \\neg (p \\to q) \\) is equal to",
+    "options": [
+      "\\(p \\lor q\\)",
+      "\\(p \\lor \\neg q\\)",
+      "\\(p \\land q\\)",
+      "\\(p \\land \\neg q\\)"
+    ]
+  },
+  {
+    "id": 106,
+    "testIdcet": 3,
+    "question": "With the usual notation \\( \\int [x^2] - [x]^2 dx \\) is equal to",
+    "options": [
+      "\\(4 + \\sqrt{2 - \\sqrt{3}}\\)",
+      "\\(4 - \\sqrt{2 + \\sqrt{3}}\\)",
+      "\\(4 - \\sqrt{2 - \\sqrt{3}}\\)",
+      "none of these"
+    ]
+  },
+  {
+    "id": 107,
+    "testIdcet": 3,
+    "question": "The general solution of \\( x(1 + x^2)^{1/2} dx + y(1 + x^2)^{1/2} dy = 0 \\) is",
+    "options": [
+      "\\(\\cos 1 + x \\cos 1 y = C\\)",
+      "\\(x^2 + y^2 + (1 + x^2)^{1/2} + C\\)",
+      "\\((1 + x^2)^{1/2} + (1 + y^2)^{1/2} = C\\)",
+      "\\(\\tan^{-1} x - \\tan^{-1} y = C\\)"
+    ]
+  },
+  {
+    "id": 108,
+    "testIdcet": 3,
+    "question": "If \\( A = \\begin{bmatrix} 0 & 1 & 0 \\\\ 1 & 0 & 0 \\\\ 0 & 0 & 1 \\end{bmatrix} \\), then \\( A^{2008} \\) is equal to",
+    "options": [
+      "\\(A\\)",
+      "\\(A^{-1}\\)",
+      "\\(I_3\\)",
+      "0"
+    ]
+  },
+  {
+    "id": 109,
+    "testIdcet": 3,
+    "question": "Three vertices of a parallelogram ABCD are \\( A (3, -1, 2), B (1, 2, -4) \\) and \\( C (-1, 1, 2) \\). The coordinates of fourth vertex D are",
+    "options": [
+      "(1,1,1)",
+      "(1, 2, 8)",
+      "(2, 2, -6)",
+      "(0,1,2)"
+    ]
+  },
+  {
+    "id": 110,
+    "testIdcet": 3,
+    "question": "The value of \\( \\frac{\\sin x + \\cos x}{\\sqrt{1 - \\sin 2x}} \\) is equal to",
+    "options": [
+      "\\(\\sqrt{\\sin 2x}\\)",
+      "\\(\\cos 2x + C\\)",
+      "\\(±(\\sin x - \\cos x) + C\\)",
+      "\\(±\\log(\\sin x - \\cos x) + C\\)"
+    ]
+  },
+  {
+    "id": 111,
+    "testIdcet": 3,
+    "question": "The equation of the plane containing the line \\( \\frac{x + 1}{3} = \\frac{y + 2}{-3} = \\frac{z + 2}{2} \\) and the point (0, -7, -7), is",
+    "options": [
+      "x + y + z = 3",
+      "x + y + z = -3",
+      "x + y + z = 6",
+      "None of these"
+    ]
+  },
+  {
+    "id": 112,
+    "testIdcet": 3,
+    "question": "The co-ordinates of the foot of perpendicular from the point \\( A(1,1,1) \\), on the line joining the points \\( B(1,4,6) \\) and \\( C(5,4,4) \\), are",
+    "options": [
+      "(3,4,5)",
+      "(4,5,3)",
+      "(3,-4,5)",
+      "(-3,4,-5)"
+    ]
+  },
+  {
+    "id": 113,
+    "testIdcet": 3,
+    "question": "\\( p \\to (p \\to q) \\) is",
+    "options": [
+      "A tautology",
+      "A contradiction",
+      "Both a tautology and a contradiction",
+      "Neither a tautology nor a contradiction"
+    ]
+  },
+  {
+    "id": 114,
+    "testIdcet": 3,
+    "question": "Two finite sets have m and n elements. The total number of subsets of the first set is 56 more than the total number of subsets of the second set. Then:",
+    "options": [
+      "m = 3, n = 6",
+      "m = 6, n = 3",
+      "m = 5, n = 6",
+      "None of these"
+    ]
+  },
+  {
+    "id": 117,
+    "testIdcet": 3,
+    "question": "\\( \\int \\frac{x + \\sin x}{1 + \\cos x} dx \\) is equal to:",
+    "options": [
+      "\\(\\tan \\frac{x}{2} + C\\)",
+      "\\(\\cot \\frac{x}{2} + C\\)",
+      "\\(\\log(|1 + \\cos x|) + C\\)",
+      "\\(\\log(|x + \\sin x|) + C\\)"
+    ]
+  },
+  {
+    "id": 118,
+    "testIdcet": 3,
+    "question": "The maximum value of \\( z = 6x + 8y \\) subject to constraints \\( 2x + y \\leq 30, x + 2y \\leq 24 \\) and \\( x, y \\geq 0 \\), is",
+    "options": [
+      "90",
+      "120",
+      "96",
+      "240"
+    ]
+  },
+  {
+    "id": 119,
+    "testIdcet": 3,
+    "question": "\\( \\int_\\pi^3 \\sin (\\pi[x] - x)dx \\) is equal to:",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{\\sqrt{3}}{2} - \\frac{\\pi}{6}\\)",
+      "\\(\\frac{\\pi}{2}\\)",
+      "\\(\\frac{\\sqrt{3}}{2} - \\frac{\\pi}{6}\\)"
+    ]
+  },
+  {
+    "id": 120,
+    "testIdcet": 3,
+    "question": "The general solution of the equation \\( \\tan 0 + \\tan 40 + \\tan 70 = \\tan 0 \\tan 40 \\tan 70 \\) is",
+    "options": [
+      "\\( \\frac{n \\pi}{4} \\)",
+      "\\( \\frac{n \\pi}{12} \\)",
+      "\\( \\frac{n \\pi}{6} \\)",
+      "\\( \\text{None of these} \\)"
+    ]
+  },
+  {
+    "id": 121,
+    "testIdcet": 3,
+    "question": "For non-zero, non-collinear vectors \\( \\mathbf{p} \\) and \\( \\mathbf{q} \\), the value of \\( [\\mathbf{i} \\mathbf{p} \\mathbf{q}] + [\\mathbf{j} \\mathbf{p} \\mathbf{q}] + [\\mathbf{k} \\mathbf{p} \\mathbf{q}] \\) is",
+    "options": [
+      "\\( 0 \\)",
+      "\\( 2 (\\mathbf{p} \\times \\mathbf{q}) \\)",
+      "\\( \\mathbf{p} \\times \\mathbf{q} \\)",
+      "\\( (\\mathbf{p} \\times \\mathbf{q}) \\)"
+    ]
+  },
+  {
+    "id": 122,
+    "testIdcet": 3,
+    "question": "Let \\( f(\\theta) = \\sin \\theta (\\sin \\theta + \\sin 3\\theta) \\). Then",
+    "options": [
+      "f(\\theta) \\geq 0 \\forall \\theta \\in \\mathbb{R}",
+      "f(\\theta) \\leq 0 \\forall \\theta \\in \\mathbb{R}",
+      "f(\\theta) \\geq 1 \\forall \\theta \\in \\mathbb{R}",
+      "None of these"
+    ]
+  },
+  {
+    "id": 123,
+    "testIdcet": 3,
+    "question": "The maximum value of \\( z = 5x + 2y \\), subject to the constraints \\( x + y \\leq 7, x + 2y \\leq 10, x, y \\geq 0 \\) is",
+    "options": [
+      "10",
+      "28",
+      "35",
+      "None of these"
+    ]
+  },
+  {
+    "id": 124,
+    "testIdcet": 3,
+    "question": "The volume of the greatest cylinder which can be inscribed in a cone of height 30 cm and semi-vertical angle 30° is",
+    "options": [
+      "4000\\pi /3 \\text{ cm}^3",
+      "400\\pi /3 \\text{ cm}^3",
+      "4000\\sqrt{3} \\text{ cm}^3",
+      "None of these"
+    ]
+  },
+  {
+    "id": 125,
+    "testIdcet": 3,
+    "question": "The equation of the plane through the line \\( x + y + z = 3, 2x - y + 3z = 4 \\) and parallel to the vector \\( \\mathbf{a} = 2 \\mathbf{i} - \\mathbf{j} + 3 \\mathbf{k} \\) is",
+    "options": [
+      "x - 2y + 3z - 7 = 0",
+      "x + 2y - 3z + 1 = 0",
+      "x + 2y + 3z - 4 = 0",
+      "None of these"
+    ]
+  },
+  {
+    "id": 126,
+    "testIdcet": 3,
+    "question": "Let \\( \\mathbf{a}, \\mathbf{b}, \\mathbf{c} \\) be non-coplanar unit vectors equally inclined to one another at an acute angle \\( \\theta \\). Then \\( [\\mathbf{a} \\mathbf{b} \\mathbf{c}] \\) in terms of \\( \\theta \\) is equal to",
+    "options": [
+      "(1 + \\cos \\theta) / 2 \\cos 2\\theta",
+      "(1 - \\cos \\theta) / 2 \\cos 2\\theta",
+      "(1 - \\cos \\theta) / 1 + 2\\cos \\theta",
+      "None of these"
+    ]
+  },
+  {
+    "id": 127,
+    "testIdcet": 3,
+    "question": "General solution of the equation \\( \\sin 2x - \\sin 4x + \\sin 6x = 0 \\) is",
+    "options": [
+      "n \\pi",
+      "n \\pi \\pm \\frac{\\pi}{6}",
+      "n \\pi \\pm \\frac{\\pi}{4}",
+      "n \\pi \\pm 2n \\pi \\frac{\\pi}{4}"
+    ]
+  },
+  {
+    "id": 128,
+    "testIdcet": 3,
+    "question": "A focus of an ellipse is at the origin. The directrix is the line \\( x = 4 \\) and the eccentricity is \\( \\frac{1}{2} \\). Then the length of the semi-major axis is",
+    "options": [
+      "\\frac{3}{2}",
+      "\\frac{1}{2}",
+      "\\frac{4}{3}",
+      "\\frac{5}{3}"
+    ]
+  },
+  {
+    "id": 129,
+    "testIdcet": 3,
+    "question": "The locus of a point that is equidistant from the lines \\( x + y - \\sqrt{2} = 0 \\) and \\( x + y - \\sqrt{2} = 0 \\) is",
+    "options": [
+      "x + y - \\sqrt{5} / 2 = 0",
+      "x + y - 3\\sqrt{2} = 0",
+      "2x + 2y - 3\\sqrt{2} = 0",
+      "2x + 2y - 5\\sqrt{2} = 0"
+    ]
+  },
+  {
+    "id": 133,
+    "testIdcet": 3,
+    "question": "In a triangle ABC, \\( \\angle C = 90^\\circ \\), then \\( \\frac{a^2 - b^2}{a^2 + b^2} \\) is equal to:",
+    "options": [
+      "\\( \\sin (A + B) \\)",
+      "\\( \\sin (A - B) \\)",
+      "\\( \\cos (A + B) \\)",
+      "\\( \\sin \\left(\\frac{A - B}{2}\\right) \\)"
+    ]
+  },
+  {
+    "id": 134,
+    "testIdcet": 3,
+    "question": "The internal angles of a convex polygon are in A.P. The smallest angle is 120° and the common difference is 5°. The number of sides of the polygon is",
+    "options": [
+      "8",
+      "9",
+      "10",
+      "16"
+    ]
+  },
+  {
+    "id": 135,
+    "testIdcet": 3,
+    "question": "In a binomial distribution \\( n = 5, P(X=1) = 0.4096 \\) and \\( P(X=2) = 0.2048 \\), then the mean of the distribution is equal to",
+    "options": [
+      "1",
+      "1.5",
+      "2",
+      "2.5"
+    ]
+  },
+  {
+    "id": 136,
+    "testIdcet": 3,
+    "question": "The equation of the tangent to the curve \\( y = \\sin^{-1} \\frac{2x}{1 + x^2} \\) at \\( x = \\sqrt{3} \\) is",
+    "options": [
+      "\\( y - \\frac{\\pi}{4} = \\frac{1}{2} (x - \\sqrt{3}) \\)",
+      "\\( y - \\frac{\\pi}{2} = \\frac{1}{2} (x - \\sqrt{3}) \\)",
+      "\\( y + \\frac{\\pi}{3} = \\frac{1}{2} (x - \\sqrt{3}) \\)",
+      "\\( \\text{None of these} \\)"
+    ]
+  },
+  {
+    "id": 137,
+    "testIdcet": 3,
+    "question": "Let A, B be two events such that the probability of A is \\( \\frac{1}{3} \\) and conditional probability of A given B is \\( \\frac{1}{2} \\). The probability that exactly one of the events A or B happens equals",
+    "options": [
+      "\\frac{1}{2}",
+      "\\frac{6}{10}",
+      "\\frac{7}{10}",
+      "\\frac{7}{9}"
+    ]
+  },
+  {
+    "id": 138,
+    "testIdcet": 3,
+    "question": "If the line passing through P(1, 2) making an angle with the x-axis in the positive direction meets the pair of lines \\( x^2 + 4xy + y^2 = 4 \\) at A and B, then \\( PA \\cdot PB \\) is",
+    "options": [
+      "13/3",
+      "13/6",
+      "11/6",
+      "11/3"
+    ]
+  },
+  {
+    "id": 139,
+    "testIdcet": 3,
+    "question": "If the curves \\( dy = x^2 + 7 \\) and \\( x^2 = y \\) cut orthogonally at (1,1), then the value of \\( a \\) is",
+    "options": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "id": 140,
+    "testIdcet": 3,
+    "question": "The value of \\( \\cos \\left( 2\\cos^{-1} (x + \\sin^{-1} x) \\right) \\) at \\( x = \\frac{1}{5} \\) is",
+    "options": [
+      "\\frac{2\\sqrt{6}}{5}",
+      "\\frac{\\sqrt{6}}{5}",
+      "None"
+    ]
+  },
+  {
+    "id": 141,
+    "testIdcet": 3,
+    "question": "Which of the following is logically equivalent to \\( \\sim (p \\Rightarrow q) \\)",
+    "options": [
+      "\\( p \\wedge q \\)",
+      "\\( p \\wedge \\sim q \\)",
+      "\\( \\sim p \\wedge q \\)",
+      "\\( \\sim p \\Rightarrow q \\)"
+    ]
+  },
+  {
+    "id": 142,
+    "testIdcet": 3,
+    "question": "The area of the region bounded by the curves \\( y^2 - 1 = 2|x - 1| \\), \\( x = 3 \\) and the x-axis is",
+    "options": [
+      "4",
+      "2",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "id": 143,
+    "testIdcet": 3,
+    "question": "If the slope of the tangent at (x,y) to a curve passing through \\( \\left(1, \\frac{\\pi}{4} \\right) \\) is given by \\( \\frac{y}{x} - \\cos^2 y \\left( \\frac{y}{x} \\right) \\), then the equation of the curve is",
+    "options": [
+      "\\( y = \\tan^{-1} \\log (c/x) \\)",
+      "\\( y = e^{t + c(1-y)} \\)",
+      "\\( y = x \\tan^{-1} \\log \\frac{e}{x} \\)",
+      "\\( y = e^{(1+y) \\log x} \\)"
+    ]
+  },
+  {
+    "id": 144,
+    "testIdcet": 3,
+    "question": "A fair coin is tossed 99 times. If X is the number of times heads occurs, P(X=x) is maximum when",
+    "options": [
+      "49 or 50",
+      "50 or 51",
+      "None of these"
+    ]
+  },
+  {
+    "id": 145,
+    "testIdcet": 3,
+    "question": "The fourth term of an A.P. is three times of the first term and the seventh term exceeds the twice of the third term by one, then the common difference of the progression is",
+    "options": [
+      "2",
+      "3",
+      "\\(\\frac{3}{2}\\)",
+      "-1"
+    ]
+  },
+  {
+    "id": 146,
+    "testIdcet": 3,
+    "question": "The eccentricity of the hyperbola \\( x^2 - 3y^2 = 2x + 8 \\) is",
+    "options": [
+      "\\( \\frac{2}{3} \\)",
+      "\\( \\frac{1}{3} \\)",
+      "\\( \\frac{2}{\\sqrt{3}} \\)",
+      "\\( \\frac{3}{2} \\)"
+    ]
+  },
+  {
+    "id": 147,
+    "testIdcet": 3,
+    "question": "The differential equation representing the family of curves \\( y^2 = 2c (x + \\sqrt{c}) \\), where c is a positive parameter, is of",
+    "options": [
+      "order 3",
+      "order 2",
+      "degree 3",
+      "degree 4"
+    ]
+  },
+  {
+    "id": 148,
+    "testIdcet": 3,
+    "question": "If \\( f(x) = \\frac{1}{1 - x} \\), the number of points of discontinuity of \\( f(f(f(x))) \\) is:",
+    "options": [
+      "2",
+      "1",
+      "0",
+      "infinite"
+    ]
+  },
+
+  {
+    "id": 1,
+    "testIdcet": 4,
+    "question": "The frequencies for series limit of Balmer and Paschen series respectively are \\( v_1 \\) and \\( v_2 \\). If frequency of first line of Balmer series is \\( v_3 \\), then the relation between \\( v_1, v_2 \\) and \\( v_3 \\) is",
+    "options": [
+      "\\( v_1 + v_2 = v_3 \\)",
+      "\\( v_1 - v_2 = v_3 \\)",
+      "\\( v_1 + v_3 = v_2 \\)",
+      "\\( v_1 - v_3 = v_2 \\)"
+    ]
+  },
+  {
+    "id": 2,
+    "testIdcet": 4,
+    "question": "When three capacitors of equal capacities are connected in parallel and one of the same capacity is connected in series with this combination. The resultant capacity is \\(3.75\\mu F\\). The capacity of each capacitor is",
+    "options": [
+      "5 \\(\\mu F\\)",
+      "6 \\(\\mu F\\)",
+      "7 \\(\\mu F\\)",
+      "8 \\(\\mu F\\)"
+    ]
+  },
+  {
+    "id": 3,
+    "testIdcet": 4,
+    "question": "Sensitivity of moving coil galvanometer is \\( S \\). If \\( \\frac{1}{8} \\) of the resistance of galvanometer is connected to moving coil galvanometer, its sensitivity becomes",
+    "options": [
+      "\\( \\frac{S}{3} \\)",
+      "\\( \\frac{S}{6} \\)",
+      "\\( \\frac{S}{2} \\)",
+      "\\( \\frac{S}{12} \\)"
+    ]
+  },
+  {
+    "id": 4,
+    "testIdcet": 4,
+    "question": "Two unknown resistances are connected in two gaps of a meter-bridge. The null point is obtained at 40 cm from left end. A 30 \\( \\Omega \\) resistance is connected in series with the smaller of the two resistances, the null point shifts by 20 cm to the right end. The value of smaller resistance in \\( \\Omega \\) is",
+    "options": [
+      "12",
+      "24",
+      "36",
+      "48"
+    ]
+  },
+  {
+    "id": 5,
+    "testIdcet": 4,
+    "question": "In Fraunhofer diffraction pattern, slit width is 0.2 mm and screen is at 2 m away from the lens. If wavelength of light used is 5000 Å, the distance between the first minimum on either side of the central maximum is (in \\( \\theta \\) is small and measured in radian)",
+    "options": [
+      "10^{-1} \\text{ m}",
+      "10^{-2} \\text{ m}",
+      "10^{-3} \\text{ m}",
+      "2 \\times 10^{-3} \\text{ m}"
+    ]
+  },
+  {
+    "id": 6,
+    "testIdcet": 4,
+    "question": "In series \\( LCR \\) circuit \\( R = 18 \\Omega \\) and impedance is \\( 33 \\Omega \\). An ac source 220 V is applied across the circuit. The true power consumed in AC circuit is",
+    "options": [
+      "220 W",
+      "400 W",
+      "600 W",
+      "800 W"
+    ]
+  },
+  {
+    "id": 7,
+    "testIdcet": 4,
+    "question": "Two parallel plate capacitors of same capacity \\( C \\) are connected in series to a battery of emf \\( E \\). Then one of the capacitors is completely filled with dielectric material of constant \\( K \\). The change in the effective capacity of the series combination is",
+    "options": [
+      "\\( \\frac{C(K - 1)}{2(K + 1)} \\)",
+      "\\( \\frac{2C(K - 1)}{K + 1} \\)",
+      "\\( \\frac{C(K + 1)}{2(K - 1)} \\)",
+      "\\( \\frac{C(K - 1)}{2K + 1} \\)"
+    ]
+  },
+  {
+    "id": 8,
+    "testIdcet": 4,
+    "question": "The polarising angle for transparent medium is \\( \\theta \\) and \\( v \\) is the speed of light in that medium. Then relation between \\( \\theta \\) and \\( v \\) is",
+    "options": [
+      "\\( \\theta = \\tan^{-1} \\left( \\frac{v}{c} \\right) \\)",
+      "\\( \\theta = \\cot^{-1} \\left( \\frac{v}{c} \\right) \\)",
+      "\\( \\theta = \\sin^{-1} \\left( \\frac{v}{c} \\right) \\)",
+      "\\( \\theta = \\cos^{-1} \\left( \\frac{v}{c} \\right) \\)"
+    ]
+  },
+
+  {
+    "id": 9,
+    "testIdcet": 4,
+    "question": "Two identical light waves having phase difference ‘Φ’ propagate in same direction. When they superpose, the intensity of resultant wave is proportional to",
+    "options": [
+      "cos²Φ",
+      "cos²(Φ/2)",
+      "cos²(Φ/3)",
+      "cos²(Φ/4)"
+    ]
+  },
+  {
+    "id": 10,
+    "testIdcet": 4,
+    "question": "For a transistor, αc and βc are the current ratios, then the value of \\ \frac{\\beta_c}{\\alpha_c - \\beta_c} \\ is",
+    "options": [
+      "1",
+      "1.5",
+      "2",
+      "2.5"
+    ]
+  },
+  {
+    "id": 11,
+    "testIdcet": 4,
+    "question": "A radioactive element has rate of disintegration 10,000 disintegrations per minute at a particular instant. After four minutes it becomes 2500 disintegrations per minute. The decay constant per minute is",
+    "options": [
+      "0.2 log2",
+      "0.5 log2",
+      "0.6 log2",
+      "0.8 log2"
+    ]
+  },
+  {
+    "id": 12,
+    "testIdcet": 4,
+    "question": "When the same monochromatic ray of light travels through glass slab and through water, the number of waves in glass slab of thickness 6cm is same as in water column of height 7cm. If refractive index of glass is 1.5, then refractive index of water is",
+    "options": [
+      "1.258",
+      "1.269",
+      "1.286",
+      "1.310"
+    ]
+  },
+  {
+    "id": 13,
+    "testIdcet": 4,
+    "question": "If the electron in hydrogen atom jumps from second Bohr orbit to ground state and difference between energies of the two states is radiated in the form of photons. If the work function of the material is 4.2 eV, then stopping potential is",
+    "options": [
+      "XV",
+      "4V",
+      "6V",
+      "8V"
+    ]
+  },
+  {
+    "id": 14,
+    "testIdcet": 4,
+    "question": "The magnetic moment of electron due to orbital motion is proportional to \\ (n = \\text{principal quantum numbers}) \\",
+    "options": [
+      "1/n²",
+      "1/n",
+      "n²",
+      "n"
+    ]
+  },
+  {
+    "id": 15,
+    "testIdcet": 4,
+    "question": "Photodiode is a device",
+    "options": [
+      "which is always operated in reverse bias",
+      "which is always operated in forward bias",
+      "in which photo current is independent of intensity of incident radiation",
+      "which may be operated in forward or reverse bias"
+    ]
+  },
+  {
+    "id": 16,
+    "testIdcet": 4,
+    "question": "A bucket of moment of inertia 2 kg m² is rotating about its axis passing through centre and perpendicular to its plane at a speed 60 rad/s. Due to friction, it comes to rest in 5 minutes. The angular momentum of the wheel three minutes before it stops rotating is",
+    "options": [
+      "48 kg m²/s",
+      "72 kg m²/s",
+      "96 kg m²/s",
+      "None of these"
+    ]
+  },
+  {
+    "id": 17,
+    "testIdcet": 4,
+    "question": "The equation of the progressive wave is \\ 3 \\sin \\[ \\pi \\left( \\frac{x}{5} + \\frac{t}{4} \\right) \\] \\, where x and y are in metre and time in second. Which of the following is correct?",
+    "options": [
+      "Velocity = 1.5 m/s",
+      "Amplitude = 3cm",
+      "Frequency = 0.2Hz",
+      "Wavelength = 10m"
+    ]
+  },
+
+  {
+    "id": 18,
+    "testIdcet": 4,
+    "question": "Two spherical black bodies have radii \\( r_1 \\) and \\( r_2 \\). Their surface temperatures are \\( T_1 \\) and \\( T_2 \\). If they radiate the same power, then \\( \\frac{r_2}{r_1} \\) is",
+    "options": [
+      "\\( \\frac{T_1}{T_2} \\)",
+      "\\( \\frac{T_2}{T_1} \\)",
+      "\\( \\left( \\frac{T_1}{T_2} \\right)^2 \\)",
+      "\\( \\left( \\frac{T_2}{T_1} \\right)^2 \\)"
+    ]
+  },
+  {
+    "id": 19,
+    "testIdcet": 4,
+    "question": "The closed and open organ pipes have the same length. When they are vibrating simultaneously in the first overtone, they produce three beats. The length of the open pipe is made \\( \\frac{1}{3} \\)rd and the closed pipe is made three times the original. The number of beats produced will be",
+    "options": [
+      "8",
+      "14",
+      "17",
+      "20"
+    ]
+  },
+  {
+    "id": 20,
+    "testIdcet": 4,
+    "question": "A lift of mass \\( m \\) is connected to a rope which is moving upward with maximum acceleration \\( a \\). For maximum safe stress, the elastic limit of the rope is \\( T \\). The minimum diameter of the rope is (\\( g \\) = gravitational acceleration)",
+    "options": [
+      "\\( \\left( \\frac{2m(g + a)}{\\pi T} \\right)^{\\frac{1}{2}} \\)",
+      "\\( \\left( \\frac{4m(g + a)}{\\pi T} \\right)^{\\frac{1}{2}} \\)",
+      "\\( \\left( \\frac{m(g + a)}{\\pi T} \\right)^{\\frac{1}{2}} \\)",
+      "\\( \\left( \\frac{m(g + a)}{2\\pi T} \\right)^{\\frac{1}{2}} \\)"
+    ]
+  },
+
+  {
+    "id": 21,
+    "testIdcet": 4,
+    "question": "A solid sphere of mass 2 kg is rolling on a frictionless horizontal surface with velocity 6m/s. It collides on the free end of an ideal spring whose other end is fixed. The maximum compression produced in the spring will be (Force constant of the spring = 36 N/m)",
+    "options": [
+      "√4m",
+      "√2.8m",
+      "√14m",
+      "√0.7m"
+    ]
+  },
+  {
+    "id": 22,
+    "testIdcet": 4,
+    "question": "A flywheel at rest is to reach an angular velocity of 24rad/s in 8 second with constant angular acceleration. The total angle turned through during this interval is",
+    "options": [
+      "24rad",
+      "48rad",
+      "72rad",
+      "96rad"
+    ]
+  },
+  {
+    "id": 23,
+    "testIdcet": 4,
+    "question": "Two uniform wires of the same material are vibrating under the same tension. If the first overtone of the first wire is equal to the second overtone of the second wire and radius of the first wire is twice the radius of the second wire, then the ratio of the lengths of the first wire to second wire is",
+    "options": [
+      "1/3",
+      "1/6",
+      "1/2",
+      "1"
+    ]
+  },
+  {
+    "id": 24,
+    "testIdcet": 4,
+    "question": "When one end of the capillary is dipped in water, the height of the water column is ‘h’. The upward force of 105 dyne due to surface tension is balanced by the force due to the weight of water column. The inner circumference of capillarity is (Surface tension of water = 7×10⁻³N/m)",
+    "options": [
+      "1.5cm",
+      "2cm",
+      "2.5cm",
+      "3cm"
+    ]
+  },
+  {
+    "id": 25,
+    "testIdcet": 4,
+    "question": "For a rigid diatomic molecule, universal gas constant R=NC₀ where ‘C₀’ is the molar specific heat at constant pressure and ‘N’ is a number. Hence ‘n’ is equal to",
+    "options": [
+      "0.2257",
+      "0.4",
+      "0.2857",
+      "0.3557"
+    ]
+  },
+  {
+    "id": 26,
+    "testIdcet": 4,
+    "question": "An ideal gas has pressure ‘p’ volume ‘V’ and absolute temperature ‘T’. If ‘m’ is the mass of each molecule and ‘K’ is the Boltzmann constant, then density of the gas is",
+    "options": [
+      "pm/KT",
+      "pm/pT",
+      "pK/Tm",
+      "pK/Tm"
+    ]
+  },
+  {
+    "id": 27,
+    "testIdcet": 4,
+    "question": "A big water drop is formed by the combination of ‘n’ small water drops of equal radii. The ratio of the surface energy of ‘n’ drops to the surface energy of big drop is",
+    "options": [
+      "n² : 1",
+      "n : 1",
+      "√n : 1",
+      "√n:1"
+    ]
+  },
+  {
+    "id": 28,
+    "testIdcet": 4,
+    "question": "The ratio of binding energy of a satellite at rest on earth’s surface to the binding energy of a satellite of same mass revolving around the earth at a height ‘h’ above the earth’s surface is (R = radius of the earth).",
+    "options": [
+      "2(R+h)/R",
+      "(R+h)/2",
+      "R/(R+h)",
+      "R+h/R"
+    ]
+  },
+  {
+    "id": 29,
+    "testIdcet": 4,
+    "question": "A particle performing SHM starts equilibrium position and its time period is 16 seconds. After 2 seconds its velocity is ‘n’ m/s. Amplitude of oscillation is",
+    "options": [
+      "cos 45° = √2/2",
+      "√2m",
+      "4√2m",
+      "4/2m"
+    ]
+  },
+  {
+    "id": 30,
+    "testIdcet": 4,
+    "question": "In sonometer experiment, the string of length ‘L’ under tension vibrates in second overtone between two bridges. The amplitude of vibration is maximum at",
+    "options": [
+      "2L/3, 5L/3",
+      "L/3, 2L/3",
+      "L/8, 4L/2",
+      "L/6, 2L/6"
+    ]
+  },
+  {
+    "id": 31,
+    "testIdcet": 4,
+    "question": "The depth ‘d’ at which the value of acceleration due to gravity becomes 1/n times the value at the earth’s surface is (R = radius of earth)",
+    "options": [
+      "d = R(n-1)/n",
+      "d = R - n/n-1",
+      "d = R(n-1)/n",
+      "d = R - n/n-1"
+    ]
+  },
+  {
+    "id": 32,
+    "testIdcet": 4,
+    "question": "A particle is performing SHM starting extreme position, graphical representation shows that between displacement and acceleration there is a phase difference of",
+    "options": [
+      "0 rad",
+      "π/4 rad",
+      "π/2 rad",
+      "π rad"
+    ]
+  },
+  {
+    "id": 33,
+    "testIdcet": 4,
+    "question": "The fundamental frequency of an air column in a pipe closed at one end is 100 Hz. If the same pipe is open at both the ends, the frequencies produced in Hz are",
+    "options": [
+      "100, 200, 300, 400",
+      "100, 300, 500, 700",
+      "200, 300, 400, 500",
+      "200, 400, 600, 800"
+    ]
+  },
+  
+  {
+    "id": 34,
+    "testIdcet": 4,
+    "question": "For a particle moving in a vertical circle, the total energy at different positions along the path",
+    "options": [
+      "is conserved",
+      "increases",
+      "decreases",
+      "may increase or decrease"
+    ]
+  },
+  {
+    "id": 35,
+    "testIdcet": 4,
+    "question": "A simple pendulum of length \\( L \\) has mass \\( M \\) and it oscillates freely with amplitude \\( A \\). At the extreme position, its potential energy is (g = acceleration due to gravity)",
+    "options": [
+      "\\( \\frac{MgA^2}{2L} \\)",
+      "\\( \\frac{MgA^2}{L} \\)",
+      "\\( \\frac{MgA}{2} \\)",
+      "\\( 2MgA \\)"
+    ]
+  },
+  {
+    "id": 36,
+    "testIdcet": 4,
+    "question": "On a photosensitive material, when the frequency of incident radiation is increased by 30%, the kinetic energy of emitted photoelectrons increases from 0.4 eV. The work function of the surface is",
+    "options": [
+      "1 eV",
+      "1.26 eV",
+      "1.44 eV",
+      "1.8 eV"
+    ]
+  },
+  {
+    "id": 37,
+    "testIdcet": 4,
+    "question": "Out of the following graphs, which graph shows the correct relation (graphical representation) for LC parallel resonant circuit?",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)",
+      "(4)"
+    ]
+  },
+  {
+    "id": 38,
+    "testIdcet": 4,
+    "question": "According to de-Broglie hypothesis, the wavelength associated with a moving electron of mass \\( m \\) is \\( \\lambda_1 \\). Using mass energy relation and Planck's quantum theory, the wavelength associated with a photon is \\( \\lambda_2 \\). If the energy (E) of electron and photon is the same, then the relation between \\( \\lambda_1 \\) and \\( \\lambda_2 \\) is",
+    "options": [
+      "\\( \\lambda_2 > \\lambda_1 \\)",
+      "\\( \\lambda_2 \\propto \\lambda_1^2 \\)",
+      "\\( \\lambda_2 \\propto \\sqrt{\\lambda_1} \\)",
+      "\\( \\lambda_2 > \\lambda_1^3 \\)"
+    ]
+  },
+  {
+    "id": 39,
+    "testIdcet": 4,
+    "question": "A parallel plate air capacitor of capacitance \\( C \\), charge potential \\( V \\), and total energy \\( E \\) joule. When the gap between the plates is completely filled with a dielectric,",
+    "options": [
+      "both \\( V \\) and \\( E \\) increase",
+      "both \\( V \\) and \\( E \\) decrease",
+      "\\( V \\) decreases, \\( E \\) increases",
+      "\\( V \\) increases, \\( E \\) decreases"
+    ]
+  },
+  {
+    "id": 40,
+    "testIdcet": 4,
+    "question": "The resistivity of a potentiometer wire is \\( 40 \\times 10^{-8} \\) ohm-metre and its area of cross-section is \\( 8 \\times 10^{-6} \\) m². If a 2A current is flowing through the wire, then the potential gradient of the wire is",
+    "options": [
+      "\\( 10^7 \\) V/m",
+      "\\( 10^5 \\) V/m",
+      "\\( 10^6 \\) V/m",
+      "\\( 10^4 \\) V/m"
+    ]
+  },
+  {
+    "id": 41,
+    "testIdcet": 4,
+    "question": "A ceiling fan rotates about its own axis with some angular velocity. When the fan is switched off, the angular velocity becomes \\( \\frac{1}{4} \\)th of the original in time \\( t \\) and \\( N \\) revolutions are made in that time. The number of revolutions made by the fan during the time interval between switch off and rest are (Angular retardation is uniform)",
+    "options": [
+      "\\( \\frac{4N}{3} \\)",
+      "\\( \\frac{8N}{15} \\)",
+      "\\( \\frac{16N}{15} \\)",
+      "\\( \\frac{32N}{15} \\)"
+    ]
+  },
+  {
+    "id": 42,
+    "testIdcet": 4,
+    "question": "A disc of moment of inertia \\( I_1 \\) is rotating in a horizontal plane about an axis passing through its center and perpendicular to its plane with constant angular speed \\( \\omega_0 \\). Another disc of moment of inertia \\( I_2 \\) having zero angular speed is placed coaxially on a rotating disc. Now, both the discs are rotating with constant angular speed \\( \\omega_1 \\). The energy lost by the initial rotating disc is",
+    "options": [
+      "\\( \\frac{1}{2} \\frac{I_1 I_2}{I_1 + I_2} \\omega_0^2 \\)",
+      "\\( \\frac{1}{2} \\frac{I_1 I_2}{2 I_1 - I_2} \\omega_0^2 \\)",
+      "\\( \\frac{1}{2} \\frac{I_1 - I_2}{I_1} \\omega_0^2 \\)",
+      "\\( \\frac{1}{2} \\frac{I_2}{2 I_1 + I_2} \\omega_0^2 \\)"
+    ]
+  },
+  {
+    "id": 43,
+    "testIdcet": 4,
+    "question": "A particle performs linear SHM at a particular instant, the velocity of the particle is \\( u \\) and acceleration is \\( a \\), while at another instant velocity is \\( v \\) and acceleration is \\( \\beta \\) (\\( 0 < a < \\beta \\)). The distance between the two positions is",
+    "options": [
+      "\\( \\frac{u^2 - v^2}{a + \\beta} \\)",
+      "\\( \\frac{u^2 + v^2}{a + \\beta} \\)",
+      "\\( \\frac{u^2 - v^2}{a - \\beta} \\)",
+      "\\( \\frac{u^2 + v^2}{a - \\beta} \\)"
+    ]
+  },
+
+  {
+    "id": 44,
+    "testIdcet": 4,
+    "question": "The observer is moving with velocity 'v₀' towards the stationary source of sound and then after crossing moves away from the source with velocity 'v₀'. Assume that the medium through which the sound waves travel is at rest. If 'v' is the velocity of sound and 'n' is the frequency emitted by the source, then the difference between apparent frequencies heard by the observer is",
+    "options": [
+      "2n₀ v₀ / v",
+      "n₀ v₀ / v",
+      "v / 2n₀ v₀",
+      "v / n₀ v₀"
+    ]
+  },
+  {
+    "id": 45,
+    "testIdcet": 4,
+    "question": "A metal rod of length 'L' and cross-sectional area 'A' is heated through 'T°C'. What is the force required to prevent the expansion of the rod lengthwise?",
+    "options": [
+      "Y AαT / (1 - αT)",
+      "Y AαT / (1 + αT)",
+      "(1 - αT) / Y AαT",
+      "(1 + αT) / Y AαT"
+    ]
+  },
+  {
+    "id": 46,
+    "testIdcet": 4,
+    "question": "Two coils P and Q are kept near each other. When no current flows through coil P and current increases in coil Q at the rate 10 A/s, the emf in coil P is 15 mV. When coil Q carries no current and current of 1.8 A flows through coil P, the magnetic flux linked with the coil Q is",
+    "options": [
+      "1.4 mWb",
+      "2.2 mWb",
+      "2.7 mWb",
+      "2.9 mWb"
+    ]
+  },
+  {
+    "id": 47,
+    "testIdcet": 4,
+    "question": "In Young’s double experiment, in an interference pattern second minimum is observed exactly in front of one slit. The distance between the two coherent sources is 'a' and the distance between source and screen is 'D'. The wavelength of light source used is",
+    "options": [
+      "d² / D",
+      "d² / 2D",
+      "d² / 3D",
+      "d² / 4D"
+    ]
+  },
+  {
+    "id": 48,
+    "testIdcet": 4,
+    "question": "In communication system, the process of superimposing a low frequency signal on a high frequency wave is known as",
+    "options": [
+      "repeater",
+      "attenuation",
+      "modulation",
+      "demodulation"
+    ]
+  },
+  {
+    "id": 49,
+    "testIdcet": 4,
+    "question": "A bar magnet has length 3 cm, cross-sectional area 2 cm² and magnetic moment 3 Am². The intensity of magnetisation of bar magnet is",
+    "options": [
+      "2 × 10⁴ A/m",
+      "3 × 10⁴ A/m",
+      "4 × 10⁴ A/m",
+      "5 × 10⁴ A/m"
+    ]
+  },
+  {
+    "id": 50,
+    "testIdcet": 4,
+    "question": "The magnetic flux near the axis and inside the air core solenoid of length 60 cm carrying current ‘I’ is 157 × 10⁻⁴ Wb. Its magnetic moment will be (cross-sectional area of a solenoid is very small as compared to its length, μ₀ = 4π × 10⁻⁷ SI unit)",
+    "options": [
+      "0.25 A",
+      "0.50 A",
+      "0.75 A",
+      "1 A"
+    ]
+  },
+  {
+    "id": 51,
+    "testIdcet": 4,
+    "question": "The work done during combustion of 9 × 10⁻³ kg of ethane, C₂H₆ at 300 K is (Given R = 8.314 J deg⁻¹, atomic mass C = 12, H = 1)",
+    "options": [
+      "6.236 kJ",
+      "-6.236 kJ",
+      "8.171 kJ",
+      "-8.171 kJ"
+    ]
+  },
+  {
+    "id": 52,
+    "testIdcet": 4,
+    "question": "What type of sugar molecule is present in DNA?",
+    "options": [
+      "D-3-deoxyribose",
+      "D-ribose",
+      "D-2-deoxyribose",
+      "D-glucopyranose"
+    ]
+  },
+  {
+    "id": 53,
+    "testIdcet": 4,
+    "question": "The molality of solution containing 15.20 g of urea, molar mass = 60 g/mol dissolved in 150 g of water is",
+    "options": [
+      "1.689 mol kg⁻¹",
+      "0.1689 mol kg⁻¹",
+      "0.5922 mol kg⁻¹",
+      "0.2533 mol kg⁻¹"
+    ]
+  },
+  {
+    "id": 54,
+    "testIdcet": 4,
+    "question": "The acid, which contains both -OH and -COOH groups is",
+    "options": [
+      "phthalic acid",
+      "adipic acid",
+      "glutaric acid",
+      "salicylic acid"
+    ]
+  },
+  {
+    "id": 55,
+    "testIdcet": 4,
+    "question": "Identify the compound, in which phosphorus exists in the oxidation state of +1.",
+    "options": [
+      "Phosphoric acid (H₃PO₄)",
+      "Phosphinic acid (H₃PO₂)",
+      "Pyrophosphorus acid (H₄P₂O₅)",
+      "Orthophosphoric acid (H₄P₂O₇)"
+    ]
+  },
+  {
+    "id": 56,
+    "testIdcet": 4,
+    "question": "Identify the weakest oxidising agent among the following.",
+    "options": [
+      "Li⁺",
+      "Na⁺",
+      "Cd²⁺",
+      "I₂"
+    ]
+  },
+  {
+    "id": 57,
+    "testIdcet": 4,
+    "question": "The monomers used in preparation of teraton are",
+    "options": [
+      "lactic acid and glycolic acid",
+      "3-hydroxy butanoic acid and 3-hydroxy pentanoic acid",
+      "styrene and 1,3-butadiene",
+      "hexamethylene diamine and adipic acid"
+    ]
+  },
+  {
+    "id": 58,
+    "testIdcet": 4,
+    "question": "Which among the following compounds does not act as reducing agent?",
+    "options": [
+      "H₂O",
+      "H₂S",
+      "H₂Se",
+      "H₂Te"
+    ]
+  },
+  {
+    "id": 59,
+    "testIdcet": 4,
+    "question": "Which of the following processes is not used to preserve the food?",
+    "options": [
+      "Irradiation",
+      "Addition of salts",
+      "Addition of heat",
+      "Hydration"
+    ]
+  },
+  {
+    "id": 60,
+    "testIdcet": 4,
+    "question": "In case of substituted aniline the group which decreases the basic strength is",
+    "options": [
+      "-OCH₃",
+      "-CH₃",
+      "-NH₂",
+      "-C₂H₅"
+    ]
+  },
+  {
+    "id": 61,
+    "testIdcet": 4,
+    "question": "(+2)-2-methylbutan-1-ol & (-2)-2-methylbutan-1-ol have different values for which property?",
+    "options": [
+      "Boiling point",
+      "Relative density",
+      "Refraction index",
+      "Specific rotation"
+    ]
+  },
+  {
+    "id": 62,
+    "testIdcet": 4,
+    "question": "Which among the following is not mineral of iron?",
+    "options": [
+      "Hematite",
+      "Magnetite",
+      "Magnesite",
+      "Siderite"
+    ]
+  },
+
+  {
+    "id": 63,
+    "testIdcet": 4,
+    "question": "Nitration of which among the following compounds yields cyclonite?",
+    "options": [
+      "Formaldehyde",
+      "Benzaldehyde",
+      "Urotropine",
+      "Acetaldehyde ammonia"
+    ]
+  },
+  {
+    "id": 64,
+    "testIdcet": 4,
+    "question": "Calculate the work done during compression of 2 mol of an ideal gas from a volume of 1 m³ to 10 dm³ 300K against a pressure of 100 KPa.",
+    "options": [
+      "-99 kJ",
+      "+99 kJ",
+      "-22.98 kJ",
+      "-22.98 kJ"
+    ]
+  },
+  {
+    "id": 65,
+    "testIdcet": 4,
+    "question": "Which element among the following does form π – π multiple bonds?",
+    "options": [
+      "Arsenic",
+      "Nitrogen",
+      "Phosphorus",
+      "Antimony"
+    ]
+  },
+  {
+    "id": 66,
+    "testIdcet": 4,
+    "question": "Which of the following statement(s) is/are incorrect in case of Hofmann bromamide degradation?",
+    "options": [
+      "Reaction is useful for decreasing length of carbon chain by one carbon atom",
+      "It gives tertiary amine",
+      "It gives primary amine",
+      "Aqueous or alc. KOH is used with bromine"
+    ]
+  },
+  {
+    "id": 67,
+    "testIdcet": 4,
+    "question": "Which of the following statement (s) is/are incorrect for pair of elements Zr-Hf?",
+    "options": [
+      "Both possess same number of valence electrons.",
+      "Both have almost identical radii.",
+      "Both these belong to same period of periodic table."
+    ]
+  },
+  {
+    "id": 68,
+    "testIdcet": 4,
+    "question": "Aldehyde or ketones when treated with C6H5-NH-NH2, the product formed is",
+    "options": [
+      "semicarbazone",
+      "phenylhydrazone",
+      "hydrazone",
+      "oxime"
+    ]
+  },
+  {
+    "id": 69,
+    "testIdcet": 4,
+    "question": "Solubility of which among the following solids in water changes slightly with temperature?",
+    "options": [
+      "KNO3",
+      "NaNO3",
+      "KBr",
+      "NaBr"
+    ]
+  },
+  {
+    "id": 70,
+    "testIdcet": 4,
+    "question": "What is the quantity of hydrogen gas liberated when 4 g sodium reacts with excess ethanol?",
+    "options": [
+      "2.4 × 10⁻³ kg",
+      "2.0 × 10⁻³ kg",
+      "4.0 × 10⁻³ kg",
+      "2.4 × 10⁻³ kg"
+    ]
+  },
+  {
+    "id": 71,
+    "testIdcet": 4,
+    "question": "Tert-butyl methyl ether on treatment with hydrogen iodide in cold gives",
+    "options": [
+      "tert-butyl iodide and methyl iodide",
+      "tert-butyl alcohol and methyl alcohol",
+      "tert-butyl alcohol and methyl iodide",
+      "tert-butyl iodide and methyl alcohol"
+    ]
+  },
+  {
+    "id": 72,
+    "testIdcet": 4,
+    "question": "Name the process that is employed to refine aluminum.",
+    "options": [
+      "Hall’s process",
+      "Mond process",
+      "Hoop’s process",
+      "Serpeck’s process"
+    ]
+  },
+  {
+    "id": 73,
+    "testIdcet": 4,
+    "question": "The colour and magnetic nature of manganate ion (MnO4²⁻) is",
+    "options": [
+      "green, paramagnetic",
+      "purple, diamagnetic",
+      "green, diamagnetic",
+      "purple, paramagnetic"
+    ]
+  },
+  {
+    "id": 74,
+    "testIdcet": 4,
+    "question": "The osmotic pressure of solution containing 34.2 g of glucose (molar mass = 342 g mol⁻¹) in 1L of solution at 20°C (is Given R = 0.082 L atm K⁻¹ mol⁻¹)",
+    "options": [
+      "2.40 atm",
+      "3.64 atm",
+      "24 atm",
+      "0.0024 atm"
+    ]
+  },
+  {
+    "id": 75,
+    "testIdcet": 4,
+    "question": "In assigning R-S configuration, which among the following groups has highest priority?",
+    "options": [
+      "-SO3H",
+      "-COOH",
+      "-CHO",
+      "-CH3"
+    ]
+  },
+  {
+    "id": 76,
+    "testIdcet": 4,
+    "question": "Which of the following is used as antiseptic?",
+    "options": [
+      "Chloramphenicol",
+      "Bithional",
+      "Cimetidine",
+      "Chlorodiazepoxide"
+    ]
+  },
+  {
+    "id": 77,
+    "testIdcet": 4,
+    "question": "In preparation of sulphuric acid from sulphur dioxide in lead chamber process. What substance is used as a catalyst?",
+    "options": [
+      "Manganese dioxide",
+      "Vanadium pentoxide",
+      "Nitric oxide",
+      "Raney nickel"
+    ]
+  },
+  {
+    "id": 78,
+    "testIdcet": 4,
+    "question": "The correct charge on and co-ordination number of Fe³⁺ in [K3Fe(CN)6] is",
+    "options": [
+      "+2, 4",
+      "+3, 6",
+      "+2, 6",
+      "+3, 3"
+    ]
+  },
+  {
+    "id": 79,
+    "testIdcet": 4,
+    "question": "Which among the following reactions is an example of pseudo first order reaction?",
+    "options": [
+      "Inversion of cane sugar",
+      "Decomposition of H2O2",
+      "Conversion of cyclopropane to propene",
+      "Decomposition of N2O5"
+    ]
+  },
+  {
+    "id": 80,
+    "testIdcet": 4,
+    "question": "Thioamide, which reacts with p-toluenesulphonyl chloride to give a clear solution, which on acidification gives insoluble compound is",
+    "options": [
+      "C6H5NH2",
+      "C6H5N",
+      "CH3NHCH3",
+      "CH3NH2"
+    ]
+  },
+  {
+    "id": 81,
+    "testIdcet": 4,
+    "question": "Which among the following equation represents Arrhenius equation?",
+    "options": [
+      "k = A",
+      "k = A e⁻(Ea/RT)",
+      "k = A e (Ea/RT)",
+      "k = A e (Ea/2RT)"
+    ]
+  },
+  {
+    "id": 82,
+    "testIdcet": 4,
+    "question": "Which of the following compound will give positive iodoform test?",
+    "options": [
+      "Isopropyl alcohol",
+      "Propionaldehyde",
+      "Ethylphenyl ketone",
+      "Benzyl alcohol"
+    ]
+  },
+  {
+    "id": 83,
+    "testIdcet": 4,
+    "question": "The first law of thermodynamics for isothermal process is",
+    "options": [
+      "ΔE = -W",
+      "ΔU = W",
+      "ΔU = -q",
+      "ΔU = q"
+    ]
+  },
+  {
+    "id": 84,
+    "testIdcet": 4,
+    "question": "The conversion of ethyl bromide using sodium iodide and dry acetone, this reaction is known as",
+    "options": [
+      "Swarts reaction",
+      "Finkelstein reaction",
+      "Sandmeyer reaction",
+      "Stephen reaction"
+    ]
+  },
+  {
+    "id": 85,
+    "testIdcet": 4,
+    "question": "What is the hybridisation of carbon atoms in fullerene?",
+    "options": [
+      "sp²",
+      "sp",
+      "sp³",
+      "dsp³"
+    ]
+  },
+  {
+    "id": 86,
+    "testIdcet": 4,
+    "question": "What is the SI unit of conductivity?",
+    "options": [
+      "Sm",
+      "Sm⁻¹",
+      "Sm²",
+      "Sm³"
+    ]
+  },
+  {
+    "id": 87,
+    "testIdcet": 4,
+    "question": "Which of the following in Baeyer’s reagent?",
+    "options": [
+      "Alkaline KMnO₄",
+      "Acidic K₂Cr₂O₇",
+      "Alkaline Na₂Cr₂O₇",
+      "MnO₂"
+    ]
+  },
+  {
+    "id": 88,
+    "testIdcet": 4,
+    "question": "What is the chief constituent of pyrex glass?",
+    "options": [
+      "B₂O₃",
+      "SiO₂",
+      "Al₂O₃",
+      "Na₂O"
+    ]
+  },
+  {
+    "id": 89,
+    "testIdcet": 4,
+    "question": "Which of the following compounds has lowest boiling point?",
+    "options": [
+      "n-butyl alcohol",
+      "Iso-butyl alcohol",
+      "Tert-butyl alcohol",
+      "Sec-butyl alcohol"
+    ]
+  },
+  {
+    "id": 90,
+    "testIdcet": 4,
+    "question": "Identify the invalid equation",
+    "options": [
+      "ΔH = ∑H (reactants) - ∑H (products)",
+      "ΔH = ΔU + PV",
+      "ΔF (reversible) = ∑F (product bonds) - ∑F (reactant bonds)",
+      "ΔH = ΔU + ΔnRT"
+    ]
+  },
+  {
+    "id": 91,
+    "testIdcet": 4,
+    "question": "The rate constant for a first order reaction is 7.0 x 10⁻⁴ s⁻¹. If initial concentration of reactant is 0.080 M, what is the half-life of reaction?",
+    "options": [
+      "990 s",
+      "79.2 s",
+      "12375 s",
+      "10.10 x 10⁴ s"
+    ]
+  },
+  {
+    "id": 92,
+    "testIdcet": 4,
+    "question": "The polymer used in making handles of cookers and frying pans is",
+    "options": [
+      "bakelite",
+      "nylon-2-nylon-6",
+      "orlon",
+      "Polyvinyl chloride"
+    ]
+  },
+  {
+    "id": 93,
+    "testIdcet": 4,
+    "question": "Which halogen has the highest value of negative electron gain enthalpy?",
+    "options": [
+      "Fluorine",
+      "Chlorine",
+      "Bromine",
+      "Iodine"
+    ]
+  },
+  {
+    "id": 94,
+    "testIdcet": 4,
+    "question": "What is the actual volume occupied by water molecules present in 20 cm³ of water?",
+    "options": [
+      "20 cm³",
+      "10 cm³",
+      "40 cm³",
+      "24.89 cm³"
+    ]
+  },
+  {
+    "id": 95,
+    "testIdcet": 4,
+    "question": "Which of the following co-ordinate complexes is an exception to FAN rule? (Given atomic number Pt = 78, Fe = 26, Zn = 30, Cu = 29)",
+    "options": [
+      "[Pt(NH₃)₄]²⁺",
+      "[Fe(CN)₆]³⁻",
+      "[Zn(NH₃)₄]²⁺",
+      "[Cu(NH₃)₄]²⁺"
+    ]
+  },
+  {
+    "id": 96,
+    "testIdcet": 4,
+    "question": "Which among the following equations represents the reduction reaction taking place in lead accumulator at positive electrode, while it is being used as a source of electrical energy?",
+    "options": [
+      "Pb → Pb²⁺",
+      "Pb²⁺ → Pb",
+      "Pb²⁺ → PbO₂",
+      "Pb⁴⁺ → Pb²⁺"
+    ]
+  },
+  {
+    "id": 97,
+    "testIdcet": 4,
+    "question": "For which among the following equimolar aqueous solutions Van’t Hoff factor has the lowest value?",
+    "options": [
+      "Aluminium chloride",
+      "Potassium sulphate",
+      "Ammonium chloride",
+      "Urea"
+    ]
+  },
+  {
+    "id": 98,
+    "testIdcet": 4,
+    "question": "The amino acid, which is basic in nature is",
+    "options": [
+      "histidine",
+      "tyrosine",
+      "proline",
+      "valine"
+    ]
+  },
+  {
+    "id": 99,
+    "testIdcet": 4,
+    "question": "Which element among the following does not form diatomic molecules?",
+    "options": [
+      "Argon",
+      "Oxygen",
+      "Nitrogen",
+      "Bromine"
+    ]
+  },
+  {
+    "id": 100,
+    "testIdcet": 4,
+    "question": "A molecule of stachyose contains how many carbon atoms?",
+    "options": [
+      "6",
+      "12",
+      "18",
+      "24"
+    ]
+  },
+
+  {
+    "id": 101,
+    "testIdcet": 4,
+    "question": "The number of principal solutions of \\( \\tan 2\\theta = 1 \\) is:",
+    "options": [
+      "one",
+      "two",
+      "three",
+      "four"
+    ]
+  },
+  {
+    "id": 102,
+    "testIdcet": 4,
+    "question": "The objective function \\( z = 4x_1 + 5x_2 \\), subject to \\( 2x_1 + x_2 \\geq 7 \\), \\( 2x_1 + 3x_2 \\leq 15 \\), \\( x_1 \\leq 3 \\), \\( x_1, x_2 \\geq 0 \\) has minimum value at the point:",
+    "options": [
+      "on X-axis",
+      "on Y-axis",
+      "at the origin",
+      "on the line parallel to X-axis"
+    ]
+  },
+  {
+    "id": 103,
+    "testIdcet": 4,
+    "question": "If \\( z_1 \\) and \\( z_2 \\) are z-coordinates of the points of trisection of the segment joining the points \\( A(2,1,4) \\), \\( B(-1,3,6) \\), then \\( z_1 + z_2 = \\)",
+    "options": [
+      "1",
+      "4",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "id": 104,
+    "testIdcet": 4,
+    "question": "The maximum value of \\( f(x) = \\frac{\\log x}{x} \\) for \\( x > 0, x \\neq 1 \\) is:",
+    "options": [
+      "e",
+      "\\frac{1}{e}",
+      "e^2",
+      "\\frac{1}{e^2}"
+    ]
+  },
+
+  {
+    "id": 105,
+    "testIdcet": 4,
+    "question": "∫ x * tan⁻¹ x dx =",
+    "options": [
+      "π/4 - 1/2",
+      "π/4 + 1/2",
+      "π/2 - 1/4",
+      "π/2 + 1/4"
+    ]
+  },
+  {
+    "id": 106,
+    "testIdcet": 4,
+    "question": "The statement pattern (¬ P ∧ Q) is logically equivalent to",
+    "options": [
+      "(P ∨ Q) ∨ ¬ P",
+      "(P ∨ Q) ∧ ¬ P",
+      "(P ∧ Q) → P",
+      "(P ∨ Q) → P"
+    ]
+  },
+  {
+    "id": 107,
+    "testIdcet": 4,
+    "question": "If g(x) is the inverse function of f(x) and f'(x) = (1 - x²) / (1 + [g(x)]⁴), then g'(x) is",
+    "options": [
+      "1 + [g(x)]⁴",
+      "1 - [g(x)]⁴",
+      "1 + [f(x)]⁴",
+      "1 / (1 + [g(x)]⁴)"
+    ]
+  },
+  {
+    "id": 108,
+    "testIdcet": 4,
+    "question": "The inverse of the matrix [ 1 0 0; 3 3 0; 5 2 -1] is",
+    "options": [
+      "[-3 0 0; 3 3 9; 9 -2 3]",
+      "[-3 0 0; 3 3 -1; -9 -2 3]",
+      "[-3 0 0; -3 3 0; 9 -2 3]",
+      "[-3 0 0; -3 3 0; -9 -2 3]"
+    ]
+  },
+  {
+    "id": 109,
+    "testIdcet": 4,
+    "question": "If ∫ (1 / (9 - 16x²)) dx = a sin⁻¹(βx) + c, then α / β =",
+    "options": [
+      "7/12",
+      "19/12",
+      "9/12",
+      "12/12"
+    ]
+  },
+  {
+    "id": 110,
+    "testIdcet": 4,
+    "question": "O(0,0), A(1,2), B(3,4) are the vertices of △OAB. The joint equation of the altitude and median drawn from O is",
+    "options": [
+      "x + 7xy - y² = 0",
+      "x² + 7xy + y² = 0",
+      "3x² - xy - 2y² = 0",
+      "3x² + xy - 2y² = 0"
+    ]
+  },
+  {
+    "id": 111,
+    "testIdcet": 4,
+    "question": "If the function f(x) = [tan(π/4 + x)] / [tan(π/4 - x)] for x ≠ 0 is K for x = 0 continuous at x = 0, then K = ?",
+    "options": [
+      "e",
+      "e²",
+      "e³",
+      "e⁴"
+    ]
+  },
+  {
+    "id": 112,
+    "testIdcet": 4,
+    "question": "For an invertible matrix A, if A(adj(A)) = [10 0; 0 10], then |A| =",
+    "options": [
+      "100",
+      "-100",
+      "10",
+      "-10"
+    ]
+  },
+  {
+    "id": 113,
+    "testIdcet": 4,
+    "question": "The solution of the differential equation dy/dx = tan(y/x) + (y/x) is",
+    "options": [
+      "cos(y/x) = cx",
+      "sin(y/x) = cx",
+      "cos(y/x) = cy",
+      "sin(y/x) = cy"
+    ]
+  },
+  {
+    "id": 114,
+    "testIdcet": 4,
+    "question": "In △ABC, if sinA + sinB = sin²C and K(AB) = 10, then the maximum value of the area of △ABC is",
+    "options": [
+      "50",
+      "10√2",
+      "25",
+      "25√2"
+    ]
+  },
+  {
+    "id": 115,
+    "testIdcet": 4,
+    "question": "If x = f(t) and y = g(t) are differentiable functions of t, then d²y/dx² is",
+    "options": [
+      "f''(t)g'(t) - g''(t)f'(t) / [f'(t)]³",
+      "f''(t)g'(t) + g''(t)f'(t) / [f'(t)]³",
+      "g''(t)f'(t) - f''(t)g'(t) / [f'(t)]³",
+      "g''(t)f'(t) + f''(t)g'(t) / [f'(t)]³"
+    ]
+  },
+  {
+    "id": 116,
+    "testIdcet": 4,
+    "question": "The equation of the line equality inclined to coordinate axes and passing through (-3,2,-5) is",
+    "options": [
+      "(x+3)/1 = (y-2)/-1 = (z+5)/1",
+      "(x+3)/1 = (y-2)/1 = (z+5)/-1",
+      "(x+3)/-1 = (y-2)/1 = (z+5)/1",
+      "(x+3)/1 = (y-2)/-1 = (z+5)/-1"
+    ]
+  },
+
+  {
+    "id": 117,
+    "testIdcet": 4,
+    "question": "If ∫₀³ log cos x dx = π/2 log (1/2), then",
+    "options": [
+      "∫₀ⁿ log sec dx",
+      "π/2 log (1/2)",
+      "1 - π/2 log (1/2)",
+      "π/2 log 2"
+    ]
+  },
+  {
+    "id": 118,
+    "testIdcet": 4,
+    "question": "A boy tosses fair coin 3 times. If he gets 2X for X heads, then his expected gain equals to .........",
+    "options": [
+      "1",
+      "3/2",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": 119,
+    "testIdcet": 4,
+    "question": "Which of the following statement pattern is a tautology?",
+    "options": [
+      "p ∨ (q → p)",
+      "q → p",
+      "(q → p) ∨ (p → q)",
+      "p ∧ ~p"
+    ]
+  },
+  {
+    "id": 120,
+    "testIdcet": 4,
+    "question": "If the angle between the planes r.(m̂ î - 3 ĵ + 2 k̂) + 3 = 0 and r.(2 î - m ĵ - k̂) - 5 = 0 is π/3, then m =",
+    "options": [
+      "2",
+      "±3",
+      "3",
+      "-2"
+    ]
+  },
+  {
+    "id": 121,
+    "testIdcet": 4,
+    "question": "If the origin and the points P(2,3,4), Q(1,2,3) and R(k, y, z) are coplanar, then",
+    "options": [
+      "x - 2y - z = 0",
+      "k + 2y + z = 0",
+      "x - 2y + z = 0",
+      "2x - 2y + z = 0"
+    ]
+  },
+  {
+    "id": 122,
+    "testIdcet": 4,
+    "question": "If lines represented by equation p²x² - qy² = 0 are distinct, then",
+    "options": [
+      "pq > 0",
+      "pq < 0",
+      "p + q = 0",
+      "p - q = 0"
+    ]
+  },
+  {
+    "id": 123,
+    "testIdcet": 4,
+    "question": "Let PQRS be a quadrilateral. If M and N are the mid-points of the sides PQ and RS respectively, then PS ∩ QR =",
+    "options": [
+      "3 MN",
+      "4MN",
+      "3 MN",
+      "2NM"
+    ]
+  },
+  {
+    "id": 124,
+    "testIdcet": 4,
+    "question": "If slopes of lines represented by kx² + 5xy + y² = 0 differ by 1, then k =",
+    "options": [
+      "2",
+      "3",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "id": 125,
+    "testIdcet": 4,
+    "question": "If vector v̂ with d₃ ≤ 1, m̂ is equally inclined to the coordinate axes, then the total number of such vectors is",
+    "options": [
+      "4",
+      "6",
+      "8",
+      "2"
+    ]
+  },
+  {
+    "id": 126,
+    "testIdcet": 4,
+    "question": "If ∫ (x² +1)/(x⁴ + x² +9) dx = 4 tan⁻¹ x/2 + B tan⁻¹ (x/3) + C, then A - B =",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": 127,
+    "testIdcet": 4,
+    "question": "If α and β are roots of the equation x² + 5|x| - 6 = 0, then the value of |tan⁻¹ α - tan⁻¹ β| is",
+    "options": [
+      "0",
+      "π/6",
+      "π",
+      "π/4"
+    ]
+  },
+  {
+    "id": 128,
+    "testIdcet": 4,
+    "question": "If x = (l - y)/l, y = (l + x)/l, where l is the parameter, then dy/dx =",
+    "options": [
+      "y/x",
+      "x/y",
+      "x/x",
+      "y/x"
+    ]
+  },
+  {
+    "id": 129,
+    "testIdcet": 4,
+    "question": "The point on the curve y = √x - 1, where the tangent is perpendicular to the line 2x+y-5=0 is",
+    "options": [
+      "(2,-1)",
+      "(10,3)",
+      "(2,1)",
+      "(5,-2)"
+    ]
+  },
+  {
+    "id": 130,
+    "testIdcet": 4,
+    "question": "If ∫√(x-5)/√(x-7) dx = A√x² -12x + 35 + log|x| - 6 + √x² -12x + 35 + C, then A =",
+    "options": [
+      "-1",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "id": 131,
+    "testIdcet": 4,
+    "question": "A random variable X ~ B(n, p). If values of mean and variance of X are 18 and 12 respectively, then total number of possible values of X are",
+    "options": [
+      "54",
+      "55",
+      "12",
+      "18"
+    ]
+  },
+  {
+    "id": 132,
+    "testIdcet": 4,
+    "question": "The area of the region bounded by the lines y = 2x + 1, y = 3x + 1 and x = 4 is",
+    "options": [
+      "16 sq unit",
+      "12 sq unit",
+      "33 sq unit",
+      "8 sq unit"
+    ]
+  },
+  {
+    "id": 133,
+    "testIdcet": 4,
+    "question": "A box contains 6 pens, 2 of which are defective. Two pens are taken randomly from the box. If r.v. X : number of defective pens obtained, then standard deviation of X =",
+    "options": [
+      "4/3",
+      "5/6",
+      "8/9",
+      "3√5/5"
+    ]
+  },
+
+  {
+    "id": 134,
+    "testIdcet": 4,
+    "question": "If the volume of a spherical ball is increasing at the rate of \\(4\\pi\\) cm³/s, then the rate of change of its surface area when the volume is \\(288\\pi\\) cm³ is:",
+    "options": [
+      "\\( \\frac{3}{2} \\) cm²/s",
+      "\\( \\frac{2}{3} \\) cm²/s",
+      "\\( 4\\pi \\) cm²/s",
+      "\\( 2\\pi \\) cm²/s"
+    ]
+  },
+  {
+    "id": 135,
+    "testIdcet": 4,
+    "question": "If \\( f(x) = \\log (\\sec^2 x)^{x^2} \\), for \\( x \\neq 0 \\), \\( f(x) \\) is continuous at \\( x = 0 \\), then \\( k \\) is:",
+    "options": [
+      "\\( e \\)",
+      "1",
+      "0",
+      "\\( e^2 \\)"
+    ]
+  },
+  {
+    "id": 136,
+    "testIdcet": 4,
+    "question": "If denies the contradiction, then dual of the compound statement \\( p \\rightarrow q \\lor (q \\lor r) \\) is:",
+    "options": [
+      "\\( \\neg p \\lor (q \\land r) \\)",
+      "\\( \\neg p \\land (q \\lor r) \\)",
+      "\\( p \\lor (q \\land r) \\)",
+      "\\( \\neg p \\lor q \\land \\neg q \\)"
+    ]
+  },
+  {
+    "id": 137,
+    "testIdcet": 4,
+    "question": "The differential equation of all parabolas whose axis is the \\( Y \\)-axis, is:",
+    "options": [
+      "\\( x \\frac{d^2y}{dx^2} - \\frac{dy}{dx} = 0 \\)",
+      "\\( x \\frac{d^2y}{dx^2} + \\frac{dy}{dx} = 0 \\)",
+      "\\( d^2y - y = 0 \\)",
+      "\\( d^2y - \\frac{dy}{dx} = 0 \\)"
+    ]
+  },
+  {
+    "id": 138,
+    "testIdcet": 4,
+    "question": "\\( \\int_0^1 [x] dx \\) where \\( [x] \\) is the greatest integer function, is:",
+    "options": [
+      "3",
+      "0",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "id": 139,
+    "testIdcet": 4,
+    "question": "The objective function of LPP defined over the convex set attains its optimum value at:",
+    "options": [
+      "at least two of the corner points",
+      "all the corner points",
+      "the interior points",
+      "at least one of the corner points"
+    ]
+  },
+  {
+    "id": 140,
+    "testIdcet": 4,
+    "question": "If the inverse of the matrix \\( \\begin{bmatrix} 2 & 3 & 1 \\\\ 6 & 2 & 3 \\\\ 14 & -1 & -7 \\end{bmatrix} \\) does not exist, then the value of \\( \\alpha \\) is:",
+    "options": [
+      "1",
+      "\\(-1\\)",
+      "0",
+      "\\(-2\\)"
+    ]
+  },
+  {
+    "id": 141,
+    "testIdcet": 4,
+    "question": "If \\( f(x) = x^x \\) for \\( x > 0 \\), then \\( f'(x) \\) at \\( x = 0 \\) is:",
+    "options": [
+      "continuous but not differentiable",
+      "not continuous but differentiable",
+      "continuous and differentiable",
+      "not continuous and not differentiable"
+    ]
+  },
+  {
+    "id": 142,
+    "testIdcet": 4,
+    "question": "The equation of the plane through \\((-1,1,2)\\), whose normal makes equal acute angles with coordinate axes, is:",
+    "options": [
+      "\\( r \\cdot (i + j + k) = 2 \\)",
+      "\\( r \\cdot (i + j + k) = 6 \\)",
+      "\\( r \\cdot (-3i - 3j - 3k) = 2 \\)",
+      "\\( r \\cdot (i - j + k) = 3 \\)"
+    ]
+  },
+  {
+    "id": 143,
+    "testIdcet": 4,
+    "question": "Probability that a person will develop immunity after vaccinations is 0.8. If 8 people are given the vaccine, then probability that all develop immunity is:",
+    "options": [
+      "\\( (0.2)^8 \\)",
+      "\\( (0.8)^8 \\)",
+      "\\( 8C_8 (0.2)^8 (0.8)^8 \\)",
+      "None of these"
+    ]
+  },
+
+  {
+    "id": 144,
+    "testIdcet": 4,
+    "question": "If the distance of points \\(2i + 3j + \\lambda k\\) from the plane \\( r \\cdot (3i + 2j + 6k) = 13 \\) is 5 units, then \\( \\lambda \\) is:",
+    "options": [
+      "6, \\frac{17}{3}",
+      "6, -\\frac{17}{3}",
+      "-6, \\frac{17}{3}",
+      "-6, -\\frac{17}{3}"
+    ]
+  },
+  {
+    "id": 145,
+    "testIdcet": 4,
+    "question": "The value of \\( \\cos^{-1} \\left( \\cot^2 \\left( \\frac{\\pi}{2} \\right) \\right) + \\cos^{-1} \\left( \\sin \\left( \\frac{2 \\pi}{2} \\right) \\right) \\) is:",
+    "options": [
+      "\\frac{2\\pi}{3}",
+      "\\frac{\\pi}{3}",
+      "\\frac{\\pi}{2}",
+      "\\pi"
+    ]
+  },
+  {
+    "id": 146,
+    "testIdcet": 4,
+    "question": "The particular solution of the differential equation \\( x \\frac{dy}{dx} + 2y = 0 \\), when \\( x = 2, y = 1 \\) is:",
+    "options": [
+      "xy = 4",
+      "xy = -4",
+      "x^2 y = 4",
+      "x^2 y = -4"
+    ]
+  },
+  {
+    "id": 147,
+    "testIdcet": 4,
+    "question": "A \\( \\triangle ABC \\) has vertices at \\( A(2,3,5) \\), \\( B(-1,3,2) \\) and \\( C(5,5,1) \\). If the median through \\( A \\) is equally inclined to the axes, then the values of \\( \\lambda \\) and \\( \\mu \\) respectively are:",
+    "options": [
+      "10, 7",
+      "9, 10",
+      "7, 9",
+      "7, 10"
+    ]
+  },
+  {
+    "id": 148,
+    "testIdcet": 4,
+    "question": "For the following distribution function \\( F(x) \\) of a random variable \\( X \\): \n\n \\( \\begin{array}{c|c|c|c|c|c} x & 1 & 2 & 3 & 4 & 5 & 6 \\\\ \\hline F(x) & 0.2 & 0.37 & 0.48 & 0.62 & 0.85 & 1 \\end{array} \\) \n\n The probability \\( P(3 < x < 5) \\) is:",
+    "options": [
+      "0.48",
+      "0.37",
+      "0.27",
+      "1.47"
+    ]
+  },
+  {
+    "id": 149,
+    "testIdcet": 4,
+    "question": "The lines \\( \\frac{x-1}{2} = \\frac{y+1}{4} = \\frac{z-1}{2} \\) and \\( \\frac{x-3}{2} = \\frac{y-k}{2} = \\frac{z-3}{2} \\) intersect each other at point:",
+    "options": [
+      "(2,4,5)",
+      "(2,-4,5)",
+      "(2,-4,-5)",
+      "(2,-5)"
+    ]
+  },
+  {
+    "id": 150,
+    "testIdcet": 4,
+    "question": "\\( \\int \\sec^x dx \\) is:",
+    "options": [
+      "\\csc x",
+      "\\frac{\\sec^x x}{8} + c",
+      "\\frac{\\sec^x x}{6} + c",
+      "\\frac{\\sec^x x}{9} + c"
+    ]
+  },
+
+  {
+    "id": 8,
+    "testIdcet": 5,
+    "question": "In the following network, the current flowing through \\( 15\\Omega \\) resistance is",
+    "options": [
+      "0.8A",
+      "1.0A",
+      "1.2A",
+      "1.4A"
+    ]
+  },
+  {
+    "id": 9,
+    "testIdcet": 5,
+    "question": "The angle made by the incident ray of light with the normal of the reflecting surface is called",
+    "options": [
+      "glancing angle",
+      "angle of incidence",
+      "angle of deviation",
+      "angle of refraction"
+    ]
+  },
+  {
+    "id": 10,
+    "testIdcet": 5,
+    "question": "In non-uniform circular motion, the ratio of tangential to radius acceleration is \\( (r = \\text{radius of circle}, v = \\text{speed of the particle}, \\alpha = \\text{angular acceleration}) \\)",
+    "options": [
+      "\\( \\frac{\\alpha r^2}{v} \\)",
+      "\\( \\frac{\\alpha r^2}{v^2} \\)",
+      "\\( \\frac{\\alpha r^2}{v^2} \\)",
+      "\\( \\frac{v^2}{r \\alpha} \\)"
+    ]
+  },
+  {
+    "id": 11,
+    "testIdcet": 5,
+    "question": "If numerical aperture of a microscope is increased then its",
+    "options": [
+      "resolving power remains constant",
+      "resolving power becomes zero",
+      "limit of resolution is decreased",
+      "limit of resolution is increased"
+    ]
+  },
+  {
+    "id": 12,
+    "testIdcet": 5,
+    "question": "In amplitude modulation",
+    "options": [
+      "amplitude remains constant but frequency changes",
+      "both amplitude and frequency do not change",
+      "both amplitude and frequency change",
+      "amplitude of the carrier wave changes according to information signal"
+    ]
+  },
+  {
+    "id": 13,
+    "testIdcet": 5,
+    "question": "If \\( M_z \\) is the magnetization of a paramagnetic sample, \\( B \\) is the external magnetic field, \\( T \\) is the absolute temperature, \\( C \\) is the Curie constant, then according to Curie's law in magnetism, the correct relation is",
+    "options": [
+      "\\( M_z = \\frac{T}{CB} \\)",
+      "\\( M_z = \\frac{CB}{T} \\)",
+      "\\( C = \\frac{M_z B}{T} \\)",
+      "\\( C = \\frac{T}{M_z B} \\)"
+    ]
+  },
+  {
+    "id": 14,
+    "testIdcet": 5,
+    "question": "An electron of stationary hydrogen atom jumps from 4th energy level to ground level. The velocity that the photon acquired as a result of electron transition will be \\( (h = \\text{Planck’s constant}, R = \\text{Rydberg’s constant}, m = \\text{mass of photon}) \\)",
+    "options": [
+      "\\( \\frac{9 R h}{16 m} \\)",
+      "\\( \\frac{11 R h}{16 m} \\)",
+      "\\( \\frac{13 R h}{16 m} \\)",
+      "\\( \\frac{15 R h}{16 m} \\)"
+    ]
+  },
+  {
+    "id": 15,
+    "testIdcet": 5,
+    "question": "A metal wire of density \\( p \\) floats on water surface horizontally. If it is NOT to sink in water then maximum radius of wire is proportional to \\( (T = \\text{surface of water}, g = \\text{gravitational acceleration}) \\)",
+    "options": [
+      "\\( \\frac{T}{\\sqrt{r p g}} \\)",
+      "\\( \\frac{\\sqrt{r p g}}{T} \\)",
+      "\\( \\frac{T}{r p g} \\)",
+      "\\( \\frac{r p g}{T} \\)"
+    ]
+  },
+  {
+    "id": 16,
+    "testIdcet": 5,
+    "question": "A sphere of mass \\( m \\) moving with velocity \\( v \\) collides head-on another sphere of same mass which is at rest. The ratio of final velocity of second sphere to the initial velocity of the first sphere is \\( (c = \\text{coefficient of restitution} \\) and collision is inelastic)",
+    "options": [
+      "\\( \\frac{c - 1}{2} \\)",
+      "\\( \\frac{c}{2} \\)",
+      "\\( \\frac{c + 1}{2} \\)",
+      "\\( c \\)"
+    ]
+  },
+
+  {
+    "id": 20,
+    "testIdcet": 5,
+    "question": "The molar specific heat of an ideal gas at constant pressure and constant volume is \\( C_p \\) and \\( C_v \\) respectively. If ‘R’ is the universal gas constant and the ratio of \\( C_p \\) to \\( C_v \\) is ‘\\( \\gamma \\)’, then \\( C_v = \\) ?",
+    "options": [
+      "\\( \\frac{1 - \\gamma}{1 + \\gamma} \\)",
+      "\\( \\frac{1 + \\gamma}{1 - \\gamma} \\)",
+      "\\( \\frac{R}{\\gamma} \\)",
+      "\\( \\frac{R}{\\gamma - 1} \\)"
+    ]
+  },
+  {
+    "id": 21,
+    "testIdcet": 5,
+    "question": "In a capillary tube having area cross-section ‘A’ water rises to a height ‘h’. If cross-sectional area is reduced to \\( \\frac{A}{Q} \\), the rise of water in the capillary tube is",
+    "options": [
+      "\\( 4h \\)",
+      "\\( 3h \\)",
+      "\\( 2h \\)",
+      "\\( h \\)"
+    ]
+  },
+  {
+    "id": 22,
+    "testIdcet": 5,
+    "question": "With forward biased mode, the p-n junction diode",
+    "options": [
+      "is one in which width of depletion layer increases",
+      "is one in which potential barrier increases",
+      "acts as closed switch",
+      "acts as open switch"
+    ]
+  },
+  {
+    "id": 23,
+    "testIdcet": 5,
+    "question": "An alternating electric field of frequency ‘\\( \\nu \\)’ is applied across the dees (radius R) of a cyclotron to accelerate protons (mass m). The operating magnetic field ‘B’ used and K.E. of the proton beam produced by it are respectively (e = charge on proton)",
+    "options": [
+      "\\( \\frac{2 \\pi m \\nu}{e} , \\frac{2 \\pi^2 m \\nu^2 R^2}{e} \\)",
+      "\\( \\frac{2 \\pi^2 m \\nu}{e^2} , 4 \\pi^2 m \\nu^2 R^2 \\)",
+      "\\( \\frac{m \\nu}{e} , \\pi^2 m \\nu^2 R^2 \\)",
+      "\\( \\frac{2 \\pi^2 m \\nu^2}{e} , \\frac{2 \\pi^2 m \\nu^2 R^2}{e} \\)"
+    ]
+  },
+  {
+    "id": 24,
+    "testIdcet": 5,
+    "question": "A ray of light is incident normally on a glass slab of thickness 5 cm and refractive index 1.6. The time taken to travel by a from source of slab is same as to travel through glass slab. The distance of source from the surface is",
+    "options": [
+      "4 cm",
+      "8 cm",
+      "12 cm",
+      "16 cm"
+    ]
+  },
+  {
+    "id": 25,
+    "testIdcet": 5,
+    "question": "A string is vibrating in its fifth overtone between two rigid supports 2.4 m apart. The distance between successive node and antinode is",
+    "options": [
+      "0.1 m",
+      "0.2 m",
+      "0.6 m",
+      "0.8 m"
+    ]
+  },
+  {
+    "id": 26,
+    "testIdcet": 5,
+    "question": "If \\( \\mathbf{A} = 3 \\hat{i} - 2 \\hat{j} + k \\), \\( \\mathbf{B} = \\hat{i} - 3 \\hat{j} + 5 \\hat{k} \\) and \\( \\mathbf{C} = 2 \\hat{i} + \\hat{j} - 4 \\hat{k} \\) form a right angled triangle then out of the following which one is satisfied?",
+    "options": [
+      "\\( \\mathbf{A} = \\mathbf{B} + \\mathbf{C} \\) and \\( A^2 = B^2 + C^2 \\)",
+      "\\( \\mathbf{A} = \\mathbf{B} + \\mathbf{C} \\) and \\( B^2 = A^2 + C^2 \\)",
+      "\\( \\mathbf{B} = \\mathbf{A} + \\mathbf{C} \\) and \\( B^2 = A^2 + C^2 \\)",
+      "\\( \\mathbf{B} = \\mathbf{A} + \\mathbf{C} \\) and \\( A^2 = B^2 + C^2 \\)"
+    ]
+  },
+  {
+    "id": 27,
+    "testIdcet": 5,
+    "question": "A square frame ABCD is formed by four identical rods each of mass ‘m’ and length ‘\\( \\ell \\)’. This frame is in X-Y plane such that side AB coincides with X-axis and side AD along Y-axis. The moment of inertia of the frame about X-axis is",
+    "options": [
+      "\\( \\frac{5m \\ell^2}{3} \\)",
+      "\\( \\frac{2m \\ell^2}{3} \\)",
+      "\\( \\frac{4m \\ell^2}{3} \\)",
+      "\\( \\frac{m \\ell^2}{12} \\)"
+    ]
+  },
+  {
+    "id": 28,
+    "testIdcet": 5,
+    "question": "A unit vector is represented as \\( (0.8 \\hat{i} + b \\hat{j} + 0.4 \\hat{k}) \\). Hence the value of ‘b’ must be",
+    "options": [
+      "0.4",
+      "\\( \\sqrt{0.6} \\)",
+      "0.2",
+      "\\( \\sqrt{0.2} \\)"
+    ]
+  },
+  {
+    "id": 29,
+    "testIdcet": 5,
+    "question": "Magnetic susceptibility for a paramagnetic and diamagnetic materials is respectively",
+    "options": [
+      "small, positive and small, positive",
+      "large, positive and small, negative",
+      "small, positive and small, negative",
+      "large, negative and large, positive"
+    ]
+  },
+  {
+    "id": 30,
+    "testIdcet": 5,
+    "question": "A mass is suspended from a vertical spring which is executing S.H.M. of frequency 5 Hz. The spring is unstretched at the highest point of oscillation. Maximum speed of the mass is [acceleration due to gravity \\( g = 10 \\text{ m/s}^2 \\)]",
+    "options": [
+      "\\( 2 \\pi \\) m/s",
+      "\\( \\pi \\) m/s",
+      "\\( \\frac{1}{2 \\pi} \\) m/s",
+      "1 m/s"
+    ]
+  },
+  {
+    "id": 31,
+    "testIdcet": 5,
+    "question": "The moment of inertia of a ring about an axis passing through the centre and perpendicular to its plane is ‘I’. It is rotating with angular velocity ‘\\( \\omega \\)’. Another identical ring is gently placed on it so that their centres coincide. If both the rings are rotating about the same axis then loss in kinetic energy is",
+    "options": [
+      "\\( \\frac{I \\omega^2}{2} \\)",
+      "\\( \\frac{I \\omega^2}{4} \\)",
+      "\\( \\frac{I \\omega^2}{6} \\)",
+      "\\( \\frac{I \\omega^2}{8} \\)"
+    ]
+  },
+
+  {
+    "id": 32,
+    "testIdcet": 5,
+    "question": "A bomb at rest explodes into 3 parts of same mass. The momentum of two parts is \\(-3P\\hat{i}\\) and \\(2P\\hat{i}\\) respectively. The magnitude of momentum of the third part is",
+    "options": [
+      "P",
+      "5P",
+      "11P",
+      "\\(\\sqrt{13} P\\)"
+    ]
+  },
+  {
+    "id": 33,
+    "testIdcet": 5,
+    "question": "In a photocell, frequency of incident radiation is increased by keeping other factors constant \\((v > v_0)\\), the stopping potential",
+    "options": [
+      "decreases",
+      "increases",
+      "becomes zero",
+      "first decreases and then increases"
+    ]
+  },
+  {
+    "id": 34,
+    "testIdcet": 4,
+    "question": "A mass attached to one end of a string crosses top-most point on a vertical circle with critical speed. Its centripetal acceleration when string becomes horizontal will be \\((g = \\text{gravitational acceleration})\\)",
+    "options": [
+      "g",
+      "3g",
+      "4g",
+      "6g"
+    ]
+  },
+  {
+    "id": 35,
+    "testIdcet": 4,
+    "question": "The expression for electric field intensity at a point outside uniformly charged thin plane sheet \\(d\\) (where \\(d\\) is the distance of point from plane sheet) is",
+    "options": [
+      "independent of \\(d\\)",
+      "directly proportional to \\(\\sqrt{d}\\)",
+      "directly proportional to \\(d\\)",
+      "directly proportional to \\(\\frac{1}{\\sqrt{d}}\\)"
+    ]
+  },
+  {
+    "id": 36,
+    "testIdcet": 4,
+    "question": "When source of sound moves towards a stationary observer, the wavelength of sound received by him",
+    "options": [
+      "decrease while frequency increase",
+      "remains the same whereas frequency increases",
+      "increases and frequency also increases",
+      "decreases while frequency remains the same"
+    ]
+  },
+  {
+    "id": 37,
+    "testIdcet": 4,
+    "question": "The deflection in galvanometer falls to \\(\\left( \\frac{1}{4} \\right)^{\\text{th}}\\) when it is shunted by 3Ω. If additional shunt of 2Ω is connected to earlier shunt, the deflection in galvanometer falls to",
+    "options": [
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\left( \\frac{1}{3} \\right)^{\\text{th}}\\)",
+      "\\(\\left( \\frac{1}{4} \\right)^{\\text{th}}\\)",
+      "\\(\\left( \\frac{1}{8.5} \\right)^{\\text{th}}\\)"
+    ]
+  },
+  {
+    "id": 38,
+    "testIdcet": 4,
+    "question": "A body is thrown from the surface of the earth with velocity \\(u\\) m/s. The maximum height \\(h\\) above the surface of the earth up to which it will reach is \\((R = \\text{radius of earth}, g = \\text{acceleration due to gravity})\\)",
+    "options": [
+      "\\(\\frac{u^2 R}{2gR - u^2}\\)",
+      "\\(\\frac{2u^2 R}{gR - u^2}\\)",
+      "\\(\\frac{u^2 R^2}{2gR^2 - u^2}\\)",
+      "\\(\\frac{u^2 R}{gR - u^2}\\)"
+    ]
+  },
+  {
+    "id": 39,
+    "testIdcet": 4,
+    "question": "A series combination of \\(N_1\\) capacitors (each of capacity \\(C_1\\)) is charged to potential difference ‘3V’. Another parallel combination of \\(N_2\\) capacitors (each of capacity \\(C_2\\)) is charged to potential difference ‘V’. The total energy stored in both the combinations is same. The value of \\(C_1\\) in terms of \\(C_2\\) is",
+    "options": [
+      "\\(\\frac{C_2 N_1 N_2}{9}\\)",
+      "\\(\\frac{C_2 N_1^2 N_2^2}{9}\\)",
+      "\\(\\frac{C_2 N_1}{9N_2}\\)",
+      "\\(\\frac{C_2 N_2}{9N_1}\\)"
+    ]
+  },
+  {
+    "id": 40,
+    "testIdcet": 4,
+    "question": "Heat energy is incident on the surface at the rate of 1000 J/min. If coefficient of absorption is 0.8 and coefficient of reflection is 0.1 then energy transmitted by the surface in 5 minutes",
+    "options": [
+      "100J",
+      "500J",
+      "700J",
+      "900J"
+    ]
+  },
+  {
+    "id": 41,
+    "testIdcet": 5,
+    "question": "Two metal wires ‘P’ and ‘Q’ of same length and material are stretched by same load. Their masses are in the ratio \\(m_1 : m_2\\). The ratio of elongation of wire ‘P’ to that of ‘Q’ is",
+    "options": [
+      "\\(m_1^2 : m_2^2\\)",
+      "\\(m_2^2 : m_1^2\\)",
+      "\\(m_2 : m_1\\)",
+      "\\(m_1 : m_2\\)"
+    ]
+  },
+  {
+    "id": 42,
+    "testIdcet": 5,
+    "question": "Let \\(x = \\frac{a^2 b^2}{c}\\) be the physical quantity. If the percentage error in the measurement of physical quantities \\(a, b\\) and \\(c\\) is 2, 3 and 4 percent respectively then percentage error in the measurement of \\(x\\) is",
+    "options": [
+      "7%",
+      "14%",
+      "21%",
+      "28%"
+    ]
+  },
+
+  {
+    "id": 43,
+    "testIdcet": 5,
+    "question": "Following graphs show the variation of stopping potential corresponding to the frequency of incident radiation (F) for a given metal. The correct variation is shown in graph \\( v_0 \\) (Threshold frequency).",
+    "options": [
+      "(1)",
+      "(2)",
+      "(3)",
+      "(4)"
+    ]
+  },
+  {
+    "id": 44,
+    "testIdcet": 5,
+    "question": "In compound microscope, the focal length and aperture of the objective used is respectively",
+    "options": [
+      "large and large",
+      "large and small",
+      "short and large",
+      "short and small"
+    ]
+  },
+  {
+    "id": 45,
+    "testIdcet": 5,
+    "question": "The energy of an electron having de-Broglie wavelength \\( \\lambda \\) is \\( (h \\) = Planck’s constant, \\( m \\) = mass of electron).",
+    "options": [
+      "\\( \\frac{h^2}{2m \\lambda} \\)",
+      "\\( \\frac{h^2}{2m \\lambda^2} \\)",
+      "\\( \\frac{h^2}{2m^2 \\lambda} \\)",
+      "\\( \\frac{h^2}{2m^2 \\lambda^2} \\)"
+    ]
+  },
+  {
+    "id": 46,
+    "testIdcet": 5,
+    "question": "'n' number of waves are produced on a string in 0.5 second. Now the tension in the string is doubled (Assume length and radius constant), the number of waves produced in 0.5 second for the same harmonic will be",
+    "options": [
+      "\\( n \\)",
+      "\\( \\sqrt{2} n \\)",
+      "\\( \\frac{n}{\\sqrt{2}} \\)",
+      "\\( \\frac{n}{\\sqrt{5}} \\)"
+    ]
+  },
+  {
+    "id": 47,
+    "testIdcet": 5,
+    "question": "The increase in energy of a metal bar of length \\( L \\) and cross-sectional area \\( A \\) when compressed with a load \\( M \\) along its length is \\( (Y = \\) Young’s modulus of the material of metal bar).",
+    "options": [
+      "\\( \\frac{FL}{2AY} \\)",
+      "\\( \\frac{F^2 L}{2AY} \\)",
+      "\\( \\frac{FL}{AY} \\)",
+      "\\( \\frac{F^2 L^2}{2AY} \\)"
+    ]
+  },
+  {
+    "id": 48,
+    "testIdcet": 5,
+    "question": "The ratio of magnetic fields due to a bar magnet at the two axial points \\( P_1 \\) and \\( P_2 \\) which are separated from each other by 10 cm is 25 : 2. Points \\( P_1 \\) is situated at 10 cm from the centre of the magnet. Magnetic length of the bar magnet is (Points \\( P_1 \\) and \\( P_2 \\) are on the same side of the magnet and distance of \\( P_2 \\) from the centre is greater than distance of \\( P_1 \\) from the centre)",
+    "options": [
+      "5 cm",
+      "10 cm",
+      "15 cm",
+      "20 cm"
+    ]
+  },
+  {
+    "id": 49,
+    "testIdcet": 5,
+    "question": "A satellite is revolving in a circular orbit at a height ‘h’ above the surface of the earth of radius ‘R’. The speed of the satellite in its orbit is one-fourth the escape velocity from the surface of the earth. The relation between ‘h’ and ‘R’ is",
+    "options": [
+      "\\( h = 2R \\)",
+      "\\( h = 3R \\)",
+      "\\( h = 5R \\)",
+      "\\( h = 7R \\)"
+    ]
+  },
+  {
+    "id": 50,
+    "testIdcet": 5,
+    "question": "A pipe closed at one end has length 83 cm. The number of possible natural oscillations of air column whose frequencies lie below 1000 Hz are (velocity of sound in air = 332 m/s)",
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "id": 51,
+    "testIdcet": 5,
+    "question": "A certain reaction occurs in two steps as \\[ \\text{(i) } 2SO_2(g) + 2NO_2(g) \\to 2SO_3(g) + 2NO(g) \\] \\[ \\text{(ii) } 2NO(g) + O_2(g) \\to 2NO_2(g) \\] In the reaction",
+    "options": [
+      "NO_2(g) is intermediate",
+      "NO(g) is intermediate",
+      "NO(g) is catalyst",
+      "O_2(g) is intermediate"
+    ]
+  },
+  {
+    "id": 52,
+    "testIdcet": 5,
+    "question": "Which among the following equations represents the first law of thermodynamics under isobaric conditions?",
+    "options": [
+      "\\( \\Delta U = q_p - P_{ex} \\Delta V \\)",
+      "\\( q_v = \\Delta U \\)",
+      "\\( \\Delta U = W \\)",
+      "\\( W = -q \\)"
+    ]
+  },
+  {
+    "id": 53,
+    "testIdcet": 5,
+    "question": "During galvanization of iron, which metal is used for coating iron surface?",
+    "options": [
+      "Copper",
+      "Zinc",
+      "Nickel",
+      "Tin"
+    ]
+  },
+  {
+    "id": 54,
+    "testIdcet": 5,
+    "question": "Formation of \\( PCl_3 \\) is explained on the basis of what hybridisation of phosphorus atom?",
+    "options": [
+      "sp²",
+      "sp³",
+      "sp³d",
+      "sp³d²"
+    ]
+  },
+  {
+    "id": 55,
+    "testIdcet": 5,
+    "question": "Identify the element that forms amphoteric oxide.",
+    "options": [
+      "Copper",
+      "Zinc",
+      "Calcium",
+      "Sulphur"
+    ]
+  },
+  {
+    "id": 56,
+    "testIdcet": 5,
+    "question": "Identify the product ‘C’ in the following reaction. \\[ \\text{Aniline} \\xrightarrow{(CH_3CH_2O) Br_2} A \\xrightarrow{Pyridine} B \\xrightarrow{CH_3COOH} C \\]",
+    "options": [
+      "Acetanilide",
+      "p-Bromoacetanilide",
+      "p-Bromoaniline",
+      "o-Bromoaniline"
+    ]
+  },
+  {
+    "id": 57,
+    "testIdcet": 5,
+    "question": "Identify the functional group that has electron donating inductive effect.",
+    "options": [
+      "-COOH",
+      "-CN",
+      "-CH_3",
+      "-NO_2"
+    ]
+  },
+
+  {
+    "id": 58,
+    "testIdcet": 5,
+    "question": "Which among the following metals crystallise as a simple cube?",
+    "options": [
+      "Polonium",
+      "Iron",
+      "Copper",
+      "Gold"
+    ]
+  },
+  {
+    "id": 59,
+    "testIdcet": 5,
+    "question": "Which among the following oxoacids of phosphorus shows a tendency of disproportionation?",
+    "options": [
+      "Phosphinic acid (H₃PO₂)",
+      "Orthophosphoric acid (H₃PO₄)",
+      "Phosphonic acid (H₃PO₃)",
+      "Pyrophosphoric acid (H₄P₂O₇)"
+    ]
+  },
+  {
+    "id": 60,
+    "testIdcet": 5,
+    "question": "What is the oxidation number of gold in the complex \\([Au(CN)_2]^{-}\\)?",
+    "options": [
+      "+4",
+      "+3",
+      "+2",
+      "+1"
+    ]
+  },
+  {
+    "id": 61,
+    "testIdcet": 5,
+    "question": "Which symbol replaces the unit of atomic mass, amu?",
+    "options": [
+      "u",
+      "A",
+      "M",
+      "n"
+    ]
+  },
+  {
+    "id": 62,
+    "testIdcet": 5,
+    "question": "Which of the following compounds reacts immediately with Lucas reagent?",
+    "options": [
+      "CH₃CH₂OH",
+      "CH₃CH₂CH₂OH",
+      "CH₃-CH-CH₃ (with OH attached to second carbon)",
+      "CH₃-C-CH₃ (with OH attached to central carbon)"
+    ]
+  },
+  {
+    "id": 63,
+    "testIdcet": 5,
+    "question": "What is the catalyst used for oxidation of SO₂ to SO₃ in lead chamber process for manufacture of sulphuric acid?",
+    "options": [
+      "Nitric oxide",
+      "Nitrous oxide",
+      "Potassium iodide",
+      "Dilute HCl"
+    ]
+  },
+  {
+    "id": 64,
+    "testIdcet": 5,
+    "question": "The number of moles of electrons passed when current of 2 A is passed through a solution of electrolyte for 20 minutes is",
+    "options": [
+      "4.1 × 10⁻⁴ mol e⁻",
+      "1.24 × 10⁻² mol e⁻",
+      "2.48 × 10⁻² mol e⁻",
+      "2.48 × 10⁻¹ mol e⁻"
+    ]
+  },
+  {
+    "id": 65,
+    "testIdcet": 5,
+    "question": "The molarity of urea (molar mass 60 g mol⁻¹) solution by dissolving 15 g of urea in 500 cm³ of water is",
+    "options": [
+      "2 mol dm⁻³",
+      "0.5 mol dm⁻³",
+      "0.125 mol dm⁻³",
+      "0.0005 mol dm⁻³"
+    ]
+  },
+  {
+    "id": 66,
+    "testIdcet": 5,
+    "question": "Which carbon atom of deoxy Ribose sugar in DNA does NOT contain C—OH bond?",
+    "options": [
+      "C₅",
+      "C₃",
+      "C₂",
+      "C₁"
+    ]
+  },
+  {
+    "id": 67,
+    "testIdcet": 5,
+    "question": "Which of the following carboxylic acids is most reactive towards esterification?",
+    "options": [
+      "CH₃CH₂COOH",
+      "(CH₃)₂CHCOOH",
+      "CH₃CH₂CH₂COOH",
+      "(C₂H₅)₂CHCOOH"
+    ]
+  },
+  {
+    "id": 68,
+    "testIdcet": 5,
+    "question": "Molarity is",
+    "options": [
+      "the number of moles of solute present in 1 dm³ volume of solution",
+      "the number of moles of solute dissolved in 1 kg of solvent",
+      "the number of moles of solute dissolved in 1 kg of solution",
+      "the number of moles of solute dissolved in 1000 dm³ volume of solution"
+    ]
+  },
+  {
+    "id": 69,
+    "testIdcet": 5,
+    "question": "Which of the following is a tricarboxylic acid?",
+    "options": [
+      "Citric acid",
+      "Malonic acid",
+      "Succinic acid",
+      "Malic acid"
+    ]
+  },
+  {
+    "id": 70,
+    "testIdcet": 5,
+    "question": "What is the number of donor atoms in dimethylglyoximato ligand?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "id": 71,
+    "testIdcet": 5,
+    "question": "In which substance does nitrogen exhibit the lowest oxidation state?",
+    "options": [
+      "Nitrogen gas",
+      "Ammonia",
+      "Nitrous oxide",
+      "Nitric oxide"
+    ]
+  },
+  {
+    "id": 72,
+    "testIdcet": 5,
+    "question": "Which of the following is most reactive towards addition reaction of hydrogen cyanide to form corresponding cyanohydrin?",
+    "options": [
+      "Acetone",
+      "Formaldehyde",
+      "Acetaldehyde",
+      "Diethylketone"
+    ]
+  },
+  {
+    "id": 73,
+    "testIdcet": 5,
+    "question": "The most basic hydroxide from the following is",
+    "options": [
+      "Pr(OH)₃ (Z=59)",
+      "Sm(OH)₃ (Z=62)",
+      "Ho(OH)₃ (Z=67)",
+      "La(OH)₃ (Z=57)"
+    ]
+  },
+  {
+    "id": 74,
+    "testIdcet": 5,
+    "question": "What is the SI unit of density?",
+    "options": [
+      "g cm⁻³",
+      "g m⁻³",
+      "kg m⁻³",
+      "kg cm⁻³"
+    ]
+  },
+  {
+    "id": 75,
+    "testIdcet": 5,
+    "question": "Which of the following compounds does NOT undergo haloform reaction?",
+    "options": [
+      "CH₃—CH—CH₃ (with OH attached to second carbon)",
+      "CH₃—C—CH₃ (with Cl attached to central carbon)",
+      "C₂H₅—CH—C₂H₅ (with OH attached to second carbon)",
+      "CH₃—C≡C—C₂H₅ (with OH attached to third carbon)"
+    ]
+  },
+  {
+    "id": 76,
+    "testIdcet": 5,
+    "question": "Two moles of an ideal gas are allowed to expand from a volume of 10 dm³ to 2 m³ at 300 K against a pressure of 101.325 kPa. Calculate the work done.",
+    "options": [
+      "-201.6 kJ",
+      "13.2 kJ",
+      "-810.6 J",
+      "-18.96 kJ"
+    ]
+  },
+  {
+    "id": 77,
+    "testIdcet": 5,
+    "question": "In which among the following solids, Schottky defect is NOT observed?",
+    "options": [
+      "ZnS",
+      "NaCl",
+      "KCl",
+      "CsCl"
+    ]
+  },
+  {
+    "id": 78,
+    "testIdcet": 5,
+    "question": "What are the products of auto-photolysis of water?",
+    "options": [
+      "H₂ and O₂",
+      "H₃O⁺ and OH⁻",
+      "Steam",
+      "Hydrogen peroxide"
+    ]
+  },
+
+  {
+    "id": 79,
+    "testIdcet": 5,
+    "question": "Bauxite, the ore of aluminium, is purified by which process?",
+    "options": [
+      "Hoop's process",
+      "Hall's process",
+      "Mond’s process",
+      "Liquation process"
+    ]
+  },
+  {
+    "id": 80,
+    "testIdcet": 5,
+    "question": "Phenol in presence of sodium hydroxide reacts with chloroform to form salicylaldehyde. The reaction is known as",
+    "options": [
+      "Kolbe’s reaction",
+      "Reimer-Tiemann reaction",
+      "Stephen reaction",
+      "Etard reaction"
+    ]
+  },
+  {
+    "id": 81,
+    "testIdcet": 5,
+    "question": "Which among the following elements of group-2 exhibits anomalous properties?",
+    "options": [
+      "Be",
+      "Mg",
+      "Ca",
+      "Ba"
+    ]
+  },
+  {
+    "id": 82,
+    "testIdcet": 5,
+    "question": "Excess of ammonia with sodium hypochlorite solution in the presence of glue or gelatine gives",
+    "options": [
+      "NaNH₂",
+      "NH₂NH₂",
+      "N₂",
+      "NH₄Cl"
+    ]
+  },
+  {
+    "id": 83,
+    "testIdcet": 5,
+    "question": "What is the density of solution of sulphuric acid used as an electrolyte in lead accumulator?",
+    "options": [
+      "1.5 g mL⁻¹",
+      "1.2 g mL⁻¹",
+      "1.8 g mL⁻¹",
+      "2.0 g mL⁻¹"
+    ]
+  },
+  {
+    "id": 84,
+    "testIdcet": 5,
+    "question": "Which of the following polymers is used to manufacture clothes for firefighters?",
+    "options": [
+      "Thiokol",
+      "Kevlar",
+      "Nomex",
+      "Dynel"
+    ]
+  },
+  {
+    "id": 85,
+    "testIdcet": 5,
+    "question": "Which element is obtained in the pure form by van Arkel method?",
+    "options": [
+      "Aluminium",
+      "Titanium",
+      "Silicon",
+      "Nickel"
+    ]
+  },
+  {
+    "id": 86,
+    "testIdcet": 5,
+    "question": "Which of the following is NOT a tranquilizer?",
+    "options": [
+      "Meprobamate",
+      "Equanil",
+      "Chlordiazepoxide",
+      "Bromopheniramine"
+    ]
+  },
+  {
+    "id": 87,
+    "testIdcet": 5,
+    "question": "Conversion of hexane into benzene involves the reaction of",
+    "options": [
+      "hydration",
+      "hydrolysis",
+      "hydrogenation",
+      "dehydrogenation"
+    ]
+  },
+  {
+    "id": 88,
+    "testIdcet": 5,
+    "question": "The element that does NOT exhibit allotropic is",
+    "options": [
+      "phosphorus",
+      "arsenic",
+      "antimony",
+      "bismuth"
+    ]
+  },
+  {
+    "id": 89,
+    "testIdcet": 5,
+    "question": "Which of the following reactions is used to prepare aryl fluorides from diazonium salts and fluoroboric acid?",
+    "options": [
+      "Sandmeyer reaction",
+      "Balz-Schiemann reaction",
+      "Gattermann reaction",
+      "Swarts reaction"
+    ]
+  },
+  {
+    "id": 90,
+    "testIdcet": 5,
+    "question": "The correct relation between elevation of boiling point and mass of solute is",
+    "options": [
+      "\\( M_2 = \\frac{K_b \\cdot W_2}{\\Delta T_b \\cdot W_1} \\)",
+      "\\( M_2 = \\frac{K_b \\cdot W_1}{\\Delta T_b \\cdot W_2} \\)",
+      "\\( M_2 = \\frac{W_1 \\cdot W_2}{\\Delta T_b \\cdot K_b} \\)",
+      "\\( M_2 = \\frac{K_b \\cdot W_2}{\\Delta T_b} \\)"
+    ]
+  },
+  {
+    "id": 91,
+    "testIdcet": 5,
+    "question": "Which among the group-15 elements does NOT exist as a tetra atomic molecule?",
+    "options": [
+      "Nitrogen",
+      "Phosphorus",
+      "Arsenic",
+      "Antimony"
+    ]
+  },
+  {
+    "id": 92,
+    "testIdcet": 5,
+    "question": "Identify the monosaccharide containing only one asymmetric carbon atom in its molecule.",
+    "options": [
+      "Ribulose",
+      "Ribose",
+      "Erythrose",
+      "Glyceraldehyde"
+    ]
+  },
+  {
+    "id": 93,
+    "testIdcet": 5,
+    "question": "Identify the oxidation states of titanium (Z=22) and copper (Z=29) in their colourless compounds.",
+    "options": [
+      "Ti³⁺, Cu²⁺",
+      "Ti²⁺, Cu²⁺",
+      "Ti⁴⁺, Cu¹⁺",
+      "Ti⁴⁺, Cu²⁺"
+    ]
+  },
+  {
+    "id": 94,
+    "testIdcet": 5,
+    "question": "Arenes on treatments with chlorine in presence of ferric chloride as a catalyst undergo what type of reaction?",
+    "options": [
+      "Electrophilic substitution",
+      "Nucleophilic substitution",
+      "Electrophilic addition",
+      "Nucleophilic addition"
+    ]
+  },
+  {
+    "id": 95,
+    "testIdcet": 5,
+    "question": "In case of R, S configuration the group having highest priority is",
+    "options": [
+      "−NO₂",
+      "−NH₂",
+      "−CN",
+      "−OH"
+    ]
+  },
+  {
+    "id": 96,
+    "testIdcet": 5,
+    "question": "Lactic acid and glycolic acid are the monomers used for preparation of polymer",
+    "options": [
+      "Nylon-2 nylon-6",
+      "Dextrin",
+      "PHBV",
+      "Buna-N"
+    ]
+  },
+  {
+    "id": 97,
+    "testIdcet": 5,
+    "question": "What is the geometry of water molecule?",
+    "options": [
+      "distorted tetrahedral",
+      "tetrahedral",
+      "trigonal planar",
+      "diagonal"
+    ]
+  },
+  {
+    "id": 98,
+    "testIdcet": 5,
+    "question": "With which halogen the reactions of alkanes are explosive?",
+    "options": [
+      "Fluorine",
+      "Chlorine",
+      "Bromine",
+      "Iodine"
+    ]
+  },
+  {
+    "id": 99,
+    "testIdcet": 5,
+    "question": "Calculate the work done during combustion of 0.138 g of ethanol, \\( C_2H_5OH \\) at 300 K. Given: \\( R = 8.314 \\) J K⁻¹ mol⁻¹, molar mass of ethanol = 46 g mol⁻¹.",
+    "options": [
+      "-7482 J",
+      "7482 J",
+      "-2494 J",
+      "2494 J"
+    ]
+  },
+  {
+    "id": 100,
+    "testIdcet": 5,
+    "question": "Slope of the straight line obtained by plotting \\( \\log_{10} k \\) against \\( 1/T \\) represents what term?",
+    "options": [
+      "-E_a",
+      "-2.303 E_a / R",
+      "-E_a / 2.303 R",
+      "-E_a / R"
+    ]
+  },
+
+  {
+    "id": 101,
+    "testIdcet": 5,
+    "question": "If \\( \\int_{0}^{K} \\frac{dx}{2 + 18x^2} = \\frac{\\pi}{24} \\), then the value of \\( K \\) is",
+    "options": [
+      "3",
+      "4",
+      "\\( \\frac{1}{3} \\)",
+      "\\( \\frac{1}{4} \\)"
+    ]
+  },
+  {
+    "id": 102,
+    "testIdcet": 5,
+    "question": "The cartesian co-ordinates of the point on the parabola \\( y^2 = -16x \\), whose parameter is \\( \\frac{1}{2} \\), are",
+    "options": [
+      "(-2,4)",
+      "(4,-1)",
+      "(-1,4)",
+      "(-1,-4)"
+    ]
+  },
+  {
+    "id": 103,
+    "testIdcet": 5,
+    "question": "\\( \\int \\frac{\\sin x \\cos^3 x}{dx} \\)",
+    "options": [
+      "\\( \\sec x + \\log |\\sec x + \\tan x| + C \\)",
+      "\\( \\sec x \\tan x + C \\)",
+      "\\( \\sec x + \\log |\\sec x - \\tan x| + C \\)",
+      "\\( \\sec x + \\log |\\sec x - \\cot x| + C \\)"
+    ]
+  },
+  {
+    "id": 104,
+    "testIdcet": 5,
+    "question": "If \\( \\log_{10} \\left( \\frac{x^3 - y^3}{x^3 + y^3} \\right) = 2 \\), then \\( \\frac{dy}{dx} \\) is",
+    "options": [
+      "\\( \\frac{x}{y} \\)",
+      "\\( \\frac{-y}{x} \\)",
+      "\\( \\frac{x}{-y} \\)",
+      "\\( \\frac{y}{x} \\)"
+    ]
+  },
+  {
+    "id": 105,
+    "testIdcet": 5,
+    "question": "If \\( f: \\mathbb{R} - \\{2\\} \\to \\mathbb{R} \\) is a function defined by \\( f(x) = \\frac{x^2 - 4}{x - 2} \\), then its range is",
+    "options": [
+      "\\( \\mathbb{R} \\)",
+      "\\( \\mathbb{R} - \\{2\\} \\)",
+      "\\( \\mathbb{R} - \\{4\\} \\)",
+      "\\( \\mathbb{R} - \\{ -2, 2 \\} \\)"
+    ]
+  },
+  {
+    "id": 106,
+    "testIdcet": 5,
+    "question": "If \\( f(x) = x^2 + \\alpha \\) for \\( x > 0 \\) and \\( 0 = 2 \\sqrt{x^2} + \\beta \\) for \\( x < 0 \\) is continuous at \\( x = 0 \\), then \\( \\frac{1}{2} = 2 \\) then \\( \\alpha^2 + \\beta^2 \\) is",
+    "options": [
+      "3",
+      "\\( \\frac{8}{25} \\)",
+      "\\( \\frac{25}{8} \\)",
+      "\\( \\frac{1}{3} \\)"
+    ]
+  },
+  {
+    "id": 107,
+    "testIdcet": 5,
+    "question": "If \\( y = (\\tan^{-1} x)^2 \\), then \\( (x^2 + 1)^2 \\frac{d^2 y}{dx^2} + 2x(x^2+1) \\frac{dy}{dx} \\) is",
+    "options": [
+      "4",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "id": 108,
+    "testIdcet": 5,
+    "question": "The line \\( 5x + y - 1 = 0 \\) coincides with one of the lines given by \\( 5x^2 + xy - kx - 2y + 2 = 0 \\), then the value of \\( k \\) is",
+    "options": [
+      "-11",
+      "11",
+      "31",
+      "-31"
+    ]
+  },
+  {
+    "id": 109,
+    "testIdcet": 5,
+    "question": "If \\( A = \\begin{bmatrix} 1 & 2 & 3 \\\\ -1 & 1 & 2 \\\\ 1 & 2 & 4 \\end{bmatrix} \\), then \\( (A^2 - 5A) A^{-1} = \\)",
+    "options": [
+      "\\( \\begin{bmatrix} 4 & 2 & 3 \\\\ -1 & 4 & 2 \\\\ 1 & 2 & 1 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} -4 & -2 & 3 \\\\ 2 & -4 & 2 \\\\ 3 & 2 & -1 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} -4 & -1 & 1 \\\\ 2 & -4 & 2 \\\\ 3 & 2 & -1 \\end{bmatrix} \\)",
+      "\\( \\begin{bmatrix} -1 & -2 & 1 \\\\ 1 & -4 & 2 \\\\ 4 & -2 & -3 \\end{bmatrix} \\)"
+    ]
+  },
+  {
+    "id": 110,
+    "testIdcet": 5,
+    "question": "The equation of line passing through \\( (3, -1, 2) \\) and perpendicular to the lines \\( \\mathbf{r} = (\\hat{i} + \\hat{j} - \\hat{k}) + \\lambda (2 \\hat{i} - 2 \\hat{j} + \\hat{k}) \\) and \\( \\mathbf{r} = (2 \\hat{i} + \\hat{j} - 3 \\hat{k}) + \\mu (\\hat{i} - 2 \\hat{j} + 2 \\hat{k}) \\) is",
+    "options": [
+      "\\( \\frac{x + 3}{2} = \\frac{y + 1}{3} = \\frac{z - 2}{2} \\)",
+      "\\( \\frac{x - 3}{3} = \\frac{y + 1}{2} = \\frac{z - 2}{2} \\)",
+      "\\( \\frac{x - 3}{3} = \\frac{y + 1}{2} = \\frac{z - 2}{3} \\)",
+      "\\( \\frac{x - 3}{2} = \\frac{y + 1}{2} = \\frac{z - 2}{3} \\)"
+    ]
+  },
+
+  {
+    "id": 115,
+    "testIdcet": 5,
+    "question": "\\int e^x \\frac{2 + \\sin 2x}{1 + \\cos 2x} dx =",
+    "options": [
+      "e^x \\tan x + c",
+      "e^x \\tan x + c",
+      "2e^x \\tan x + c",
+      "e^x \\tan 2x + c"
+    ]
+  },
+  {
+    "id": 116,
+    "testIdcet": 5,
+    "question": "A coin is tossed three times. If X denotes the absolute difference between the number of heads and the number of tails then P(X=1) =",
+    "options": [
+      "\\frac{1}{2}",
+      "\\frac{2}{3}",
+      "\\frac{1}{6}",
+      "\\frac{3}{4}"
+    ]
+  },
+  {
+    "id": 117,
+    "testIdcet": 5,
+    "question": "If 2 \\sin \\left( \\theta + \\frac{\\pi}{3} \\right) = 3 \\cos \\left( \\theta - \\frac{\\pi}{6} \\right), \\text{ then } \\tan \\theta =",
+    "options": [
+      "\\sqrt{3}",
+      "\\frac{1}{\\sqrt{3}}",
+      "\\frac{1}{3}",
+      "-\\sqrt{3}"
+    ]
+  },
+  {
+    "id": 118,
+    "testIdcet": 5,
+    "question": "The area of the region bounded by \\(x^2 = 4y\\), \\(y = 1\\), \\(y = 4\\) and the y-axis lying in the first quadrant is square units.",
+    "options": [
+      "\\frac{22}{3}",
+      "\\frac{28}{3}",
+      "30",
+      "\\frac{21}{4}"
+    ]
+  },
+  {
+    "id": 119,
+    "testIdcet": 5,
+    "question": "If f(x) = \\frac{e^x - \\cos x}{x}, \\text{ for } x \\neq 0 \\text{ is continuous at } x = 0, \\text{ then value of } f(0) \\text{ is }",
+    "options": [
+      "\\frac{2}{3}",
+      "\\frac{5}{2}",
+      "1",
+      "\\frac{3}{2}"
+    ]
+  },
+  {
+    "id": 120,
+    "testIdcet": 5,
+    "question": "The maximum value of \\(2x + y\\) subject to \\(3x + 5y \\leq 26\\) and \\(5x + 3y \\leq 30\\), \\(x \\geq 0\\), \\(y \\geq 0\\) is",
+    "options": [
+      "12",
+      "11.5",
+      "10",
+      "17.33"
+    ]
+  },
+  {
+    "id": 121,
+    "testIdcet": 5,
+    "question": "If \\(\\mathbf{a}, \\mathbf{b}, \\mathbf{c}\\) are mutually perpendicular vectors having magnitudes 1, 2, 3 respectively, then \\[ \\left| \\mathbf{a} + \\mathbf{b} + \\mathbf{c} \\right|^2 \\] equals",
+    "options": [
+      "0",
+      "6",
+      "12",
+      "18"
+    ]
+  },
+  {
+    "id": 122,
+    "testIdcet": 5,
+    "question": "If points P(4,5, x), Q(3,y,4) and R(5,8,0) are collinear, then the value of x+y is",
+    "options": [
+      "4",
+      "3",
+      "5",
+      "4"
+    ]
+  },
+  {
+    "id": 123,
+    "testIdcet": 5,
+    "question": "If the slope of one of the lines given by \\( ax^2 + 2hxy + by^2 = 0 \\) is two times the other, then",
+    "options": [
+      "8h^2 = 9ab",
+      "8h^2 = 9ab^2",
+      "8h = 9ab",
+      "8h = 9ab^2"
+    ]
+  },
+  {
+    "id": 124,
+    "testIdcet": 5,
+    "question": "The equation of the line passing through the point (-3,1) and bisecting the angle between coordinate axes is",
+    "options": [
+      "x + y + 2 = 0",
+      "x - y + 2 = 0",
+      "x - y + 4 = 0",
+      "x + y + 5 = 0"
+    ]
+  },
+  {
+    "id": 125,
+    "testIdcet": 5,
+    "question": "The negation of the statement: \"Getting above 95% marks is necessary condition for Hema to get the admission in good college\" is",
+    "options": [
+      "Hema gets above 95% marks but she does not get the admission in good college",
+      "Hema does not get above 95% marks and she gets admission in good college",
+      "If Hema does not get above 95% marks then she will not get the admission in good college",
+      "Hema does not get above 95% marks or she gets the admission in good college"
+    ]
+  },
+  {
+    "id": 126,
+    "testIdcet": 5,
+    "question": "Cos1° Cos2° Cos3° ... Cos 179° =",
+    "options": [
+      "0",
+      "1",
+      "\\frac{1}{2}",
+      "-1"
+    ]
+  },
+  {
+    "id": 127,
+    "testIdcet": 5,
+    "question": "If planes \\(x - cy - bz = 0\\), \\(cx - y + az = 0\\) and \\(bx + ay - z = 0\\) pass through a straight line then \\(a^2 + b^2 + c^2 -\\) ?",
+    "options": [
+      "1 - abc",
+      "abc - 1",
+      "1 - 2abc",
+      "2abc - 1"
+    ]
+  },
+  {
+    "id": 128,
+    "testIdcet": 5,
+    "question": "The point of intersection of the line represented by \\( x^2 - y^2 + 3y - 2 = 0 \\) is",
+    "options": [
+      "(1,0)",
+      "(0,2)",
+      "\\left( \\frac{1}{2}, \\frac{3}{2} \\right)",
+      "\\left( \\frac{1}{2}, \\frac{1}{2} \\right)"
+    ]
+  },
+
+  {
+    "id": 134,
+    "testIdcet": 5,
+    "question": "The number of solutions of \\( \\sin x + \\sin 3x + \\sin 5x = 0 \\) in the interval \\( \\left[ \\frac{\\pi}{2}, \\frac{3\\pi}{2} \\right] \\) is",
+    "options": ["2", "3", "4", "5"]
+},
+{
+    "id": 135,
+    "testIdcet": 5,
+    "question": "If \\( \\tan^{-1} 2x + \\tan^{-1} 3x = \\frac{\\pi}{4} \\), then \\( x \\) =",
+    "options": ["-1", "\\frac{1}{3}", "\\frac{1}{6}", "\\frac{1}{2}"]
+},
+{
+    "id": 136,
+    "testIdcet": 5,
+    "question": "Matrix \\( A = \\begin{bmatrix} 1 & 2 & 3 \\\\ 1 & 1 & 5 \\\\ 2 & 4 & 7 \\end{bmatrix} \\) then the value of \\( a_{31} A_{31} + a_{32} A_{32} + a_{33} A_{33} \\) is",
+    "options": ["1", "13", "-1", "-13"]
+},
+{
+    "id": 137,
+    "testIdcet": 5,
+    "question": "The contrapositive of the statement: \"If the weather is fine then my friends will come and we go for a picnic.\"",
+    "options": [
+        "The weather is fine but my friends will not come or we do not go for a picnic",
+        "If my friends do not come or we do not go for a picnic then weather will not be fine",
+        "If the weather is not fine then my friends will not come or we do not go a picnic",
+        "The weather is not fine but friends will come and we go for a picnic"
+    ]
+},
+{
+    "id": 138,
+    "testIdcet": 5,
+    "question": "If \\( f(x) = \\frac{x}{x^2 + 1} \\) is increasing function then the value of \\( x \\) lies in",
+    "options": ["\\mathbb{R}", "(-\\infty,-1)", "(1,\\infty)", "(-1,1)"]
+},
+{
+    "id": 139,
+    "testIdcet": 5,
+    "question": "If \\( X = \\{4n - 3: n \\in \\mathbb{N} \\} \\) and \\( Y = \\{9n - 1: n \\in \\mathbb{N} \\} \\), then \\( X \\cap Y \\) =",
+    "options": ["X", "Y", "\\emptyset", "\\{0\\}"]
+},
+{
+    "id": 140,
+    "testIdcet": 5,
+    "question": "The statement pattern \\( P \\land (\\sim P \\lor q) \\) is",
+    "options": ["a tautology", "a contradiction", "equivalent to \\( P \\land q \\)", "equivalent to \\( P \\lor q \\)"]
+},
+{
+    "id": 141,
+    "testIdcet": 5,
+    "question": "If the line \\( y = 4x - 5 \\) touches the curve \\( y^2 = ax^3 + bx \\) at the point \\( (2,3) \\), then \\( 7a + 2b = \\)",
+    "options": ["0", "1", "-1", "2"]
+},
+{
+    "id": 142,
+    "testIdcet": 5,
+    "question": "The sides of a rectangle are given by \\( x + a \\) and \\( y + b \\). The equation of the circle passing through the vertices of the rectangle is",
+    "options": [
+        "x^2 + y^2 = a^2",
+        "x^2 + y^2 = a^2 - b^2",
+        "x^2 + y^2 = a^2 + b^2",
+        "(x-a)^2 + (y-b)^2 = a^2 + b^2"
+    ]
+},
+
+{
+  "id": 143,
+  "testIdcet": 5,
+  "question": "The minimum value of the function \\( f(x) = x \\log x \\) is",
+  "options": ["-\\frac{1}{e}", "-c", "\\frac{1}{e}", "c"]
+},
+{
+  "id": 144,
+  "testIdcet": 5,
+  "question": "If \\( X \\sim B(n, p) \\) with \\( n = 10, p = 0.4 \\) then \\( E(X^2) = \\)",
+  "options": ["4", "2.4", "3.6", "18.4"]
+},
+{
+  "id": 145,
+  "testIdcet": 5,
+  "question": "The general solution of the differential equation \\( \\frac{dx}{dy} = \\cos (x + y) \\) is",
+  "options": [
+      "\\tan \\left( \\frac{x + y}{2} \\right) = y + c",
+      "\\tan \\left( \\frac{x + y}{2} \\right) = x + c",
+      "\\cot \\left( \\frac{x + y}{2} \\right) = y + c",
+      "\\cot \\left( \\frac{x + y}{2} \\right) = x + c"
   ]
+},
+{
+  "id": 146,
+  "testIdcet": 5,
+  "question": "If planes \\( \\mathbf{r} \\cdot (\\mathbf{p} \\hat{i} - \\hat{j} + 2\\hat{k}) + 3 = 0 \\) and \\( \\mathbf{r} \\cdot (2 \\hat{i} - p \\hat{j} - \\hat{k}) - 5 = 0 \\) include an angle \\( \\frac{\\pi}{3} \\), then the value of \\( p \\) is",
+  "options": ["1, -3", "-1, -3", "-3", "3"]
+},
+{
+  "id": 147,
+  "testIdcet": 5,
+  "question": "The order of the differential equation of all parabolas, whose latus rectum is \\( 4a \\) and axis parallel to the x-axis, is",
+  "options": ["one", "four", "three", "two"]
+},
+{
+  "id": 148,
+  "testIdcet": 5,
+  "question": "If lines \\( \\frac{x - 1}{2} = \\frac{y + 1}{3} = \\frac{z - 1}{4} \\) and \\( x - 3 = \\frac{y - k}{2} = \\frac{z}{2} \\) intersect, then the value of \\( k \\) is",
+  "options": ["\\frac{9}{2}", "\\frac{1}{2}", "\\frac{5}{2}", "\\frac{7}{2}"]
+},
+{
+  "id": 149,
+  "testIdcet": 5,
+  "question": "If a line makes angles \\( 120^\\circ \\) and \\( 60^\\circ \\) with the positive directions of X and Z axes respectively, then the angle made by the line with the positive Y-axis is",
+  "options": ["150^\\circ", "60^\\circ", "135^\\circ", "120^\\circ"]
+},
+{
+  "id": 150,
+  "testIdcet": 5,
+  "question": "L and M are two points with position vectors \\( 2\\mathbf{a} - \\mathbf{b} \\) and \\( \\mathbf{a} + 2\\mathbf{b} \\) respectively. The position vector of the point N which divides the line segment LM in the ratio \\( 2:1 \\) externally is",
+  "options": ["3\\mathbf{b}", "4\\mathbf{b}", "5\\mathbf{b}", "3\\mathbf{a} + 4\\mathbf{b}"]
+},
+
+{
+  "id": 7,
+  "testIdcet": 6,
+  "question": "The quantity which *does not* vary periodically for a particle performing S.H.M. is",
+  "options": [
+    "acceleration",
+    "total energy",
+    "displacement",
+    "velocity"
+  ]
+},
+{
+  "id": 8,
+  "testIdcet": 6,
+  "question": "Which of the following combinations of 7 identical capacitors each of 2 µF gives a resultant capacitance of \\(\\frac{10}{11}\\) µF?",
+  "options": [
+    "3 in parallel and 4 in series",
+    "2 in parallel and 5 in series",
+    "4 in parallel and 3 in series",
+    "5 in parallel and 2 in series"
+  ]
+},
+{
+  "id": 9,
+  "testIdcet": 6,
+  "question": "Bohr model is applied to a particle of mass 'm' and charge 'q' moving in a plane under the influence of a transverse magnetic field 'B'. The energy of the charged particle in the \\(n^{th}\\) level will be \\((h = \\text{Planck’s constant})\\)",
+  "options": [
+    "\\(\\frac{2nhq B}{\\pi}\\)",
+    "\\(\\frac{nhq B}{2\\pi}\\)",
+    "\\(\\frac{nhq B}{4\\pi}\\)",
+    "\\(\\frac{nhq B}{\\pi}\\)"
+  ]
+},
+{
+  "id": 10,
+  "testIdcet": 6,
+  "question": "In moving coil galvanometer, strong horse shoe magnet of concave shaped pole pieces is used to",
+  "options": [
+    "increase space for rotation of coil",
+    "reduce weight of galvanometer",
+    "produce magnetic field which is parallel to plane of coil at any position",
+    "make magnetic induction weak at the centre"
+  ]
+},
+{
+  "id": 11,
+  "testIdcet": 6,
+  "question": "Two identical wires of substances 'P' and 'Q' are subjected to equal stretching force along the length. If the elongation of 'Q' is more than that of 'P', then",
+  "options": [
+    "both P and Q are equally elastic",
+    "P is more elastic than Q",
+    "P is plastic and Q is elastic",
+    "Q is more elastic than P"
+  ]
+},
+{
+  "id": 12,
+  "testIdcet": 6,
+  "question": "If \\(W_1, W_2, W_3\\) represent the work done in moving a particle from A to B along three different paths 1, 2 and 3 (as shown in fig.) in the gravitational field of the point mass 'm'. Find the correct relation between \\(W_1, W_2\\) and \\(W_3\\).",
+  "options": [
+    "\\(W_1 < W_3 < W_2\\)",
+    "\\(W_1 < W_2 < W_3\\)",
+    "\\(W_1 = W_2 = W_3\\)",
+    "\\(W_1 > W_3 > W_2\\)"
+  ]
+},
+{
+  "id": 13,
+  "testIdcet": 6,
+  "question": "Assuming that the junction diode is ideal, the current in the arrangement shown in figure is",
+  "options": [
+    "30mA",
+    "40mA",
+    "20mA",
+    "10mA"
+  ]
+},
+{
+  "id": 14,
+  "testIdcet": 6,
+  "question": "The equation of simple harmonic progressive wave is given by \\(Y = A \\sin 2\\pi (bt - cx)\\). The maximum particle velocity will be twice the wave velocity if",
+  "options": [
+    "\\(c = \\pi a\\)",
+    "\\(c = \\frac{1}{2\\pi a}\\)",
+    "\\(c = \\frac{1}{\\pi a}\\)",
+    "\\(c = 2\\pi a\\)"
+  ]
+},
+{
+  "id": 15,
+  "testIdcet": 6,
+  "question": "In fundamental mode, the time required for the sound wave to reach upto the closed end of a pipe filled with air is 't' second. The frequency of vibration of air column is",
+  "options": [
+    "\\(2t^{-1}\\)",
+    "\\(4t^{-1}\\)",
+    "\\(2(t^{-1})\\)",
+    "\\(4(t^{-1})\\)"
+  ]
+},
+{
+  "id": 16,
+  "testIdcet": 6,
+  "question": "Two small drops of mercury each of radius ‘R’ coalesce to form a large single drop. The ratio of the total surface energies before and after the change is",
+  "options": [
+    "\\(2^{2/3} : 1\\)",
+    "\\(\\sqrt{2} : 1\\)",
+    "\\(2^{1/3} : 1\\)",
+    "\\(2 : 1\\)"
+  ]
+},
+{
+  "id": 17,
+  "testIdcet": 6,
+  "question": "If radius of the solid sphere is doubled by keeping its mass constant, the ratio of its moment of inertia about any of its diameter is",
+  "options": [
+    "1 : 8",
+    "2 : 5",
+    "2 : 3",
+    "1 : 4"
+  ]
+},
+
+{
+  "id": 18,
+  "testIdcet": 6,
+  "question": "For a metallic wire, the ratio of voltage to corresponding current is",
+  "options": [
+    "independent of temperature",
+    "increases with rise in temperature",
+    "increases or decreases with rise in temperature depending upon the metal",
+    "decreases with rise in temperature"
+  ]
+},
+{
+  "id": 19,
+  "testIdcet": 6,
+  "question": "A soap bubble in vacuum has a radius of 3 cm and another soap bubble in vacuum has a radius of 4 cm. If the two bubbles coalesce under isothermal condition, then the radius of the new bubble is",
+  "options": [
+    "2.3 cm",
+    "4.5 cm",
+    "5 cm",
+    "7 cm"
+  ]
+},
+{
+  "id": 20,
+  "testIdcet": 6,
+  "question": "Two parallel conductors carrying unequal currents in the same direction",
+  "options": [
+    "neither attract nor repel each other",
+    "repel each other",
+    "attract each other",
+    "will have rotational motion"
+  ]
+},
+{
+  "id": 21,
+  "testIdcet": 6,
+  "question": "A layer of atmosphere that reflects medium frequency radio waves which is ineffective during night, is",
+  "options": [
+    "F layer",
+    "E layer",
+    "stratosphere",
+    "thermosphere"
+  ]
+},
+{
+  "id": 22,
+  "testIdcet": 6,
+  "question": "A transverse wave is propagating on the string. The linear density of a vibrating string is \\(10^{-3}\\) kg/m. The equation of the wave is \\(y = 0.05 \\sin(x + 15t)\\) where x and y are in metre and time in second. The tension in the string is",
+  "options": [
+    "0.2N",
+    "0.250N",
+    "0.225N",
+    "0.325N"
+  ]
+},
+{
+  "id": 23,
+  "testIdcet": 6,
+  "question": "The kinetic energy of a revolving satellite (mass m) at a height equal to thrice the radius of the earth (R) is",
+  "options": [
+    "\\(\\frac{mgR}{8}\\)",
+    "\\(\\frac{mgR}{16}\\)",
+    "\\(\\frac{mgR}{2}\\)",
+    "\\(\\frac{mgR}{4}\\)"
+  ]
+},
+{
+  "id": 24,
+  "testIdcet": 6,
+  "question": "A particle executes simple harmonic motion with an amplitude ‘A’. The distance travelled by it in one periodic time is",
+  "options": [
+    "\\(\\frac{A}{2}\\)",
+    "A",
+    "2A",
+    "4A"
+  ]
+},
+{
+  "id": 25,
+  "testIdcet": 6,
+  "question": "A galvanometer has resistance of 100 \\(\\Omega\\) and a current of 10 mA produces full scale deflection in it. The resistance to be connected to it in series, to get a voltmeter of range 50 volt is",
+  "options": [
+    "3900 \\(\\Omega\\)",
+    "4000 \\(\\Omega\\)",
+    "4600 \\(\\Omega\\)",
+    "4900 \\(\\Omega\\)"
+  ]
+},
+{
+  "id": 26,
+  "testIdcet": 6,
+  "question": "The angle made by orbital angular momentum of electron with the direction of the orbital magnetic moment is",
+  "options": [
+    "120°",
+    "60°",
+    "180°",
+    "90°"
+  ]
+},
+{
+  "id": 27,
+  "testIdcet": 6,
+  "question": "The current in 1 \\(\\Omega\\) resistor in the following circuit is",
+  "options": [
+    "1 A",
+    "0.5 A",
+    "1.1 A",
+    "0.8 A"
+  ]
+},
+{
+  "id": 28,
+  "testIdcet": 6,
+  "question": "The wavelength of the first line in Balmer series in the hydrogen spectrum is \\(\\lambda\\). What is the wavelength of the second line in the same series?",
+  "options": [
+    "\\(\\frac{20}{27} \\lambda\\)",
+    "\\(\\frac{3}{16} \\lambda\\)",
+    "\\(\\frac{5}{36} \\lambda\\)",
+    "\\(\\frac{3}{4} \\lambda\\)"
+  ]
+},
+{
+  "id": 29,
+  "testIdcet": 6,
+  "question": "Work done in stretching a wire through 1 mm is 2J. What amount of work will be done for elongating another wire of same material, with half the length and double the radius of cross section, by 1 mm?",
+  "options": [
+    "1.2 J",
+    "4 J",
+    "8 J",
+    "16 J"
+  ]
+},
+
+{
+  "id": 30,
+  "question": "The resultant \\(\\overrightarrow{R}\\) of \\(\\overrightarrow{P}\\) and \\(\\overrightarrow{Q}\\) is perpendicular to \\(\\overrightarrow{P}\\). Also \\(|\\overrightarrow{P}| = |\\overrightarrow{R}|\\). The angle between \\(\\overrightarrow{P}\\) and \\(\\overrightarrow{Q}\\) is \\(\\tan 45^\\circ = 1\\)",
+  "options": [
+    "\\(\\frac{6\\pi}{4}\\)",
+    "\\(\\frac{7\\pi}{4}\\)",
+    "\\(\\frac{\\pi}{4}\\)",
+    "\\(\\frac{3\\pi}{4}\\)"
+  ]
+},
+{
+  "id": 31,
+  "question": "A telescope has large diameter of the objective. Then its resolving power is",
+  "options": [
+    "independent of the diameter of the objective",
+    "low",
+    "zero",
+    "high"
+  ]
+},
+{
+  "id": 32,
+  "question": "A uniform rod of length ‘6L’ and mass ‘8m’ is pivoted at its centre ‘C’. Two masses ‘m’ and ‘2m’ with speed 2v, as shown, strike the rod and stick to the rod. Initially, the rod is at rest. Due to impact, if it rotates with angular velocity ‘w1’ then ‘w1’ will be",
+  "options": [
+    "\\(\\frac{v}{4L}\\)",
+    "Zero",
+    "8v",
+    "\\(\\frac{11v}{3L}\\)"
+  ]
+},
+{
+  "id": 33,
+  "question": "If \\(\\sqrt{A^2 + B^2}\\) represents the magnitude of resultant of two vectors \\((\\overrightarrow{A} + \\overrightarrow{B})\\) and \\((\\overrightarrow{A} - \\overrightarrow{B})\\), then the angle between two vectors is",
+  "options": [
+    "\\(\\cos^{-1} \\left[ \\frac{2(A^2 - B^2)}{(A^2 + B^2)} \\right]\\)",
+    "\\(\\cos^{-1} \\left[ \\frac{A^2 - B^2}{A^2 + B^2} \\right]\\)"
+  ]
+},
+{
+  "id": 34,
+  "question": "A thin metal wire of length ‘L’ and uniform linear mass density ‘Q’ is bent into a circular coil with ‘O’ as centre. The moment of inertia of a coil about the axis XX’ is",
+  "options": [
+    "\\(\\frac{3QL^2}{8\\pi^2}\\)",
+    "\\(\\frac{QL^2}{4\\pi^2}\\)",
+    "\\(\\frac{3QL^2}{4\\pi^2}\\)",
+    "\\(\\frac{QL^2}{8\\pi^2}\\)"
+  ]
+},
+{
+  "id": 35,
+  "question": "The dimensions of torque are same as that of",
+  "options": [
+    "moment of force",
+    "pressure",
+    "acceleration",
+    "impulse"
+  ]
+},
+{
+  "id": 36,
+  "question": "For transistor, the current ratio \\(\\beta_{dc}\\) is defined as the ratio of",
+  "options": [
+    "collector current to emitter current",
+    "collector current to base current",
+    "base current to collector current",
+    "emitter current to collector current"
+  ]
+},
+{
+  "id": 37,
+  "question": "A clock pendulum having coefficient of linear expansion \\(\\alpha = 9 \\times 10^{-7} / ^\\circ C\\) has a period of 0.5 s at 20°C. If the clock is used in a climate where the temperature is 30°C, how much time does the clock lose in each oscillation? \\(g = \\text{constant}\\)",
+  "options": [
+    "\\(2.5 \\times 10^{-7}\\) s",
+    "\\(5 \\times 10^{-7}\\) s",
+    "\\(1.125 \\times 10^{-6}\\) s",
+    "\\(2.25 \\times 10^{-6}\\) s"
+  ]
+},
+{
+  "id": 38,
+  "question": "Two capillary tubes of different diameters are dipped in water. The rise of water is",
+  "options": [
+    "zero in both the tube",
+    "same in both the tube",
+    "more in the tube of larger diameter",
+    "more in the tube of smaller diameter"
+  ]
+},
+
+  {
+    "id": 39,
+    "question": "A thin hollow prism of refracting angle 3°, filled with water gives a deviation of 1°. The refractive index of water is",
+    "options": [
+      "1.50",
+      "1.39",
+      "1.46",
+      "1.51"
+    ]
+  },
+  {
+    "id": 40,
+    "question": "A body is projected vertically from the surface of the earth of radius ‘R’ with velocity equal to half of the escape velocity. The maximum height reached by the body is",
+    "options": [
+      "R / 5",
+      "3R / 2",
+      "3R / 4",
+      "R / 2"
+    ]
+  },
+  {
+    "id": 41,
+    "question": "In biprism experiment, the distance between source and eyepiece is 1.2 m, the distance between two virtual sources is 0.84 mm. Then the wavelength of light used if eyepiece is to be moved transversely through a distance of 2.799 cm to shift 30 fringes is",
+    "options": [
+      "6533 Å",
+      "6537 Å",
+      "6535 Å",
+      "6351 Å"
+    ]
+  },
+  {
+    "id": 42,
+    "question": "When photons of energy hν fall on metal plate of work function ‘W₀’, photoelectrons of maximum kinetic energy ‘K’ are ejected. If the frequency of the radiation is doubled, the maximum kinetic energy of the ejected photoelectrons will be",
+    "options": [
+      "K + W₀",
+      "K + hν",
+      "K",
+      "2K"
+    ]
+  },
+  {
+    "id": 43,
+    "question": "If a star emitting yellow light is accelerated towards earth, then to an observer on earth it will appear",
+    "options": [
+      "becoming orange",
+      "shining yellow",
+      "gradually changing to blue",
+      "gradually changing to red"
+    ]
+  },
+  {
+    "id": 44,
+    "question": "The magnitude of magnetic induction at a point on the axis at a large distance (r) from the centre of circular coil of ‘n’ turns, and area ‘A’ carrying current (I) is given by",
+    "options": [
+      "Bₐₓᵢₛ = μ₀ nAI / 4π r³",
+      "Bₐₓᵢₛ = μ₀ 2nIA / 4π r³",
+      "Bₐₓᵢₛ = μ₀ nIA / 4π r³",
+      "Bₐₓᵢₛ = μ₀ 2nI A / 4π r³"
+    ]
+  },
+  {
+    "id": 45,
+    "question": "A metal sphere of radius ‘R’ and density ‘e₁’ is dropped in a liquid of density ‘σ’, moves with terminal velocity ‘V’. Another metal sphere of the same radius and density ‘e₂’ is dropped in the same liquid, its terminal velocity will be",
+    "options": [
+      "V ( (e₂ + σ) / (e₁ + σ) )",
+      "V ( (e₁ + σ) / (e₂ + σ) )",
+      "V ( (e₂ - σ) / (e₁ - σ) )",
+      "V ( (e₁ - σ) / (e₂ - σ) )"
+    ]
+  },
+  {
+    "id": 46,
+    "question": "If ‘α’ is the coefficient of performance of a refrigerator and ‘Q₁’ is heat released to the hot reservoir, then the heat extracted from the cold reservoir ‘Q₂’ is",
+    "options": [
+      "αQ₁ / (α - 1)",
+      "(α - 1) Q₁ / α",
+      "αQ₁ / (1 + α)",
+      "(1 + α) Q₁ / α"
+    ]
+  },
+  {
+    "id": 47,
+    "question": "The real force ‘F’ acting on a particle of mass ‘m’ performing circular motion acts along the radius of circle ‘r’ and is directed towards the centre of the circle. The square root of magnitude of such force is (T = periodic time)",
+    "options": [
+      "2π / T √(mr)",
+      "Tmr / 4π",
+      "2πT / √(mr)",
+      "T²mr / 4π"
+    ]
+  },
+  {
+    "id": 48,
+    "question": "Dimensions of Gyromagnetic ratio are",
+    "options": [
+      "[L²MT⁻²I⁻¹]",
+      "[L⁰M⁰T⁻¹I⁻¹]",
+      "[L¹M⁰T⁻¹I⁻¹]",
+      "[L⁻¹M⁰T¹I¹]"
+    ]
+  },
+  {
+    "id": 49,
+    "question": "The maximum velocity of the photoelectron emitted by the metal surface is ‘V’. Charge and mass of the photoelectron is denoted by ‘e’ and ‘m’ respectively. The stopping potential in volt is",
+    "options": [
+      "V² / (2e m)",
+      "V² / (2m e)",
+      "V² / (e m)",
+      "V² / e m"
+    ]
+  },
+
+  {
+    "id": 50,
+    "testIdcet": 6,
+    "question": "The equiconvex lens has a focal length ‘f’. If the lens is cut along the line perpendicular to principal axis and passing through the pole, what will be the focal length of any half part?",
+    "options": [
+      "f/2",
+      "2f",
+      "3f/2",
+      "f"
+    ]
+  },
+  {
+    "id": 51,
+    "testIdcet": 6,
+    "question": "Which of following methods is used to separate wolframite and stannic oxide present in cassiterite?",
+    "options": [
+      "Hydraulic washing using Wilfley table",
+      "Froth floatation",
+      "Hydraulic classifier",
+      "Magnetic separation"
+    ]
+  },
+  {
+    "id": 52,
+    "testIdcet": 6,
+    "question": "In the reaction, \\(MnO_4^- (aq) + Br^- (aq) → MnO_2 (s) + BrO_3^- (aq)\\), the correct change in oxidation number of the species involved is",
+    "options": [
+      "Br⁻ to Br⁺¹",
+      "Mn⁺⁷ to Mn⁺²",
+      "Mn⁺⁷ to Mn⁺⁴",
+      "Br⁻ to Br⁺⁵"
+    ]
+  },
+  {
+    "id": 53,
+    "testIdcet": 6,
+    "question": "How many isoprene units are present in abscisic acid?",
+    "options": [
+      "Three",
+      "Two",
+      "Four",
+      "Five"
+    ]
+  },
+  {
+    "id": 54,
+    "testIdcet": 6,
+    "question": "Action of hydrogen iodide on anisole gives,",
+    "options": [
+      "Phenol and iodomethane",
+      "Iodobenzene and methanol",
+      "Phenol and methanol",
+      "Iodobenzene and iodomethane"
+    ]
+  },
+  {
+    "id": 55,
+    "testIdcet": 6,
+    "question": "Which among the following compounds is used to decaffeinate coffee?",
+    "options": [
+      "Iodoform",
+      "Carbon tetrachloride",
+      "Methylene chloride",
+      "Chloroform"
+    ]
+  },
+  {
+    "id": 56,
+    "testIdcet": 6,
+    "question": "Which complex among the following gives a white precipitate on treatment with an aqueous solution of barium chloride?",
+    "options": [
+      "[Pt(NH₃)₄Br₂]Cl₂",
+      "[Co(NH₃)₆]SO₄NO₂",
+      "[Co(NH₃)₄NO₂]SO₄",
+      "[Pt(NH₃)₄Cl₂]Br₂"
+    ]
+  },
+  {
+    "id": 57,
+    "testIdcet": 6,
+    "question": "When CuSO₄ solution in water is treated with concentrated HCl it turns?",
+    "options": [
+      "Violet",
+      "Yellow",
+      "Purple",
+      "Green"
+    ]
+  },
+  {
+    "id": 58,
+    "testIdcet": 6,
+    "question": "Which of the following polymer is used in paints?",
+    "options": [
+      "Gutta percha",
+      "Melamine",
+      "Buna-S",
+      "Novolac"
+    ]
+  },
+  {
+    "id": 59,
+    "testIdcet": 6,
+    "question": "Three moles of an ideal gas are expanded isothermally from a volume of 300 cm³ to 2.5 L at 300 K against a pressure of 1.9 atm. The work done in joules is",
+    "options": [
+      "-423.56 J",
+      "+423.56 J",
+      "-418 J",
+      "+4.8 J"
+    ]
+  },
+  {
+    "id": 60,
+    "testIdcet": 6,
+    "question": "Which among the following is used in the treatment of cancer?",
+    "options": [
+      "cis-[Pt(en)₂Cl₂]",
+      "cis-[PtCl₂(NH₃)₂]",
+      "trans-[Pt(en)₂Cl₂]",
+      "trans-[Pt(NH₃)₂Cl₂]"
+    ]
+  },
+  {
+    "id": 61,
+    "testIdcet": 6,
+    "question": "Which among the following pairs of compounds is NOT isomorphous?",
+    "options": [
+      "NaNO₃ and CaCO₃",
+      "K₂SO₄ and K₂SeO₄",
+      "NaCl and KCl",
+      "NaF and MgO"
+    ]
+  },
+  {
+    "id": 62,
+    "testIdcet": 6,
+    "question": "Which among the following compounds is used as selective weed killer?",
+    "options": [
+      "Picric acid",
+      "2,4-dichlorophenoxy acetic acid",
+      "2,4,6-trichlorophenoxy acetic acid",
+      "Salol"
+    ]
+  },
+  {
+    "id": 63,
+    "testIdcet": 6,
+    "question": "Calculate the difference between heat of combustion of carbon monoxide gas at constant pressure and at constant volume at 27°C \\(R = 2\\) Cal K⁻¹ mol⁻¹?",
+    "options": [
+      "54 cal",
+      "-600 cal",
+      "-300 cal",
+      "27 cal"
+    ]
+  },
+  {
+    "id": 64,
+    "testIdcet": 6,
+    "question": "The conductivity of an electrolytic solution decreases on dilution due to",
+    "options": [
+      "Decrease in number of ions per unit volume",
+      "Increase in ionic mobility of ions",
+      "Increase in percentage ionisation",
+      "Increase in number of ions per unit volume"
+    ]
+  }
+]

@@ -52,6 +52,7 @@ const TestResults = () => {
   const { userId } = useUser();
   const navigate = useNavigate();
   console.log("User ID from useUser:", userId);
+  
   useEffect(() => {
     const fetchResult = async () => {
       if (!userId) return;
@@ -88,6 +89,18 @@ const TestResults = () => {
 
     fetchResult();
   }, [testId, userId]);
+
+  useEffect(() => {
+    window.history.pushState(null, null, window.location.href);
+    window.addEventListener("popstate", () => {
+      navigate("/dashboard"); // Redirect back to dashboard if back is pressed
+    });
+  
+    return () => {
+      window.removeEventListener("popstate", () => {});
+    };
+  }, []);
+  
 
   if (loading) return <div className="min-h-screen bg-gray-900 flex items-center justify-center">Loading...</div>;
   if (error) return <div className="min-h-screen bg-gray-900 flex items-center justify-center">Error: {error}</div>;
@@ -127,12 +140,9 @@ const TestResults = () => {
             color="stroke-indigo-500"
           >
             <div className="text-center">
-              <span className="text-5xl font-bold text-white">{percentage}%</span>
-              <div className="mt-2 text-gray-400">
-                <span className="text-2xl text-green-400">{result.marksObtained * 4 - result.wrongQuestions.length}</span>
-                <span className="mx-2">/</span>
-                <span className="text-xl">{300}</span>
-              </div>
+                <span className="text-5xl text-green-400">{result.marksObtained * 4 - result.wrongQuestions.length}</span>
+                <span className="mx-2 text-5xl text-gray-100">/</span>
+                <span className="text-5xl  text-gray-400">{300}</span>
             </div>
           </CircularProgress>
 
@@ -153,8 +163,8 @@ const TestResults = () => {
                   <div className="text-2xl font-bold text-white">{result.marksObtained}</div>
                 </div>
                 <div className="text-right">
-                  <div className="text-sm text-indigo-100">Accuracy</div>
-                  <div className="text-2xl font-bold text-white">{result.marksObtained}%</div>
+                  <div className="text-sm text-indigo-100">Wrong Answers</div>
+                  <div className="text-2xl font-bold text-white">{result.wrongQuestions.length}</div>
                 </div>
               </div>
             </div>
@@ -163,23 +173,25 @@ const TestResults = () => {
 
         {/* Performance Summary */}
         <div className="bg-gray-700/50 p-6 rounded-xl space-y-4">
-          <h3 className="text-xl font-bold text-white mb-2">Detailed Analysis</h3>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="p-4 bg-gray-600/30 rounded-lg">
-              <div className="text-gray-400 text-sm">Test Version</div>
-              <div className="text-white font-semibold">2025 Standard</div>
-            </div>
-            <div className="p-4 bg-gray-600/30 rounded-lg">
-            <button
-              onClick={handleWrongQuestion}
-              className="w-full sm:w-auto bg-green-500 text-white py-2 px-6 sm:px-8 rounded-lg hover:bg-green-600 transition-colors duration-300 text-sm sm:text-base"
-            >
-              Wrong Questions
-            </button>
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+    {/* Test Version Block */}
+    <div className="p-4 bg-gray-600/30 rounded-lg">
+      <div className="text-gray-400 text-sm">Test Version</div>
+      <div className="text-white font-semibold">2025 Standard</div>
+    </div>
 
-            </div>
-          </div>
-        </div>
+    {/* Button Block */}
+    <div className="p-4 bg-gray-600/30 rounded-lg flex justify-center sm:justify-start">
+      <button
+        onClick={handleWrongQuestion}
+        className="w-full sm:w-auto max-w-[200px] bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300 text-sm sm:text-base"
+      >
+        Wrong Questions
+      </button>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

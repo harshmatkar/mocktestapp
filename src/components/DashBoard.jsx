@@ -12,7 +12,7 @@ const DashBoard = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [username, setUsername] = useState('Student');
   const navigate = useNavigate();
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [purchasedTests, setPurchasedTests] = useState([]); // NEW: Track purchased tests
   const [user] = useAuthState(auth); // Get Firebase user state
@@ -126,19 +126,63 @@ const DashBoard = () => {
 
   const sidebarItems = [
     { icon: Home, label: 'Home', id: 'home', onClick: () => { navigate('/'); setActiveSection('home'); } },
-    { icon: Package, label: 'Packs', id: 'packs', onClick: () => { navigate('/packs'); setActiveSection('packs'); } },
+    { icon: Package, label: 'Raise Issue', id: 'packs', onClick: () => { navigate('/issue'); setActiveSection('packs'); } },
     { icon: User, label: 'Profile', id: 'profile', onClick: () => { navigate('/profile'); setActiveSection('profile'); } },
     { icon: Book, label: 'SEE Mistakes(CET)', id: 'mistakes', onClick: () => { navigate('/mistakes'); setActiveSection('mistakes'); } }
   ];
 
   const mockTests = [
-    { title: 'MHT CET Mock Tests', action: 'Take Mock Test', path: '/mocktestlistmhtcet', content:'30+ Mock Test of MHTCET'},
-    { title: 'JEE MAIN Mock Tests', action: 'Take Mock Test', path: '/mocktestslist', content:'30+ Mock Test of JEE MAINS' },
-    { title: 'JEE ADVANCED Mock Tests', action: 'Take Mock Test', path: '/mocktestslistneet', content:'10+ Mock Test of JEE ADVANCE' },
-    { title: 'MHT CET PYQ', action: 'View Analytics', path: '/pyqcet' , content:'MHT CET PYQs of 10 Years'},
-    { title: 'JEE MAIN PYQ', action: 'View Rank', path: '/competition' , content:'5000+ Chapterwise PYQ'},
-    { title: 'JEE ADVANCED PYQ', action: 'View Analytics', path: '/analytics' , content:'PYQs of 10 years along with solution'}
-  ];
+    { 
+        title: 'MHT CET Mock Tests', 
+        action: 'Take Mock Test', 
+        path: '/mocktestlistmhtcet', 
+        isLive: 0,
+        content: '30+ Mock Test of MHTCET',
+        image: 'https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396266/Target_99_Percentile_2_hoz1bl.png' 
+    },
+    { 
+        title: 'JEE MAIN Mock Tests', 
+        action: 'Take Mock Test', 
+        path: '/mocktestslist', 
+        isLive: true ,
+        content: '30+ Mock Test of JEE MAINS',
+        image: 'https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396265/Target_99_Percentile_1_a58qay.png' 
+    },
+    { 
+        title: 'JEE ADVANCED Mock Tests', 
+        action: 'Take Mock Test', 
+        path: '/mocktestslistneet', 
+        content: '10+ Mock Test of JEE ADVANCE',
+        image: 'https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396268/Target_99_Percentile_3_qv5wb0.png' 
+    },
+    { 
+        title: 'MHT CET PYQ', 
+        action: 'View Analytics', 
+        path: '/pyqcet', 
+        content: 'MHT CET PYQs of 10 Years',
+        image: 'https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396826/Target_99_Percentile_6_er6urb.png' 
+    },
+    { 
+        title: 'JEE MAIN PYQ', 
+        action: 'View Rank', 
+        path: '/competition', 
+        content: '5000+ Chapterwise PYQ',
+        image: 'https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396737/Target_99_Percentile_5_qwoq2a.png' 
+    },
+    { 
+        title: 'JEE ADVANCED PYQ', 
+        action: 'View Analytics', 
+        path: '/analytics', 
+        content: 'PYQs of 10 years along with solution',
+        image: 'https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396593/Target_99_Percentile_4_pe3fg8.png' 
+    }
+];
+  const getGreeting = () => {
+    const hour = new Date().getHours();
+    if (hour < 12) return "Good Morning";
+    if (hour < 18) return "Good Afternoon";
+    return "Good Evening";
+  };
 
   return (
     <div className={`min-h-screen ${isDarkMode ? 'dark bg-gray-900' : 'bg-gray-50'}`}>
@@ -169,8 +213,8 @@ const DashBoard = () => {
         text-2xl 
         font-bold 
         bg-gradient-to-r 
-        from-red-300 
-        to-purple-800 
+        from-stone-300 
+        to-stone-300 
         text-transparent 
         bg-clip-text
       
@@ -256,7 +300,7 @@ const DashBoard = () => {
         <div className="flex-1 p-4 lg:p-8 ml-0 lg:ml-0">
           <div className="mb-8 mt-16 lg:mt-0">
             <h1 className={`text-xl font-semibold ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
-              Good Afternoon, <span className="text-blue-500">{username}!</span>
+              {getGreeting()},<span className="text-blue-500">{username}!</span>
             </h1>
             <span className={`text-sm ${isDarkMode ? 'text-gray-400' : 'text-gray-500'}`}>
               Welcome back! All the best because #PaperPhodnaHai
@@ -269,12 +313,12 @@ const DashBoard = () => {
                 isDarkMode ? 'bg-gray-800 shadow-gray-900/50' : 'bg-white shadow-lg'
               } transition-transform hover:-translate-y-1`}>
                 <div className="h-28 overflow-hidden relative">
-                  <img 
-                    src="https://cdn.quizrr.in/web-assets/img/pack_banners/jee_main_2025_test_series_droppers.png" 
-                    alt={test.title} 
-                    className="w-full h-full object-cover" 
-                  />
-                </div>
+        <img 
+          src={test.image} 
+          alt={test.title} 
+          className="w-full h-full object-cover" 
+        />
+      </div>
                 <div className={`
                   rounded-lg 
                   shadow-md 
@@ -314,32 +358,59 @@ const DashBoard = () => {
                   </div>
                 </div>
                 
-                <div className="p-4 flex justify-between">
-                  {/*
-                    Conditionally render:
-                    - If the test is purchased (i.e. its title is in the purchasedTests array), show the button to start/take the test.
-                    - Otherwise, show the Buy Now / Payment button.
-                  */}
-                  {purchasedTests.includes(test.title) ? (
-                    <button
-                      onClick={() => navigate(test.path)}
-                      className={`px-4 py-2 rounded-lg border-2 text-xs font-medium transition-colors
-                        ${isDarkMode ? 'border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white' 
-                          : 'border-blue-500 text-blue-500 hover:bg-blue-50'}`}
-                    >
-                      {test.action}
-                    </button>
-                  ) : (
-                    <button
-                      onClick={() => handlePayment(test)}
-                      className="px-4 py-2 rounded-lg text-white flex items-center gap-2 border-1 border-red-500 hover:shadow-lg hover:-translate-y-1 active:translate-y-0"
-                    >
-                      <span className="text-lg font-bold text-green-400">₹99</span>
-                      <span className="text-sm font-semibold">80% OFF</span>
-                      <span className="text-sm text-gray-100 line-through">₹499</span>
-                    </button>
-                  )}
-                </div>
+                {/* <div className="p-4 flex justify-between">
+  {test.isLive ? (
+    purchasedTests.includes(test.title) ? (
+      <button
+        onClick={() => navigate(test.path)}
+        className={`px-4 py-2 rounded-lg border-2 text-xs font-medium transition-colors
+          ${isDarkMode ? 'border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white' 
+            : 'border-blue-500 text-blue-500 hover:bg-blue-50'}`}
+      >
+        {test.action}
+      </button>
+    ) : (
+      <button
+        onClick={() => handlePayment(test)}
+        className="px-4 py-2 rounded-lg text-white flex items-center gap-2 border-1 border-red-500 hover:shadow-lg hover:-translate-y-1 active:translate-y-0"
+      >
+        <span className="text-lg font-bold text-green-400">₹99</span>
+        <span className="text-sm font-semibold">80% OFF</span>
+        <span className="text-sm text-gray-100 line-through">₹499</span>
+      </button>
+    )
+  ) : (
+    <button
+      className="px-4 py-2 rounded-lg cursor-not-allowed border border-red-500 text-red-500" 
+      disabled
+    >
+      Coming Soon..
+    </button>
+  )}
+</div> */}
+
+<div className="p-4 flex justify-between">
+      {test.isLive ? (
+        <button
+          onClick={() => navigate(test.path)}
+          className={`px-4 py-2 rounded-lg border-2 text-xs font-medium transition-colors
+            ${isDarkMode ? 'border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white' 
+              : 'border-blue-500 text-blue-500 hover:bg-blue-50'}`}
+        >
+          {test.action || "Start Test"}
+        </button>
+      ) : (
+        <button
+          className="px-4 py-2 rounded-lg cursor-not-allowed border border-red-500 text-red-500" 
+          disabled
+        >
+          Coming Soon..
+        </button>
+      )}
+    </div>
+
+
+
               </div>
             ))}
           </div>

@@ -79,10 +79,10 @@ const LandingPage = () => {
   ];
 
   const achievements = [
-    { number: '500+', text: 'Successful Students' },
-    { number: '100+', text: 'Expert Tutors' },
-    { number: '95%', text: 'Success Rate' },
-    { number: '10+', text: 'Years of Experience' }
+    // { number: '500+', text: 'Successful Students' },
+    // { number: '100+', text: 'Expert Tutors' },
+    // { number: '95%', text: 'Success Rate' },
+    // { number: '10+', text: 'Years of Experience' }
   ];
 
   return (
@@ -129,27 +129,28 @@ const LandingPage = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="md:hidden bg-white">
-              {['Home', 'Features', 'About', 'Courses'].map((item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item}
-                </a>
-              ))}
-              <div className="px-4 py-3">
-                <button
-                  className="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
-                  onClick={handleGetStarted}
-                >
-                  Get Started
-                </button>
-              </div>
-            </div>
-          )}
+  <div className="md:hidden bg-gray-800 text-amber-100 rounded-lg shadow-lg top-16 right-4">
+    {['Home', 'Features', 'About', 'Courses'].map((item) => (
+      <a
+        key={item}
+        href={`#${item.toLowerCase()}`}
+        className="block px-4 py-2 text-white hover:bg-gray-700 hover:text-white transition-colors duration-200"
+        onClick={() => setIsMenuOpen(false)}
+      >
+        {item}
+      </a>
+    ))}
+    <div className="px-4 py-3">
+      <button
+        className="w-full bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors duration-300"
+        onClick={handleGetStarted}
+      >
+        Get Started
+      </button>
+    </div>
+  </div>
+)}
+
         </div>
       </nav>
 
@@ -187,7 +188,7 @@ const LandingPage = () => {
       <div className="py-20 bg-gray-50" id="features">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
-            Why Choose <span className="text-blue-600">Mockitup?</span>
+            Why Choose <span className="text-blue-600">Mockitupp?</span>
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
@@ -205,7 +206,7 @@ const LandingPage = () => {
       </div>
 
       {/* Achievements Section */}
-      <div className="py-20 bg-blue-600">
+      {/* <div className="py-20 bg-blue-600">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">
             Our Achievements
@@ -224,17 +225,17 @@ const LandingPage = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-center space-x-6 mb-8">
             {[
-              { Icon: Facebook, link: 'https://facebook.com' },
-              { Icon: Twitter, link: 'https://twitter.com' },
-              { Icon: Instagram, link: 'https://instagram.com' },
-              { Icon: Linkedin, link: 'https://linkedin.com' }
+              { Icon: Facebook },
+              { Icon: Twitter},
+              { Icon: Instagram },
+              { Icon: Linkedin }
             ].map(({ Icon, link }, index) => (
               <a
                 key={index}

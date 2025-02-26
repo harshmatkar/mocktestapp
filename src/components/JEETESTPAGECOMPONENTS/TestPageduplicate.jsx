@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useCallback} from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import questionsData from "../../assets/questions.json";
@@ -10,8 +10,10 @@ import { ChevronLeft, ChevronRight , Menu} from "lucide-react";
 import Header from "./Header";
 import Subheader from "./Subheader";
 import Cookies from 'js-cookie';
-
-
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import PreventNavigation from "./PreventNavigation";
 
 import {
   Button,
@@ -63,7 +65,7 @@ const TestPage = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [markedQuestions, setMarkedQuestions] = useState({});
-  const [remainingTime, setRemainingTime] = useState(3600); // initial time in seconds
+  const [remainingTime, setRemainingTime] = useState(10800); // initial time in seconds
   const [language, setLanguage] = useState("english");
   const [openSubmitDialog, setOpenSubmitDialog] = useState(false);
   const [submittedAnswers, setSubmittedAnswers] = useState([]); // initial value set to empty
@@ -77,57 +79,126 @@ const TestPage = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isVerifyingAccess, setIsVerifyingAccess] = useState(true);
   const [hasAccess, setHasAccess] = useState(false);
+  const [isInitialized, setIsInitialized] = useState(false);
 
   const auth = getAuth();
   const db = getFirestore();
 
-  
   useEffect(() => {
-    const unsubscribe = auth.onAuthStateChanged(async (user) => {
-      setIsVerifyingAccess(true);
-      
-      // First check if user is logged in
-      if (!user) {
-        navigate('/login');
-        setIsVerifyingAccess(false);
-        return;
-      }
+    const countdownCompleted = localStorage.getItem("countdownCompleted");
+    const instructionsVisited = localStorage.getItem("instructionsVisited");
   
-      // Then check test access
-      const cookieKey = `hasAccess_${user.uid}`;
-      const storedAccess = Cookies.get(cookieKey);
-  
-      if (storedAccess !== undefined) {
-        setHasAccess(storedAccess === 'true');
-        setIsVerifyingAccess(false);
-        
-        return;
-      }
-  
+    if (countdownCompleted !== "true" || instructionsVisited !== "true") {
+      navigate("/"); // Redirect if steps were skipped
+    } else if (parseInt(testId, 10) > 5) {
+      navigate("/dashboard"); // Redirect to dashboard if testId > 6
+    } console.log("countdownCompleted:", countdownCompleted);
+  console.log("instructionsVisited:", instructionsVisited);
+  console.log("testId:", testId);
+  }, [navigate, testId]);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem(`testState-${testId}`);
+    if (savedState) {
       try {
-        const q = query(
-          collection(db, "transactions"),
-          where("userId", "==", user.uid),
-          where("courseTitle", "==", "JEE MAIN Mock Tests")
-        );
-        const querySnapshot = await getDocs(q);
-        const access = !querySnapshot.empty;
-        setHasAccess(access);
-        Cookies.set(cookieKey, access.toString(), { expires: 1, path: '/' });
-        if (!access) navigate('/dashboard');
+        const parsedState = JSON.parse(savedState);
+        if (!isInitialized) { // Prevent resetting once initialized
+          setSelectedAnswers(parsedState.selectedAnswers || {});
+          setMarkedQuestions(parsedState.markedQuestions || {});
+          setCurrentQuestionIndex(parsedState.currentIndex || 0);
+          setRemainingTime(parsedState.timeRemaining || 3600);
+          setIsInitialized(true);
+        }
       } catch (error) {
-        console.error("Access check failed:", error);
-      } finally {
-        setIsVerifyingAccess(false);
+        console.error("Error parsing saved state:", error);
       }
-    });
+    } else {
+      setIsInitialized(true); // Ensure flag is set even if no saved state
+    }
+  }, [testId, isInitialized]); // ✅ Adding `isInitialized` prevents unnecessary resets
+
+ 
+
   
-    return () => unsubscribe();
-  }, [navigate, userId]);
 
+// Save state continuously
+useEffect(() => {
+  // Load saved state only once
+  const storageKey = `testState-${userId}-${testId}`;
+  const savedState = localStorage.getItem(storageKey);
+
+  if (savedState) {
+    const {
+      selectedAnswers: savedAnswers,
+      markedQuestions: savedMarked,
+      currentIndex,
+      timeRemaining
+    } = JSON.parse(savedState);
+    
+    setSelectedAnswers(savedAnswers || {});
+    setMarkedQuestions(savedMarked || {});
+    setCurrentQuestionIndex(currentIndex || 0);
+    setRemainingTime(timeRemaining || 3600);
+  }
+  setIsInitialized(true);
+}, [testId, userId, isInitialized]);
+
+// Separate effect to save changes after initialization
+useEffect(() => {
+  if (!isInitialized) return;
+
+  const stateToSave = {
+    selectedAnswers,
+    markedQuestions,
+    currentIndex: currentQuestionIndex,
+    timeRemaining: remainingTime
+  };
+  
+  const storageKey = `testState-${userId}-${testId}`;
+  localStorage.setItem(storageKey, JSON.stringify(stateToSave));
+
+},  [selectedAnswers, markedQuestions, currentQuestionIndex, remainingTime, testId, userId]);
 
   
 
+  // useEffect(() => {
+  //   const checkExistingTransaction = async () => {
+  //     console.log("userId:", userId); 
+  //     if (!userId) {
+  //       console.log("No userId provided, skipping transaction check.");
+  //       return;
+  //     }
+  //     console.log("userId:", userId);
+  
+  //     console.log("Checking transactions for userId:", userId);
+  
+  //     // Reference to the transactions collection
+  //     const transactionsRef = collection(db, "transactions");
+  //     const q = query(
+  //       transactionsRef,
+  //       where("userId", "==", userId),
+  //       where("testTitle", "==", "JEE MAIN Mock Tests")
+  //     );
+  
+  //     try {
+  //       const querySnapshot = await getDocs(q);
+  //       console.log("Transaction query completed. Number of results:", querySnapshot.size);
+  
+  //       if (!querySnapshot.empty) {
+  //         console.log("Existing transaction found, navigating to /dashboard");
+          
+  //       } else {
+  //         console.log("No existing transactions found for this user.");
+  //         navigate("/dashboard");
+  //       }
+  //     } catch (error) {
+  //       console.error("Error checking existing transactions:", error);
+  //     }
+  //   };
+  
+  //   checkExistingTransaction();
+  // }, [userId, navigate]); // Dependency array 
+   
   
 
   const legendItems = [
@@ -135,7 +206,7 @@ const TestPage = () => {
     { color: 'red', text: 'Not Answered' },
     { color: 'green', text: 'Answered' },
     { color: 'purple', text: 'Marked' },
-    { color: 'purple', text: 'Answered & Marked', dot: true },
+    { color: 'green', text: 'Answered & Marked', dot: true },
   ];
   
   const statusColors = {
@@ -145,8 +216,6 @@ const TestPage = () => {
     red: { main: '#f44336', dark: '#d32f2f' },
     'purple-dot': { main: '#9c27b0', dark: '#7b1fa2' }
   };
-  
-  
 
   //-------------------------------------------------------------------- Initial useEffect for loading
   
@@ -174,7 +243,8 @@ const TestPage = () => {
   
   //-------------------------------------------------------------------- Timer setup (180 minutes)
   useEffect(() => {
-    setRemainingTime(180 * 60);
+    if (!isInitialized) return; // Prevents running before loading previous state
+    
     const timer = setInterval(() => {
       setRemainingTime((prevTime) => {
         if (prevTime <= 0) {
@@ -185,9 +255,10 @@ const TestPage = () => {
         return prevTime - 1;
       });
     }, 1000);
-
+  
     return () => clearInterval(timer);
-  }, [testId]);
+  }, [isInitialized]); // Runs only when initialization is done
+  
 
   //-------------------------------------------------------------------- Ensure MathJax processes new content when component updates
   //-------------------------------------------------------------------- Format seconds into HH:MM:SS
@@ -219,33 +290,29 @@ const TestPage = () => {
       setLocalValue(selectedAnswers[question.id]?.toString() || '');
     }, [question.id]);
 
-    const handleNumpadInput = (num) => {
+    const handleNumpadInput = useCallback((num) => {
       let newValue;
       if (num === '±') {
-        newValue = localValue.startsWith('-') 
-          ? localValue.slice(1) 
-          : `-${localValue}`;
+        newValue = localValue.startsWith('-') ? localValue.slice(1) : `-${localValue}`;
       } else {
         newValue = localValue + num.toString();
       }
-
-      // Validate numerical constraints
       if (Math.abs(parseInt(newValue) || 0) <= 99999) {
         setLocalValue(newValue);
         handleOptionSelect(question.id, newValue, true);
       }
-    };
+    }, [localValue, question.id, handleOptionSelect]);
 
-    const handleBackspace = () => {
+    const handleBackspace = useCallback(() => {
       const newValue = localValue.slice(0, -1);
       setLocalValue(newValue);
       handleOptionSelect(question.id, newValue, true);
-    };
+    }, [localValue, question.id, handleOptionSelect]);
 
-    const handleClear = () => {
+    const handleClear = useCallback(() => {
       setLocalValue('');
       handleOptionSelect(question.id, '', true);
-    };
+    }, [question.id, handleOptionSelect]);
 
     return (
       <Box sx={{ mt: 3, display: 'flex', alignItems: 'flex-start' }}>
@@ -260,13 +327,7 @@ const TestPage = () => {
               pattern: "\\d*",
               readOnly: true // Using numpad, so keep it read-only
             },
-            endAdornment: (
-              <InputAdornment position="end">
-                <Typography variant="caption" color="textSecondary">
-                  Integer only
-                </Typography>
-              </InputAdornment>
-            )
+            
           }}
           sx={{ width: '200px' }}
         />
@@ -279,20 +340,34 @@ const TestPage = () => {
     );
   };
 
+
   //-------------------------------------------------------------------- Numpad component
   const Numpad = ({ onInput, onBackspace, onClear }) => (
-    <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 1, ml: 2, width: '200px' }}>
-      {[7, 8, 9, 4, 5, 6, 1, 2, 3, '±', 0].map((num) => (
-        <Button key={num} variant="outlined" onClick={() => onInput(num)} sx={{ minWidth: 0 }}>
+    <Box
+      sx={{
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gap: 1,
+        ml: 2,
+        width: "200px",
+      }}
+    >
+      {[7, 8, 9, 4, 5, 6, 1, 2, 3, "±", 0].map((num) => (
+        <Button
+          key={num}
+          variant="outlined"
+          onClick={() => onInput(num)}
+          sx={{ minWidth: "60px", minHeight: "50px" }} // Ensures equal button size
+        >
           {num}
         </Button>
       ))}
-
+  
       <Button
         variant="outlined"
         color="error"
         onClick={onBackspace}
-        sx={{ gridColumn: '1 / 3' }}
+        sx={{ minWidth: "60px", minHeight: "50px" }} // Ensures uniform size
       >
         ⌫
       </Button>
@@ -300,11 +375,14 @@ const TestPage = () => {
         variant="outlined"
         color="secondary"
         onClick={onClear}
+        sx={{ minWidth: "60px", minHeight: "50px" }} // Ensures uniform size
       >
         C
       </Button>
     </Box>
   );
+  
+  
 
   //-------------------------------------------------------------------- Option select handler
   const handleOptionSelect = (questionId, value, isInteger = false) => {
@@ -335,24 +413,23 @@ const TestPage = () => {
       alert("Please select an option before proceeding.");
       return;
     }
-    if (currentQuestion.id) {
-      setSelectedAnswers((prev) => ({
-        ...prev,
-        [currentQuestion.id]: selectedAnswers[currentQuestion.id],
-      }));
-
-      // Add to submitted answers
-      setSubmittedAnswers((prev) => [
-        ...prev,
-        {
-          questionId: currentQuestion.id,
-          userAnswer: selectedAnswers[currentQuestion.id],
-        },
-      ]);
-    }
-
+  
+    // Add to submitted answers
+    setSubmittedAnswers((prev) => [
+      ...prev,
+      {
+        questionId: currentQuestion.id,
+        userAnswer: selectedAnswers[currentQuestion.id],
+      },
+    ]);
+  
+    // Navigate to next question and update visited status
     if (currentQuestionIndex < questions.length - 1) {
-      setCurrentQuestionIndex((prev) => prev + 1);
+      const newIndex = currentQuestionIndex + 1;
+      setCurrentQuestionIndex(newIndex);
+      if (!visitedQuestions.includes(newIndex)) {
+        setVisitedQuestions((prev) => [...prev, newIndex]);
+      }
     }
   };
 
@@ -397,12 +474,13 @@ const TestPage = () => {
 
   //-------------------------------------------------------------------- Subject navigation handler
   const handleSubjectClick = (subject) => {
-    const firstQuestionIndex = questions.findIndex((q) => q.subject === subject);
-    if (firstQuestionIndex !== -1) {
-      setCurrentQuestionIndex(firstQuestionIndex);
-    } else {
-      console.log(`No questions available for ${subject}`);
-    }
+    const subjectIndices = {
+      Physics: 0,
+      Chemistry: 25,
+      Mathematics: 50,
+    };
+  
+    setCurrentQuestionIndex(subjectIndices[subject] || 0);
   };
 
   //-------------------------------------------------------------------- Submit Confirmation handler
@@ -424,23 +502,6 @@ const TestPage = () => {
       (q) => selectedAnswers[q.id] === q.correctAnswer
     ).length;
 
-    const wrongQuestions = questions.filter(q => 
-      selectedAnswers[q.id] && 
-      selectedAnswers[q.id] !== q.correctAnswer
-    ).map(q => {
-      // Validate all required fields
-      if (!q.id || !q.question || !q.correctAnswer) {
-        console.error('Invalid question format:', q);
-        return null;
-      }
-      return {
-        questionId: String(q.id),
-        questionText: q.question,
-        userAnswer: selectedAnswers[q.id],
-        correctAnswer: q.correctAnswer
-      };
-    }).filter(q => q !== null); // Remove null entries
-
     const questionStatuses = questions.map(q => {
       const isAnswered = selectedAnswers[q.id] !== undefined;
       const isCorrect = selectedAnswers[q.id] === q.correctAnswer;
@@ -458,18 +519,38 @@ const TestPage = () => {
       };
     });
 
+    const marksObtained = questionStatuses.filter(q => q.status === "Correct Solved").length;
+
+    const wrongQuestions = questions.filter(q => 
+      selectedAnswers[q.id] && 
+      selectedAnswers[q.id] !== q.correctAnswer
+    ).map(q => {
+      if (!q.id || !q.question || !q.correctAnswer) {
+        console.error('Invalid question format:', q);
+        return null;
+      }
+      return {
+        questionId: String(q.id),
+        questionText: q.question,
+        userAnswer: selectedAnswers[q.id],
+        correctAnswer: q.correctAnswer
+      };
+    }).filter(q => q !== null);
+
     try {
-      // Save test results to backend
+      // Ensure submittedAnswers stores all selected answers
+      const updatedSubmittedAnswers = { ...selectedAnswers };
+      
       const docRef = await addDoc(collection(db, "testResults"), {
         userId: userId,
         testId: testId,
-        marksObtained: correctAnswers,
+        marksObtained: marksObtained,
         totalMarks: totalQuestions,
         wrongQuestions: wrongQuestions,
         timestamp: new Date(),
         durationUsed: 3600 - remainingTime,
         selectedAnswers: selectedAnswers,
-        submittedAnswers: submittedAnswers,
+        submittedAnswers: updatedSubmittedAnswers, // Updated here
         markedQuestions: Object.keys(markedQuestions),
         questionStatuses: questionStatuses,
       });
@@ -484,14 +565,15 @@ const TestPage = () => {
     const resultData = {
       totalQuestions,
       answeredQuestions,
-      correctAnswers,
+      correctAnswers: marksObtained,
       unansweredQuestions: totalQuestions - answeredQuestions,
       markedQuestions: Object.keys(markedQuestions).length,
-      submittedAnswers,
+      submittedAnswers: updatedSubmittedAnswers, // Updated here
     };
     setTestResults(resultData);
     clearLocalStorage(); 
   };
+
 
   //-------------------------------------------------------------------- Visited questions and status handling
   const [visitedQuestions, setVisitedQuestions] = useState([0]);
@@ -509,7 +591,7 @@ const TestPage = () => {
     const isVisited = visitedQuestions.includes(index);
     const isMarkedForReview = markedQuestions[question.id];
   
-    if (isAnswered && isMarkedForReview) return "purple-dot";
+    if (isAnswered && isMarkedForReview) return "green";
     if (!isAnswered && isMarkedForReview) return "purple";
     if (isAnswered) return "green";
     if (isVisited && !isAnswered) return "red";
@@ -535,11 +617,14 @@ const TestPage = () => {
 
   const currentQuestion = questions[currentQuestionIndex];
 
+
   return (
     <MathJaxContext config={mathJaxConfig}>
       <>
       <Header logo={logo} remainingTime={remainingTime} formatTime={formatTime} />
-      <Subheader handleSubjectClick={handleSubjectClick} setIsDrawerOpen={setIsDrawerOpen}/>
+      <Subheader handleSubjectClick={handleSubjectClick} setIsDrawerOpen={setIsDrawerOpen} handlesubmitclick={handleSubmitConfirmation}/>
+      <PreventNavigation /> 
+  
        
         {/* Main Content - Modified grid layout */}
         <Grid container spacing={2} sx={{ p: { xs: 1, sm: 2 }, flexDirection: { xs: 'column-reverse', sm: 'row' } }}>
@@ -561,7 +646,7 @@ const TestPage = () => {
                 mb: 2,
                 p: 1,
                 border:'none',
-                minHeight: "40vh",
+                minHeight: { xs: '75vh', sm: '40vh' },
                 maxHeight: { xs: '60vh', sm: '60vh' },
                 overflowY: "auto",
                 fontSize: { xs: '0.9rem', sm: '1rem' },
@@ -585,48 +670,55 @@ const TestPage = () => {
 
                 {!isIntegerQuestion(currentQuestionIndex) ? (
                     <FormControl component="fieldset" sx={{ width: "100%" }}>
-                        <RadioGroup
-                            value={selectedAnswers[currentQuestion.id] || ""}
-                            onChange={(e) => handleOptionSelect(currentQuestion.id, e.target.value)}
-                        >
+                    <RadioGroup
+                        value={selectedAnswers[currentQuestion.id] || ""}
+                        onChange={(e) => handleOptionSelect(currentQuestion.id, e.target.value)}
+                    >
                         {currentQuestion.options.map((option, i) => (
-                            <FormControlLabel
-                            key={i}
-                            value={option}
-                            control={<Radio sx={{ "&.Mui-checked": { color: "#18b111" } }} />}
-                            label={
-                            <Box sx={{ p: 1, "&:hover": { backgroundColor: "#f8f8f8" } }}>
-                                <MathJax dynamic key={`${currentQuestionIndex}-${i}`}>
-                                    {option.includes("\\")
-                                        ? `\\(${option}\\)`
-                                        : `\\text{${option}}`}
-                                </MathJax>
-                            </Box>
-                        }
-                    sx={{ margin: "8px 0", width: "100%" }}
+    <FormControlLabel
+        key={i}
+        value={option}
+        control={<Radio sx={{ "&.Mui-checked": { color: "#18b111" } }} />}
+        label={
+            <Box sx={{ p: 1, "&:hover": { backgroundColor: "#f8f8f8" } }}>
+                {option.match(/\.(jpg|jpeg|png|gif)$/i) ? (  // Check for any image file
+                    <img 
+                        src={option.startsWith("http") ? option : `/images/${option}`}  // If not HTTP, assume local
+                        alt={`Option ${i}`} 
+                        style={{ maxWidth: "100px", maxHeight: "100px" }} 
+                        onError={(e) => e.target.style.display = "none"} // Hide broken images
                     />
-                ))}
-                        </RadioGroup>
-                    </FormControl>
+                ) : (
+                    <MathJax dynamic key={`${currentQuestionIndex}-${i}`}>
+                        {option.includes("\\") ? `\\(${option}\\)` : `\\text{${option}}`}
+                    </MathJax>
+                )}
+            </Box>
+        }
+        sx={{ margin: "8px 0", width: "100%" }}
+    />
+))}
+
+                    </RadioGroup>
+                </FormControl>
+                
                 ) : (
                     <QuestionAnswerSection question={currentQuestion} index={currentQuestionIndex} />
                 )}
               </Box>
 
-              <Box sx={{ 
-                  display: { xs: 'none', md: 'block' }, // Only show on desktop
-                  position: 'fixed',
-                  bottom: 0,
-                  left: 0,
-                  right: 395,
-                  zIndex: 1000,
-                  bgcolor: 'background.paper',
-                  borderTop: 'px solid',
-                  borderColor: 'divider',
-                  py: 1,
-                  px: 2,
-                  boxShadow: 2
-                }}>
+                <Box   sx={{
+        display: { xs: 'none', md: 'block' },
+        position: 'fixed',
+        bottom: 32,
+        left: 0,
+        right: 395,
+        bgcolor: 'background.paper',       
+        py: 1,
+        px: 2,
+        borderRadius: 1,
+        zIndex: 1000
+      }}>
         <Box sx={{
           display: 'flex',
           gap: 2,
@@ -646,179 +738,185 @@ const TestPage = () => {
             }
           }
         }}>
-        <Button onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))} 
-                disabled={currentQuestionIndex === 0}
-                variant="contained" 
-                sx={{ backgroundColor: '#FF5733', color: 'white'}}
-                >
-          Previous
-        </Button>
-        <Button onClick={handleSaveAndNext} 
-                variant="contained" 
-                sx={{ backgroundColor: '#4fd65e', color: 'white' }}>
-          Save & Next
-        </Button>
-        <Button onClick={handleMarkForReview}
-            variant="contained"
-            sx={{ backgroundColor: '#e3873b', color: 'white' }}>      Mark Review
-    </Button>
+           <button
+        onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
+        disabled={currentQuestionIndex === 0}
+        className="flex items-center gap-2 rounded-full px-4 py-2 bg-[#FF5733] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        <ArrowLeft size={16} />
+        Previous
+      </button>
 
-    <Button onClick={handleClearResponse}
-            variant="contained"
-            sx={{  color: 'white', '&:hover': { backgroundColor: '#E64A19' } }}>      Clear
-    </Button>
-        <Button onClick={handleSubmitConfirmation} 
-                variant="contained" 
-                color="success"
-                sx={{ marginLeft: 'auto' , backgroundColor: '#ffffff', color: 'black', '&:hover': { backgroundColor: '#4fd65e' , color:'white'}}}>
-          Submit Test
-        </Button>
+      
+
+      <button
+        onClick={handleMarkForReview}
+        className="rounded-full px-4 py-2 bg-[#e3873b] text-white"
+      >
+        Mark Review
+      </button>
+
+      <button
+        onClick={handleClearResponse}
+        className="rounded-full px-4 py-2 bg-[#E64A19] text-white hover:bg-[#E64A19]/90"
+      >
+        Clear
+      </button>
+
+      <button
+        onClick={handleSaveAndNext}
+        className="flex items-center gap-2 rounded-full px-4 py-2 bg-[#4fd65e] text-white"
+      >
+        Save & Next
+      </button>
+
+      <button
+        onClick={handleNext}
+        disabled={currentQuestionIndex === questions.length - 1} 
+        sx={{ borderRadius: "50%"}}
+        className="flex items-center gap-2 rounded-2xl px-4 py-2 bg-[#646464] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+      >
+        Next
+        <ArrowRight size={22} />
+      </button>
+        </Box>
       </Box>
-    </Box>
-    <Box sx={{ 
-      display: { xs: 'block', md: 'none' }, // Only show on mobile
-      position: 'fixed',
-      bottom: 0,
-      bgcolor: 'background.paper',
-      py: 1,
-      borderTop: '2px solid',
-      borderColor: 'divider',
-      width: '100vw' 
-    }}>
-      <Box sx={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        gap: 1,
-        justifyContent: 'center',
-        '& button': {
-          flex: '1 1 45%',
-          fontSize: '0.7rem',
-          py: 0.5,
-          px: 0.5,
-          minWidth: 'unset',
-          borderRadius: '4px',
-          boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
-        }
-      }}>
-        <Button onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
-                disabled={currentQuestionIndex === 0}
-                variant="contained"
-                sx={{ backgroundColor: '#FF5733', color: 'white'}}
-                size="small">
-          Previous
-        </Button>
-        <Button onClick={handleSaveAndNext}
-                variant="contained"
-                sx={{ backgroundColor: '#4fd65e', color: 'white' }}
-                size="small">
-          Save & Next
-        </Button>
-        <Button onClick={handleMarkForReview}
-                variant="contained"
-                sx={{ backgroundColor: '#e3873b', color: 'white' }}
-                size="small">
-          Review
-        </Button>
-        <Button onClick={handleClearResponse}
-                variant="contained"
-                sx={{  color: 'white', '&:hover': { backgroundColor: '#E64A19' } }}
-                size="small">
-          Clear
-        </Button>
-        <Button onClick={handleSubmitConfirmation}
-                variant="contained"
-                sx={{ marginLeft: 'auto' , backgroundColor: '#d2d6e0', color: 'black', '&:hover': { backgroundColor: '#4fd65e' , color:'white'}}}
-                size="small">
-                
-          Submit Test
-        </Button>
-      </Box>
-    </Box>
+    <Box
+  sx={{
+    display: "flex",
+    display: { xs: "flex", sm: "none" },
+    gap: 1,
+    justifyContent: "center", // Centers buttons in one line
+    alignItems: "center",
+    "& button": {
+      fontSize: "0.7rem",
+      py: 0.5,
+      px: 1.5,
+      borderRadius: "20px", // Makes buttons rounded
+      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+      minWidth: "unset",
+    },
+  }}
+>
+<Button
+  onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev - 1))}
+  disabled={currentQuestionIndex === 0}
+  variant="contained"
+  sx={{
+    backgroundColor: "",
+    color: "white",
+    borderRadius: "50%",  // Ensures circular shape
+    width: "30px",        // Fixed width
+    height: "30px",       // Fixed height
+    minWidth: "unset",    // Prevents stretching
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+  size="small"
+>
+  <ArrowBackRoundedIcon />
+</Button>
+
+<Button
+    onClick={handleClearResponse}
+    variant="contained"
+    sx={{ backgroundColor: "#FF5733" }}
+    size="small"
+  >
+    Clear
+  </Button>
+
+  <Button
+    onClick={handleMarkForReview}
+    variant="contained"
+    sx={{ backgroundColor: "#e3873b", color: "white" }}
+    size="small"
+  >
+    Review
+  </Button>
+
+  <Button
+    onClick={handleSaveAndNext}
+    variant="contained"
+    sx={{ backgroundColor: "#4fd65e", color: "white" }}
+    size="small"
+  >
+    Save & Next
+  </Button>
+
+  
+
+  <Button
+  onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev + 1))}
+  disabled={currentQuestionIndex === questions.length - 1}
+  variant="contained"
+  sx={{
+    backgroundColor: "",
+    color: "",
+    borderRadius: "50%",  // Ensures circular shape
+    width: "30px",        // Fixed width
+    height: "30px",       // Fixed height
+    minWidth: "unset",    // Prevents stretching
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+  size="small"
+>
+  <ArrowForwardRoundedIcon />
+</Button>
+</Box>
+
+
             </Paper>
           </Grid>
 
           {/* Right Section - Question Navigation */}
-          <Grid item xs={12} md={3} sx={{ order: { xs: 1, sm: 0 } ,display: { xs: 'none', md: 'block' }}}>
-            <Paper elevation={3} sx={{ p: 1, height: { xs: 'auto', sm: '85vh' }, overflowY: 'auto' }}>
-              <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
-                <IconButton onClick={() => setIsPalletOpen(!isPalletOpen)} size="small">
-                  {isPalletOpen ? <ChevronRight /> : <ChevronLeft />}
-                </IconButton>
-              </Box>
+<Grid item xs={12} md={3} sx={{ order: { xs: 1, sm: 0 } ,display: { xs: 'none', md: 'block' }, border:'none'}}>
+  <Paper elevation={3} sx={{ p: 1, height: { xs: 'auto', sm: '75vh' }, overflowY: 'auto', border:'none'}}>
+    <Box sx={{ display: {xs:'block', sm:'none'}, justifyContent: 'flex-end' }}>
+      <IconButton onClick={() => setIsPalletOpen(!isPalletOpen)} size="small">
+        {isPalletOpen ? <ChevronRight /> : <ChevronLeft />}
+      </IconButton>
+    </Box>
 
-              {isPalletOpen && (
-                <>
-                  {/* Legend - Modified for mobile */}
-                  <Box sx={{ 
-                    display: 'grid', 
-                    gridTemplateColumns: 'repeat(2, 1fr)', 
-                    gap: 1, 
-                    mb: 2,
-                    fontSize: '0.7rem'
-                  }}>
-                    {legendItems.map((item, index) => (
-                      <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                        <Box sx={{
-                          width: 16,
-                          height: 16,
-                          borderRadius: '50%',
-                          bgcolor: item.color,
-                          position: 'relative'
-                        }}>
-                          {item.dot && (
-                            <Box sx={{
-                              position: 'absolute',
-                              bottom: -2,
-                              right: -2,
-                              width: 8,
-                              height: 8,
-                              bgcolor: 'warning.main',
-                              borderRadius: '50%'
-                            }} />
-                          )}
-                        </Box>
-                        <Typography variant="caption">{item.text}</Typography>
-                      </Box>
-                    ))}
-                  </Box>
+    {isPalletOpen && (
+      <>
+        {/* Legend - Modified for mobile */}
+        <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 1, mb: 2,fontSize: '0.7rem'}}>
+          {legendItems.map((item, index) => (
+            <Box key={index} sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
+              <Box sx={{width: 16,height: 16,borderRadius: '50%', bgcolor: item.color ,position: 'relative'}}>
+                {item.dot && (<Box sx={{position: 'absolute',bottom: -2,right: -2,width: 8,height: 8,bgcolor: 'warning.main',borderRadius: '50%'}} />)}
+              </Box>
+              <Typography variant="caption">{item.text}</Typography>
+            </Box>
+          ))}
+        </Box>
 
                   {/* Question buttons - Modified grid for mobile */}
-                  <Box sx={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(5, 1fr)',
-                    gap: 1,
-                    '@media (min-width: 400px)': {
-                      gridTemplateColumns: 'repeat(7, 1fr)'
-                    }
-                  }}>
-                    {questions.map((_, index) => {
-                      const status = getQuestionStatus(index);
-                      return (
-                        <Button
-  key={index}
-  onClick={() => handleQuestionView(index)}
-  variant="contained"
-  sx={{
-    minWidth: 32,
-    height: 32,
-    p: 0,
-    fontSize: '0.75rem',
-    bgcolor: theme => {
-      if (currentQuestionIndex === index) return '#f0f0f0'; // Current question
-      return `${statusColors[status]?.main || '#f5f5f5'}` // Default light gray
-    },
-    color: theme => {
-      if (currentQuestionIndex === index) return 'black';
-      return status === 'gray' ? 'black' : 'white'
-    },
-    border: theme => currentQuestionIndex === index ? '2px solid #1976d2' : 'none',
-    '&:hover': { 
-      bgcolor: `${statusColors[status]?.dark || '#e0e0e0'}`,
-      boxShadow: '0 4px 6px rgba(0,0,0,0.1)' 
-    },
-    transition: 'all 0.2s ease',
-  }}
->
+        <Box sx={{display: 'grid',gridTemplateColumns: 'repeat(5, 1fr)',gap: 1,'@media (min-width: 400px)': {gridTemplateColumns: 'repeat(7, 1fr)'}}}>
+            {questions.map((_, index) => {const status = getQuestionStatus(index);
+            
+              return (
+                  <Button key={index}onClick={() => handleQuestionView(index)}variant="contained"sx={{minWidth: 32,height: 32,p: 0,fontSize: '0.75rem',
+                    bgcolor: theme => {
+                      if (currentQuestionIndex === index) return '#00000'; // Current question
+                        return `${statusColors[status]?.main || '#00000'}` // Default light gray
+                    },
+                            color: theme => {
+                              if (currentQuestionIndex === index) return 'white';
+                              return status === 'gray' ? 'black' : 'white'
+                            },
+                            border: theme => currentQuestionIndex === index ? '2px solid #1976d2' : 'none',
+                            '&:hover': { 
+                              bgcolor: `${statusColors[status]?.dark || '#e0e0e0'}`,
+                              boxShadow: '0 4px 6px rgba(0,0,0,0.1)' 
+                            },
+                            transition: 'all 0.2s ease',
+                          }}
+                        >
                           {index + 1}
                           {status === 'purple-dot' && (
                             <Box sx={{
@@ -832,13 +930,13 @@ const TestPage = () => {
                             }} />
                           )}
                         </Button>
-                      );
-                    })}
-                  </Box>
-                </>
-              )}
-            </Paper>
-          </Grid>
+                );
+            })}
+        </Box>
+      </>
+    )}
+  </Paper>
+</Grid>
 
           <SwipeableDrawer
   anchor="right"
@@ -854,7 +952,7 @@ const TestPage = () => {
     } 
   }}
 >
-  <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+  <Box sx={{ display: 'flex', justifyContent: 'flex-end'}}>
     <IconButton onClick={() => setIsDrawerOpen(false)}>
       <ChevronRight />
     </IconButton>
@@ -877,7 +975,7 @@ const TestPage = () => {
             width: 16,
             height: 16,
             borderRadius: '50%',
-            bgcolor: item.color,
+            bgcolor:item.color,
             position: 'relative'
           }}>
             {item.dot && (
@@ -920,9 +1018,10 @@ const TestPage = () => {
             p: 0,
             fontSize: '0.75rem',
             bgcolor: theme => {
-              if (currentQuestionIndex === index) return '#f0f0f0';
-              return `${statusColors[status]?.main || '#f5f5f5'}`
+              if (currentQuestionIndex === index) return "#1976d2"; // A clear blue for active
+              return statusColors[status]?.main || "#e0e0e0"; // A neutral default
             },
+            
             color: theme => {
               if (currentQuestionIndex === index) return 'black';
               return status === 'gray' ? 'black' : 'white'
@@ -957,4 +1056,4 @@ const TestPage = () => {
   );
 };
 
-export default TestPage;
+export default React.memo(TestPage);

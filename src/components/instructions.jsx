@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import {
   Container,
@@ -27,11 +27,31 @@ const Instructions = () => {
   const { testId } = useParams();
   const [isAgreed, setIsAgreed] = useState(false);
 
+  useEffect(() => {
+    const countdownCompleted = localStorage.getItem("countdownCompleted");
+    if (countdownCompleted !== "true") {
+      navigate("/"); // Redirect if countdown was skipped
+    } else {
+      localStorage.setItem("instructionsVisited", "true"); // Mark instructions as visited
+    }
+  }, [navigate]);
+
   const handleStartTest = () => {
     if (isAgreed) {
       navigate(`/test/${testId}`);
     }
   };
+
+  useEffect(() => {
+      window.history.pushState(null, null, window.location.href);
+      window.addEventListener("popstate", () => {
+        navigate("/dashboard"); // Redirect back to dashboard if back is pressed
+      });
+    
+      return () => {
+        window.removeEventListener("popstate", () => {});
+      };
+    }, []);
 
   return (
     <Container maxWidth="xl" sx={{ py: 4 }}>
@@ -52,7 +72,7 @@ const Instructions = () => {
 
           <Grid item xs={12}>
             <Typography variant="body1" paragraph>
-              Total duration of JEE-Main - Paper 1 15-04-18 is 180 minutes. JEE Paper-2 is for Mathematics, Aptitude Test, and Drawing. The Drawing test is required to be done on a separate drawing sheet, which is not part of the current mock test.
+              Total duration of JEE-Main - Paper 1 is 180 minutes. 
             </Typography>
             <Typography variant="body1" paragraph>
               The clock will be set at the server. The countdown timer in the top-right corner of the screen will display the remaining time available for you to complete the examination. When the timer reaches zero, the examination will end by itself. You will not be required to end or submit your examination.
@@ -82,7 +102,7 @@ const Instructions = () => {
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
                   <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Box sx={{ width: 30, height: 30, bgcolor: '#FFFF00', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 1 }}>1</Box>
+                    <Box sx={{ width: 30, height: 30, bgcolor: '#ef1eb3', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 1 }}>1</Box>
                     <Typography>Answered & Marked for review</Typography>
                   </Box>
                 </Grid>
@@ -128,17 +148,11 @@ const Instructions = () => {
                   secondary="Questions are divided into sections. Navigate freely between sections during the examination using the top bar."
                 />
               </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <InfoOutlined color="primary" />
-                </ListItemIcon>
-                <ListItemText 
-                  primary="Rough Work" 
-                  secondary="Use the rough sheet provided at the examination center. Hand over the rough sheet to the invigilator after completing the test."
-                />
-              </ListItem>
             </List>
           </Grid>
+
+          <h3 style={{ color: 'red' , textAlign: '', marginLeft: 'px'}}>*Back from page wont save responces<br/>*Even if you take a back from here it is counted as one attempt</h3>
+          <h3 style={{ color: 'red' , textAlign: '', marginLeft: 'px'}}>*Images may take time to load</h3>
 
           <Grid item xs={12}>
             <Divider sx={{ my: 2 }} />

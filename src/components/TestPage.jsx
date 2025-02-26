@@ -66,11 +66,37 @@ const TestPage = () => {
   const { userId } = useUser();
   const [isPalletOpen, setIsPalletOpen] = useState(true);  // Renamed from 'open' for clarity
 
+  useEffect(() => {
+    const countdownCompleted = localStorage.getItem("countdownCompleted");
+    const instructionsVisited = localStorage.getItem("instructionsVisited");
+
+    if (countdownCompleted !== "true" || instructionsVisited !== "true") {
+      navigate("/"); // Redirect if steps were skipped
+    }
+  }, [navigate]);
+
   //-------------------------------------------------------------------- Initial useEffect for loading
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 500);
     return () => clearTimeout(timer);
   }, [testId]);
+
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      // Modern browsers will ignore custom messages, but still show a confirmation dialog
+      const message = "Are you sure you want to leave this page?";
+      event.returnValue = message; // Required for some browsers
+      return message; // For others
+    };
+
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
 
   //-------------------------------------------------------------------- Filter questions based on testId
   useEffect(() => {
@@ -198,7 +224,7 @@ const TestPage = () => {
 
   //-------------------------------------------------------------------- Numpad component
   const Numpad = ({ onInput, onBackspace, onClear }) => (
-    <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 1, ml: 2, width: '200px' }}>
+    <Box sx={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 1, ml: 2, width: '200px' }}>
       {[7, 8, 9, 4, 5, 6, 1, 2, 3, '±', 0].map((num) => (
         <Button key={num} variant="outlined" onClick={() => onInput(num)} sx={{ minWidth: 0 }}>
           {num}

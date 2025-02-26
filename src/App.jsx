@@ -3,19 +3,21 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import LoginPage from './components/LoginPage';
 import DashBoard from './components/DashBoard';
-import MockTest from './components/Mocktest';
+
 import MockTests from "./components/Mocktestlist";
 import MockTestscet from "./components/mocktestlistmhtcet";
 import TestPage from './components/JEETESTPAGECOMPONENTS/TestPageduplicate'; // New TestPage
 import TestPagecet from './components/mhtcettestpage'; // New TestPage
 import ResultPage from './components/result';
+import Resultscet from './components/resultcet'; // Import UserProvider
 import Instruction from './components/instructions';
 import Instructioncet from './components/instructionscet';
 import NotebookPage from './components/notebook';
 import ProfilePage from './components/profile';
 import Pyqcet from './components/pyqmhtcet';
 import { UserProvider } from './components/UserContext'; // Import UserProvider
-import Resultscet from './components/resultcet'; // Import UserProvider
+import Raiseissueform from './components/issue';
+import PreventNavigation from './components/JEETESTPAGECOMPONENTS/PreventNavigation';
 
 function App() {
   return (
@@ -26,7 +28,6 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<DashBoard />} />
         {/* <Route path="/mock-test-selection" element={<MockTestSelection />} /> */}
-        <Route path="/mock-test" element={<MockTest />} />
         <Route path="/mocktestslist" element={<MockTests />} />
         <Route path="/mocktestlistmhtcet" element={<MockTestscet />} />
   
@@ -40,9 +41,9 @@ function App() {
         <Route path="/notebook" element={<NotebookPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/pyqcet" element={<Pyqcet />} />
-        <Route path="/resultcet" element={<Resultscet />} />
-
-        
+        <Route path="/resultcet/:testIdcet" element={<Resultscet />} />
+        <Route path="/issue" element={<Raiseissueform />} />
+      
       </Routes>
     </BrowserRouter>
     </UserProvider>  
