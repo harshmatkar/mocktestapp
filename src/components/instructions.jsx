@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import {
   Container,
   Paper,
@@ -8,19 +8,13 @@ import {
   Box,
   List,
   ListItem,
-  ListItemIcon,
-  ListItemText,
-  Alert,
-  AlertTitle,
   Checkbox,
   FormControlLabel,
   Divider,
   Grid,
-} from '@mui/material';
-import {
-  CheckCircleOutline,
-  InfoOutlined,
-} from '@mui/icons-material';
+  Alert,
+} from "@mui/material";
+import { InfoOutlined } from "@mui/icons-material";
 
 const Instructions = () => {
   const navigate = useNavigate();
@@ -28,160 +22,72 @@ const Instructions = () => {
   const [isAgreed, setIsAgreed] = useState(false);
 
   useEffect(() => {
-    const countdownCompleted = localStorage.getItem("countdownCompleted");
-    if (countdownCompleted !== "true") {
-      navigate("/"); // Redirect if countdown was skipped
+    if (localStorage.getItem("countdownCompleted") !== "true") {
+      navigate("/");
     } else {
-      localStorage.setItem("instructionsVisited", "true"); // Mark instructions as visited
+      localStorage.setItem("instructionsVisited", "true");
     }
   }, [navigate]);
 
+  useEffect(() => {
+    window.history.pushState(null, null, window.location.href);
+    const handleBack = () => navigate("/dashboard");
+    window.addEventListener("popstate", handleBack);
+    return () => window.removeEventListener("popstate", handleBack);
+  }, [navigate]);
+
   const handleStartTest = () => {
-    if (isAgreed) {
-      navigate(`/test/${testId}`);
-    }
+    if (isAgreed) navigate(`/test/${testId}`);
   };
 
-  useEffect(() => {
-      window.history.pushState(null, null, window.location.href);
-      window.addEventListener("popstate", () => {
-        navigate("/dashboard"); // Redirect back to dashboard if back is pressed
-      });
-    
-      return () => {
-        window.removeEventListener("popstate", () => {});
-      };
-    }, []);
-
   return (
-    <Container maxWidth="xl" sx={{ py: 4 }}>
+    <Container maxWidth="md" sx={{ py: 4 }}>
       <Paper elevation={3} sx={{ p: 4, borderRadius: 2 }}>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <Typography variant="h4" color="primary" gutterBottom align="center">
-                GENERAL INSTRUCTIONS
-            </Typography>
-          </Grid>
+        <Typography variant="h4" color="primary" align="center" gutterBottom>
+          General Instructions
+        </Typography>
 
-          <Grid item xs={12}>
-            <Alert severity="info" sx={{ mb: 3 }}>
-              <AlertTitle>Important Notice</AlertTitle>
-              Please read all instructions carefully before proceeding with the test.
-            </Alert>
-          </Grid>
+        <Alert severity="info" sx={{ mb: 3 }}>
+          Please read all instructions carefully before proceeding.
+        </Alert>
 
-          <Grid item xs={12}>
-            <Typography variant="body1" paragraph>
-              Total duration of JEE-Main - Paper 1 is 180 minutes. 
-            </Typography>
-            <Typography variant="body1" paragraph>
-              The clock will be set at the server. The countdown timer in the top-right corner of the screen will display the remaining time available for you to complete the examination. When the timer reaches zero, the examination will end by itself. You will not be required to end or submit your examination.
-            </Typography>
-            <Typography variant="body1" paragraph>
-              The Questions Palette displayed on the right side of the screen will show the status of each question using one of the following symbols:
-            </Typography>
-          </Grid>
+        <Typography variant="body1" paragraph>
+          The test duration is 180 minutes. The countdown timer will display the remaining time.
+        </Typography>
+        <Typography variant="body1" paragraph>
+          When the timer reaches zero, the test will end automatically.
+        </Typography>
 
-          <Grid item xs={12}>
-            <Typography variant="h6" gutterBottom color="primary">
-              Question Status Information:
-            </Typography>
-            <Paper variant="outlined" sx={{ p: 2, mb: 3 }}>
-              <Grid container spacing={2}>
-                <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Box sx={{ width: 30, height: 30, bgcolor: 'gray', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', borderRadius: 1 }}>77</Box>
-                    <Typography>Not Visited</Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Box sx={{ width: 30, height: 30, bgcolor: '#008000', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', borderRadius: 1 }}>13</Box>
-                    <Typography>Answered</Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Box sx={{ width: 30, height: 30, bgcolor: '#ef1eb3', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: 1 }}>1</Box>
-                    <Typography>Answered & Marked for review</Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} sm={6} md={3}>
-                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
-                    <Box sx={{ width: 30, height: 30, bgcolor: '#FF0000', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'white', borderRadius: 1 }}>1</Box>
-                    <Typography>Visited but Not answered</Typography>
-                  </Box>
-                </Grid>
-              </Grid>
-            </Paper>
-          </Grid>
+        <Typography variant="h6" color="primary" gutterBottom>
+          Important Notes:
+        </Typography>
+        <List>
+          <ListItem>
+            <InfoOutlined color="primary" sx={{ mr: 1 }} /> Use the question palette to navigate.
+          </ListItem>
+          <ListItem>
+            <InfoOutlined color="primary" sx={{ mr: 1 }} /> Save answers using "Save & Next."
+          </ListItem>
+          <ListItem>
+            <InfoOutlined color="primary" sx={{ mr: 1 }} /> Mark questions for review if unsure.
+          </ListItem>
+          <ListItem>
+            <InfoOutlined color="primary" sx={{ mr: 1 }} /> Do not use the back button, as responses won't be saved.
+          </ListItem>
+        </List>
 
-          <Grid item xs={12}>
-            <Typography variant="h6" gutterBottom color="primary">
-              Key Instructions:
-            </Typography>
-            <List>
-              <ListItem>
-                <ListItemIcon>
-                  <InfoOutlined color="primary" />
-                </ListItemIcon>
-                <ListItemText 
-                  primary="Navigating to a Question" 
-                  secondary="To answer a question, click on the question number in the Question Palette at the right of your screen to go to that numbered question directly. Save your answer using 'Save & Next' or mark it for review with 'Mark for Review & Next.'"
-                />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <InfoOutlined color="primary" />
-                </ListItemIcon>
-                <ListItemText 
-                  primary="Answering Questions" 
-                  secondary="To select an answer, click on the option button. Deselect by clicking again or use 'Clear Response.' Always save your answer by clicking 'Save & Next.'"
-                />
-              </ListItem>
-              <ListItem>
-                <ListItemIcon>
-                  <InfoOutlined color="primary" />
-                </ListItemIcon>
-                <ListItemText 
-                  primary="Sections and Navigation" 
-                  secondary="Questions are divided into sections. Navigate freely between sections during the examination using the top bar."
-                />
-              </ListItem>
-            </List>
-          </Grid>
+        <Divider sx={{ my: 2 }} />
 
-          <h3 style={{ color: 'red' , textAlign: '', marginLeft: 'px'}}>*Back from page wont save responces<br/>*Even if you take a back from here it is counted as one attempt</h3>
-          <h3 style={{ color: 'red' , textAlign: '', marginLeft: 'px'}}>*Images may take time to load</h3>
+        <FormControlLabel
+          control={<Checkbox checked={isAgreed} onChange={(e) => setIsAgreed(e.target.checked)} color="primary" />}
+          label="I have read and understood the instructions."
+        />
 
-          <Grid item xs={12}>
-            <Divider sx={{ my: 2 }} />
-            <FormControlLabel
-              control={
-                <Checkbox 
-                  checked={isAgreed}
-                  onChange={(e) => setIsAgreed(e.target.checked)}
-                  color="primary"
-                />
-              }
-              label="I have read and understood all the instructions."
-            />
-          </Grid>
-
-          <Grid item xs={12}>
-            <Box sx={{ display: 'flex', justifyContent: 'center', mt: 2 }}>
-              <Button 
-                variant="contained" 
-                size="large"
-                onClick={handleStartTest}
-                disabled={!isAgreed}
-                sx={{ minWidth: 200 }}
-              >
-                Start Test
-              </Button>
-            </Box>
-          </Grid>
-        </Grid>
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 3 }}>
+          <Button variant="contained" size="large" onClick={handleStartTest} disabled={!isAgreed}>
+            Start Test
+          </Button>
+        </Box>
       </Paper>
     </Container>
   );

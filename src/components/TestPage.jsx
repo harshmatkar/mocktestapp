@@ -496,7 +496,7 @@ const TestPage = () => {
                 Candidate: Harsh Matkar
               </Typography>
               <Typography variant="subtitle2" sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
-                Exam: JEE ADVANCE
+                Exam: JEE MAIN
               </Typography>
               <Typography
                 variant="body2"

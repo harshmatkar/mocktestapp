@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
+import { Mail, FileText, Hash, AlertTriangle, Lightbulb } from 'lucide-react';
 
 const RaiseIssueForm = () => {
   const [formData, setFormData] = useState({
@@ -55,58 +56,78 @@ const RaiseIssueForm = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-6 bg-gray-900">
+    <div className="min-h-screen flex flex-col items-center justify-center p-6 bg-gray-900 relative">
+      {message && (
+        <div className="fixed top-0 left-0 right-0 bg-red-600 text-white text-center py-2 shadow-md">
+          {message}
+        </div>
+      )}
+      <div className="flex items-center justify-center bg-red-100 dark:bg-blue-900 text-blue-400 dark:text-amber-300 p-4 rounded-lg shadow-md mb-4 font-extrabold">
+      <Lightbulb className="w-24 h-10 text-red-600 dark:text-amber-300" />
+      <h3 className="text- font-semibold">
+        You can see Question Id in Mistake page  
+      </h3>
+    </div>
       <div className="w-full max-w-lg bg-gray-800 text-gray-100 shadow-lg rounded-xl p-6">
-        <h1 className='text-red-500'>You can see qn num in mistake page</h1>
+        
         <h2 className="text-2xl font-semibold text-center mb-4">Raise an Issue</h2>
         
         <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
+          <div className="relative">
             <label htmlFor="testNumber" className="block text-sm font-medium text-gray-300 mb-1">
-              Test Number
+              Test Id
             </label>
-            <input
-              id="testNumber"
-              name="testNumber"
-              type="text"
-              value={formData.testNumber}
-              onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter test number"
-              required
-            />
+            <div className="flex items-center bg-gray-700 border border-gray-600 rounded-lg">
+              <Hash className="ml-3 text-gray-400" />
+              <input
+                id="testNumber"
+                name="testNumber"
+                type="text"
+                value={formData.testNumber}
+                onChange={handleChange}
+                className="w-full px-4 py-2 bg-transparent text-white focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter test number"
+                required
+              />
+            </div>
           </div>
 
-          <div>
+          <div className="relative">
             <label htmlFor="questionNumber" className="block text-sm font-medium text-gray-300 mb-1">
-              Question Number
+              Question Id
             </label>
-            <input
-              id="questionNumber"
-              name="questionNumber"
-              type="text"
-              value={formData.questionNumber}
-              onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter question number"
-              required
-            />
+            <div className="flex items-center bg-gray-700 border border-gray-600 rounded-lg">
+              <FileText className="ml-3 text-gray-400" />
+              <input
+                id="questionNumber"
+                name="questionNumber"
+                type="text"
+                value={formData.questionNumber}
+                onChange={handleChange}
+                className="w-full px-4 py-2 bg-transparent text-white focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter question number"
+                required
+              />
+            </div>
           </div>
 
-          <div>
+          <div className="relative">
             <label htmlFor="issue" className="block text-sm font-medium text-gray-300 mb-1">
               Issue Description
             </label>
-            <textarea
-              id="issue"
-              name="issue"
-              value={formData.issue}
-              onChange={handleChange}
-              className="w-full px-4 py-2 bg-gray-700 border border-gray-600 text-white rounded-lg focus:ring-2 focus:ring-blue-500"
-              placeholder="Describe the issue"
-              rows={4}
-              required
-            />
+            <div className="flex items-start bg-gray-700 border border-gray-600 rounded-lg">
+              <Mail className="ml-3 mt-3 text-gray-400" />
+              <textarea
+                id="issue"
+                name="issue"
+                value={formData.issue}
+                onChange={handleChange}
+                className="w-full px-4 py-2 bg-transparent text-white focus:ring-2 focus:ring-blue-500"
+                placeholder="Describe the issue"
+                rows={4}
+                required
+              />
+            </div>
           </div>
 
           <button 
@@ -117,8 +138,6 @@ const RaiseIssueForm = () => {
             {countdown > 0 ? `Wait ${Math.floor(countdown / 60)}:${(countdown % 60).toString().padStart(2, '0')}` : 'Submit Issue'}
           </button>
         </form>
-
-        {message && <p className="mt-4 text-center text-green-400">{message}</p>}
       </div>
     </div>
   );

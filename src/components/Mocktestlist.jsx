@@ -13,6 +13,7 @@ import {
   increment
 } from "firebase/firestore";
 import { useUser } from "./UserContext";
+import { AlertTriangle, Lightbulb , TargetIcon} from "lucide-react";
 
 const MockTests = () => {
   const [testsCompleted, setTestsCompleted] = useState({});
@@ -50,7 +51,7 @@ const MockTests = () => {
   
 
   const mockTests = Array.from({ length: 10 }, (_, i) => ({
-    name: `Mock Test ${i + 1}`,
+    name: `${i + 1}`,
     subject: "JEE MAIN",
     id: i + 1,
     isLive: i < 5,
@@ -181,102 +182,106 @@ useEffect(() => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <div className="container mx-auto py-8 px-4">
-        <h2 className="text-4xl font-bold text-center mb-6 text-gray-800 dark:text-cyan-600">
-           Mockitupp
-        </h2>
 
-        <h3 className="text-1xl text-center mb-6 text-gray-800 dark:text-red-500">Once you go on test environment it will be considered as 1 attempt , for each test user have 1 attempts</h3>
+      <div className="flex items-center justify-center bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 p-4 rounded-lg shadow-md mb-4">
+  <TargetIcon className="w-24 h-10 mr-3 text-blue-600 dark:text-blue-100" />
+  <h3 className="text- font-light">
+    Stay calm and focused during the test! Read each question carefully and manage your time wisely.  
+  </h3>
+</div>
 
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg mb-8">
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b border-gray-200 dark:border-gray-700">
-                  <th className="p-4 text-left text-gray-700 dark:text-gray-200">
-                    Test Name
-                  </th>
-                  <th className="p-4 text-left text-gray-700 dark:text-gray-200">
-                    Exam
-                  </th>
-                  <th className="p-4 text-left text-gray-700 dark:text-gray-200">
-                    Scores
-                  </th>
-                  <th className="p-4 text-right text-gray-700 dark:text-gray-200">
-                    Actions
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {mockTests.map((test) => (
-                  <tr
-                    key={test.id}
-                    className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700"
-                  >
-                    <td className="p-2 dark:text-white">{test.name}</td>
-                    <td className="p- dark:text-white">{test.subject}</td>
-                    <td className="p-4 dark:text-white">
-                      {/* Changed from difficulty to score */}
-                      <span className="font-medium">
-                        {test.score}/300
-                      </span>
-                    </td>
-                    <td className="p-4 text-right">
-                      {test.isLive ? (
-                        <button
-                        disabled={testAttempts === null || testAttempts[test.id] > 0}
-                        onClick={() => handleStartTest(test.name, test.id)}
-                        className={`py-2 px-4 rounded-lg transition-all duration-300 text-white ${
-                          testAttempts === null
-                            ? "bg-gray-400 cursor-wait"
-                            : testAttempts[test.id] > 0
-                            ? "bg-blue-500 cursor-not-allowed"
-                            : "bg-green-500 hover:bg-green-600"
-                        }`}
-                      >
-                        {testAttempts === null
-                          ? "Checking..."
-                          : testAttempts[test.id] > 1
-                          ? "Completed"
-                          : "Start Test"}
-                      </button>
-                      
-                      ) : (
-                        <button
-                          disabled
-                          className="px-4 py-2 rounded-md text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed"
-                        >
-                          Coming Soon
-                        </button>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        {selectedTest && (
-  <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center animate-fade-in">
-    <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-6 w-full max-w-sm mx-4 transform scale-105 transition-all duration-300">
-      <h3 className="text-2xl font-bold mb-3 text-gray-900 dark:text-white text-center">
-        Get Ready! 🚀
+      
+        <div className="flex items-center justify-center bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 p-4 rounded-lg shadow-md mb-4">
+      <AlertTriangle className="w-24 h-10 mr-3 text-red-600 dark:text-red-400" />
+      <h3 className="text- font-light">
+        Once you enter the test environment, it will be counted as an attempt. 
+        You have only <span className="font-bold">one</span> attempt per test.
       </h3>
-      <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-2">
-        Your test <span className="font-semibold">{selectedTest?.name}</span> is starting in:
+    </div>
+
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg mb-8 w-full">
+  <table className="w-full table-fixed border-collapse">
+    <thead>
+      <tr className="border-b border-gray-200 dark:border-gray-700">
+        <th className="p-4 text-left text-gray-700 dark:text-gray-200 w-1/6">Test</th>
+        <th className="p-4 text-left text-gray-700 dark:text-gray-200 w-1/3 hidden sm:table-cell">Exam</th>
+        <th className="p-4 text-left text-gray-700 dark:text-gray-200 w-1/5">Scores</th>
+        <th className="p-4 text-right text-gray-700 dark:text-gray-200 w-1/3">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {mockTests.map((test) => (
+        <tr
+          key={test.id}
+          className="border-b border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700"
+        >
+          <td className="p-4 dark:text-white">{test.name}</td>
+          <td className="p-4 dark:text-white hidden sm:table-cell">{test.subject}</td>
+          <td className="p-4 dark:text-white">
+            <span className="font-medium">{test.score}/300</span>
+          </td>
+          <td className="p-4 text-right">
+            {test.isLive ? (
+              <button
+                disabled={testAttempts === null || testAttempts[test.id] > 2}
+                onClick={() => handleStartTest(test.name, test.id)}
+                className={`py-2 px-4 rounded-lg transition-all duration-300 text-white 
+                  w-full sm:w-1/3 ${
+                    testAttempts === null
+                      ? "bg-gray-400 cursor-wait"
+                      : testAttempts[test.id] > 2
+                      ? "bg-blue-500 cursor-not-allowed"
+                      : "bg-green-500 hover:bg-green-600"
+                  }`}
+                
+              >
+                {testAttempts === null
+                  ? "Checking..."
+                  : testAttempts[test.id] > 2
+                  ? "Completed"
+                  : "Start Test"}
+              </button>
+            ) : (
+              <button
+                disabled
+                className="px-4 py-2 rounded-md text-sm font-medium bg-gray-200 dark:bg-gray-700 text-gray-500 dark:text-gray-400 cursor-not-allowed w-full sm:w-1/3"
+              >
+                Coming Soon
+              </button>
+            )}
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
+
+
+
+{selectedTest && (
+  <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center animate-fade-in-up">
+    <div className="bg-white dark:bg-gray-900 shadow-2xl rounded-2xl p-8 w-full max-w-md mx-4 transform transition-all duration-300 scale-105">
+      <h3 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white text-center">
+        Get Ready!
+      </h3>
+      <p className="text-center text-lg text-gray-700 dark:text-gray-300 mb-3">
+        Your test <span className="font-semibold text-blue-600 dark:text-blue-400">{selectedTest?.name}</span> is starting in:
       </p>
-      <p className="text-4xl font-extrabold text-center text-blue-600 dark:text-blue-400 animate-pulse">
+      <p className="text-5xl font-extrabold text-center text-blue-600 dark:text-blue-400 animate-pulse">
         {countdown} sec
       </p>
       <button
         onClick={handleCancelCountdown}
-        className="mt-5 w-full px-4 py-2 bg-red-500 text-white text-lg font-medium rounded-lg shadow-md hover:bg-red-600 transition-all duration-200"
+        className="mt-6 w-full px-5 py-3 bg-red-500 text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-red-600 focus:outline-none transition-all duration-200"
+        aria-label="Cancel Countdown"
       >
         Cancel
       </button>
     </div>
   </div>
 )}
+
 
       </div>
     </div>

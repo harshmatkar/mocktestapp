@@ -1,10 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, navigate } from "react";
 import { AppBar, Toolbar, Box, Typography } from "@mui/material";
 import { useUser } from '../UserContext';
+import { auth, db } from '../../firebaseConfig';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const Header = ({ logo, remainingTime, formatTime }) => {
     const [language, setLanguage] = useState("en"); // Default language is English
-    
+    const [username, setUsername] = useState('Student');
+    const [useremail, setuseremail] = useState('');
+    const [user] = useAuthState(auth);
+
+     useEffect(() => {
+        // Set username from Firebase auth
+        if (user?.displayName) {
+          setUsername(user.displayName);
+          setuseremail(user.email);
+        } else if (user?.email) {
+          setUsername(user.email.split('@')[0]); 
+        }
+      }, [user, navigate]); 
   
   const handleLanguageChange = (event) => {
     setLanguage(event.target.value);
@@ -52,10 +66,10 @@ const Header = ({ logo, remainingTime, formatTime }) => {
 
     <Box sx={{ textAlign: "right", flexGrow: 1, ml: { xs: 0, sm: 2 } }}>
       <Typography variant="subtitle1" sx={{ fontSize: { xs: "0.8rem", sm: "1rem" }, display: { xs: "none", sm: "block" } }}>
-        Candidate: XYZ
+        Candidate: {username}
       </Typography>
       <Typography variant="subtitle2" sx={{ fontSize: { xs: "0.7rem", sm: "0.875rem" }, display: { xs: "none", sm: "block" } }}>
-        Exam: JEE ADVANCE
+        Exam: JEE MAIN
       </Typography>
       <Typography
         variant="body2"
@@ -80,13 +94,14 @@ const Header = ({ logo, remainingTime, formatTime }) => {
     }}
   >
      <img src={logo} alt="NTA Logo" style={{ height: "35px", marginRight: 4 }} />
-    <Typography variant="subtitle2" sx={{ fontSize: "0.8rem", fontWeight: "bold"}} className="text-blue-600">
+    <Typography variant="subtitle2" sx={{ fontSize: "0.9rem", fontWeight: "Bold"}} className="text-blue-800 border-2 p-1">
      JEE MAINS
     </Typography>
     <Typography
       variant="body2"
       color={remainingTime <= 600 ? "error" : "textSecondary"}
       sx={{ fontSize: "0.8rem", fontWeight: "bold" }}
+      className="border-2 p-1"
     >
       Time Remaining: {formatTime(remainingTime)}
     </Typography>

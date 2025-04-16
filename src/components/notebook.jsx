@@ -5,6 +5,7 @@ import { useUser } from "./UserContext.jsx";
 import { MathJax, MathJaxContext } from "better-react-mathjax";
 import questionsData from "../assets/questions.json";
 import {Box} from "@mui/material";
+import { AlertTriangle, Lightbulb } from "lucide-react";
 
 const mathJaxConfig = {
   loader: { load: ["[tex]/html"] },
@@ -113,41 +114,59 @@ const correctAnswer = question.correctAnswer || "Not Provided"; // Correct answe
   return (
     <MathJaxContext config={mathJaxConfig}>
       <div className="min-h-screen bg-gray-900 text-gray-100">
-        <div className="container mx-auto p-4 max-w-4xl">
-          <div className="flex flex-wrap gap-4 mb-6">
-          <h3 className="text-red-600 text-sm mb-1">Solutions are not uploaded yet we are working on it</h3>
-          <h3 className="text-red-500 text-sm mb-1">**Use desktop mode if complete question is not displayed**</h3>
-            <div className="flex-1 min-w-[200px]">
-              
-              <label className="block text-sm font-medium text-gray-300 mb-2">Select Test:</label>
-              <select
-                className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-gray-100 
-                         focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                value={selectedTest}
-                onChange={e => setSelectedTest(e.target.value)}
-              >
-                <option value="">Choose a test</option>
-                {Array.from({ length: 30 }, (_, i) => (
-                  <option key={i + 1} value={`test${i + 1}`}>Test {i + 1}</option>
-                ))}
-              </select>
-            </div>
+      <div className="container mx-auto p-6 max-w-4xl">
+      <div className="container mx-auto p-6 max-w-4xl">
+  {/* Alerts Section */}
+  <div className="flex flex-col md:grid md:grid-cols-2 gap-4 mb-6">
+    {/* Info Box */}
+    <div className="flex items-center bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 p-4 rounded-lg shadow-md min-h-[80px]">
+      <Lightbulb className="w-8 h-8 mr-3 text-blue-600 dark:text-blue-400" />
+      <h3 className="text-base font-light">Use desktop mode for a better experience.</h3>
+    </div>
 
-            <div className="flex-1 min-w-[200px]">
-              <label className="block text-sm font-medium text-gray-300 mb-2">Filter by Status:</label>
-              <select
-                className="w-full p-2 border border-gray-700 rounded-md bg-gray-800 text-gray-100 
-                         focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-                value={selectedStatus}
-                onChange={e => setSelectedStatus(e.target.value)}
-              >
-                <option value="all">All Questions</option>
-                <option value="correct">Correct Solved</option>
-                <option value="wrong">Wrong Solved</option>
-                <option value="unattempted">Not Visited</option>
-              </select>
-            </div>
-          </div>
+    {/* Warning Box */}
+    <div className="flex items-center bg-red-100 dark:bg-red-900 text-red-700 dark:text-red-300 p-4 rounded-lg shadow-md min-h-[80px]">
+      <AlertTriangle className="w-8 h-8 mr-3 text-red-600 dark:text-red-400" />
+      <h3 className="text-base font-light">Solutions are not available yet. We're working on it.</h3>
+    </div>
+  </div>
+
+  {/* Dropdown Filters */}
+  <div className="flex flex-col md:grid md:grid-cols-2 gap-4">
+    {/* Test Selection */}
+    <div className="w-full">
+      <label className="block text-sm font-medium text-gray-300 mb-2">Select Test:</label>
+      <select
+        className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-gray-100 focus:ring-2 focus:ring-blue-500"
+        value={selectedTest}
+        onChange={e => setSelectedTest(e.target.value)}
+      >
+        <option value="">Choose a test</option>
+        {Array.from({ length: 30 }, (_, i) => (
+          <option key={i + 1} value={`test${i + 1}`}>Test {i + 1}</option>
+        ))}
+      </select>
+    </div>
+
+    {/* Status Filter */}
+    <div className="w-full">
+      <label className="block text-sm font-medium text-gray-300 mb-2">Filter by Status:</label>
+      <select
+        className="w-full p-3 border border-gray-700 rounded-md bg-gray-800 text-gray-100 focus:ring-2 focus:ring-blue-500"
+        value={selectedStatus}
+        onChange={e => setSelectedStatus(e.target.value)}
+      >
+        <option value="all">All Questions</option>
+        <option value="correct">Correct Solved</option>
+        <option value="wrong">Wrong Solved</option>
+        <option value="unattempted">Not Visited</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+
+
 
           {isLoading && (
             <div className="text-center py-8">

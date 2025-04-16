@@ -84,18 +84,51 @@ const TestPage = () => {
   const auth = getAuth();
   const db = getFirestore();
 
-  useEffect(() => {
-    const countdownCompleted = localStorage.getItem("countdownCompleted");
-    const instructionsVisited = localStorage.getItem("instructionsVisited");
+  // useEffect(() => {
+  //   const countdownCompleted = localStorage.getItem("countdownCompleted");
+  //   const instructionsVisited = localStorage.getItem("instructionsVisited");
   
-    if (countdownCompleted !== "true" || instructionsVisited !== "true") {
-      navigate("/"); // Redirect if steps were skipped
-    } else if (parseInt(testId, 10) > 5) {
-      navigate("/dashboard"); // Redirect to dashboard if testId > 6
-    } console.log("countdownCompleted:", countdownCompleted);
-  console.log("instructionsVisited:", instructionsVisited);
-  console.log("testId:", testId);
-  }, [navigate, testId]);
+  //   if (countdownCompleted !== "true" || instructionsVisited !== "true") {
+  //     navigate("/"); // Redirect if steps were skipped
+  //   } else if (parseInt(testId, 10) > 5) {
+  //     navigate("/dashboard"); // Redirect to dashboard if testId > 6
+  //   } console.log("countdownCompleted:", countdownCompleted);
+  // console.log("instructionsVisited:", instructionsVisited);
+  // console.log("testId:", testId);
+  // }, [navigate, testId]);
+
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      console.log("🔄 Attempted reload detected!");
+      event.preventDefault();
+      event.returnValue = "Are you sure you want to leave this page?";
+    };
+
+    const handleBackNavigation = (event) => {
+      console.log("⬅️ Back button pressed!");
+      const confirmLeave = window.confirm("Are you sure you want to go back?");
+      console.log(`🧐 User response: ${confirmLeave ? "Leaving" : "Staying"}`);
+
+      if (!confirmLeave) {
+        console.log("🔄 Blocking back navigation...");
+        window.history.pushState(null, "", window.location.href);
+      }
+    };
+
+    // Push an initial state to prevent back navigation
+    window.history.pushState(null, "", window.location.href);
+    
+    // Add event listeners
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    window.addEventListener("popstate", handleBackNavigation);
+    console.log("✅ Event listeners added!");
+
+    return () => {
+      console.log("❌ Removing event listeners...");
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+      window.removeEventListener("popstate", handleBackNavigation);
+    };
+  }, []);
 
   useEffect(() => {
     const savedState = localStorage.getItem(`testState-${testId}`);
@@ -210,7 +243,7 @@ useEffect(() => {
   ];
   
   const statusColors = {
-    gray: { main: '#f5f5f5', dark: '#e0e0e0' }, // Light gray
+    gray: { main: '#ebeeef', dark: '#e0e0e0' }, // Light gray
     green: { main: '#4caf50', dark: '#388e3c' }, // Keep green
     purple: { main: '#9c27b0', dark: '#7b1fa2' },
     red: { main: '#f44336', dark: '#d32f2f' },
@@ -623,7 +656,6 @@ useEffect(() => {
       <>
       <Header logo={logo} remainingTime={remainingTime} formatTime={formatTime} />
       <Subheader handleSubjectClick={handleSubjectClick} setIsDrawerOpen={setIsDrawerOpen} handlesubmitclick={handleSubmitConfirmation}/>
-      <PreventNavigation /> 
   
        
         {/* Main Content - Modified grid layout */}
@@ -675,28 +707,61 @@ useEffect(() => {
                         onChange={(e) => handleOptionSelect(currentQuestion.id, e.target.value)}
                     >
                         {currentQuestion.options.map((option, i) => (
-    <FormControlLabel
-        key={i}
-        value={option}
-        control={<Radio sx={{ "&.Mui-checked": { color: "#18b111" } }} />}
-        label={
-            <Box sx={{ p: 1, "&:hover": { backgroundColor: "#f8f8f8" } }}>
-                {option.match(/\.(jpg|jpeg|png|gif)$/i) ? (  // Check for any image file
-                    <img 
-                        src={option.startsWith("http") ? option : `/images/${option}`}  // If not HTTP, assume local
-                        alt={`Option ${i}`} 
-                        style={{ maxWidth: "100px", maxHeight: "100px" }} 
-                        onError={(e) => e.target.style.display = "none"} // Hide broken images
-                    />
-                ) : (
-                    <MathJax dynamic key={`${currentQuestionIndex}-${i}`}>
-                        {option.includes("\\") ? `\\(${option}\\)` : `\\text{${option}}`}
-                    </MathJax>
-                )}
-            </Box>
-        }
-        sx={{ margin: "8px 0", width: "100%" }}
-    />
+   <FormControlLabel
+   key={i}
+   value={option}
+   control={
+       <Radio sx={{ "&.Mui-checked": { color: "#18b111" } }} />
+   }
+   label={
+       <Box
+           sx={{
+               p: 1,
+               border: 'none',
+               minHeight: { xs: 'auto', sm: 'auto' }, // Prevents excessive height
+               maxWidth: "100%", 
+               overflowWrap: "break-word", 
+               whiteSpace: "pre-wrap", // Ensures text wraps properly
+               display: "flex",
+               flexDirection: "column", // Forces content to stack
+               alignItems: "flex-start",
+               "& .MathJax": { fontSize: "0.9rem !important" }, // Matches working style
+               "& img": {
+                   maxWidth: "100%", 
+                   maxHeight: "100px",
+                   height: "auto",
+                   display: "block"
+               },
+                fontSize: { xs: '0.9rem', sm: '1rem' },
+                '& .MathJax': { fontSize: '0.9rem !important' } ,// Scale down equations
+                whiteSpace: "pre-wrap"
+           }}
+       >
+           {option.match(/\.(jpg|jpeg|png|gif)$/i) ? (
+               <img 
+                   src={option.startsWith("http") ? option : `/images/${option}`}
+                   alt={`Option ${i}`}
+                   onError={(e) => e.target.style.display = "none"}
+               />
+           ) : (
+               <MathJax dynamic key={`${currentQuestionIndex}-${i}`}>
+                   {option.includes("\\") ? `\\(${option}\\)` : `\\text{${option}}`}
+               </MathJax>
+           )}
+       </Box>
+   }
+   sx={{
+       margin: "8px 0",
+       width: "100%",
+       alignItems: "flex-start", 
+       "& .MuiFormControlLabel-label": {
+           width: "100%",
+           display: "flex",
+           flexDirection: "column", // Stacks the label and ensures proper wrapping
+       }
+   }}
+/>
+
 ))}
 
                     </RadioGroup>
@@ -741,31 +806,31 @@ useEffect(() => {
            <button
         onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
         disabled={currentQuestionIndex === 0}
-        className="flex items-center gap-2 rounded-full px-4 py-2 bg-[#FF5733] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+        className="flex items-center gap-2 rounded-full px-4 py-2 bg-[#4960f5] text-white disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
       >
         <ArrowLeft size={16} />
         Previous
       </button>
 
       
-
-      <button
-        onClick={handleMarkForReview}
-        className="rounded-full px-4 py-2 bg-[#e3873b] text-white"
-      >
-        Mark Review
-      </button>
-
       <button
         onClick={handleClearResponse}
-        className="rounded-full px-4 py-2 bg-[#E64A19] text-white hover:bg-[#E64A19]/90"
+        className="flex items-center gap-2 rounded-2xl px-4 py-2 bg-[#E64A19] text-white hover:bg-[#E64A19]/90 font-semibold"
       >
         Clear
       </button>
 
       <button
+        onClick={handleMarkForReview}
+        className="flex items-center gap-2 rounded-2xl px-4 py-2 bg-[#e3873b] text-white font-semibold"
+      >
+        Mark Review
+      </button>
+
+
+      <button
         onClick={handleSaveAndNext}
-        className="flex items-center gap-2 rounded-full px-4 py-2 bg-[#4fd65e] text-white"
+        className="flex items-center gap-2 rounded-full px-4 py-2 bg-[#4fd65e] text-white font-semibold"
       >
         Save & Next
       </button>
@@ -774,7 +839,7 @@ useEffect(() => {
         onClick={handleNext}
         disabled={currentQuestionIndex === questions.length - 1} 
         sx={{ borderRadius: "50%"}}
-        className="flex items-center gap-2 rounded-2xl px-4 py-2 bg-[#646464] text-white disabled:opacity-50 disabled:cursor-not-allowed"
+        className="flex items-center gap-2 rounded-2xl px-4 py-2 bg-[#4960f5] text-white disabled:opacity-50 disabled:cursor-not-allowed font-semibold"
       >
         Next
         <ArrowRight size={22} />
@@ -848,7 +913,7 @@ useEffect(() => {
   
 
   <Button
-  onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev + 1))}
+  onClick={handleNext}
   disabled={currentQuestionIndex === questions.length - 1}
   variant="contained"
   sx={{
@@ -958,7 +1023,7 @@ useEffect(() => {
     </IconButton>
   </Box>
   
-  {/* Reuse the question panel content from desktop */}
+  {/* Reuse the question panel content from Mobile */}
   <Box sx={{ mb: 2 }}>
     <Typography variant="subtitle2" gutterBottom>
       Question Palette

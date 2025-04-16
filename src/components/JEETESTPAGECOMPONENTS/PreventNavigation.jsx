@@ -1,63 +1,56 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const PreventNavigation = () => {
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      const message = "Are you sure you want to leave this page?";
-      event.preventDefault();
-      event.returnValue = message;
-      return message;
-    };
-
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
+  const [showOverlay, setShowOverlay] = useState(false);
 
   useEffect(() => {
+    const preventGoBack = () => {
+      console.log("🔄 Pushing new history state to prevent back navigation.");
+      window.history.pushState(null, "", window.location.href);
+    };
+
     const handleBackButton = () => {
-      const confirmLeave = window.confirm("Are you sure you want to leave this page?");
-      if (!confirmLeave) {
-        // Re-push the state to override the back action
-        window.history.pushState(null, "", window.location.href);
-      } else {
-        // Allow normal back navigation
-        window.removeEventListener("popstate", handleBackButton);
-        history.back();
-      }
+      console.log("⬅️ Back button pressed!");
+      setShowOverlay(true);
+      console.log("🚨 Overlay activated!");
+
+      setTimeout(() => {
+        setShowOverlay(false);
+        console.log("✅ Overlay removed, restoring state...");
+        preventGoBack();
+      }, 100);
     };
 
-    // Push a dummy state initially
-    window.history.pushState(null, "", window.location.href);
-
-    const handlePopState = () => {
-      handleBackButton();
-    };
-
-    window.addEventListener("popstate", handlePopState);
+    preventGoBack(); // Push initial state
+    window.addEventListener("popstate", handleBackButton);
+    console.log("✅ Back button listener added!");
 
     return () => {
-      window.removeEventListener("popstate", handlePopState);
+      console.log("❌ Removing back button listener...");
+      window.removeEventListener("popstate", handleBackButton);
     };
   }, []);
 
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        alert("You are leaving the test page!");
-      }
-    };
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-    };
-  }, []);
-
-  return null;
+  return showOverlay ? (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        width: "100vw",
+        height: "100vh",
+        backgroundColor: "rgba(0, 0, 0, 0.5)", // Semi-transparent overlay
+        zIndex: 9999,
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        fontSize: "20px",
+      }}
+    >
+      <p>⚠️ Back navigation is disabled!</p>
+    </div>
+  ) : null;
 };
 
 export default PreventNavigation;

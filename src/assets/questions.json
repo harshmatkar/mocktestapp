@@ -3853,7 +3853,7 @@
       "id": 39,
     "correctAnswer":"\\text140",
       "testId": 5,
-      "question": "For a complex reaction:\n\\( P \\xrightarrow{k} \\text{Products} \\)\n\\( E_{a1} = 200 \\) kJ/mol, \\( E_{a2} = 90 \\) kJ/mol, \\( E_{a3} = 80 \\) kJ/mol\nOverall rate constant \\( k \\) is related to individual rate constants by the equation:\n\\[\nk = \\left( \\frac{k_1 k_2}{k_3} \\right)^{2/3}\n\\]\nActivation energy (kJ/mol) for the overall reaction is (mark answer to nearest integer).",
+      "question": "For a complex reaction:\n\\( P \\xrightarrow{k} \\text{Products} \\)\n\\( E_{a1} = 200 \\) kJ/mol, \\( E_{a2} = 90 \\) kJ/mol, \\( E_{a3} = 80 \\) kJ/mol\nOverall rate constant \\( k \\) is related to individual rate constants by the equation:\\(k = \\left( \\frac{k_1 k_2}{k_3} \\right)^{2/3}\\)\n Activation energy (kJ/mol) for the overall reaction is (mark answer to nearest integer).",
       "options": [
         "\\text240",
         "\\text160",
@@ -5818,7 +5818,7 @@
       "image":"https://i.ibb.co/67509TRP/Screenshot-2025-02-19-184045.png",
       "question": "The diagram shows three concentric conducting spherical shells having radii R, 2R, and 3R. All three shells are given some charges. The initial potential of each shell is as mentioned in the figure. If the innermost shell is earthed, then the final charge present on its outer surface would be equal to:",
       "options": ["Zero \\,", "40\\pi\\epsilon_0 R", "4\\pi\\epsilon_0 R", "-\\pi\\epsilon_0 R"],
-      "correctAnswer": "Zero \\"
+      "correctAnswer": "Zero \\,"
   },
   {
       "id": 2,
@@ -6763,7 +6763,7 @@
 },
 {
   "testId": 9,
-  "correctAnswer":"r^0\\",
+  "correctAnswer":"r^0\\,",
   "id": 10,
   "question": "In an imaginary electric field, the electric potential energy of an electron at a distance \\(r\\) from the center of the force field is given by \\(U = kr^2\\), where \\(k\\) is a positive constant of appropriate dimensions. If the electron is moving in a circular orbit of radius \\(r\\) about the center, then the orbital time period of the electron is proportional to:",
   "options": [
@@ -6788,14 +6788,14 @@
 },
 {
   "testId": 9,
-  "correctAnswer":"\\frac{\\pi}{12\\omega} \\pi",
+  "correctAnswer":"\\frac{\\pi}{12\\omega} ",
   "id": 12,
   "question": "Two particles are executing SHM which are described by the equations \\(x_1 = a \\sin (\\omega t + \\frac{\\pi}{6})\\) and \\(x_2 = a \\sin (\\omega t + \\frac{\\pi}{4})\\). Find the minimum time interval between the particles crossing their mean position.",
   "options": [
-    "\\frac{\\pi}{12\\omega} \\pi",
-    "\\frac{\\pi}{6\\omega} \\pi",
-    "\\frac{\\pi}{4\\omega} \\pi",
-    "\\frac{\\pi}{3\\omega} \\pi"
+    "\\frac{\\pi}{12\\omega} ",
+    "\\frac{\\pi}{6\\omega} ",
+    "\\frac{\\pi}{4\\omega} ",
+    "\\frac{\\pi}{3\\omega} "
   ]
 },
 {
@@ -6824,7 +6824,7 @@
 },
 {
   "testId": 9,
-  "correctAnswer":"4 s\\",
+  "correctAnswer":"4 s\\,",
   "id": 15,
   "question": "Two particles start moving from the same point in two different directions. The first particle moves along the positive x-axis with a constant acceleration of \\(3 \\text{ m/s}^2\\). The second particle moves in a straight line making an angle of 60° with the positive x-axis with a constant speed of \\(24 \\text{ m/s}\\). Find the time after which the relative velocity of the particles is minimum.",
   "options": [
@@ -6947,7 +6947,7 @@
 {
   "testId": 9,
   "id": 27,
-  "correctAnswer":"",
+  "correctAnswer":"\\text{19.5}",
   "question": "Molality of sulphuric acid solution in which the mole fraction of water is 0.74 is:",
   "options": [
     "\\text{9.51}",
@@ -6958,7 +6958,7 @@
 },
 {
   "testId": 9,
-  "id": 28,"correctAnswer":"",
+  "id": 28,"correctAnswer":"\\text{IV < III < II < I}",
   "image":"https://i.postimg.cc/MKVW0Q8h/image.png",
   "question": "The increasing order of \\(pK_b\\) values of the following compounds is:",
   "options": [
@@ -6970,19 +6970,19 @@
 },
 {
   "testId": 9,
-  "id": 29,"correctAnswer":"",
+  "id": 29,"correctAnswer":"\\text{A}",
   "image":"https://i.postimg.cc/5N1rGYzc/image.png",
   "question": "The increasing order of \\(pK_b\\) values of the following compounds is:",
   "options": [
-    "\\text{II < I < III < IV}",
-    "\\text{II < III < I < IV}",
-    "\\text{IV < III < II < I}",
-    "\\text{IV < II < III < I}"
+    "\\text{A}",
+    "\\text{B}",
+    "\\text{C}",
+    "\\text{D}"
   ]
 },
 {
   "testId": 9,
-  "id": 30,"correctAnswer":"",
+  "id": 30,"correctAnswer":"\\text{(1) > (2) > (4) > (3)}",
   "question": "Arrange the following solutions in the decreasing order of pH:\n(1) 0.1M NaOH, \n(2) 0.1M NaCl, \n(3) \\(0.1M H_2SO_4\\), \n(4) \\(0.1M NH_4Cl.\\)",
   "options": [
     "\\text{(1) > (2) > (3) > (4)}",
@@ -6993,7 +6993,7 @@
 },
 {
   "testId": 9,
-  "id": 31,"correctAnswer":"",
+  "id": 31,"correctAnswer":"\\text{Poor and high}",
   "question": "Among the nitrates of alkaline earth metals, the thermal stability of \\(Mg(NO_3)_2\\) and \\(Sr(NO_3)_2\\) respectively are:",
   "options": [
     "\\text{Poor and poor}",
@@ -7004,7 +7004,7 @@
 },
 {
   "testId": 9,
-  "id": 32,"correctAnswer":"",
+  "id": 32,"correctAnswer":"K_c = K_p RT^{-1} \\,",
   "question": "For the reaction \\(NH_4Cl (g) \\rightleftharpoons NH_3 (g) + HCl (g)\\), the correct relation between \\(K_c\\) and \\(K_p\\) is:",
   "options": [
     "K_c = K_p RT^{-2} \\,",
@@ -7015,7 +7015,7 @@
 },
 {
   "testId": 9,
-  "id": 33,"correctAnswer":"",
+  "id": 33,"correctAnswer":"\\text{Marshall’s acid contains one S-S bond}",
   "question": "The incorrect statement is:",
   "options": [
     "\\ H_2S_2O_5\\ \\text{contains no S-S bond}",
@@ -7026,7 +7026,7 @@
 },
 {
   "testId": 9,
-  "id": 34,"correctAnswer":"",
+  "id": 34,"correctAnswer":"\\text{(A) is wrong but (R) is correct}",
   "question": "Consider the assertion and reason given below:\nAssertion (A): Buta-1,3-diene is a monomer of gutta percha.\nReason (R): Gutta percha is formed through cationic addition polymerisation.\nChoose the correct answer:",
   "options": [
     "\\text{Both (A) and (R) are wrong}",
@@ -7037,7 +7037,7 @@
 },
 {
   "testId": 9,
-  "id": 35,"correctAnswer":"",
+  "id": 35,"correctAnswer":"\\text{3-Methyl-2-butenoic acid}",
   "question": "Which of the following compounds does not show geometrical isomerism?",
   "options": [
     "\\text{But-2-ene}",
@@ -7048,7 +7048,7 @@
 },
 {
   "testId": 9,
-  "id": 36,"correctAnswer":"",
+  "id": 36,"correctAnswer":"1.95 \\times 10^{-4}",
   "question": "The equilibrium constant for the reaction \\(PCl_5 (g) \\rightleftharpoons PCl_3 (g) + Cl_2 (g)\\) at 400K is given that \\(\\Delta H = 77.2\\) kJ/mol and \\(\\Delta S = 122\\) J/K·mol.",
   "options": [
     "1.95 \\times 10^{-6}",
@@ -7059,7 +7059,7 @@
 },
 {
   "testId": 9,
-  "id": 37,"correctAnswer":"",
+  "id": 37,"correctAnswer":"Ferrocene \\,",
   "question": "Which of the following is not an example of a \\(\\sigma\\)-bonded organometallic complex?",
   "options": [
     "\\ Pb(C_2H_5)_4",
@@ -7070,7 +7070,7 @@
 },
 {
   "testId": 9,
-  "id": 38,"correctAnswer":"",
+  "id": 38,"correctAnswer":"\\text{98, 67, 103, 90}",
   "question": "The set that contains atomic numbers of only inner transition elements is:",
   "options": [
     "\\text{9, 17, 34, 38}",
@@ -7081,7 +7081,7 @@
 },
 
 {
-  "testId": 9,"correctAnswer":"",
+  "testId": 9,"correctAnswer":"(C) \\,",
   "image":"https://i.postimg.cc/RCw8XQNQ/image.png",
   "id": 39,
   "question": "Conider the following reaction",
@@ -7094,7 +7094,7 @@
 },
 {
   "testId": 9,
-  "id": 40,"correctAnswer":"",
+  "id": 40,"correctAnswer":"(C) \\,",
   "image":"https://i.postimg.cc/NFvnQLPH/image.png",
   "question": "",
   "options": [
@@ -7106,19 +7106,19 @@
 },
 {
   "testId": 9,
-  "id": 41,"correctAnswer":"",
+  "id": 41,"correctAnswer":"https://i.postimg.cc/QNfy3HZS/image.png",
   "image":"https://i.postimg.cc/3JXT0QXh/image.png",
   "question": "The major product obtained from the following reaction is:",
   "options": [
-    "(A) Image",
-    "(B) Image",
-    "(C) Image",
-    "(D) Image"
+    "https://i.postimg.cc/5ypdc3qm/image.png",
+    "https://i.postimg.cc/v8vd6YF6/image.png",
+    "https://i.postimg.cc/QNfy3HZS/image.png",
+    "https://i.postimg.cc/QNK0RSSN/image.png"
   ]
 },
 {
   "testId": 9,
-  "id": 42,"correctAnswer":"",
+  "id": 42,"correctAnswer":"\\text{Gd}",
   "question": "The Lanthanoid that does not show +2 oxidation states is:",
   "options": [
     "\\text{Sm}",
@@ -7129,7 +7129,7 @@
 },
 {
   "testId": 9,
-  "id": 43,"correctAnswer":"",
+  "id": 43,"correctAnswer":"\\text{Bell metal is an alloy of Cu and Sn}",
   "question": "The correct statement is:",
   "options": [
     "\\text{Magnalium is an alloy of Al and Cu}",
@@ -7140,7 +7140,7 @@
 },
 {
   "testId": 9,
-  "id": 44,"correctAnswer":"",
+  "id": 44,"correctAnswer":"\\text{Viscosity and surface tension for D.P. is almost similar to D.M.}",
   "question": "The incorrect statement for lyophilic colloids is:",
   "options": [
     "\\text{Easy to prepare}",
@@ -7151,7 +7151,7 @@
 },
 {
   "testId": 9,
-  "id": 45,"correctAnswer":"",
+  "id": 45,"correctAnswer":"\\text{10}",
   "question": "For a reaction \\( P \\to Q \\), the activation energy for the forward reaction and backward reaction is 15 KJ/mol and 5 KJ/mol, respectively. The potential energy of \\( P \\) is 8 KJ/mol. Then the heat of reaction (in kJ) is:",
   "options": [
     "\\text{10}",

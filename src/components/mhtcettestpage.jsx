@@ -26,6 +26,8 @@ import {
   Toolbar,
   Grid,
 } from "@mui/material";
+import ArrowBackRoundedIcon from "@mui/icons-material/ArrowBackRounded";
+import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 
 const TestPage = () => {
   const navigate = useNavigate();
@@ -42,44 +44,6 @@ const TestPage = () => {
   const [visitedQuestions, setVisitedQuestions] = useState([]);
 
   // Check if the user already has a transaction.
-  useEffect(() => {
-    const checkExistingTransaction = async () => {
-      console.log("userId:", userId);
-      if (!userId) {
-        console.log("No userId provided, skipping transaction check.");
-        return;
-      }
-      console.log("Checking transactions for userId:", userId);
-
-      const transactionsRef = collection(db, "transactions");
-      const q = query(
-        transactionsRef,
-        where("userId", "==", userId),
-        where("testTitle", "==", "MHT CET Mock Tests")
-      );
-
-      try {
-        const querySnapshot = await getDocs(q);
-        console.log(
-          "Transaction query completed. Number of results:",
-          querySnapshot.size
-        );
-
-        if (!querySnapshot.empty) {
-          console.log("Existing transaction found, navigating to /dashboard");
-          // Optionally, you can navigate if a transaction exists:
-          // navigate("/dashboard");
-        } else {
-          console.log("No existing transactions found for this user.");
-          navigate("/dashboard");
-        }
-      } catch (error) {
-        console.error("Error checking existing transactions:", error);
-      }
-    };
-
-    checkExistingTransaction();
-  }, [userId, navigate]);
 
   // Simulate a short loading delay.
   useEffect(() => {
@@ -276,15 +240,34 @@ const TestPage = () => {
   return (
     <MathJaxContext>
       <AppBar position="static" sx={{ bgcolor: "#113671" }}>
-        <Toolbar sx={{ justifyContent: "space-between" }}>
-          <Typography variant="h6">
-            MHT-CET TEST - {selectedSubject}
-          </Typography>
-          <Typography variant="body2" color="white">
-            Time Remaining: {formatTime(remainingTime)}
-          </Typography>
-        </Toolbar>
-      </AppBar>
+  <Toolbar sx={{ justifyContent: "space-between" }}>
+    <Typography variant="h6" color="white" sx={{fontSize: { xs: "0.85rem", sm: "1.575rem" }}}>
+      MHT-CET TEST - {selectedSubject}
+    </Typography>
+
+    <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+      <Typography variant="body2" color="white" sx={{ display: { xs: 'block', sm: 'none' } }}>
+        Time: {formatTime(remainingTime)}
+      </Typography>
+      <Typography variant="body2" color="white" sx={{ display: { xs: 'none', sm: 'block' } }}>
+        Time Remaining: {formatTime(remainingTime)}
+      </Typography>
+      <Button 
+        onClick={handleSubmitConfirmation}
+        variant="contained" 
+        color="error" 
+        sx={{ 
+          fontSize: { xs: "0.75rem", sm: "0.875rem" }, 
+          px: { xs: 1, sm: 2 },
+          py: { xs: 0.5, sm: 1 }
+        }}
+      >
+        Submit
+      </Button>
+    </Box>
+  </Toolbar>
+</AppBar>
+
 
       <Box
         sx={{
@@ -321,7 +304,15 @@ const TestPage = () => {
         </Box>
       </Box>
 
-      <Grid container spacing={2} sx={{ p: 2, height: "calc(100vh - 160px)" }}>
+      <Grid 
+  container 
+  spacing={2} 
+  sx={{ 
+    p: 2, 
+    height: { xs: "100vh", sm: "calc(100vh - 160px)" } 
+  }} 
+>
+
         <Grid item xs={12} md={9}>
           <Paper
             elevation={3}
@@ -381,6 +372,7 @@ const TestPage = () => {
   sx={{
     mt: 3,
     display: "flex",
+    display : {sm:'flex', xs:'none'},
     gap: 2,
     marginLeft:{sm:3, xs:0},
     flexWrap: "wrap",
@@ -446,6 +438,95 @@ const TestPage = () => {
   >
     SUBMIT
   </Button>
+</Box>
+
+
+<Box
+  sx={{
+    display: "flex",
+    marginTop: { xs: 5, sm: 0 },
+    display: { xs: "flex", sm: "none" },
+    gap: 1,
+    justifyContent: "center", // Centers buttons in one line
+    alignItems: "center",
+    "& button": {
+      fontSize: "0.7rem",
+      py: 0.5,
+      px: 1.5,
+      borderRadius: "20px", // Makes buttons rounded
+      boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+      minWidth: "unset",
+    },
+  }}
+>
+<Button
+  onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev - 1))}
+  disabled={currentQuestionIndex === 0}
+  variant="contained"
+  sx={{
+    backgroundColor: "",
+    color: "white",
+    borderRadius: "50%",  // Ensures circular shape
+    width: "30px",        // Fixed width
+    height: "30px",       // Fixed height
+    minWidth: "unset",    // Prevents stretching
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+  size="small"
+>
+  <ArrowBackRoundedIcon />
+</Button>
+
+<Button
+    onClick={handleClearResponse}
+    variant="contained"
+    sx={{ backgroundColor: "#FF5733" }}
+    size="small"
+  >
+    Clear
+  </Button>
+
+  <Button
+    onClick={handleMarkForReview}
+    variant="contained"
+    sx={{ backgroundColor: "#e3873b", color: "white" }}
+    size="small"
+  >
+    Review
+  </Button>
+
+  <Button
+    onClick={handleSaveAndNext}
+    variant="contained"
+    sx={{ backgroundColor: "#4fd65e", color: "white" }}
+    size="small"
+  >
+    Save
+  </Button>
+
+  
+
+  <Button
+  onClick={() => setCurrentQuestionIndex((prev) => Math.max(0, prev + 1))}
+  disabled={currentQuestionIndex === questions.length - 1}
+  variant="contained"
+  sx={{
+    backgroundColor: "",
+    color: "",
+    borderRadius: "50%",  // Ensures circular shape
+    width: "30px",        // Fixed width
+    height: "30px",       // Fixed height
+    minWidth: "unset",    // Prevents stretching
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+  }}
+  size="small"
+>
+  <ArrowForwardRoundedIcon />
+</Button>
 </Box>
 
           </Paper>

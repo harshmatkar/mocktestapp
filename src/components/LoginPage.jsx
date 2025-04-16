@@ -69,7 +69,7 @@ const LoginPage = () => {
           <div className="flex flex-col items-center justify-center">
   {/* Logo and Name */}
   <div className="flex items-center space-x-2">
-    <img src="https://res.cloudinary.com/dq0mpqvl7/image/upload/v1740396128/mu-icon-6_uqljmh.png" className="w-10 h-9" alt="MockitUpp Logo" />
+    <img src={logo} className="w-10 h-9" alt="MockitUpp Logo" />
     <h1 className="text-4xl font-bold text-cyan-700 bg-clip-text">
       MockitUpp
     </h1>
