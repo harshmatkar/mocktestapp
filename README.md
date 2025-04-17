@@ -1,8 +1,52 @@
-# React + Vite
+# 📘 Mock Test App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Mock Test App** repository!  
+This project is designed to help users practice mock tests efficiently, track performance, and improve over time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- User-friendly interface for taking mock tests
+- Supports multiple subjects and categories
+- Real-time score and feedback
+- Detailed result analysis and progress tracking
+- Admin dashboard for managing questions
+
+---
+
+## 🖼️ Screenshots
+
+> Add your app screenshots below for visual reference.  
+> (Replace the placeholder image links with your own.)
+
+### 🏠 Home Page
+![Home Page](https://i.postimg.cc/kGkXcjg7/image.png)
+
+### 🧪 Test Interface
+![Test Interface](https://i.postimg.cc/tgtZgHCW/image.png)
+
+### 📊 Result Page
+![Result Page](https://i.postimg.cc/vB9wLGkS/image.png)
+
+### ⚙️ Analysis Page
+![Admin Dashboard](https://i.postimg.cc/vBKQYP95/image.png)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: React / HTML / CSS / JavaScript  
+- **Backend**: FireBase 
+- **Database**: FireStore 
+- **Authentication**: Google Auth  
+- **Hosting**: Netlify
+
+---
+
+## 🔧 Installation
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/your-username/mock-test-app.git
+   cd mock-test-app
