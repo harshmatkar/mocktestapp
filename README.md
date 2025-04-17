@@ -44,9 +44,3 @@ This project is designed to help users practice mock tests efficiently, track pe
 
 ---
 
-## 🔧 Installation
-
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/your-username/mock-test-app.git
-   cd mock-test-app
