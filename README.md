@@ -17,9 +17,6 @@ This project is designed to help users practice mock tests efficiently, track pe
 
 ## 🖼️ Screenshots
 
-> Add your app screenshots below for visual reference.  
-> (Replace the placeholder image links with your own.)
-
 ### 🏠 Home Page
 ![Home Page](https://i.postimg.cc/kGkXcjg7/image.png)
 
